@@ -9,3 +9,4 @@ Content introduced in lecture is expanded on in text.
 - [Digital computers](computer.html)
 - [1s and 0s (and so on)](numbers.html)
 - [Beyond 1s and 0s](types.html)
+- [Hardware](hardware.html)

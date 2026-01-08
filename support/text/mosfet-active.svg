@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 320 270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g fill="#f7ceed" stroke="#000">
+  <path d="m40.5 100.5h80v80h-80z"/>
+  <path d="m200.5 100.5h80v80h-80z"/>
+  <path id="a" d="m55 120h10m-5-5v10m10-5a10 10 0 0 1-10 10 10 10 0 0 1-10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10z" fill="#fff" stroke="#000"/>
+ </g>
+ <use id="d" transform="translate(40.5 .5)" xlink:href="#a"/>
+ <use transform="translate(40.5,40.5)" xlink:href="#a"/>
+ <use transform="translate(-40,40)" xlink:href="#d"/>
+ <path d="m215 120h10m-5-5v10m10-5a10 10 0 0 1-10 10 10 10 0 0 1-10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10z" fill="#fff" stroke="#000"/>
+ <use transform="translate(200.5 .5)" xlink:href="#a"/>
+ <use transform="translate(200.5,40.5)" xlink:href="#a"/>
+ <use transform="translate(120,40)" xlink:href="#d"/>
+ <g stroke="#000">
+  <rect x="120.5" y="100.5" width="80" height="160" fill="#edff7e"/>
+  <path id="c" d="m125.5 250.5h10m5 0a10 10 0 0 1-10 10 10 10 0 0 1-10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10z" fill="#fff" stroke="#000"/>
+  <path d="m155.5 5.5v50h-35v30h80v-30h-35v-50" fill="#bebebe"/>
+ </g>
+ <use id="m" transform="translate(-16)" xlink:href="#n"/>
+ <path d="m5.5 75.5h60v25h-10v-15h-50" fill="#bebebe" stroke="#000"/>
+ <path d="m315.5 75.5h-60v25h10v-15h50" fill="#bebebe" stroke="#000"/>
+ <use transform="translate(-40)" xlink:href="#k"/>
+ <path id="t" d="m135.5 70.5h10m5 0a10 10 0 0 1-10 10 10 10 0 0 1-10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10z" fill="#fff" stroke="#000"/>
+ <use id="k" transform="translate(20,-8)" xlink:href="#l"/>
+ <use id="s" transform="translate(40)" xlink:href="#t"/>
+ <use id="l" transform="translate(38)" xlink:href="#m"/>
+ <use id="r" transform="translate(-20)" xlink:href="#s"/>
+ <use id="q" transform="translate(-28,-4)" xlink:href="#r"/>
+ <use id="p" transform="translate(40)" xlink:href="#q"/>
+ <use id="o" transform="translate(16,8)" xlink:href="#p"/>
+ <use id="n" transform="translate(-40)" xlink:href="#o"/>
+ <use id="b" transform="translate(24)" xlink:href="#c"/>
+ <use id="e" transform="translate(24)" xlink:href="#b"/>
+ <use id="j" transform="translate(12,-20)" xlink:href="#c"/>
+ <use id="i" transform="translate(12,-20)" xlink:href="#b"/>
+ <use id="h" transform="translate(12,-20)" xlink:href="#e"/>
+ <use transform="translate(0,-40)" xlink:href="#c"/>
+ <use transform="translate(0,-40)" xlink:href="#b"/>
+ <use transform="translate(0,-40)" xlink:href="#e"/>
+ <use transform="translate(0,-40)" xlink:href="#j"/>
+ <use transform="translate(0,-40)" xlink:href="#i"/>
+ <use transform="translate(0,-40)" xlink:href="#h"/>
+ <use id="g" transform="translate(72,-8)" xlink:href="#a"/>
+ <use id="f" transform="translate(72,-8)" xlink:href="#d"/>
+ <use transform="translate(16,24)" xlink:href="#g"/>
+ <use transform="translate(16,24)" xlink:href="#f"/>
+ <path d="m0 80h60v25c0 5 5 10 15 10h170c10 0 15-4 15-10v-25h60" fill="none" stroke="#348dc2" stroke-linejoin="round" stroke-opacity=".75" stroke-width="5"/>
+</svg>
