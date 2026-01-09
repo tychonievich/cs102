@@ -21,8 +21,6 @@ Examples include
 Any two distinguishable states will work,
 and each hardware component uses a pair that makes sense for it.
 
-# Processors
-
 [<dfn aria-describedby="processors">Processors</dfn> are hardware that perform arithmetic and other computations.]{#processors}
 By far the most common processor technology today
 uses electricity for information
@@ -31,11 +29,13 @@ But that's just because those are fast and cheap; the same ideas can be built us
 
 Processors use some kind of pressure to represent 1 and its absence to represent 0.
 Commonly, this is electrical pressure, also called voltage,
-but we could also use something else like water pressure if we wanted.
+but we could also use something else (like water pressure) if we wanted.
 
 Processor work by letting that pressure flow through established channels.
 Commonly, this flow is electrical current through wires,
-but it could be something else like water current though pipes if we wanted.
+but it could be something else (like water current though pipes) if we wanted.
+
+# Switches (transistors)
 
 The key component that lets processors work is two kinds of pressure-activated switches,
 called transistors in an electrical setting or valves in a water setting.
@@ -141,7 +141,7 @@ but each would take time to understand
 and there are so many steps we can't hope to cover them all in this course.
 Instead, we'll illustrate a few steps to give a sense of how computers can be built.
 
-## Switches to Gates
+# Switches to Gates
 
 [<dfn aria-describedby="gates">Gates</dfn> are small collections of transistors connected to a power source with 1 output wire and usually 2 input wires. They are designed so that specific combinations of voltage on the input wires will connect the output wire to the power source, while other combinations will not.]{#gates}
 
@@ -539,79 +539,8 @@ The four gates we've see so far would have the following truth tables:
  1   0         1
  1   1         0
 
-## Gates to Muxes
 
-In a programmable computer, we often want to pick an option based on an input.
-For example, we want to add if we see a `+` but subtract if we see a `-`.
-Picking complicated things like that will be built off of picking a single wire,
-a tool that is called a multiplexer or mux.
-
-A mux has 3 inputs:
-two things to pick between
-and one to use in picking one of them.
-We can write this out as a truth table:
-
-<style>.r { color: red; } .g { color: green; }</style>
-
-
- S   [A]{.r}   [B]{.g}   mux (A, B) using S
---- --------- --------- --------------------
- 0   [0]{.r}   [0]{.g}       [0]{.r}
- 0   [0]{.r}   [1]{.g}       [0]{.r}
- 0   [1]{.r}   [0]{.g}       [1]{.r}
- 0   [1]{.r}   [1]{.g}       [1]{.r}
- 1   [0]{.r}   [0]{.g}       [0]{.g}
- 1   [0]{.r}   [1]{.g}       [1]{.g}
- 1   [1]{.r}   [0]{.g}       [0]{.g}
- 1   [1]{.r}   [1]{.g}       [1]{.g}
-
-Note that in this table, the result us the same as A when S=0
-and the same as B when S=1.
-
-We could try to find switches for this entire set of inputs,
-but it's much easier to just use gates.
-(([not]{.smallcaps} S) [and]{.smallcaps} A) [or]{.smallcaps} (S [and]{.smallcaps} B)
-will give us the result we want:
-
- S   [not]{.smallcaps} S   [A]{.r}   [B]{.g}   ([not]{.smallcaps} S) [and]{.smallcaps} A   S [and]{.smallcaps} B   (([not]{.smallcaps} S) [and]{.smallcaps} A) [or]{.smallcaps} (S [and]{.smallcaps} B)
---- --------------------- --------- --------- ------------------------------------------- ----------------------- --------------------------------------------------------------------------------------
- 0            1            [0]{.r}   [0]{.g}                      [0]{.r}                           0                 [0]{.r}
- 0            1            [0]{.r}   [1]{.g}                      [0]{.r}                           0                 [0]{.r}
- 0            1            [1]{.r}   [0]{.g}                      [1]{.r}                           0                 [1]{.r}
- 0            1            [1]{.r}   [1]{.g}                      [1]{.r}                           0                 [1]{.r}
- 1            0            [0]{.r}   [0]{.g}                       0                               [0]{.g}            [0]{.g}
- 1            0            [0]{.r}   [1]{.g}                       0                               [1]{.g}            [1]{.g}
- 1            0            [1]{.r}   [0]{.g}                       0                               [0]{.g}            [0]{.g}
- 1            0            [1]{.r}   [1]{.g}                       0                               [1]{.g}            [1]{.g}
-
-:::aside
-Cognitive Overload
-
-At this point (and possibly long before it) you are probably feeling overwhelmed and lost.
-Even if you can work through every line in the table above,
-you're probably still wondering where it all came from
-and why it is the way it is
-and feeling lost and confused.
-
-This is normal.
-
-If you were learning to be computer engineers,
-you would have spent at least a few weeks getting to this point,
-learning about tricks you can do with truth tables
-and properties of different gates
-and notation for combining them
-and so on and so forth.
-We skipped all of that, which leaves you feeling overwhelmed and confused.
-
-What should you be taking away from all of this so far?
-That the steps, though strange seeming and with somewhat opaque goals,
-can be understood.
-There's no magic, there's just one step after another
-and a fair amount of someone figuring something out and everyone else just learning that thing.
-The details of the specific things learned are not the point here.
-::: 
-
-## Gates to Addition
+# Gates to Addition
 
 Consider adding two 1-bit numbers
 
@@ -725,3 +654,187 @@ multiplication uses a 1-digit multiplication table (which in binary is just an [
 and a bunch of additions;
 and so on.
 
+
+# Gates to Muxes
+
+In a programmable computer, we often want to pick an option based on an input.
+For example, we want to add if we see a `+` but subtract if we see a `-`.
+Picking complicated things like that will be built off of picking a single wire,
+a tool that is called a multiplexer or mux.
+
+A mux has 3 inputs:
+two things to pick between
+and one to use in picking one of them.
+We can write this out as a truth table:
+
+<style>.r { color: red; } .g { color: green; }</style>
+
+
+ S   [A]{.r}   [B]{.g}   mux (A, B) using S
+--- --------- --------- --------------------
+ 0   [0]{.r}   [0]{.g}       [0]{.r}
+ 0   [0]{.r}   [1]{.g}       [0]{.r}
+ 0   [1]{.r}   [0]{.g}       [1]{.r}
+ 0   [1]{.r}   [1]{.g}       [1]{.r}
+ 1   [0]{.r}   [0]{.g}       [0]{.g}
+ 1   [0]{.r}   [1]{.g}       [1]{.g}
+ 1   [1]{.r}   [0]{.g}       [0]{.g}
+ 1   [1]{.r}   [1]{.g}       [1]{.g}
+
+Note that in this table, the result us the same as A when S=0
+and the same as B when S=1.
+
+We could try to find switches for this entire set of inputs,
+but it's much easier to just use gates.
+(([not]{.smallcaps} S) [and]{.smallcaps} A) [or]{.smallcaps} (S [and]{.smallcaps} B)
+will give us the result we want:
+
+ S   [not]{.smallcaps} S   [A]{.r}   [B]{.g}   ([not]{.smallcaps} S) [and]{.smallcaps} A   S [and]{.smallcaps} B   (([not]{.smallcaps} S) [and]{.smallcaps} A) [or]{.smallcaps} (S [and]{.smallcaps} B)
+--- --------------------- --------- --------- ------------------------------------------- ----------------------- --------------------------------------------------------------------------------------
+ 0            1            [0]{.r}   [0]{.g}                      [0]{.r}                           0                 [0]{.r}
+ 0            1            [0]{.r}   [1]{.g}                      [0]{.r}                           0                 [0]{.r}
+ 0            1            [1]{.r}   [0]{.g}                      [1]{.r}                           0                 [1]{.r}
+ 0            1            [1]{.r}   [1]{.g}                      [1]{.r}                           0                 [1]{.r}
+ 1            0            [0]{.r}   [0]{.g}                       0                               [0]{.g}            [0]{.g}
+ 1            0            [0]{.r}   [1]{.g}                       0                               [1]{.g}            [1]{.g}
+ 1            0            [1]{.r}   [0]{.g}                       0                               [0]{.g}            [0]{.g}
+ 1            0            [1]{.r}   [1]{.g}                       0                               [1]{.g}            [1]{.g}
+
+:::aside
+Cognitive Overload
+
+At this point (and possibly long before it) you are probably feeling overwhelmed and lost.
+Even if you can work through every line in the table above,
+you're probably still wondering where it all came from
+and why it is the way it is
+and feeling lost and confused.
+
+This is normal.
+
+If you were learning to be computer engineers,
+you would have spent at least a few weeks getting to this point,
+learning about tricks you can do with truth tables
+and properties of different gates
+and notation for combining them
+and so on and so forth.
+We skipped all of that, which leaves you feeling overwhelmed and confused.
+
+What should you be taking away from all of this so far?
+That the steps, though strange seeming and with somewhat opaque goals,
+can be understood.
+There's no magic, there's just one step after another
+and a fair amount of someone figuring something out and everyone else just learning that thing.
+The details of the specific things learned are not the point here.
+::: 
+
+# And so much more
+
+Registers are a kind of high-speed memory
+that is designed by connecting the inputs and outputs of specific gates
+in a loop that can store one bit at a time.
+
+Gated^[Here "gate" does not mean a few-input one-output collection of switches; instead if means "there's a barrier that prevents things usually but can be opened sometimes".] registers use a few more gates
+to add a special "clock" input that makes them ignore their input except at specific moments in time.
+They allow the entire processor to operate in synchronized steps,
+doing one thing to conclusion before the clock ticks and they move on to the next thing.
+
+A counter is a gated register with its output run through a "+ 1" computation
+and put into its input, causing it to count up by one each time the clock ticks.
+
+A variant on muxes lets us do indexing or addressing,
+picking not between just two things
+but between billions of things stored in a giant grid of register-like storage
+we call "memory".
+
+In memory we put a sequence of instructions.
+By having the selector that picks a value out of memory
+be the output of a counter, we see the instructions one at a time in order.
+
+Instructions (which are many bits in size) are broken into groups of bits
+which are used to pick which values to operate on (by using them as selectors for memory)
+and what operation to do with those values (by using muxes to pick one arithmetic circuits outputs to keep).
+
+Some instructions use a mux to pick whether to let the counter act like normal
+(moving from one instruction to the next)
+or to change the counter to a new value.
+This allows the program to run through the same set of instructions several times in a loop,
+jump to a set of instructions of interest and later jump back,
+and otherwise do much more complicated things then simply doing a specific set of actions in order.
+
+And each of these ideas has multiple variants,
+ways of being more complicated and faster and fancier
+in ways that make new computers able to run faster than old ones.
+
+# How computers are built
+
+Most processors are made from silicon transistors.
+The basic steps are:
+
+1. Make a single monocrystal of 100% pure silicon the size of a small tree trunk.
+2. Slice it into perfectly smooth wafers.
+3. Cover the wafer in a photoreactive chemical.
+4. Use a super-accurate microprojector to expose some of it to light and others not.
+5. Wash it with something that cleans off the exposed parts but not the unexposed (or vice-versa).
+6. Repeat steps 3--5 with different materials to build up the full computer chip.
+
+There are variants on this process,
+but the overall design (atomically-perfect silicon crystals and microscopically-accurate light delivery)
+allows creating chips of mindbogglingly tiny dimensions.
+Entire transistors may be no more than a few hundred atoms across^[Chip component sizes are measured in nanometers, not atoms, but most of us have no concept of how small a nanometer is. The atomic radius of silicon (the principle element in most chips today) is about .11 nm and silicon bonds with itself at about 4.3 atoms per nm.].
+That extreme small size has three big benefits:
+
+- The smaller the transistor, the more we can fit on a chip.
+
+    More transistors implies more things the computer can do at the same time.
+
+    Moore's Law predicts that the number of transistors on newly-produced computer chips
+    will double every 2 years, and [has proven true](https://ourworldindata.org/grapher/transistors-per-microprocessor) for more than 50 years,
+    resulting tens of billions of transistors per chip on modern computers.
+    
+- The smaller the transistor, the less energy it takes to push current through it.
+
+    This means that the electricity per unit of computation decreases as transistors shrink.
+    
+    This is not a perfectly smooth relationship: two chips with the same transistor size might use very different amounts of energy.
+    But it is a strong overall trend.
+
+- The smaller the transistors, the faster each computation can complete.
+    
+    Nothing can go faster than the speed of light.
+    But computers run in the multiple GHz speed range,
+    meaning they do multiple entire arithmetic computations
+    each nanosecond^[1 GHz means 1 thing per nanosecond. Common computers today have a clock speed somewhere around 3 GHz, meaning they do 3 steps of computation (roughly a many-digit addition) each nanosecond].
+    A nanosecond is roughly the time it takes light to travel 1 foot^[The speed of light is exactly 29.979246 cm per ns].
+    Information in a computation needs to travel back and forth across the chip in a non-straight path,
+    and doing work (like changing from low- to high-voltage) takes time beyond what information flow does.
+    The smaller the chip components get, the less time it takes information to flow across them.
+
+<details class="aside"><summary>Moore's Law</summary>
+
+In 1965 a reporter writing for Electronics Magazine
+asked Gordon Moore, director of R&D at Fairchild Semiconductor,
+to predict the future of semiconductors over the next ten years.
+Moore observed that the number of components per chip had been doubling each year
+and predicted it would continue doing so for the next ten years.
+
+![Gordon Moore in 1978, 13 years after coining "Moore's Law" and 10 years after co-founding Intel. Ⓒ Intel Free Press, CC-by-sa license, [hosted by wikimedia](https://commons.wikimedia.org/wiki/File:Gordon_Moore_1978_(cropped).png)](https://upload.wikimedia.org/wikipedia/commons/e/eb/Gordon_Moore_1978_%28cropped%29.png)
+
+This doubling claim was was a bold enough to make some impact,
+but likely would have faded in importance quickly
+had not Carver Mead, one of Moore's collaborators at CalTech,
+named it "Moore's Law" and that term often enough that it became common.
+
+In 1975 Moore revised his prediction from doubling every year
+to doubling every two years, which has been a roughly accurate prediction ever since.
+Arguably this is partially a self-fulfilling prophesy:
+it has held for so long that chip manufacturers expect someone will find a way to keep it up
+and don't want to fall behind, so they set it as an internal goal driving design and development.
+User-visible chip performance, realized in part by transistor count increases, improves much more slowly.
+
+The success of Moore's Law, both as a name and as a prediction,
+has led to a variety of spin-offs and variants.
+It is common to hear a wide variety of exponential-growth predictions
+related to computers being called "Moore's Law,"
+even if the prediction being discussed is about speed, power, size, concurrency, cost, or almost anything else.
+
+</details>
