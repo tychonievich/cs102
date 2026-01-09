@@ -1,8 +1,8 @@
 ---
-title: Hardware
+title: Processors
 ...
 
-[<dfn aria-describedby="hardware">Hardware</dfn> is a term used for physical machines that process information and make p a computer.]{#hardware}
+<dfn>Hardware</dfn> is a term used for physical machines that process information and make p a computer.
 There are multiple hardware components in any usable computer,
 and each can be designed in multiple ways.
 This page attempts to give an overview of a few of the most common components.
@@ -21,7 +21,7 @@ Examples include
 Any two distinguishable states will work,
 and each hardware component uses a pair that makes sense for it.
 
-[<dfn aria-describedby="processors">Processors</dfn> are hardware that perform arithmetic and other computations.]{#processors}
+<dfn>Processors</dfn> are hardware that perform arithmetic and other computations.
 By far the most common processor technology today
 uses electricity for information
 and microscopically-small silicon-based semiconductor components to implement the machinery.
@@ -41,7 +41,7 @@ The key component that lets processors work is two kinds of pressure-activated s
 called transistors in an electrical setting or valves in a water setting.
 One type of switch connects two channels into one when pressure is applied and disconnects them when it is removed;
 the other type does the complement, disconnecting two channels when pressure is applied and connecting them when it is removed.
-Both have some kind of [<dfn aria-describedby="threshold">threshold</dfn> pressure, a pressure strong enough to activate the switch]{#threshold}, and some noise or variation in individual switches;
+Both have some kind of <dfn>threshold</dfn> pressure, a pressure strong enough to activate the switch, and some noise or variation in individual switches;
 to deal with that variation "1" is chosen as a pressure high enough that even the stiffest switch is activated
 and "0" as a pressure low enough that even the softest switch is not.
 
@@ -143,7 +143,7 @@ Instead, we'll illustrate a few steps to give a sense of how computers can be bu
 
 # Switches to Gates
 
-[<dfn aria-describedby="gates">Gates</dfn> are small collections of transistors connected to a power source with 1 output wire and usually 2 input wires. They are designed so that specific combinations of voltage on the input wires will connect the output wire to the power source, while other combinations will not.]{#gates}
+<dfn>Gates</dfn> are small collections of transistors connected to a power source with 1 output wire and usually 2 input wires. They are designed so that specific combinations of voltage on the input wires will connect the output wire to the power source, while other combinations will not.
 
 The simplest gate is the [not]{.smallcaps} gate.
 A [not]{.smallcaps} gate has the property that its output has voltage if and only if its input does not.
@@ -503,10 +503,10 @@ While such a gate made from other gates may not be optimal
 (we can probably use fewer than the 14 switches this would need),
 it does show how we can design new components out of pieces we've already designed.
 
-[Sometimes gates are summarized by making a table
+Sometimes gates are summarized by making a table
 of all their possible input and output combinations.
 In keeping with the true/false interpretation of 1/0 that inspires the gate names,
-these are called <dfn aria-describedby="truth-table">truth tables</dnf>]{#truth-table}.
+these are called <dfn>truth tables</dnf>.
 The four gates we've see so far would have the following truth tables:
 
 

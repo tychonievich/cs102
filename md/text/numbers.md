@@ -240,16 +240,16 @@ It's a similar kind of statement to
 "on a book, everything is white paper and black ink":
 it's not false, exactly, but also not super insightful.
 
-[The word <dfn aria-describedby="binary">binary</dfn> means "related to two"
+The word <dfn>binary</dfn> means "related to two"
 and is used in computing both as a shorthand label for
 base-two place-value numbers,
 and for data stored in a computer-friendly format,
 and for data that makes sense to a computer program but not to most humans.
 Binary is also used outside of computing to modify other words to emphasize "two",
-such as a "binary decision" (a choice between one of two things with no middle-ground).]{#binary}
+such as a "binary decision" (a choice between one of two things with no middle-ground).
 
-[A single base-two digit is called a <dfn aria=describedby="bit">bit</dfn>,
-a portmantau of "**bi**nary dig**it**"]{#bit}.
+A single base-two digit is called a <dfn>bit</dfn>,
+a portmantau of "**bi**nary dig**it**".
 
 ## Digit grouping for bigger data: base 256
 
@@ -268,10 +268,10 @@ They found about 100 things to do, rounded up to have room for later additions,
 and chose 256,
 which is a grouping of 8 bits.
 They named each such 8-bit grouping a "byte";
-thus [a <dfn aria-describedby="byte">byte</dfn> is eight bits,
+thus a <dfn>byte</dfn> is eight bits,
 a number between 0 and 255,
 a digit in base-256 place-value numbers,
-or something else (such as an action on an English typewriter) represented by such a number]{#byte}.^[In some technical documents, the word "octet" is used instead of "byte" because in early computing history not all hardware used 8-bit bytes so "octet" (from the Greek word for eight) is seen as more precise.]
+or something else (such as an action on an English typewriter) represented by such a number.^[In some technical documents, the word "octet" is used instead of "byte" because in early computing history not all hardware used 8-bit bytes so "octet" (from the Greek word for eight) is seen as more precise.]
 
 Bytes aren't just a convenient way of writing:
 it's built into almot all hardware.
@@ -298,7 +298,7 @@ From a bits perspective, that's 4 bits, so base 16 is just a digit grouping of b
 From a bytes perspective, that's half a byte, so base 256 is just a digit grouping of base 16.
 And learning 16 symbols is much more doable.
 
-[We call base-sixteen <dfn aria-describedby="hex">hexadecimal</dfn> or simply <abbr title="hexadecimal">hex</abbr>.]{#hex}
+We call base-sixteen <dfn>hexadecimal</dfn> or simply <abbr title="hexadecimal">hex</abbr>.
 
 The hexadecimal symbols that are used are the ten base-ten digits
 followed by the English letters `A` through `F` (in either upper or lower case).

@@ -2,11 +2,11 @@
 title: Digital computers
 ...
 
-[A <dfn aria-describedby="computer">computer</dfn> is something that performs computations]{#computer}.
+A <dfn>computer</dfn> is something that performs computations.
 In arithmetic classes, you learn to be a computer.
 Prior to the 1970s, some people were professional computers, solving mathematical expressions for other people.
 
-[A <dfn aria-describedby="computing-machine">computing machine</dfn> is a computer that is a device, not a person]{#computing-machine}.
+A <dfn>computing machine</dfn> is a computer that is a device, not a person.
 There are many devices that could be argued to be computing machines,
 ranging from bags and boxes that can perform addition
 (pour one into another and you find the sum of the things in them)
@@ -14,9 +14,9 @@ to specialized electrical circuits that perform integration.
 Most of these, however, would not be called computers
 because the computation they perform is fixed at the time the machine is constructed.
 
-[A <dfn aria-describedby="programmable-computer">programmable computer</dfn> accepts two kinds of inputs:
-the [<dfn aria-describedby="arguments">arguments</dfn> or input values to compute a result based on]{#arguments}
-and [<dfn aria-describedby="instructions">instructions</dfn> describing what specific computations to perform]{#instructions} on those arguments.]{#programmable-computer}
+A <dfn aria-describedby="programmable-computer">programmable computer</dfn> accepts two kinds of inputs:
+the <dfn>arguments</dfn> or input values to compute a result based on
+and <dfn>instructions</dfn> describing what specific computations to perform on those arguments.
 
 :::example
 When you are presented with an arithmetic expression like
@@ -25,7 +25,7 @@ you are getting both instructions (in the form of the operators $+$, $\times$, $
 and arguments (in the form of the values $3$, $4$, $5$, $6$, and $7$ and the results of intermediate computations you peform).
 :::
 
-[A <dfn aria-describedby="digital-computer">digital computer</dfn> represents both its arguments and the results it produces using digits, not analogs.]{#digital-computer}
+A <dfn>digital computer</dfn> represents both its arguments and the results it produces using digits, not analogs.
 Analog signals represent a single value by another single value,
 while digital signals represent it by a formalism known as place-value numbers.
 
@@ -70,10 +70,10 @@ was a metal frame to attach to the front of locomotives to clear the track of ob
 
 </details>
 
-[If a programmable digital computer uses the same media for storing
+If a programmable digital computer uses the same media for storing
 instructions, arguments, and the results of computations;
 and if it is of specific limited by versatile set of computations;
-then it becomes a <dfn aria-describedby="general-purpose">general purpose</dfn> programmable computer.]{#general-purpose}
+then it becomes a <dfn>general purpose</dfn> programmable computer.
 General-purpose computers can do dramatically more than other computers
 because they can use the operations they were built to perform
 to define other types of operations.

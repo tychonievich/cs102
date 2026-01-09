@@ -12,9 +12,9 @@ computers use those numbers to represent more complicated ideas.
 
 The most common way to represent images in a computer
 is as a grid of colors,
-where [each individual cell of color in the grid is called a <dfn aria-describedby="pixel">pixel</dfn>]{#pixel}, a portmanteau word from "picture element."
-The most common way of displaying such an image is with [a light-emitting color display
-commonly called a <dfn aria-describedby="screen">screen</dfn>]{#screen}^["Screen"'s oldest meaning is to cover or protect something (such as how a window screen covers the window and prevents insects from getting in); from there it became the name of a freestanding wall-like piece of furniture; then anything which could be used like the screen furniture to catch shadows in 19^th^ century shadow plays; then a similar device used to project movies onto; then other surfaces capable of displaying images like those shown in.]
+where each individual cell of color in the grid is called a <dfn>pixel</dfn>, a portmanteau word from "picture element."
+The most common way of displaying such an image is with a light-emitting color display
+commonly called a <dfn>screen</dfn>.^["Screen"'s oldest meaning is to cover or protect something (such as how a window screen covers the window and prevents insects from getting in); from there it became the name of a freestanding wall-like piece of furniture; then anything which could be used like the screen furniture to catch shadows in 19^th^ century shadow plays; then a similar device used to project movies onto; then other surfaces capable of displaying images like those shown in.]
 The most common way to manufacture a light-emitting color display
 is not to try to emit every possible wavelength of light,
 but rather just combinations of three specific wavelengths that optimally trigger the color light receptors in most people's eyes.
@@ -58,10 +58,10 @@ but on a screen there is such a maximum.
 Your screen's maximum is likely different from mine,
 so we don't want to send colors with physical units
 like lumens or candela;
-instead [we <dfn aria-described-by="normalize">normalize</dfn> the brightness,
+instead we <dfn>normalize</dfn> the brightness,
 picking a fixed range of numbers and trusting each display to re-map
 the smallest number in the range to "as dark as this screen gets"
-and the largest number in the range to "as bright as this screen gets."]{#normalize}
+and the largest number in the range to "as bright as this screen gets."
 
 But what should we normalize to?
 0 makes sense as the bottom of the range:
@@ -200,7 +200,7 @@ Stored in 32 bits, that would be
 Numbers that are too large for the chosen number of digits cannot be stored.
 The easiest way to build machinery in those cases is to have the excess digits simply vanish;
 for example, in 3-digit decimal we might say that 980 + 051 = 031 because we can only keep three digits of the true answer, 1031.
-[The loss of high-order digits that would make a number larger than the space available is called <dfn aria-describedby="overflow">overflow</dnf>]{#overflow}
+The loss of high-order digits that would make a number larger than the space available is called <dfn>overflow</dnf>
 and has been the cause of some embarrassing and destructive computer bugs.
 
 <details class="aside"><summary>Overflow crashed the Ariane 5 rocket</summary>
@@ -391,7 +391,7 @@ so some software had adopted a 2-byte version called UCS or UTF-16,
 but that was incompatible with the more common software that used 1-byte ASCII.
 
 Enter UTF-8.
-UTF-8 is a clever scheme for encoding [the integers (called <dfn aria-describedby="code-point">code points</dfn>) identifying Unicode characters]{#code-point}
+UTF-8 is a clever scheme for encoding the integers (called <dfn>code points</dfn>) identifying Unicode characters
 with a variable number of bytes
 so that
 
@@ -400,7 +400,7 @@ so that
 
 UTF-8 is not the most efficient scheme we could come up with,
 nor the easiest to code with,
-but [it is <dfn described-by="backwards-compatible">backwards compatible</dfn>, meaning most things that worked with its predecessor also correctly work with it.]{#backwards-compatible}
+but it is <dfn>backwards compatible</dfn>, meaning most things that worked with its predecessor also correctly work with it.
 Backwards compatibility is a *huge* benefit in getting a new technology adopted,
 comparable in importance to good marketing
 and arguably more important than any new feature or other technical advantage.
