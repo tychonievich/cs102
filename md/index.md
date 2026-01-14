@@ -1,5 +1,6 @@
 ---
-title: Spring 2025 – INFO 102 – Little Bits to Big Ideas
+title: Spring 2026 INFO 102
+subtitle: Little Bits to Big Ideas
 header-includes:
   - '<script src="weekview.js"></script>'
   - '<style>div[is="week-view"] { width: 100%; }</style>'
@@ -9,6 +10,7 @@ summary: |
   </center>
   
   <center>
+  [Polls](secure/clicker.php)  
   [Text](text/)  
   </center>
 ...
