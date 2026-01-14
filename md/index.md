@@ -14,7 +14,7 @@ summary: |
   [Text](text/)  
   </center>
 ...
-...
+
 
 Welcome to INFO 102! We're excited to explore a wide variety of computing concepts with you.
 
@@ -39,31 +39,14 @@ Algorithms and computational efficiency
 :   What algorithms are, how their efficiency is measured, how that impacts software design and purchasing decisions.
 
 The future of computing
-:   Trends in how computers and software 
+:   Trends in how computers and software, including disruptions like LLMs and quantum computers.
 
-That suggests the following topics:
+Great Ideas
+:   - Cryptography, including cryptocurrency and post-quantum cryptography.
+    - Databases, both SQL and NoSQL, and how data drives software design.
+    - Modeling and simulation, using computers to predict real-world events.
+    - Artificial Intelligence, both classical (e.g. chess-playing) and recent (e.g. generative).
 
-- Data (0s and 1s and beyond)
-- Computers (silicon, memory, processor, disk)
-- Algorithms and computational efficiency (ambiguity, scale)
-- Future of computing (quantum, GPU, coprocessors)
-
-and also a selection of topics of interest; by default:
-
-- Cryptography (openly secret)
-- Internet security (technical and social)
-- Problem solving (using computers)
-- Modeling and simulation (cheap approximate experiments and predictions)
-- Artificial intelligence (both knowledge-based and data-driven)
-
-Past semesters have also discussed
-
-- The Internet
-- Databases
-- User interfaces
-- What cannot be computed
-- Conversing about computing
-- Working with computing professionals
 
 
 # Weekly schedule
