@@ -56,14 +56,14 @@ Past semesters have also discussed
 
 :::{is="week-view" st="9" et="19"}
 
-<div dow="1" st="9" d="50">Lecture<br/>100 MSEB</div>
-<div dow="3" st="9" d="50">Lecture<br/>100 MSEB</div>
-<div dow="5" st="9" d="50">Lecture<br/>100 MSEB</div>
+<div dow="1" st="9" d="50">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
+<div dow="3" st="9" d="50">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
+<div dow="5" st="9" d="50">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
 
 <div dow="2" st="4" d="75">Lab 1<br/>TBA</div>
-<div dow="3" st="4" d="75">Lab 2<br/>TBA</div>
-<div dow="4" st="4" d="75">Lab 3<br/>TBA</div>
 <div dow="2" st="5.5" d="75">Lab 4<br/>TBA</div>
-<div dow="3" st="5.5" d="75">Lab 5<br/>TBA</div>
+<div dow="3" st="4" d="75">Lab 2<br/>[G27 LCLB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0172&flId=00)</div>
+<div dow="3" st="5.5" d="75">Lab 5<br/>[G27 LCLB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0172&flId=00)</div>
+<div dow="4" st="4" d="75">Lab 3<br/>TBA</div>
 
 :::
