@@ -47,6 +47,72 @@ Great Ideas
     - Modeling and simulation, using computers to predict real-world events.
     - Artificial Intelligence, both classical (e.g. chess-playing) and recent (e.g. generative).
 
+The [first test page](text/goals.html) provides additional objectives of this course.
+
+
+# Course components
+
+Lecture (10%)
+:   Attending lecture is required.
+    
+    A goal of this course is to prepare you to engage in conversations on computing topics.
+    This is a broader goal than any single assessment can cover,
+    so your presence in our in-class conversations is part of your grade.
+    
+Lab (24%)
+:   Weekly labs will begin the second week of the course (<time datetime="2026-01-27">January 27^th^</time).
+    Each will have you go through several exercises related to recent lecture content
+    and check off your work with a the course staff leading the lab.
+    
+    Some content would sink in until you experience it.
+    The labs help provide that experience.
+
+Homework (10%)
+:   Weekly homeworks are intended to be practice, and also to keep you on track with the course material.
+    You may re-take each homework as many times as you wish at no grade penalty,
+    but must do so by the homework deadline.
+
+Quizzes (36% = 3 x 12% each)
+:   There are 3 scheduled in-class quizzes, each with a review day preceding them.
+    These are administered on paper and test your mastery of topics covered in lecture and lab prior to the quiz.
+
+    Quizzes are both a chance to review and refresh information learned previously
+    and a chance to demonstrate what you have learned.
+
+Final Exam (20%)
+:   On <time datetime="2026-05-08T19:00:00">Friday, May 8 at 7pm</time>^[This day and time [was schedule by the registrar](https://registrar.illinois.edu/final-exam-scheduling-guidelines/).]
+    we will have a cumulative in-person exam, broadly covering the content of all 3 quizzes.
+    
+    The final is partly a chance to review and refresh information learned previously.
+
+    The final is partly a chance to show you have learned material you missed on the quizzes.
+    Superior performance on the portion of the final the covers missed quiz material will increase prior quiz grades.
+    
+These components will be combined into a single percentage grade (0--100),
+then converted to a grade point (0--4) by subtracting 55 and dividing by 10,
+then rounded to the nearest [grade point bucket that campus allows](https://studentcode.illinois.edu/article3/part1/3-103).
+You can see how this works as follows:
+
+```{=html}
+<table><tbody>
+<tr><th><label for="percentage">percentage</label></th><td><input type="number" min="0" max="100" id="percentage" oninput="percent2letter()" value="95"><td></tr>
+<tr><th>grade point</th><td id="gp"><td></tr>
+<tr><th>rounded</th><td id="round"><td></tr>
+<tr><th>letter</th><td id="letter"><td></tr>
+</tbody></table>
+<script>
+function percent2letter() {
+  let p = document.getElementById('percentage').value;
+  let g = (p-55)/10;
+  let r = Math.min(Math.round(g*3)/3, 4);
+  if (r < 2/6) r = 0;
+  let letter = ["F","F","D-","D","D+","C-","C","C+","B-","B","B+","A-","A","A+"][Math.min(Math.round(g*3),13)];
+  document.getElementById('gp').textContent = Math.round(g*10000)/10000;
+  document.getElementById('round').textContent = r.toFixed(2);
+  document.getElementById('letter').textContent = letter;
+}
+</script>
+```
 
 
 # Weekly schedule
