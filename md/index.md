@@ -76,7 +76,7 @@ Lecture (10%)
     so your presence in our in-class conversations is part of your grade.
     
 Lab (24%)
-:   Weekly labs will begin the second week of the course (<time datetime="2026-01-27">January 27^th^</time).
+:   Weekly labs will begin the second week of the course (<time datetime="2026-01-27">January 27^th^</time>).
     Each will have you go through several exercises related to recent lecture content
     and check off your work with a the course staff leading the lab.
     
