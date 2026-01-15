@@ -50,6 +50,22 @@ Great Ideas
 The [first test page](text/goals.html) provides additional objectives of this course.
 
 
+## Comparison to similar courses
+
+CS 105
+:   Both INFO/CS 102 and CS 105 are non-CS-major introductions to computing generally.
+    CS 105 mixes that general overview with lightweight programming and programmable applications like spreadsheets,
+    while INFO/CS 102 mixes it with emerging topics and conversations in computing.
+
+CS 124
+:   An introduction for students wishing to pursue a CS major or minor.
+    CS 124 is primarily focused on programming, with much less overview of the computing field.
+
+CS 101, STAT/CS/IS 107, ECE 120
+:   These courses introduce specific parts of computing and programming motivated by the needs of practitioners in specific fields.
+    They have much less general overview of computing than does INFO/CS 102, but more programming and more field-driven focus.
+
+
 # Course components
 
 Lecture (10%)
