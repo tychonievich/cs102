@@ -114,7 +114,7 @@ then rounded up to a [grade point bucket that campus allows](https://studentcode
 <table><tbody>
 <tr><th><label for="percentage">percentage</label></th><td><input type="number" min="0" max="100" id="percentage" oninput="percent2letter()" value="93"><td></tr>
 <tr><th>grade point</th><td id="gp"><td></tr>
-<tr><th>rounded</th><td id="round"><td></tr>
+<tr><th>rounded up</th><td id="round"><td></tr>
 <tr><th>letter</th><td id="letter"><td></tr>
 </tbody></table>
 <script>
