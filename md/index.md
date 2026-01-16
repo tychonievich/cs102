@@ -133,6 +133,11 @@ function percent2letter() {
 
 # Weekly schedule
 
+Labs will start the second week of classes (<time datetime="2026-01-27">Jan 27</time>).
+
+Lecture will not be held on <time datetime="2026-02-18">February 18</time> and <time datetime="2026-02-20">20</time>
+because the instructor and the likely substitute instructors will all be at [The Technical Symposium on Computer Science Education](https://sigcse2026.sigcse.org/). Labs will be held on those days as normal.
+
 :::{is="week-view" st="9" et="19"}
 
 <div dow="1" st="9" d="50">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
