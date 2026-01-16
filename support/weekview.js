@@ -68,7 +68,7 @@ class WeekView extends HTMLDivElement {
       for(let t=Math.ceil(this.st); t<this.et; t+=1) {
         const hdiv = document.createElement('div');
         hdiv.style.top = (4.5*(t-this.st)) + 'em'
-        hdiv.append(t%12);
+        hdiv.append((t-1)%12+1);
         tdiv.append(hdiv);
       }
     }
