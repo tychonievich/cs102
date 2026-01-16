@@ -10,6 +10,7 @@ summary: |
   </center>
   
   <center>
+  [First Homework](https://forms.gle/CrKUXPbkiW5DCbZs7)
   [Homework](https://us.prairielearn.com/pl/course_instance/206500)  
   [Labs](labs/)  
   [Lectures](lectures/)  
@@ -91,7 +92,9 @@ Homework (10%)
     You may re-take each homework as many times as you wish at no grade penalty,
     but must do so by the homework deadline.
     
-    Homeworks are hosted on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/206500).
+    The first homework is a [google form](https://forms.gle/CrKUXPbkiW5DCbZs7). You must log in with your illinois.edu account; if you've not done that with Google before, see [this guide from the university CIO](https://answers.uillinois.edu/illinois/47599).
+    
+    Other homeworks are hosted on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/206500).
     The instructor will manually add your PrairieLearn access on the first day of class,
     or approximately 2 business days after you enroll if you enroll later than that.
 
