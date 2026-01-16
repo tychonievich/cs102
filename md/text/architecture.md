@@ -14,7 +14,7 @@ but don't let that fool you:
 while he did design and publish the precursor to the architecture described on this page,
 most of von Neumann's work was not in computing.
 
-![John von Neumman's profile picture at Los Alamos National Labratories circa 1940. Image hosted by [wikimedia](https://commons.wikimedia.org/wiki/File:JohnvonNeumann-LosAlamos.gif)](https://upload.wikimedia.org/wikipedia/commons/5/5e/JohnvonNeumann-LosAlamos.gif)
+![John von Neumann's profile picture at Los Alamos National Laboratories circa 1940. Image hosted by [Wikimedia](https://commons.wikimedia.org/wiki/File:JohnvonNeumann-LosAlamos.gif)](https://upload.wikimedia.org/wikipedia/commons/5/5e/JohnvonNeumann-LosAlamos.gif)
 
 Von Neumann was born in Budapest in 1903
 and was a child prodigy,
@@ -48,7 +48,7 @@ The core elements of the von Neumann architecture are:
 - Output devices, such as screens and printers.
 - A <dfn>Central Processing Unit (<abbr title="Central Processing Unit">CPU</abbr>)</dfn> that consists of two integrated parts:
     - A control unit that decides what operations to do on what arguments when.
-    - An Arithmetic Logic Unit (<abbr title="Arithmetic Logic Unit">ALU</abbr) that does the computing work (arithmetic and logic).
+    - An Arithmetic Logic Unit (<abbr title="Arithmetic Logic Unit">ALU</abbr>) that does the computing work (arithmetic and logic).
 - A memory unit that stores information, including both instructions and data.
 
 <figure>
@@ -97,13 +97,13 @@ and so on.
 
 The simplest ALU is built like this:
 
-- Build a circuit that adds two numbers, and another that multiples two numbers, and anther that divides two numbers, and so on for every operation you want to implement.
+- Build a circuit that adds two numbers, and another that multiples two numbers, and another that divides two numbers, and so on for every operation you want to implement.
 - Send the two input numbers to all of those circuits at once.
 - Pick the result that matches the operation input.
 
 This design is easy to build
 using just arithmetic circuits and multiplexers,
-and because all of the operations happen in parallel it's pretty fast.
+and because all the operations happen in parallel it's pretty fast.
 It does waste some power,
 but with a little extra circuity the circuits not needed for a given operation
 can have their inputs frozen to use less power.
@@ -127,7 +127,7 @@ but if it is not ready then the ALU waits, refusing new inputs until that change
 
 ## Out-of-order operation
 
-Computer code is typically provides as a list of instructions:
+Computer code is typically provided as a list of instructions:
 do this, then do that, in order.
 But sometimes it is faster to do the instructions in a different order.
 Not all instructions can be safely reordered, but those without dependencies on one another can.
@@ -149,7 +149,7 @@ But if you are told to
 3. Wash the laundry
 
 then you can reorder them without any impact on the final outcomes.
-You could also be given instructions that allow some, but not all, reorderings, such as
+You could also be given instructions that allow some, but not all, orders, such as
 
 1. Make lunch
 2. Eat lunch
@@ -179,7 +179,7 @@ The general design is as follows:
 
 3. A component takes the results of the functional units and translates them back into the form the programmer provided.
 
-    The hardware that does this step is called the <dfn>reorder bufer</dfn> and is sometimes considered part of the control unit instead of the ALU.
+    The hardware that does this step is called the <dfn>reorder buffer</dfn> and is sometimes considered part of the control unit instead of the ALU.
 
 The end result is something like a large business:
 work orders come in,
@@ -211,7 +211,7 @@ finishing at (time they told you);
 or you got it wrong and start over, finishing at (time they told you) + (time to do taxes).
 
 Speculation can cost you extra energy,
-but it never is slower than not speculating at all
+but it is never slower than not speculating
 and sometimes it gets the job done sooner.
 :::
 
@@ -238,7 +238,7 @@ and then discarding the later ones results based on the outcome of the earlier o
 All of that seems entirely correct; no problem so far.
 
 The problem is that the act of doing the instruction that won't be used
-has side-effects.
+has sideeffects.
 Most programs have patterns in how they do things
 and processors keep track of those patterns to try to speed up what will happen next.
 Spectre and Meltdown figured out clever instructions
@@ -261,7 +261,7 @@ The control unit is a machine
 that has a counter (called the <dfn>program counter (<abbr title="Program Counter">PC</abbr>)</dfn> or <dfn>instruction pointer</dfn>)
 that indicates where in memory the next instruction is found.
 It uses the value of that counter to retrieve the instruction from memory,
-parses out what it is asking to have happen,
+parses out what the instruction is asking the computer to do,
 sends those actions to the ALU,
 and updates the counter to go to the next instruction next.
 Often the next instruction is the one after the current one in memory,
@@ -285,7 +285,7 @@ while allowing the hardware designers the freedom to change their design freely.
 
 # Memory unit
 
-Von Neumman's original design called for a memory unit
+Von Neumann's original design called for a memory unit
 that stored information for the computer,
 including both instructions and data.
 Architecturally, modern computers have split that into two components
@@ -313,7 +313,7 @@ It comes in several types:
     
     Retrieving a value from or writing a value to DRAM typically takes around 100 nanoseconds, which is a few hundred CPU clock cycles.
 
-- <abbr title="Static Random Access Memory">SRAM</abbr> (usually pronounced "es ram") uses six transistors to store each bit.
+- <abbr title="Static Random Access Memory">SRAM</abbr> (usually pronounced "ess ram") uses six transistors to store each bit.
     
     SRAM is much faster than DRAM, but is also less compact and more expensive,
     both in manufacturing cost and electricity used.
@@ -414,7 +414,7 @@ There are many storage technologies, but two are common enough that you're likel
     HDDs are much slower than SSDs, but do not have the same limit on their erasure count.
     Their speeds are also complicated,
     dominated by the time needed for the arm to swing to the right distance from the spindle the disk is spinning around
-    following by the time needed for the platter to spin so the right part is under the arm's tip.
+    following by the time needed for the platter to spin so that the right part is under the arm's tip.
 
 Most likely,
 you have SSDs as the storage medium in the electronics you commonly use,
@@ -450,7 +450,7 @@ such as
 
 - Bluetooth
 - Network cables
-- Wifi antennas
+- Wi-Fi antennas
 - USB cables
 
 And these can be chained together in complicated ways;
@@ -459,7 +459,7 @@ for example, you might have
 - a thumb drive (storage)
 - attached via a USB port (input and output)
 - to a keyboard (input)
-- attached via bluetooth (input and output)
+- attached via Bluetooth (input and output)
 - to a screen (output)
 - attached via a USB-C cable (input and output)
 - to a computer

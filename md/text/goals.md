@@ -27,12 +27,12 @@ We want to prepare you to communicate with computing practitioners.
 Every field has jargon, words with precise definitions needed to engage fully in the field.
 Unlike other technical fields, computing jargon is mostly based in English:
 it's not like medicine where Latin words have technical meaning and English words don't.
-In computing it's perfectly valid to say something like
+In computing, it's perfectly valid to say something like
 
 > Most heaps^[Referring to the heap data structure, a way of organizing a collection of comparable values so that it's easy to find the smallest one.] and stacks^[Referring to the stack data structure, also called a LIFO (Last-in first-out), a way of organizing a collection of arbitrary values for each insertion and removal of items in a particular order.] are stored on the heap^[Referring to the heap segment of computer memory which can store arbitrarily-sized values and add and remove them in arbitrary order.], not the stack^[Referring to the stack segment of memory which stores temporary values used during computation in a way that lets the memory be easily re-used after the computation is complete.], but if its size is small enough and known in advance then putting a stack or heap on the stack can make sense.
 
 I'm not going to try to teach you the full computing jargon,
-but I am going to try to help you become more comfortable in conversations that contain compting jargon.
+but I am going to try to help you become more comfortable in conversations that contain computing jargon.
 
 # Work with computing professionals
 

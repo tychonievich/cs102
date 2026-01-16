@@ -82,7 +82,7 @@ Lecture (10%)
 Lab (24%)
 :   Weekly labs will begin the second week of the course (<time datetime="2026-01-27">January 27^th^</time>).
     Each will have you go through several exercises related to recent lecture content
-    and check off your work with a the course staff leading the lab.
+    and check off your work with the course staff leading the lab.
     
     Some content would sink in until you experience it.
     The labs help provide that experience.
@@ -92,7 +92,7 @@ Homework (10%)
     You may re-take each homework as many times as you wish at no grade penalty,
     but must do so by the homework deadline.
     
-    The first homework is a [google form](https://forms.gle/CrKUXPbkiW5DCbZs7). You must log in with your illinois.edu account; if you've not done that with Google before, see [this guide from the university CIO](https://answers.uillinois.edu/illinois/47599).
+    The first homework is a [Google form](https://forms.gle/CrKUXPbkiW5DCbZs7). You must log in with your illinois.edu account; if you've not done that with Google before, see [this guide from the university CIO](https://answers.uillinois.edu/illinois/47599).
     
     Other homeworks are hosted on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/206500).
     The instructor will manually add your PrairieLearn access on the first day of class,
@@ -118,7 +118,7 @@ Final Exam (20%)
 
 The course components will be combined into a single percentage grade (0--100)
 using the percentages given in the list of [course components].
-That percentage  will be converted to a grade point (0--4) by subtracting 56⅔ and dividing by 10,
+That percentage will be converted to a grade point (0--4) by subtracting 56⅔ and dividing by 10,
 then rounded up to a [grade point bucket that campus allows](https://studentcode.illinois.edu/article3/part1/3-103).
 As special cases, both F+ (0.33) and A+ (4.33) are omitted by campus and will be turned into F (0.00) and A+ (4.00) respectively.
 

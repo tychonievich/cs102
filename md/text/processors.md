@@ -122,7 +122,7 @@ which connects with positive charge voltage.
 Switches require a source of power to operate.
 Power provides the computer with two pools,
 one with high pressure (1) and one with low pressure (0).
-As a computer operates, the pressure carrier (electricity, water, etc)
+As a computer operates, the pressure carrier (electricity, water, etc.)
 will move from the high- to low-pressure pool,
 reducing the pressure differential between the pools;
 energy is required to restore the previous pressures and continue operation.
@@ -296,7 +296,7 @@ Four modes of an [and]{.smallcaps} gate
 
 If both inputs are 0,
 the output is connected to 0 by two side-by-side switches
-and disconnected from 1 by by two switches in a row,
+and disconnected from 1 by two switches in a row,
 meaning the output is 0.
 
 <figure>
@@ -458,16 +458,16 @@ is true precisely when the [and]{.smallcaps} gate would output 1 for those two i
 :::
 
 But some English words have more than one meaning.
-For example, if at a restaurant you are asked "would you like salt [or]{.smallcaps} pepper?"
+For example, if at a restaurant you are asked "would you like salt **or** pepper?"
 you can answer "yes" meaning you want one or both;
-but if you are asked "is that for here [or]{.smallcaps} to go?"
+but if you are asked "is that for here **or** to go?"
 then "yes" is not an option: you're to pick one and only one of the two.
 
 This leads to another kind of or-like gate,
 the exclusive or [xor]{.smallcaps}.
 This gate outputs 1 if either one of its inputs is 1 and the other is 0,
 but outputs 0 if both inputs are the same.
-We can make an [xor]{.smallcaps} out of switches, but we can also make it out of other gates:
+We can make an [xor]{.smallcaps} gate out of switches, but we can also make it out of other gates:
 
 - Put the inputs into an [or]{.smallcaps} gate
 - Also put the inputs into an [and]{.smallcaps} gate
@@ -507,7 +507,7 @@ Sometimes gates are summarized by making a table
 of all their possible input and output combinations.
 In keeping with the true/false interpretation of 1/0 that inspires the gate names,
 these are called <dfn>truth tables</dnf>.
-The four gates we've see so far would have the following truth tables:
+The four gates we've seen so far would have the following truth tables:
 
 
  A   [not]{.smallcaps} A
@@ -736,7 +736,7 @@ in a loop that can store one bit at a time.
 Gated^[Here "gate" does not mean a few-input one-output collection of switches; instead if means "there's a barrier that prevents things usually but can be opened sometimes".] registers use a few more gates
 to add a special "clock" input that makes them ignore their input except at specific moments in time.
 They allow the entire processor to operate in synchronized steps,
-doing one thing to conclusion before the clock ticks and they move on to the next thing.
+doing one thing to conclusion before the clock ticks, and then moving on to the next thing.
 
 A counter is a gated register with its output run through a "+ 1" computation
 and put into its input, causing it to count up by one each time the clock ticks.
@@ -772,9 +772,9 @@ The basic steps are:
 
 1. Make a single monocrystal of 100% pure silicon the size of a small tree trunk.
 2. Slice it into perfectly smooth wafers.
-3. Cover the wafer in a photoreactive chemical.
-4. Use a super-accurate microprojector to expose some of it to light and others not.
-5. Wash it with something that cleans off the exposed parts but not the unexposed (or vice-versa).
+3. Cover the wafer in a photo-reactive chemical.
+4. Use a super-accurate micro-projector to expose some of it to light and others not.
+5. Wash it with something that cleans off the exposed parts but not the unexposed (or vice versa).
 6. Repeat steps 3--5 with different materials to build up the full computer chip.
 
 There are variants on this process,
@@ -785,7 +785,7 @@ That extreme small size has three big benefits:
 
 - The smaller the transistor, the more we can fit on a chip.
 
-    More transistors implies more things the computer can do at the same time.
+    More transistors mean more things the computer can do at the same time.
 
     Moore's Law predicts that the number of transistors on newly-produced computer chips
     will double every 2 years, and [has proven true](https://ourworldindata.org/grapher/transistors-per-microprocessor) for more than 50 years,
@@ -819,14 +819,14 @@ and predicted it would continue doing so for the next ten years.
 
 ![Gordon Moore in 1978, 13 years after coining "Moore's Law" and 10 years after co-founding Intel. Ⓒ Intel Free Press, CC-by-sa license, [hosted by wikimedia](https://commons.wikimedia.org/wiki/File:Gordon_Moore_1978_(cropped).png)](https://upload.wikimedia.org/wikipedia/commons/e/eb/Gordon_Moore_1978_%28cropped%29.png)
 
-This doubling claim was was a bold enough to make some impact,
+This doubling claim was a bold enough to make some impact,
 but likely would have faded in importance quickly
 had not Carver Mead, one of Moore's collaborators at CalTech,
-named it "Moore's Law" and that term often enough that it became common.
+named it "Moore's Law" and used that term often enough that it became common.
 
 In 1975 Moore revised his prediction from doubling every year
 to doubling every two years, which has been a roughly accurate prediction ever since.
-Arguably this is partially a self-fulfilling prophesy:
+Arguably this is partially a self-fulfilling prophecy:
 it has held for so long that chip manufacturers expect someone will find a way to keep it up
 and don't want to fall behind, so they set it as an internal goal driving design and development.
 User-visible chip performance, realized in part by transistor count increases, improves much more slowly.

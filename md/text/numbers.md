@@ -14,7 +14,7 @@ This page tries to explore this idea in more detail.
 As a child, you learned a way of handling numbers
 that a worldwide standard.
 Formally, that system of numbers is called "base-ten place-value numbers"
-or sometimes simply "decimal numbers."^[You may also have heard "decimal number" being used to mean "non-integer numbers represented with a decimal point, like 3.14". That's *not* what we mean by "decimal" on this page: we mean "using the decimal digits 0 through 9".]
+or sometimes simply "decimal numbers."^[You may also have heard "decimal number" being used to mean "noninteger numbers represented with a decimal point, like 3.14". That's *not* what we mean by "decimal" on this page: we mean "using the decimal digits 0 through 9".]
 
 Base-ten place-value numbers are not what most humans used for most of history,
 nor are they the most optimal or most sensible possible number system.
@@ -249,7 +249,7 @@ Binary is also used outside of computing to modify other words to emphasize "two
 such as a "binary decision" (a choice between one of two things with no middle-ground).
 
 A single base-two digit is called a <dfn>bit</dfn>,
-a portmantau of "**bi**nary dig**it**".
+a portmanteau of "**bi**nary dig**it**".
 
 ## Digit grouping for bigger data: base 256
 
@@ -274,15 +274,15 @@ a digit in base-256 place-value numbers,
 or something else (such as an action on an English typewriter) represented by such a number.^[In some technical documents, the word "octet" is used instead of "byte" because in early computing history not all hardware used 8-bit bytes so "octet" (from the Greek word for eight) is seen as more precise.]
 
 Bytes aren't just a convenient way of writing:
-it's built into almot all hardware.
+they're built into almost all hardware.
 The inner workings of one piece of modern computers
 (the processor) works on the bits of base-2 numbers;
-everything else (memory, disks, displays, networks, etc)
+everything else (memory, disks, displays, networks, etc.)
 works on the bytes of base-256 numbers.
 
 ## Easier to read: base 16
 
-Bits is useful for computation,
+Bits are useful for computation,
 but it's easy to get lost reading binary numbers;
 even smallish numbers like 58
 are long enough binary numbers (111010)
@@ -290,7 +290,7 @@ that it's easy to mistake them for other numbers (such as 1111010 = 122).
 
 Bytes are useful for data storage,
 but 256 is too many values to try to learn a symbol for each one
-and 8 is too many bits for separators like commas to be readily readable.
+and 8 is too many bits apart for separators like commas to be readily readable.
 
 The compromise used by computing professionals
 is base 16.

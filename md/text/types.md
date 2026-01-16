@@ -3,7 +3,7 @@ title: Beyond 1s and 0s
 ...
 
 On the [previous page](numbers.html)
-we say how 0s and 1s are used to create numbers
+we showed how 0s and 1s are used to create numbers
 -- where by "number" we meant non-negative integer.
 On this page we'll explore a few ways
 computers use those numbers to represent more complicated ideas.
@@ -35,7 +35,7 @@ Those wavelengths are chosen to stimulate specific cones in our eye:
 red light to trigger the L cone, blue light to trigger the S cone, and green light to trigger the M cone^[Note, though, that the cones have overlaps in the light they can sense, especially between the L and M cones; the three-color system is an approximation, able to create most but not all colors.].
 But the sensitivities of these cones vary somewhat by individual,
 and if they happen to vary enough that the three colors don't line up with those cones very well
-then we call the person "color blind" (or more accurately but less commonly "color vision deficient").
+then we call the person "color-blind" (or more accurately but less commonly "color vision deficient").
 
 In the physical world variations in cone sensitivities have different impact on vision than in the digital world
 because physical objects typically reflect fairly wide bands of photons,
@@ -49,7 +49,7 @@ and thus generally disagree on what digital color best matches the physical colo
 </details>
 
 Thus, to send a screen data needed to display an image,
-we send it a a list of colors, one for each pixel,
+we send it a list of colors, one for each pixel,
 where a color is a list of three light intensities,
 one each for the red, green, and blue light emitters.
 
@@ -74,7 +74,7 @@ Three options are fairly common:
 - Upper limit of 255. This is the largest number that can fit in one byte.
 
 Because computers move data around in bytes, the 255 limit is the one that's used,
-meaning there's 256 levels of red, and of green, and of blue, for 256^3^ = 16,777,216 possible colors.
+meaning there are 256 levels of red, and of green, and of blue, for 256^3^ = 16,777,216 possible colors.
 Perhaps surprisingly, there are situations where some people can tell each of those colors apart
 so it is common to expose the exact byte values to the artists and graphic designers selecting colors.
 
@@ -82,7 +82,7 @@ What's a good way of sharing 1-byte values?
 With two hex digits.
 Thus, to share an entire color we use three bytes or six hex digits,
 traditionally in red-green-blur order
-with an hashtag in front to indicate that it is a color.
+with a hashtag in front to indicate that it is a color.
 
 :::example
 A nice orange color can be made with full-on red, half-on green, and all-off blue.
@@ -175,8 +175,8 @@ docolor()
 # Numbers
 
 When giving an [overview of numbers](numbers.html),
-we assumed you could tell a number begins and ends
-and we ignored negative an non-integer numbers entirely.
+we assumed you could tell a number begins and ends,
+and we ignored negative and noninteger numbers entirely.
 But if we're building a machine to work with numbers, those are not things we can ignore.
 
 ## Boundaries of numbers
@@ -215,7 +215,7 @@ The software actually noticed the overflow,
 but the code that followed such an observation wasn't written very well
 and incorrectly caused the rocket to take a very sharp turn,
 more than it could structurally withstand at that speed,
-resulting in it exploding in mid-air 37 seconds after launch.
+resulting in it exploding 37 seconds after launch.
 
 The estimated cost of this error is upwards of $300 million,
 not including loss to the reputation of the Arianespace company that launched it.
@@ -225,12 +225,12 @@ not including loss to the reputation of the Arianespace company that launched it
 Computers can be designed to work with arbitrary-length numbers
 by using the same tools humans use:
 representing the numbers in a form where the beginning and end of the number can be detected.
-Typically this is a multi-part scheme:
+Typically, this is a multipart scheme:
 
 - a meaning for each byte is chosen with some bytes being parts of a number and others being markers for its ends;
-- the computer scans the bytes, finding all the number parts
-- arithmetic is performed on the number
-- the computer turns the number back into a sequence of bytes, inclduing marking its ends.
+- the computer scans the bytes, combining the consecutive number parts;
+- arithmetic is performed on the number;
+- the computer turns the number back into a sequence of bytes, including marking its ends.
 
 This requires significantly more computing resources than the more common fixed-size numbers
 and because of that is only used in situations where the extra size is expected to pay off.
@@ -246,16 +246,16 @@ but that representation requires a lot of paired "if negative" and "if positive"
 Overflow can actually be used to get the effects of negative numbers without needing any special logic.
 One definition of ‒102 is "a number which, when added to 102, results in 0".
 With overflow and a fixed number of digits, there's a positive number that meets that rule too;
-for example, with 4 digit numbers 9898 + 0102 = 0000 (because 10000 overflows to just 0000)
+for example, with 4-digit numbers 9898 + 0102 = 0000 (because 10000 overflows to just 0000)
 so we could say that ‒102 = 9898.
 This trick (converted to binary) is used extensively in computers to make hardware simpler,
 and can mean that we need external information
 to know whether we ought to display a number as +9898 or ‒102.
-It also means that overflow might change a positive number into a negative one or vice-versa.
+It also means that overflow might change a positive number into a negative one or vice versa.
 
-## Non-integers
+## Nonintegers
 
-There are several ways to deal with non-integer numbers,
+There are several ways to deal with noninteger numbers,
 but one of the most straightforward is to continue basic place-value logic past the 1s place.
 For example, in 123.456 the 5 is two places to the right of the 1s place
 so it is multiplied by $10^{-2}$.
@@ -330,7 +330,7 @@ which in binary is 0.001100110011....
 Because the software had been running for several days,
 the numerical error had accumulated to about 3/4 of a second,
 more than enough to cause the Patriot to miss the Scud;
-the Patriot then crashed into an American barracks and killed 28 soldiers.
+the Patriot then crashed into American barracks and killed 28 soldiers.
 
 </details>
 
@@ -365,15 +365,16 @@ Thus, U+0051 means "Unicode's entry with hex number 51, which is 81 in decimal",
 The task of figuring out what to put in the list is a massive undertaking
 because cultural expectations differ so widely,
 and along the way the list has become complicated.
-There are simple characters like entry U+0051, `Q`.
-There are combining characters like entry U+030A which by itself looks like `` ̊ ``
-but when next to another character moves to it on top of it, like `̊m` or `̊k`.
-There are control characters like entry U+007F which means "delete the next character you see."
-There are characters that have color as well as shape like entry U+1F9E1 `🧡`
-and U+1F308 `🌈`.
-There is a special entry U+200D which tells computers to try to merge the characters beside it into a single shape, if they know how do to so;
-for example, U+1F468 and U+1F980 next to each other render as `👨🦰` 
-but put a U+200D between them and they're supposed to render a single emoji, `👨‍🦰`.
+
+- There are simple characters like entry U+0051, `Q`.
+- There are combining characters like entry U+030A which by itself looks like `` ̊ ``
+    but when next to another character moves to it on top of it, like `̊m` or `̊k`.
+- There are control characters like entry U+007F which means "delete the next character you see."
+- There are characters that have color as well as shape like entry U+1F9E1 `🧡`
+    and U+1F308 `🌈`.
+- There is a special entry U+200D which tells computers to try to merge the characters beside it into a single shape, if they know how do to so;
+    for example, U+1F468 and U+1F980 next to each other render as `👨🦰` 
+    but put a U+200D between them and they're supposed to render a single emoji, `👨‍🦰`.
 
 All that complexity of how to display it aside, the underling representation is simple:
 text is just a sequence of numbers.
@@ -382,11 +383,11 @@ text is just a sequence of numbers.
 
 In the 1990s, many programs assumed that all text was in ASCII.
 ASCII has 1 byte per character,
-but only has 127 characters defined and a byte can store 255 values.
+with every byte (when written in binary) beginning with a 0 bit: from 00000000 to 01111111.
 
-Unicode had been defined and had some success, but it allowed up to 1,112,064,
+Unicode had been defined and had some success, but it allowed up to 1,112,064 characters,
 requiring 3 bytes to fully represent.
-Most of that space was (and still is) unused,
+Most numbers in that range were (and still are) unused,
 so some software had adopted a 2-byte version called UCS or UTF-16,
 but that was incompatible with the more common software that used 1-byte ASCII.
 
@@ -411,7 +412,7 @@ The core idea of UTF-8 is as follows:
     
     ...then the byte's value as an integer is 127 or less; treat that value as the code point of a character (just as ASCII does) and move on to the next character in the next byte.
     
-- Otherwise, the character uses as many bytes as the first byte has consecutive high-order 1 bits.
+- Otherwise, the character uses as many bytes as the first byte has consecutive high-order 1-bits.
     
     That could be a high-order `110` for a 2-byte character,
     or `1110` for a 3-byte character,
@@ -419,7 +420,7 @@ The core idea of UTF-8 is as follows:
     
     Each of the other bytes of the character has `10` as its high-order bits.
     
-    Stick all of the remaining bits together as the code point.
+    Put all the remaining bits together as the code point.
 
 
 :::example
@@ -456,7 +457,7 @@ In 1992, Dave Prosser at AT&T's Unix System Laboratories proposed that something
 Ken Thompson, a successful operating system programmer working at Bell Labs, implemented a version of Prosser's idea in Bell's operating system of the time (called Plan 9), but it didn't seem good enough and removed it.
 
 Ken had lunch in a diner with Rob Pike, a colleague at Bell, and the two worked out the core ideas of UTF-8,
-writing their ideas on a placemat which they took back to Bell and used to add it to Plan 9.
+writing their ideas on a place mat which they took back to Bell and used to add their idea to Plan 9's code.
 
 The next year (1993) they published their idea at a conference.
 
