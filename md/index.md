@@ -130,8 +130,9 @@ function percent2letter() {
 </script>
 ```
 
+# Schedule
 
-# Weekly schedule
+## Weekly schedule
 
 Labs will start the second week of classes (<time datetime="2026-01-27">Jan 27</time>).
 
@@ -151,3 +152,20 @@ because the instructor and the likely substitute instructors will all be at [The
 <div dow="4" st="4" d="75">Lab 3<br/>TBA</div>
 
 :::
+
+## Calendar
+
+You can subscribe to the course calendar in your calendar application of choice using [this ICS link](https://calendar.google.com/calendar/ical/c_a6e5c4a9324c11c3641d0815ab3b0f37f2f56221a186282a74814a45f40761dc%40group.calendar.google.com/public/basic.ics).
+
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&showTitle=0&showCalendars=0&mode=WEEK&src=Y19hNmU1YzRhOTMyNGMxMWMzNjQxZDA4MTVhYjNiMGYzN2YyZjU2MjIxYTE4NjI4MmE3NDgxNGE0NWY0MDc2MWRjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23ef6c00" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<script>
+const iframeresize = event=>{
+document.querySelectorAll('iframe').forEach(f => f.style.width="1em")
+document.querySelectorAll('iframe').forEach(f => f.setAttribute('width', f.parentElement.scrollWidth))
+document.querySelectorAll('iframe').forEach(f => f.style.width="var(--wide)")
+}
+window.addEventListener('load', iframeresize)
+window.addEventListener('resize', iframeresize)
+</script>
+
