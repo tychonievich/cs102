@@ -105,8 +105,8 @@ Final Exam (20%)
     Superior performance on the portion of the final the covers missed quiz material will increase prior quiz grades.
     
 These components will be combined into a single percentage grade (0--100),
-then converted to a grade point (0--4) by subtracting 55 and dividing by 10,
-then rounded to the nearest [grade point bucket that campus allows](https://studentcode.illinois.edu/article3/part1/3-103).
+then converted to a grade point (0--4) by subtracting 56⅔ and dividing by 10,
+then rounded up to a [grade point bucket that campus allows](https://studentcode.illinois.edu/article3/part1/3-103).
 
 <details class="example"><summary>How a given percentage turns into a letter</summary>
 
@@ -120,8 +120,8 @@ then rounded to the nearest [grade point bucket that campus allows](https://stud
 <script>
 function percent2letter() {
   let p = document.getElementById('percentage').value;
-  let g = (p-55)/10;
-  let r = Math.min(Math.round(g*3)/3, 4);
+  let g = (p-56+2/3)/10;
+  let r = Math.min(Math.ceil(g*3)/3, 4);
   if (r < 2/6) r = 0;
   let letter = ["F","F","D−","D","D+","C−","C","C+","B−","B","B+","A−","A","A+"][Math.min(Math.round(g*3),13)];
   document.getElementById('gp').textContent = Math.round(g*10000)/10000;
