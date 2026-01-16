@@ -107,7 +107,8 @@ Final Exam (20%)
 These components will be combined into a single percentage grade (0--100),
 then converted to a grade point (0--4) by subtracting 55 and dividing by 10,
 then rounded to the nearest [grade point bucket that campus allows](https://studentcode.illinois.edu/article3/part1/3-103).
-You can see how this works as follows:
+
+<details class="example"><summary>How a given percentage turns into a letter</summary>
 
 ```{=html}
 <table><tbody>
@@ -127,8 +128,11 @@ function percent2letter() {
   document.getElementById('round').textContent = r.toFixed(2);
   document.getElementById('letter').textContent = letter;
 }
+percent2letter()
 </script>
 ```
+
+</details>
 
 # Schedule
 
