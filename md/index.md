@@ -11,6 +11,8 @@ summary: |
   
   <center>
   [Homework](https://us.prairielearn.com/pl/course_instance/206500)  
+  [Labs](labs/)  
+  [Lectures](lectures/)  
   [Polls](secure/clicker.php)  
   [Text](text/)  
   </center>
