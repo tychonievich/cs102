@@ -125,7 +125,7 @@ function percent2letter() {
   let r = Math.min(Math.round(g*3)/3, 4);
   if (r < 2/6) r = 0;
   let letter = ["F","F","D−","D","D+","C−","C","C+","B−","B","B+","A−","A","A+"][Math.min(Math.round(g*3),13)];
-  document.getElementById('gp').textContent = Math.round(g2*10000)/10000;
+  document.getElementById('gp').textContent = g2;
   document.getElementById('round').textContent = r.toFixed(2);
   document.getElementById('letter').textContent = letter;
 }
