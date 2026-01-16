@@ -208,10 +208,63 @@ window.addEventListener('resize', iframeresize)
 
 # Staff
 
-The course instructor is [Luther Tychonievich](https://siebelschool.illinois.edu/about/people/all-faculty/luthert).
+The course instructor is [Luther Tychonievich](https://siebelschool.illinois.edu/about/people/all-faculty/luthert)^[Tychonievich is pronounced like "Tie CON of Itch"].
 
 The course teaching assistants are Kamtikar Shivani (leading labs 3, 4, and 5) and Kashinath Ashish (leading labs 1 and 2).
 
 Most interactions with staff should be in-person or directed to the course's online forum, the tool for which will be selected on the first day of class.
 
-Sensitive information, including disability and personal challenges information, should be directed to the course instructor via email, or in a meeting with the professor scheduled by sending some times that work for you to the instructor by email.
+Sensitive information, including information about disabilities and disruptive life events, should be directed to the course instructor via email, or in a meeting with the professor scheduled by sending some times that work for you to the instructor by email. Any email should include "102" in the subject to minimize the chance that it is lost among the many other emails the instructor receives.
+
+
+# Policies and Resources
+
+## Collaboration with humans and AI
+
+Our goal is to foster and measure your internalized understanding of course content.
+As such, collaboration, both with humans and with AIs, is encouraged when it is helping you learn
+but discouraged when it is bypassing your need to learn.
+
+You should follow the instructions of lab staff on how to scope collaboration in labs.
+
+You may not collaborate on quizzes or exams.
+
+
+## Mental Health
+
+Significant stress, mood changes, excessive worry, substance/alcohol misuse or interferences in eating or sleep can have an impact on academic performance, social development, and emotional wellbeing. The University of Illinois offers a variety of confidential services including individual and group counseling, crisis intervention, psychiatric services, and specialized screenings which are covered through the Student Health Fee. If you or someone you know experiences any of the above mental health concerns, it is strongly encouraged to contact or visit any of the University’s resources provided below.  Getting help is a smart and courageous thing to do for yourself and for those who care about you.
+
+- Counseling Center (217) 333-3704, 610 East John Street Champaign, IL 61820
+- McKinley Health Center (217) 333-2700, 1109 South Lincoln Avenue, Urbana, Illinois 61801
+- National Suicide Prevention Lifeline (800) 273-8255
+- Rosecrance Crisis Line (217) 359-4141 (available 24/7, 365 days a year)
+
+*This statement is approved by the University of Illinois Counseling Center*
+
+
+## Disability-Related Accommodations (DRES)
+
+To obtain disability-related academic adjustments and/or auxiliary aids, students with disabilities must contact the course instructors and the Disability Resources and Educational Services (DRES) as soon as possible. To contact DRES, you may visit 1207 S. Oak St., Champaign, call 217-333-4603, e-mail disability@illinois.edu or go to <https://www.disability.illinois.edu>.  If you are concerned you have a disability-related condition that is impacting your academic progress, there are academic screening appointments available that can help diagnosis a previously undiagnosed disability. You may access these by visiting the DRES website and selecting “Request an Academic Screening” at the bottom of the page.
+
+
+## Community of Care
+
+As members of the Illinois community, we each have a responsibility to express care and concern for one another. If you come across a classmate whose behavior concerns you, whether in regards to their well-being or yours, we encourage you to refer this behavior to the Student Assistance Center (217-333-0050 or <http://odos.illinois.edu/community-of-care/referral/>). Based on your report, the staff in the Student Assistance Center reaches out to students to make sure they have the support they need to be healthy and safe.
+
+Further, we understand the impact that struggles with mental health can have on your experience at Illinois. Significant stress, strained relationships, anxiety, excessive worry, alcohol/drug problems, a loss of motivation, or problems with eating and/or sleeping can all interfere with optimal academic performance. We encourage all students to reach out to talk with someone, and we want to make sure you are aware that you can access mental health support at McKinley Health Center (<https://mckinley.illinois.edu/>).  Or the Counseling Center (<https://counselingcenter.illinois.edu/>). For urgent matters during business hours, no appointment is needed to contact the Counseling Center. For mental health emergencies, you can call 911.
+
+
+## Reporting negative experiences
+
+It is the goal of all course staff to create and maintain a welcoming, safe learning environment for all students.
+One way you can help with that is to let us know of anything that feels unwelcoming or unsafe.
+You are welcome to encouraged to share these with any member of the course staff, as we are most likely to be able to correct the situation.
+
+You are also welcome to inform the Bias Assessment and Response Team (BART) (<https://bart.illinois.edu/>). Based on your report, BART members will follow up and reach out to students to make sure they have the support they need to be healthy and safe. If the reported behavior also violates university policy, staff in the Office for Student Conflict Resolution may respond as well and will take appropriate action.
+
+
+## Family Educational Rights and Privacy Act (FERPA)
+
+Any student who has suppressed their directory information pursuant to Family Educational Rights and Privacy Act (FERPA) should self-identify to the instructors to ensure protection of the privacy of their attendance in this course. See <https://registrar.illinois.edu/academic-records/ferpa/> for more information on FERPA.
+
+
