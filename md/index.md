@@ -10,6 +10,7 @@ summary: |
   </center>
   
   <center>
+  [Homework](https://us.prairielearn.com/pl/course_instance/206500)  
   [Polls](secure/clicker.php)  
   [Text](text/)  
   </center>
@@ -87,6 +88,10 @@ Homework (10%)
 :   Weekly homeworks are intended to be practice, and also to keep you on track with the course material.
     You may re-take each homework as many times as you wish at no grade penalty,
     but must do so by the homework deadline.
+    
+    Homeworks are hosted on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/206500).
+    The instructor will manually add your PrairieLearn access on the first day of class,
+    or approximately 2 business days after you enroll if you enroll later than that.
 
 Quizzes (36% = 3 x 12% each)
 :   There are 3 scheduled in-class quizzes, each with a review day preceding them.
@@ -103,10 +108,17 @@ Final Exam (20%)
 
     The final is partly a chance to show you have learned material you missed on the quizzes.
     Superior performance on the portion of the final the covers missed quiz material will increase prior quiz grades.
-    
-These components will be combined into a single percentage grade (0--100),
-then converted to a grade point (0--4) by subtracting 56⅔ and dividing by 10,
+
+## Cumulative Grade
+
+The course components will be combined into a single percentage grade (0--100)
+using the percentages given in the list of [course components].
+That percentage  will be converted to a grade point (0--4) by subtracting 56⅔ and dividing by 10,
 then rounded up to a [grade point bucket that campus allows](https://studentcode.illinois.edu/article3/part1/3-103).
+As special cases, both F+ (0.33) and A+ (4.33) are omitted by campus and will be turned into F (0.00) and A+ (4.00) respectively.
+
+This process, or slight variants of it, are common to many courses
+and result in 90s getting As, 80s getting Bs, and so on, with pluses and minuses.
 
 <details class="example"><summary>How a given percentage turns into a letter</summary>
 
@@ -135,6 +147,26 @@ percent2letter()
 
 </details>
 
+## Absences
+
+If you need to be absent from a lecture or lab,
+please enter that into [this form](https://forms.gle/ByxWmPJTo2eP96FM9).
+These requests are generally approved automatically, with exceptions noted to you in an email from the instructor containing the phrase "102 absence request" in the subject line.
+
+If you need to change a homework deadline,
+first complete the homework as normal: it will show each question's score, but have a 0% overall if you miss the deadline.
+Then enter an absence request for the homework into [this form](https://forms.gle/ByxWmPJTo2eP96FM9),
+which the staff will use to prompt a manual update of your grade.
+
+Quiz absences are approved only on a case-by-case basis;
+if you need one, please email the instructor
+with "102 quiz absence" in the subject line
+and include suggested dates and times when a makeup quiz might be possible.
+
+Exam absences require both dean-level approvals and instructor scheduling.
+If you need to reschedule the exam, let the instructor know as soon as possible.
+
+
 # Schedule
 
 ## Weekly schedule
@@ -152,8 +184,8 @@ because the instructor and the likely substitute instructors will all be at [The
 
 <div dow="2" st="4" d="75">Lab 1<br/>TBA</div>
 <div dow="2" st="5.5" d="75">Lab 4<br/>TBA</div>
-<div dow="3" st="4" d="75">Lab 2<br/>[G27 LCLB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0172&flId=00)</div>
-<div dow="3" st="5.5" d="75">Lab 5<br/>[G27 LCLB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0172&flId=00)</div>
+<div dow="3" st="4" d="75">Lab 2<br/>TBA</div>
+<div dow="3" st="5.5" d="75">Lab 5<br/>TBA</div>
 <div dow="4" st="4" d="75">Lab 3<br/>TBA</div>
 
 :::
@@ -174,3 +206,12 @@ window.addEventListener('load', iframeresize)
 window.addEventListener('resize', iframeresize)
 </script>
 
+# Staff
+
+The course instructor is [Luther Tychonievich](https://siebelschool.illinois.edu/about/people/all-faculty/luthert).
+
+The course teaching assistants are Kamtikar Shivani (leading labs 3, 4, and 5) and Kashinath Ashish (leading labs 1 and 2).
+
+Most interactions with staff should be in-person or directed to the course's online forum, the tool for which will be selected on the first day of class.
+
+Sensitive information, including disability and personal challenges information, should be directed to the course instructor via email, or in a meeting with the professor scheduled by sending some times that work for you to the instructor by email.
