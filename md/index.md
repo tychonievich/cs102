@@ -120,11 +120,12 @@ then rounded up to a [grade point bucket that campus allows](https://studentcode
 <script>
 function percent2letter() {
   let p = document.getElementById('percentage').value;
-  let g = (p-56+2/3)/10;
-  let r = Math.min(Math.ceil(g*3)/3, 4);
+  let g = (p-55)/10;
+  let g2 = (p-56+2/3)/10;
+  let r = Math.min(Math.round(g*3)/3, 4);
   if (r < 2/6) r = 0;
   let letter = ["F","F","D−","D","D+","C−","C","C+","B−","B","B+","A−","A","A+"][Math.min(Math.round(g*3),13)];
-  document.getElementById('gp').textContent = Math.round(g*10000)/10000;
+  document.getElementById('gp').textContent = Math.round(g2*10000)/10000;
   document.getElementById('round').textContent = r.toFixed(2);
   document.getElementById('letter').textContent = letter;
 }
