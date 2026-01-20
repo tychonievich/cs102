@@ -155,12 +155,12 @@ percent2letter()
 ## Absences
 
 If you need to be absent from a lecture or lab,
-please enter that into [this form](https://forms.gle/ByxWmPJTo2eP96FM9).
+please enter that into [this form](https://forms.gle/ByxWmPJTo2eP96FM9){target="_blank"}.
 These requests are generally approved automatically, with exceptions noted to you in an email from the instructor containing the phrase "102 absence request" in the subject line.
 
 If you need to change a homework deadline,
 first complete the homework as normal: it will show each question's score, but have a 0% overall if you miss the deadline.
-Then enter an absence request for the homework into [this form](https://forms.gle/ByxWmPJTo2eP96FM9),
+Then enter an absence request for the homework into [this form](https://forms.gle/ByxWmPJTo2eP96FM9){target="_blank"},
 which the staff will use to prompt a manual update of your grade.
 
 Quiz absences are approved only on a case-by-case basis;
