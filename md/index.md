@@ -200,7 +200,7 @@ because the instructor and the likely substitute instructors will all be at [The
 
 You can subscribe to the course calendar in your calendar application of choice using [this ICS link](https://calendar.google.com/calendar/ical/c_a6e5c4a9324c11c3641d0815ab3b0f37f2f56221a186282a74814a45f40761dc%40group.calendar.google.com/public/basic.ics).
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&showTitle=0&showCalendars=0&mode=AGENDA&src=Y19hNmU1YzRhOTMyNGMxMWMzNjQxZDA4MTVhYjNiMGYzN2YyZjU2MjIxYTE4NjI4MmE3NDgxNGE0NWY0MDc2MWRjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23ef6c00" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&showTitle=0&mode=AGENDA&src=Y18wMmYwOWVjYjM1NDFhYTU1NzlmMTk3ZjliYzAxMTZlM2JiZDRiNzljZjdiMThkMzZiNDMwNDE1NTMyNTYwNWQwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19hNmU1YzRhOTMyNGMxMWMzNjQxZDA4MTVhYjNiMGYzN2YyZjU2MjIxYTE4NjI4MmE3NDgxNGE0NWY0MDc2MWRjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23ad1457&color=%23ef6c00" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 <script>
 const iframeresize = event=>{

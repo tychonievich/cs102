@@ -112,6 +112,72 @@ who was known for writing romantic poetry and for pursuing sexual relations with
 
 </details>
 
+The <dfn>Church-Turing Thesis</dfn> states that there are mathematical languages
+and physical machines
+that are capable of doing anything that can be done with information.
+That's quite the claim: we can build one machine, design one mathematcal language, and do *anything* with it.
+We can't prove that claim (because we can't define "everything" well enough to include in a proof),
+but so far we have not found any counter-examples.
+
+We call things that can do any information task <dfn>Turing complete</dfn>.
+The first two things to be shown to be Turing complete
+were the *Turing Machine*
+and the *Lambda Calculus*;
+others include all major programming languages
+and all general-purpose programmable computers^[At least, it would include these if they had unlimited memory and time; but since they don't, there are tasks that are too big for them to complete.].
+
+<details class="aside"><summary>Church and Turing</summary>
+
+![A Princeton University faculty member portrait of Alonzo Church, taken later in his life. Fair use, hosted by [Wikipedia](https://en.wikipedia.org/wiki/File:Alonzo_Church.jpg#/media/File:Alonzo_Church.jpg)](https://upload.wikimedia.org/wikipedia/en/a/a6/Alonzo_Church.jpg)
+
+Alonzo Church was the son of a judge and the grandson of a mathematics professor
+who both attended and spent most of his career working at Princeton University
+as a professor of mathematics and philosophy.
+
+![A photograph of Alan Turing taken 29 March 1951. Public domain, hosted by [Wikimedia](https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg)](https://upload.wikimedia.org/wikipedia/commons/f/f8/Alan_Turing_%281951%29.jpg)
+
+Alan Turing was the son of a British administrator in India
+and grandson of both a clergyman and a railway chief engineer.
+He traveled between England and India often as a child
+and sometimes stayed at a friend of the family's home or at a boarding school when his parents traveled.
+He was recognized early as a genius with diverse interests,
+but a particular interest in Mathematics.
+He studied at Cambridge and then Princeton,
+being one of Alonzo Church's doctoral students.
+
+Church was interested in a branch of Mathematics related to the fundamental limitations of mathematical systems.
+A recent proof by Kurt Gödel showed any sufficiently complicated mathematical system could express a version of the statement
+"this statement cannot be proven true,"
+which was self-evidently true only if it was unprovable,
+demonstrating that such languages could express true but unprovable things.
+But Kurt Gödel's version of that was a fairly complicated mathematical construct
+in a very large mathematical system.
+
+Church was interested in converting Gödel's work
+into much simpler systems.
+He designed a very small mathematical system which could still express that idea, which he called the "lambda calculus."
+His student Alan Turing came up with a simple machine design, the operation of which tightly paralleled what the lambda calculus could do, which was later termed the "Turing machine".
+The two them postulated, but did not prove,
+that any more-complicated mathematical system could be reduced to the Lambda calculus
+and any more-complicated machine could be be reduced to the Turing machine.
+This concept that the two were capable of doing anything that other systems could do
+is called the Church-Turing Thesis.
+
+After publishing their thesis,
+Alonzo Church spent several more decades teaching at Princeton,
+then at the University of California at Los Angeles,
+publishing many additional papers in mathematics and philosophy.
+He was generally regarded as a quiet and focused person
+and did little to attract attention outside of his academic work.
+
+Alan Turing returned to England and worked on cracking German codes during World War II.
+Shortly after the war ended he was convicted of homosexual acts (then illegal in England)
+and sentenced to involuntary hormone injection and limitations on his freedom of movement.
+Three years later he was found dead of cyanide poisoning,
+though it is not clear if this was suicide, murder, or an accidental exposure due to a chemistry experiment he was undertaking in his spare room.
+
+</details>
+
 
 With the above understanding of general-purpose computers, we can distinguish between three key concepts:
 
