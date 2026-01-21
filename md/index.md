@@ -222,7 +222,9 @@ Most interactions with staff should be in-person or directed to the course's onl
 
 Sensitive information, including information about disabilities and disruptive life events, should be directed to the course instructor via email, or in a meeting with the professor scheduled by sending some times that work for you to the instructor by email. Any email should include "102" in the subject to minimize the chance that it is lost among the many other emails the instructor receives.
 
-
+<!--
+^[<img src="office.png" width="90%"/>]
+-->
 # Policies and Resources
 
 ## Collaboration with humans and AI
