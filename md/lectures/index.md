@@ -8,7 +8,7 @@ Lecture 1
     :   Wed 2026-01-21
 
     Board work
-    :   [2029-01-21.pdf](2029-01-21.pdf)
+    :   [2026-01-21.pdf](2026-01-21.pdf)
 
     Relevant readings
     :   - [Main page](..)
