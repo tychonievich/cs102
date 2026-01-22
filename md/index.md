@@ -185,14 +185,15 @@ because the instructor and the likely substitute instructors will all be at [The
 :::{is="week-view" st="9" et="19" style="width:var(--wide)"}
 
 <div dow="1" st="9" d="50">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
+<div dow="2" st="4" d="50">Lab 1<br/>101 901 W Oregon</div>
+<div dow="2" st="5.5" d="75">Lab 4<br/>122 1203 1/2 W Nevada</div>
 <div dow="3" st="9" d="50">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
+<div dow="3" st="4" d="75">Lab 2<br/>	
+G27 Literatures, Cultures, & Ling</div>
+<div dow="3" st="5.5" d="75">Lab 5<br/>	
+G27 Literatures, Cultures, & Ling</div>
+<div dow="4" st="4" d="75">Lab 3<br/>122 1203 1/2 W Nevada</div>
 <div dow="5" st="9" d="50">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
-
-<div dow="2" st="4" d="75">Lab 1<br/>TBA</div>
-<div dow="2" st="5.5" d="75">Lab 4<br/>TBA</div>
-<div dow="3" st="4" d="75">Lab 2<br/>TBA</div>
-<div dow="3" st="5.5" d="75">Lab 5<br/>TBA</div>
-<div dow="4" st="4" d="75">Lab 3<br/>TBA</div>
 
 :::
 
