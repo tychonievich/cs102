@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width;initial-scale=1">
+<title>JavaScript Playground</title>
+<script>
+function repl() {
+  const o = document.getElementById('log');
+  const i = document.getElementById('prompt');
+  if (i.value.trim().length == 0) return;
+  const usr = document.createElement('div');
+  usr.classList.add("command");
+  usr.append(i.value);
+  o.append(usr);
+  const js = document.createElement('div');
+  js.classList.add("result");
+  try {
+    js.append(eval(i.value));
+  } catch (error) {
+    js.classList.add("error");
+    js.append(error.name+"\n    "+error.message);
+  }
+  o.append(js);
+  i.value = '';
+  i.scrollIntoView();
+}
+</script>
+<style>
+  * { font-size:1rem; }
+  .command::before { content: ">>> "; }
+  .error { background: #f001; }
+  #log > div { margin: 0.5ex 0ex; }
+</style>
+</head><body>
+<pre id="log"></pre>
+<form action="javascript:;" onsubmit="repl()" style="display:flex">
+<tt>>>> </tt><input type="text" id="prompt" style="flex-grow:1;">
+</form>
+</body></html>
