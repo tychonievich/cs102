@@ -57,7 +57,7 @@ Binary
 Bit
 :   A single digit in *base* 2: either 0 or 1.
     
-    The word "bit" is a portmanteau of "**bi**nary digi**t**".
+    The word "bit" is a portmanteau of "<u>bi</u>nary digi<u>t</u>".
 
 Byte
 :   A group of 8 *bits*.
