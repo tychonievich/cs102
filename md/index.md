@@ -12,6 +12,7 @@ summary: |
   <center>
   [First Homework](https://forms.gle/CrKUXPbkiW5DCbZs7)   
   [Homework](https://us.prairielearn.com/pl/course_instance/206500)  
+  [Jargon](jargon.html)  
   [Labs](labs/)  
   [Lectures](lectures/)  
   [Polls](secure/clicker.php)  
