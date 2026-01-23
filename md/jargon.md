@@ -18,7 +18,7 @@ Abstract
     To make something more abstract, you replace several steps with a generalization that describes them all.
 
 Algorithm
-:   Unambiguous steps to accomplish some task.
+:   Unambiguously-defined steps to accomplish some task.
 
     The word "algorithm" is a Latinization of the name of [Muḥammad ibn Mūsā al-Khwārizmī](https://en.wikipedia.org/wiki/Al-Khwarizmi)
     who wrote books that helped popularize the ideas of algorithms with place-value numbers in Europe.
