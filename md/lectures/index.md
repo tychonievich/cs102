@@ -3,6 +3,22 @@ title: Lectures
 ...
 
 
+Lecture 2 -- Friday 23 January 2026
+:   Board work
+    :   [2026-01-23.pdf](2026-01-23.pdf)
+
+    Relevant readings
+    :   [1s and 0s (and so on)](../text/numbers.html)
+
+    Announcements
+    :   - We will use Microsoft Teams for asynchronous communication between students and staff. Expect to be added to that later today.
+
+        - UIUC Google account activation is having trouble. We'll give IT a few days to work on it before seeking alternatives.
+            
+            For the first homework, wait until next week if you're having google account trouble.
+            
+            For the lecture absence form, email the professor (luthert@) with your absence request if you can't access that form.
+    
 Lecture 1 -- Wednesday 21 January 2026
 :   Board work
     :   [2026-01-21.pdf](2026-01-21.pdf)
