@@ -70,8 +70,8 @@ Byte
     and `F3` means a byte with the value two hundred forty-three.
 
 Digital
-:   Represented by or operating on a set of discrete symbols called digits,
-    rather than on continuous or analog signals.
+:   Represented or operating using a set of discrete symbols called digits,
+    rather than using continuous or analog signals.
     
     Because of the prevalence of programmable general-purpose digital computers,
     "digital" is sometimes used as a synonym for "done with computers".
