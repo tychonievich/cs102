@@ -21,8 +21,8 @@ Algorithm
 :   Unambiguously-defined steps to accomplish some task.
 
     The word "algorithm" is a Latinization of the name of [Muḥammad ibn Mūsā al-Khwārizmī](https://en.wikipedia.org/wiki/Al-Khwarizmi)
-    who wrote books that helped popularize the ideas of algorithms with place-value numbers in Europe.
-    Algorithms long predate his work.
+    who wrote books that Europeans adopt the ideas of algorithms with place-value numbers.
+    Algorithms themselves long predate his work.
 
 Analog
 :   Often used to mean simply "not digital", or the part of the world that is not computers.
