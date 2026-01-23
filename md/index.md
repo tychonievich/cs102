@@ -212,11 +212,19 @@ window.addEventListener('load', iframeresize)
 window.addEventListener('resize', iframeresize)
 </script>
 
+Office hours are a mix of in person and online.
+
+- In person office hours are in the open space at the lower level of the Siebel Center for Computer Science (marked as 0224 on [the faculty map](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0563&flId=00)).
+    
+    This space is used by many classes; look for a sign or whiteboard mark that says `102`.
+
+- Online office hours are on [Zoom](https://illinois.zoom.us/j/86317342679?pwd=oTNgH7k8aMaSsoJCBLfabaz3pjrnfN.1) (Meeting ID 863 1734 2679, passcode 102). 
+
 # Staff
 
 The course instructor is [Luther Tychonievich](https://siebelschool.illinois.edu/about/people/all-faculty/luthert)^[Tychonievich is pronounced like "Tie CON of Itch"].
 
-The course teaching assistants are Kamtikar Shivani (leading labs 3, 4, and 5) and Kashinath Ashish (leading labs 1 and 2).
+The course teaching assistants are Shivani Kamtikar (leading labs 3, 4, and 5) and Ashish Kashinath (leading labs 1 and 2).
 
 Most interactions with staff should be in-person or directed to the course's online forum, [Microsoft Teams](https://teams.microsoft.com/l/channel/19%3ALND-tC7Fy85Lr3-prspsp3GAqGW6GrwqKdoly3dP8sY1%40thread.tacv2/General?groupId=e7b26082-f371-45c8-8292-69f035e0adba&tenantId=44467e6f-462c-4ea2-823f-7800de5434e3).
 
