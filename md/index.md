@@ -217,7 +217,7 @@ The course instructor is [Luther Tychonievich](https://siebelschool.illinois.edu
 
 The course teaching assistants are Kamtikar Shivani (leading labs 3, 4, and 5) and Kashinath Ashish (leading labs 1 and 2).
 
-Most interactions with staff should be in-person or directed to the course's online forum, the tool for which will be selected on the first day of class.
+Most interactions with staff should be in-person or directed to the course's online forum, [Microsoft Teams](https://teams.microsoft.com/l/channel/19%3ALND-tC7Fy85Lr3-prspsp3GAqGW6GrwqKdoly3dP8sY1%40thread.tacv2/General?groupId=e7b26082-f371-45c8-8292-69f035e0adba&tenantId=44467e6f-462c-4ea2-823f-7800de5434e3).
 
 Sensitive information, including information about disabilities and disruptive life events, should be directed to the course instructor via email, or in a meeting with the professor scheduled by sending some times that work for you to the instructor by email. Any email should include "102" in the subject to minimize the chance that it is lost among the many other emails the instructor receives.
 
