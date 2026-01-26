@@ -185,14 +185,14 @@ because the instructor and the likely substitute instructors will all be at [The
 
 :::{is="week-view" st="9" et="19" style="width:var(--wide)"}
 
-<div dow="1" st="9" d="50">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
-<div dow="2" st="4" d="50">Lab 1<br/>[Oregon Lab, 901 W Oregon](https://www.techservices.illinois.edu/computer-labs/#oregon)</div>
-<div dow="2" st="5.5" d="75">Lab 4<br/>[Nevada Lab, 1203½ W Nevada](https://www.techservices.illinois.edu/computer-labs/#nevadabuilding)</div>
-<div dow="3" st="9" d="50">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
-<div dow="3" st="4" d="75">Lab 2<br/>[G27 LCLB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0172&flId=00)</div>
-<div dow="3" st="5.5" d="75">Lab 5<br/>[G27 LCLB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0172&flId=00)</div>
-<div dow="4" st="4" d="75">Lab 3<br/>[Nevada Lab, 1203½ W Nevada](https://www.techservices.illinois.edu/computer-labs/#nevadabuilding)</div>
-<div dow="5" st="9" d="50">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
+<div dow="1" st="9" d="50" style="margin-top:1ex">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
+<div dow="2" st="4" d="50" style="margin-top:1ex">Lab 1<br/>[Oregon Lab, 901 W Oregon](https://www.techservices.illinois.edu/computer-labs/#oregon)</div>
+<div dow="2" st="5.5" d="75" style="margin-top:1ex">Lab 4<br/>[Nevada Lab, 1203½ W Nevada](https://www.techservices.illinois.edu/computer-labs/#nevadabuilding)</div>
+<div dow="3" st="9" d="50" style="margin-top:1ex">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
+<div dow="3" st="4" d="75" style="margin-top:1ex">Lab 2<br/>[G27 LCLB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0172&flId=00)</div>
+<div dow="3" st="5.5" d="75" style="margin-top:1ex">Lab 5<br/>[G27 LCLB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0172&flId=00)</div>
+<div dow="4" st="4" d="75" style="margin-top:1ex">Lab 3<br/>[Nevada Lab, 1203½ W Nevada](https://www.techservices.illinois.edu/computer-labs/#nevadabuilding)</div>
+<div dow="5" st="9" d="50" style="margin-top:1ex">Lecture<br/>[100 MSEB](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0034&flId=01)</div>
 
 :::
 
@@ -214,7 +214,7 @@ window.addEventListener('resize', iframeresize)
 
 Office hours are a mix of in person and online.
 
-- In person office hours are in the open space at the lower level of the Siebel Center for Computer Science (marked as 0224 on [the faculty map](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0563&flId=00)).
+- In person office hours are in the open space at the lower level of the Siebel Center for Computer Science (marked as 0224 on [the facility map](https://facilityaccessmaps.fs.illinois.edu/archibus/schema/ab-products/essential/workplace/index.html?blId=0563&flId=00)).
     
     This space is used by many classes; look for a sign or whiteboard mark that says `102`.
 
