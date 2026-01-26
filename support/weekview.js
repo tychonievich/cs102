@@ -53,6 +53,7 @@ class WeekView extends HTMLDivElement {
         background: white;
         color: black;
         overflow: scroll;
+        margin: 0 !important;
       }
     `;
     shadow.append(style);
