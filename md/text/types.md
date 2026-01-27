@@ -326,7 +326,7 @@ and the Americans responded by launching a Patriot missile to intercept it.
 But the American control software did part of its computation based on the current time of day,
 which was stored initially by checking a clock
 and then updated 10 times a second by adding 1/10,
-which in binary is 0.001100110011....
+which in binary is 0.0001100110011....
 Because the software had been running for several days,
 the numerical error had accumulated to about 3/4 of a second,
 more than enough to cause the Patriot to miss the Scud;
