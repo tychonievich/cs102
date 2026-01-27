@@ -321,7 +321,7 @@ $0.11111111$, not $1$.
 <details class="aside"><summary>Numerical imprecision killed 28 soldiers</summary>
 
 On <time datetime="1991-02-25">25 February 1991</time>
-the Iraqi military launched a Scub missile at an American military installation,
+the Iraqi military launched a Scud missile at an American military installation,
 and the Americans responded by launching a Patriot missile to intercept it.
 But the American control software did part of its computation based on the current time of day,
 which was stored initially by checking a clock
@@ -330,7 +330,7 @@ which in binary is 0.0001100110011....
 Because the software had been running for several days,
 the numerical error had accumulated to about 3/4 of a second,
 more than enough to cause the Patriot to miss the Scud;
-the Patriot then crashed into American barracks and killed 28 soldiers.
+the Patriot (not the Scud) then crashed into American barracks and killed 28 soldiers.
 
 </details>
 
