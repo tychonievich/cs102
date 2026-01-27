@@ -310,7 +310,7 @@ $1/3 = 0.33333\overline{3}$
 but with a finite number of digits we drop the extra digits,
 making a less-precise $1/3 \approx 0.3333$.
 If we then add three of those imprecise numbers together
-we get $0.9999$, not $1$
+we get $0.9999$, not $1$.
 The same thing happens in binary:
 $1/11 = 0.010101\overline{01}$
 but with a finite number of digits we drop the extra bits,
