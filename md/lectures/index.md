@@ -2,6 +2,17 @@
 title: Lectures
 ...
 
+Lecture 3 -- Wednesday 28 January 2026
+:   Board work
+    :   [2026-01-28.pdf](2026-01-28.pdf)
+
+    Relevant readings
+    :   [Beyond 1s and 0s](../text/types.html)
+
+    Announcements
+    :   - The forms that previously required UIUC Google logins now accept any Google account (even your personal one).
+            
+
 
 Lecture 2 -- Friday 23 January 2026
 :   Board work
