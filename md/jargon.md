@@ -76,6 +76,18 @@ Digital
     Because of the prevalence of programmable general-purpose digital computers,
     "digital" is sometimes used as a synonym for "done with computers".
 
+Float
+:   Short for "floating-point number", a float is the binary version of scientific notation
+    stored as three parts:
+    
+    - + or ‒
+    - An exponent
+    - The rest of the number (the "significand" or "mantissa")
+    
+    For example, 56⅔, which in binary is 111000.1010101010101010...,
+    would be stored as +1.11000101010101010... × 2^101^ (or in decimal as 1.75 × 2^5^).
+
+
 General-purpose
 :   One of the key qualifiers of a computer,
     indicating that the computer hardware
@@ -105,6 +117,17 @@ Hexadecimal
     When it is necessary to distinguish that a number is written in hexadecimal,
     it is traditional to precede it with `0x`;
     thus `0x10E` means a hexadecimal number with digits `10E` and represents the value two hundred seventy.
+
+Overflow
+:   Most numbers in computers are represented in a fixed number of *bits*.
+    If math would produce a number that requires more bits than that, the number overflows.
+    What happens after overflow depends on the kind of number:
+    
+    - For integers, the most common is to simply discard the digits that won't fit;
+        so 10011 stored in 4 digits would become 0011.
+      
+    - For *floats*, when the exponent overflows the number changes into a special "infinity" value.
+        It loses its ability to engage in most math, but is still clearly "a big number".
 
 Programmable
 :   One of the key qualifiers of a computer,
