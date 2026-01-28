@@ -85,7 +85,8 @@ Float
     - The rest of the number (the "significand" or "mantissa")
     
     For example, 56⅔, which in binary is 111000.1010101010101010...,
-    would be stored as +1.11000101010101010... × 2^101^ (or in decimal as 1.75 × 2^5^).
+    stored as a float with 8-bit significand
+    would be +1.1100010 × 2^101^ (or in decimal as 1.765625 × 2^5^).
 
 
 General-purpose
