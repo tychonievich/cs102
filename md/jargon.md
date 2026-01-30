@@ -29,6 +29,10 @@ Analog
 
     Sometimes used to mean a signal with a meaning based on being analogous to (directly or naturally representing, not using symbols but more intrinsic properties like quantity or frequency) the thing is is describing.
 
+Backwards compatibility
+:   A new system is backwards compatible with an old system
+    if data created by/for the old system works without modification in the new system.
+
 Base
 :   Place-value number systems are defined by a single integer called their base.
     The base tells us
@@ -88,6 +92,11 @@ Float
     stored as a float with 8-bit significand
     would be +1.1100010 × 2^101^ (or in decimal as 1.765625 × 2^5^).
 
+Gate
+:   An abstraction of a group of transistors that implement some simple operation on a small number of bits.
+    
+    The most commonly discussed gates are [and]{.smallcaps}, [or]{.smallcaps}, [not]{.smallcaps}, and [xor]{.smallcaps}.
+    For some specific hardware cases, [nand]{.smallcaps} and [nor]{.smallcaps} are also used.
 
 General-purpose
 :   One of the key qualifiers of a computer,
@@ -119,6 +128,14 @@ Hexadecimal
     it is traditional to precede it with `0x`;
     thus `0x10E` means a hexadecimal number with digits `10E` and represents the value two hundred seventy.
 
+Metadata
+:   Data about the (main) data.
+
+    For example, in an image file the color of each pixel is the main data;
+    information about the camera that took the image is metadata.
+    
+    Many file formats store metadata along with the data, and many applications ignore most of the metadata.
+
 Overflow
 :   Most numbers in computers are represented in a fixed number of *bits*.
     If math would produce a number that requires more bits than that, the number overflows.
@@ -139,3 +156,12 @@ Programmable
     Usually, "programmable" is also assumed to mean that the program it follows
     is stored inside the computer's memory and can be an entire *algorithm*,
     not just one of a machine-defined set of operations selected by simple switches and buttons.
+
+Type
+:   How the bits inside some piece of data are converted into meaning.
+
+    For example, the bits 01100110 could have many meanings.
+    If they are interpreted with the data type "integer" they mean 102.
+    If they are interpreted with the data type "UTF-8 character" they mean lower-case F (`f`).
+    The bits (the information we actually store in the computer) have not changed, only how we interpret it.
+    
