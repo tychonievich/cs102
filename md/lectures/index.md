@@ -2,6 +2,25 @@
 title: Lectures
 ...
 
+Lecture 4 --Friday 30 January 2026
+:   Board work
+    :   [2026-01-30.pdf](2026-01-30.pdf)
+
+    Relevant readings
+    :   - [Beyond 1s and 0s](../text/types.html)
+        - [Processors](../text/processors.html)
+
+    Announcements
+    :   - Homeworks going forward will be on PrairieLearn.
+            
+            Make sure you choose the university-based login option, not the Google or Microsoft login options, when logging in to PrairieLearn.
+        
+            Homeworks can be repeated until you get them right. They are released on Friday and due on the following Thursday.
+        
+        - Attendance is not yet part of your grade, but will be starting after the deadline to add the course next week.
+            
+
+
 Lecture 3 -- Wednesday 28 January 2026
 :   Board work
     :   [2026-01-28.pdf](2026-01-28.pdf)
