@@ -2,7 +2,8 @@
 title: Lectures
 ...
 
-Lecture 4 --Friday 30 January 2026
+
+Lecture 4 -- Friday 30 January 2026
 :   Board work
     :   [2026-01-30.pdf](2026-01-30.pdf)
 
@@ -15,11 +16,10 @@ Lecture 4 --Friday 30 January 2026
             
             Make sure you choose the university-based login option, not the Google or Microsoft login options, when logging in to PrairieLearn.
         
-            Homeworks can be repeated until you get them right. They are released on Friday and due on the following Thursday.
+            Homework questions can be repeated until you get them right. They are released on Friday and due on the following Thursday.
         
         - Attendance is not yet part of your grade, but will be starting after the deadline to add the course next week.
             
-
 
 Lecture 3 -- Wednesday 28 January 2026
 :   Board work
@@ -49,6 +49,7 @@ Lecture 2 -- Friday 23 January 2026
             
             For the lecture absence form, email the professor (luthert@) with your absence request if you can't access that form.
     
+
 Lecture 1 -- Wednesday 21 January 2026
 :   Board work
     :   [2026-01-21.pdf](2026-01-21.pdf)
