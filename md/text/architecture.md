@@ -36,7 +36,7 @@ He told inappropriate jokes,
 always wore formal suits no matter the occasion,
 lived in one of the largest houses in the neighborhood
 and listened to energetic music so loud that it disturbed his neighbors.
-And he was mindbogglingly productive,
+And he was an extremely productive scholar,
 with more than two dozen contributions at least as significant as the von Neumann architecture
 in mathematics, physics, economics, computer science, defense, and energy production.
 
