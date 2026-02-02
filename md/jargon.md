@@ -113,6 +113,13 @@ General-purpose
     might differ from others in efficiency and speed,
     but not in the set of tasks they could eventually do, given unlimited time and storage.
 
+GHz
+:   The [SI abbreviation for "giga" meaning one billion](https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes) (G)
+    followed by the abbreviation for Hertz (Hz) which means "per second,"
+    together meaning "one billion per second."
+    Commonly used to measure the clock speed of processors,
+    roughly meaning how many billion arithmetic problems the processor can complete per second.
+
 Hex
 :   A common abbreviation for *hexadecimal*.
 
@@ -156,6 +163,15 @@ Programmable
     Usually, "programmable" is also assumed to mean that the program it follows
     is stored inside the computer's memory and can be an entire *algorithm*,
     not just one of a machine-defined set of operations selected by simple switches and buttons.
+
+TB
+:   The [SI abbreviation for "tera" meaning one trillion](https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes) (T)
+    followed by the abbreviation for Byte (B).
+    Commonly used to measure the disk space of computers,
+    indicating they can store a trillion bytes of data.
+    
+    Some of that space is typically used to store an index of sorts to help find the rest of the data,
+    so the usable space is generally lower than the advertised, theoretically-provided space.
 
 Type
 :   How the bits inside some piece of data are converted into meaning.
