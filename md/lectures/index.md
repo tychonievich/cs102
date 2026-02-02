@@ -3,6 +3,19 @@ title: Lectures
 ...
 
 
+Lecture 5 -- Monday 2 February 2026
+:   Board work
+    :   [2026-02-02.pdf](2026-02-02.pdf)
+
+    Relevant readings
+    :   - [Processors](../text/processors.html)
+
+    Announcements
+    :   - Attendance will begin counting towards you grade next lecture.
+    
+        - Quizzes are administered on paper and will include questions like those given in the first page of each lab and in the homeworks.
+            
+
 Lecture 4 -- Friday 30 January 2026
 :   Board work
     :   [2026-01-30.pdf](2026-01-30.pdf)
