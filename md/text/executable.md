@@ -1,5 +1,5 @@
 ---
-title: Computer Programs
+title: Computer Programs and Languages
 ...
 
 Modern computers are <dfn>programmable<dfn>, meaning the specific things they do
@@ -287,3 +287,176 @@ Functions
     Function invocation commonly uses a notation borrowed from algebra, like `function_name(values, to_use, in_function)`{.js}.
 
 
+:::aside
+Call, invoke, execute, run
+
+In computing, the words <dfn>call</dfn>, <dfn>invoke</dfn>, <dfn>execute</dfn>, and <dfn>run</dfn>
+all refer to having the computer do a named sequence of instructions.
+The distinctions between them are not always observed, but in common usage:
+
+- "Invoke" is used for a function, meaning it is part of a longer process and generally has access to the same data as the rest of the process.
+- "Call" is a less-formal synonym for "invoke".
+- "Execute" is used for a program, meaning it stands alone with its own permissions and access to data and external devices.
+- "Run" is a less-formal synonym for "execute".
+:::
+
+
+:::example
+
+The following human-oriented programming language (also called <dfn>pseudo-code</dfn>) uses variables, selection, and repetition to achieve the same operation as an earlier example on this page.
+
+1. Let $x$ be your age in years
+2. Let $y$ be the number 0
+3. Repeat until $x = 1$:
+    a. If $x$ is odd
+        i. Store $3x+1$ in $x$
+        i. Increment $y$
+    b. Store $x\div 2$ in $x$
+    c. Increment $y$
+4. Say "My Collatz number is" $y$
+
+Note that this is shorter, does not refer to steps by number, groups conceptual actions like things being repeated together, and allows more complicated expressions like $3x+1$ instead of only individual machine operations.
+
+:::
+
+# Many, many languages
+
+Machine instructions, assembly languages, and programming languages are all Turing Complete^[Turing Completeness is defined on the page [Digital Computers](computer.html)],
+meaning each of them can do anything any of the others can do.
+But they can't necessarily do everything equally well.
+
+All of the languages mentioned here are computer languages,
+meaning they have unambiguous meanings and highly structured grammatical forms.
+Those characteristic allow computers to easily understand exactly what any text in these languages mean.
+
+Computer languages are unlike every human language.
+Human languages always allow allusion, connotation, creativity, and other flexibility
+to support the wide range of human interests and expression.
+
+## Assembly languages
+
+Assembly language has a direct correspondence to machine instructions;
+there is nothing that one of them can do that the other cannot,
+and assembly is easier to work with.
+I've never seen people program in machine language except as a personal challenge or intellectual exercise.
+
+Assembly language gives the programmer ultimate control:
+anything than a given computer can do it can be made to do using assembly.
+That control comes at the expense of increased complexity of the programming task:
+no decisions are made for the programmer, each and every detail must be decided and implemented.
+In theory the programmer could make better (typically meaning more efficient) decisions than a programming language would,
+but in practice that is rarely realized.
+
+The two most common uses of human-written assembly language today are:
+
+- Writing small pieces of larger programs in assembly to get extra control over how the computer does certain tasks.
+- Using assembly to understand what code written and compiled by others is doing, often as a step towards breaking it in malicious ways.
+
+:::note
+Some entire programs are written in assembly.
+
+It's not common, but sometimes a program is written in assembly even when a programming language would work.
+Two of the best known examples
+are Super Mairo Brothers (1985)
+and Roller Coaster Tycoon (1999).
+
+<figure>
+```{=html}
+<div style="display:flex; justify-content:space-between;">
+<img src="https://upload.wikimedia.org/wikipedia/en/5/50/NES_Super_Mario_Bros.png" style="width:49%; image-rendering:pixelated;"/>
+<img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Diamond_heights.jpg" style="width:49%; image-rendering:pixelated;"/>
+</div>
+```
+<figcaption>Screenshots of two successful computer games written entirely in assembly language: Super Mario Brothers (left) and Roller Coaster Tycoon (right). Both images are shared under Fair Use and are hosted on Wikimedia</figcaption>
+</figure>
+:::
+
+There is in general one assembly language per computer processor design:
+because they map directly to machine instructions,
+two processors with different sets of instructions
+also need different assembly languages.
+Some of the most popular processors have a small numner of competing assembly languages
+that differ in things like what order they list the operands and destination of an instruction
+or what punctuation they use to represent that something is a variable.
+
+## Programming languages
+
+Some programming languages are designed to be <dfn>compiled</dfn>,
+meaning they will be converted from the programming language to machine instructions
+(often using an assembly language intermediate step)
+once, and then the machine instructions will be run thereafter.
+Compiled languages tend to be somewhat limited in what operations they can easily express:
+ideas that do not easily translate into machine instructions are generally not part of these languages.
+As such, programming in these languages tends to be somewhat more challenging than programming in other languages,
+but the resulting programs tend to be faster and more efficient.
+Large programs with many features, (like operating systems, web browsers, and high-end games)
+tend to be written in compiled programming languages.
+Some of the most popular compiled languages in 2026 are C, C++, Rust, and Go.
+
+Some programming languages are designed to be used as input to a program called an <dfn>interpreter</dfn>
+that reads each statement in the programming language text
+and decides what actions to have the computer take based on what it reads and the data stored in the computer at that time.
+Interpreted languages can largely ignore the limitations of machine instructions,
+allowing programmers to take large steps and summarize the actions the program should undertake in programmer-friendly terms.
+However, they also take significant extra time and energy figuring out what needs to be done for each programming language statement; it's not uncommon for a program written in an interpreted language to be 100 times slower than the same program written in a compiled language.
+Some of the most popular interpreted languages in 2026 are Python, JavaScript, R, Excell, and Sh.
+
+There are also languages that try to combine some benefits of interpreting with some benefits of compiling,
+compiling from the programming language to some intermediate, simpler programming language that is interpreted.
+Some of the most popular languages of this type in 2026 are C#, Java, and WebAssembly.
+
+Even within this, there are thousands of programming languages.
+
+- Some, like postscript, are designed with a specific task in mind.
+- Some, like lua, are designed to have very small and easy-to-run interpreters.
+- Some, like omega, are designed to explore what would happen if you lean into one programming language idea.
+- Some, like odin, are designed by one person who is frustrated by all other languages and so builds their own.
+- Some, like kotlin, are designed to try to mix the advantages of two other languages.
+- Some, like typescript, are designed to try to fix some perceived problems in other languages.
+- Some, like whitespace, are designed as a joke.
+- and so on
+
+## Non-programming computer languages
+
+Humans sometimes wish to provide computers with well-defined information
+that is describing something other than a program,
+and create computer languages for that purpose.
+These languages are not programming languages
+because they are not Turing complete
+and generally don't define process at all,
+but some of them are still very useful and prevalent today.
+
+Arguably the most successful non-programming computer language
+is HTML.
+HTML is a <dfn>markup language</dfn>,
+meaning it is designed to provide text
+while marking various parts of the text with additional information,
+such as being part of a paragraph or list or header
+or being something to emphasize with italics.
+HTML can even mark some of its text as being in a programming language,
+making it very versatile,
+but its primary design and function is to structure and organize text.
+
+Related to HTML is CSS,
+a <dfn>style language</dfn> that describes how different parts of an HTML document should be displayed.
+Where HTML might mark that a give word should be emphasized,
+CSS might express that anything emphasized should be drawn with an italic font.
+
+JSON is a popular <dfn>data interchange format</dfn>,
+a language for expressing common patterns in how data is represented
+without imposing any particular meaning on the data itself.
+It has just a few building blocks:
+text and lists and numbers and mappings;
+but it allows these to be combined arbitrarily,
+allowing a wide variety of data to be represented.
+
+SQL is a popular <dfn>query language</dfn>,
+designed to express what specific data to look for in a large pool of data.
+Query languages can be thought of as being a bit like an unambiguous version of a search engine:
+instead of finding whatever data comes closest to what you search for
+they let you express exactly what you want and what you don't.
+Query languages also often have ways of expressing changes to make to data.
+
+As with programming languages, there are thousands of other non-programming computer languages,
+designed to express new ideas
+or to express the same things as other ideas but in a new, arguably-better way.

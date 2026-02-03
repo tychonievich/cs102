@@ -11,3 +11,4 @@ Content introduced in lecture is expanded on in text.
 - [Beyond 1s and 0s](types.html)
 - [Processors](processors.html)
 - [Computer components and architecture](architecture.html)
+- [Computer Programs and Languages](executable.html)
