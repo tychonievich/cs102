@@ -26,12 +26,12 @@ fetch('secure/progress.php')
     document.getElementById('update').dateTime = when.toJSON();
     document.getElementById('update').textContent = when.toLocaleString();
     
-    p.innerHTML = '<hr/><p>Viewing data for <tt>'+data.user+'</tt></p><dl><dt>Lecture (10% weight)</dt><dd id="lecture"></dd><dt>Lab (24% weight)</dt><dd id="lab"></dd><dt>Homework (10% weight)</dt><dd id="homework"></dd><dt>Quizzes (36% weight)</dt><dd id="quiz"></dd><dt>Final Exam (20% weight)</dt><dd id="final"></dd><dt>Overall</dt><dd id="overall"></dd></dl>';
+    p.innerHTML = '<hr/><p>Viewing data for <tt>'+data.user+'</tt></p><dl><dt>Lecture (10% weight)</dt><dd id="lecture"></dd><dt>Lab (24% weight)</dt><dd id="lab"></dd><dt>Homework (10% weight)</dt><dd id="homework"></dd><dt>Quizzes (36% weight)</dt><dd id="quiz"></dd><dt>Final Exam (20% weight)</dt><dd id="final">Not completed yet; this will appear in the future.</dd><dt>Overall</dt><dd id="overall"></dd></dl>';
     
     let tot = 0;
     let of = 0;
     
-    for(let [n,w] of [['lecture',10],['lab',24],['homework',10],['quiz',36],['final',20]]) {
+    for(let [n,w] of [['lecture',10],['lab',24],['homework',10],['quiz',36]]) {
       if (data[n].of) {
         of += w;
         tot += w*data[n].score/data[n].of;
@@ -41,6 +41,8 @@ fetch('secure/progress.php')
         document.getElementById(n).append('None completed yet; these will appear in the future.');
       }
     }
+    
+    document.getElementById('overall').innerHTML = '<p>${of ? 100*tot/of : 'unknown'}%</p>';
     
   })
 </script>
