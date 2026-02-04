@@ -3,6 +3,21 @@ title: Lectures
 ...
 
 
+
+Lecture 6 -- Wednesday 4 February 2026
+:   Board work
+    :   [2026-02-04.pdf](2026-02-04.pdf)
+
+    Relevant readings
+    :   - [Processors](../text/processors.html)
+        - [Computer components and architecture](../text/architecture.html)
+
+    Announcements
+    :   - Attendance counts starting today. As a reminder, you can also fill out the absences form linked from the [main page](../#absences) if you need to miss class.
+    
+        - There's a homework due this Thursday (and most Thursdays going forward).
+            
+
 Lecture 5 -- Monday 2 February 2026
 :   Board work
     :   [2026-02-02.pdf](2026-02-02.pdf)
