@@ -42,7 +42,7 @@ fetch('secure/progress.php')
       }
     }
     
-    document.getElementById('overall').innerHTML = '<p>${of ? 100*tot/of : 'unknown'}%</p>';
+    document.getElementById('overall').innerHTML = `<p>${of ? 100*tot/of : 'unknown'}%</p>`;
     
   })
 </script>
