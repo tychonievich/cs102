@@ -33,10 +33,28 @@ fetch('secure/progress.php')
     if (data.lecture.of) {
       of += 10;
       tot += 10*data.lecture.score/data.lecture.of;
-      document.getElementById('lecture').innerHTML = `<p>Score so far: ${100*data.lecture.score/data.lecture.of}%</p><p>Components of score:</p><ul>${Object.entries(data.lecture.details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
+      document.getElementById('lecture').innerHTML = `<p>Score so far: ${100*data.lecture.score/data.lecture.of}%</p><ul>${Object.entries(data.lecture.details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
       
     } else {
       document.getElement('lecture').append('None completed yet; these will appear in the future.');
+    }
+
+    if (data.lab.of) {
+      of += 24;
+      tot += 24*data.lab.score/data.lab.of;
+      document.getElementById('lab').innerHTML = `<p>Score so far: ${100*data.lab.score/data.lab.of}%</p><ul>${Object.entries(data.lab.details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
+      
+    } else {
+      document.getElement('lab').append('None completed yet; these will appear in the future.');
+    }
+
+    if (data.homework.of) {
+      of += 24;
+      tot += 24*data.homework.score/data.homework.of;
+      document.getElementById('homework').innerHTML = `<p>Score so far: ${100*data.homework.score/data.homework.of}%</p><ul>${Object.entries(data.homework.details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
+      
+    } else {
+      document.getElement('homework').append('None completed yet; these will appear in the future.');
     }
     
   })
