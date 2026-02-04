@@ -36,7 +36,7 @@ fetch('secure/progress.php')
       document.getElementById('lecture').innerHTML = `<p>Score so far: ${100*data.lecture.score/data.lecture.of}%</p><ul>${Object.entries(data.lecture.details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
       
     } else {
-      document.getElement('lecture').append('None completed yet; these will appear in the future.');
+      document.getElementById('lecture').append('None completed yet; these will appear in the future.');
     }
 
     if (data.lab.of) {
@@ -45,7 +45,7 @@ fetch('secure/progress.php')
       document.getElementById('lab').innerHTML = `<p>Score so far: ${100*data.lab.score/data.lab.of}%</p><ul>${Object.entries(data.lab.details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
       
     } else {
-      document.getElement('lab').append('None completed yet; these will appear in the future.');
+      document.getElementById('lab').append('None completed yet; these will appear in the future.');
     }
 
     if (data.homework.of) {
@@ -54,7 +54,7 @@ fetch('secure/progress.php')
       document.getElementById('homework').innerHTML = `<p>Score so far: ${100*data.homework.score/data.homework.of}%</p><ul>${Object.entries(data.homework.details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
       
     } else {
-      document.getElement('homework').append('None completed yet; these will appear in the future.');
+      document.getElementById('homework').append('None completed yet; these will appear in the future.');
     }
     
   })
