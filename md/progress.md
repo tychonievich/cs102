@@ -26,35 +26,20 @@ fetch('secure/progress.php')
     document.getElementById('update').dateTime = when.toJSON();
     document.getElementById('update').textContent = when.toLocaleString();
     
-    p.innerHTML = '<hr/><p>Viewing data for <tt>'+data.user+'</tt></p><dl><dt>Lecture (10% weight)</dt><dd id="lecture"></dd><dt>Lab (24% weight)</dt><dd id="lab"></dd><dt>Homework (10% weight)</dt><dd id="homework"></dd><dt>Quizzes (36% weight)</dt><dd id="quizzes"></dd><dt>Final Exam (20% weight)</dt><dd id="final"></dd><dt>Overall</dt><dd id="overall"></dd></dl>';
+    p.innerHTML = '<hr/><p>Viewing data for <tt>'+data.user+'</tt></p><dl><dt>Lecture (10% weight)</dt><dd id="lecture"></dd><dt>Lab (24% weight)</dt><dd id="lab"></dd><dt>Homework (10% weight)</dt><dd id="homework"></dd><dt>Quizzes (36% weight)</dt><dd id="quiz"></dd><dt>Final Exam (20% weight)</dt><dd id="final"></dd><dt>Overall</dt><dd id="overall"></dd></dl>';
     
     let tot = 0;
     let of = 0;
-    if (data.lecture.of) {
-      of += 10;
-      tot += 10*data.lecture.score/data.lecture.of;
-      document.getElementById('lecture').innerHTML = `<p>Score so far: ${100*data.lecture.score/data.lecture.of}%</p><ul>${Object.entries(data.lecture.details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
-      
-    } else {
-      document.getElementById('lecture').append('None completed yet; these will appear in the future.');
-    }
-
-    if (data.lab.of) {
-      of += 24;
-      tot += 24*data.lab.score/data.lab.of;
-      document.getElementById('lab').innerHTML = `<p>Score so far: ${100*data.lab.score/data.lab.of}%</p><ul>${Object.entries(data.lab.details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
-      
-    } else {
-      document.getElementById('lab').append('None completed yet; these will appear in the future.');
-    }
-
-    if (data.homework.of) {
-      of += 24;
-      tot += 24*data.homework.score/data.homework.of;
-      document.getElementById('homework').innerHTML = `<p>Score so far: ${100*data.homework.score/data.homework.of}%</p><ul>${Object.entries(data.homework.details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
-      
-    } else {
-      document.getElementById('homework').append('None completed yet; these will appear in the future.');
+    
+    for(let [n,w] of [['lecture',10],['lab',24],['homework',10],['quiz',36],['final',20]]) {
+      if (data[n].of) {
+        of += w;
+        tot += w*data[n].score/data[n].of;
+        document.getElementById(n).innerHTML = `<p>Score so far: ${100*data[n].score/data[n].of}%</p><ul>${Object.entries(data[n].details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
+        
+      } else {
+        document.getElementById(n).append('None completed yet; these will appear in the future.');
+      }
     }
     
   })
