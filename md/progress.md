@@ -20,7 +20,9 @@ fetch('secure/progress.php')
     const p = document.getElementById('progress');
     if (!data) {
       p.innerHTML = 'No grade data found for you. If you are a student and have completed work for the course, please contact the instructor to have this resolved.'
+      return;
     }
+    p.innerHTML = '<p>Viewing data for <tt>'+data.user+'</tt></p>'
   })
 </script>
 ```
