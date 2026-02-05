@@ -11,7 +11,7 @@ as a guide to help them readily notice different parts of the language.
 The process of applying this formatting is called them "syntax highlighting."
 
 <figure style="border:thin solid black">
-```c
+```c {style="font-size:125%"}
 #include <stdio.h>
 #include <string.h>
 
