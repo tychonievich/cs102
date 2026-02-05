@@ -36,7 +36,7 @@ int main(void)
 
 
 <figure style="border:thin solid black">
-```java
+```java {style="font-size:125%"}
 import java.util.Scanner;
 
 public class NameHelper {
@@ -60,7 +60,7 @@ public class NameHelper {
 
 
 <figure style="border:thin solid black">
-```py
+```py {style="font-size:125%"}
 # Prompt user for their name   
 name = input("Hello. What's your name? ")
 
@@ -78,7 +78,7 @@ The following code example has slightly different behavior
 in that it is designed to run from a web page instead of in a computer terminal.
 
 <figure style="border:thin solid black">
-```js
+```js {style="font-size:125%"}
 // Prompt user for their name   
 var name = prompt("Hello. What's your name?")
 
