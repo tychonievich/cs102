@@ -15,6 +15,7 @@ summary: |
   [Labs](labs/)  
   [Lectures](lectures/)  
   [Polls](secure/clicker.php)  
+  [Progress](progress.html)  
   [Text](text/)  
   </center>
 ...
