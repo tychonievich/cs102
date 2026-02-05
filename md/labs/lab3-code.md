@@ -91,7 +91,7 @@ alert(`Your name has ${name.length} letters.`)
 <figcaption>Example program in JavaScript; to run this code from this webpage,
 ```{=html}
 <script>
-funcion example_code() {
+function example_code() {
   // Prompt user for their name   
   var name = prompt("Hello. What's your name?")
 
