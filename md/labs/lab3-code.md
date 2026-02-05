@@ -74,8 +74,8 @@ print(f"Your name has {len(name)} letters.")
 </figure>
 
 
-The following code example has slightly different behavior
-in that it is designed to run from a web page instead of in a computer terminal.
+The following code example has slightly different behavior than the three above
+because it is designed to run from a web page instead of in a computer terminal.
 
 <figure style="border:thin solid black">
 ```js {style="font-size:125%"}
