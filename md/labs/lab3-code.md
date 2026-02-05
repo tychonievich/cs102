@@ -88,7 +88,7 @@ alert(`Hi there, ${name}!`)
 // Print the length of the name
 alert(`Your name has ${name.length} letters.`)
 ```
-<figcaption>Example program in JavaScript; to run this code from this webpage,
+<figcaption>Example program in JavaScript; to run this code from this webpage, <input type="button" value="click here" onclick="example_code()"></input>.
 ```{=html}
 <script>
 function example_code() {
@@ -102,7 +102,6 @@ function example_code() {
   alert(`Your name has ${name.length} letters.`)
 }
 </script>
-<input type="button" value="click here" onclick="example_code()"></input>.
 ```
 </figcaption>
 </figure>
