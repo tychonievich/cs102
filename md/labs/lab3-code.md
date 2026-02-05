@@ -74,3 +74,21 @@ print(f"Your name has {len(name)} letters.")
 </figure>
 
 
+The following code example has slightly different behavior
+in that it is designed to run from a web page instead of in a computer terminal.
+
+<figure style="border:thin solid black">
+```js
+// Prompt user for their name   
+var name = prompt("Hello. What's your name?")
+
+// Greet the user
+alert(`Hi there, ${name}!`)
+
+// Print the length of the name
+alert(`Your name has ${name.length} letters.`)
+```
+<figcaption>Example program in JavaScript; to run this code from this webpage, <input type="button" value="click here" onclick='var name = prompt("Hello. What's your name?"); alert(`Hi there, ${name}!`); alert(`Your name has ${name.length} letters.`);'></input>.</figcaption>
+</figure>
+
+
