@@ -90,7 +90,19 @@ alert(`Your name has ${name.length} letters.`)
 ```
 <figcaption>Example program in JavaScript; to run this code from this webpage,
 ```{=html}
-<input type="button" value="click here" onclick='var name = prompt("Hello. What\'s your name?"); alert(`Hi there, ${name}!`); alert(`Your name has ${name.length} letters.`);'></input>.
+<script>
+funcion example_code() {
+  // Prompt user for their name   
+  var name = prompt("Hello. What's your name?")
+
+  // Greet the user
+  alert(`Hi there, ${name}!`)
+
+  // Print the length of the name
+  alert(`Your name has ${name.length} letters.`)
+}
+</script>
+<input type="button" value="click here" onclick="example_code()"></input>.
 ```
 </figcaption>
 </figure>
