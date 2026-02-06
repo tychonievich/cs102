@@ -243,7 +243,7 @@ and wrote another language and compiler that turned a subset of mathematical not
 this Remmington Rand knew how to market, selling it as the "A Compiler" version "A-0".
 
 Using the success of A,
-Hopper begane work on a redo of her English idea.
+Hopper began work on a redo of her English idea.
 After 10 years, in 1959 she was finally successful in launching her original idea in the form of COBOL (an acronym for **CO**mmon **B**usiness-**O**riented **L**anguage).
 Along the way her proposals were also accepted by other companies,
 resulting in both [Fortran]{.smallcaps} (an acronym for **FOR**mual **TRAN**slating system)
