@@ -9,7 +9,7 @@ Prior to the 1970s, some people were professional computers, solving mathematica
 A <dfn>computing machine</dfn> is a computer that is a device, not a person.
 There are many devices that could be argued to be computing machines,
 ranging from bags and boxes that can perform addition
-(pour one into another and you find the sum of the things in them)
+(pour one into another to find the sum of the things in them)
 to specialized electrical circuits that perform integration.
 Most of these, however, would not be called computers
 because the computation they perform is fixed at the time the machine is constructed.
@@ -22,7 +22,7 @@ and <dfn>instructions</dfn> describing what specific computations to perform on 
 When you are presented with an arithmetic expression like
 $$3+4\times 5 - 6 \div 7$$
 you are getting both instructions (in the form of the operators $+$, $\times$, $-$, and $\div$ and the order in which they appear)
-and arguments (in the form of the values $3$, $4$, $5$, $6$, and $7$ and the results of intermediate computations you peform).
+and arguments (in the form of the values $3$, $4$, $5$, $6$, and $7$ and the results of intermediate computations you perform).
 :::
 
 A <dfn>digital computer</dfn> represents both its arguments and the results it produces using digits, not analogs.
@@ -52,14 +52,14 @@ the represented value can be recovered.
 
 <details class="aside"><summary>Charles Babbage's Difference Engine, the first programmable digital computer</summary>
 
-![A portrait of Charles Babbage, circa 1820, by an unknown artist. Public domain, hosted by [wikimedia](https://commons.wikimedia.org/wiki/File:British_(English)_School_-_Charles_Babbage_(1792%E2%80%931871)_-_814168_-_National_Trust.jpg#/media/File:British_(English)_School_-_Charles_Babbage_(1792%E2%80%931871)_-_814168_-_National_Trust.jpg)](https://upload.wikimedia.org/wikipedia/commons/8/83/British_%28English%29_School_-_Charles_Babbage_%281792%E2%80%931871%29_-_814168_-_National_Trust.jpg)
+![A portrait of Charles Babbage, circa 1820, by an unknown artist. Public domain, hosted by [Wikimedia](https://commons.wikimedia.org/wiki/File:British_(English)_School_-_Charles_Babbage_(1792%E2%80%931871)_-_814168_-_National_Trust.jpg#/media/File:British_(English)_School_-_Charles_Babbage_(1792%E2%80%931871)_-_814168_-_National_Trust.jpg)](https://upload.wikimedia.org/wikipedia/commons/8/83/British_%28English%29_School_-_Charles_Babbage_%281792%E2%80%931871%29_-_814168_-_National_Trust.jpg)
 
 In 1822, Charles Babbage built a clockwork machine for computing various polynomial expressions
 which he called a Difference Engine,
 and designed several larger versions for computing larger expressions to more digits of precision.
 This is generally cited as the first programmable digital computer.
 
-![A print of a drawing of Charles Babbage's engine by his eldest son, Benjamin Herschel Babbage. Public domain, hosted by [wikimedia](https://commons.wikimedia.org/wiki/File:Difference_engine_plate_1853.jpg#/media/File:Difference_engine_plate_1853.jpg)](https://upload.wikimedia.org/wikipedia/commons/9/9e/Difference_engine_plate_1853.jpg)
+![A print of a drawing of Charles Babbage's engine by his eldest son, Benjamin Herschel Babbage. Public domain, hosted by [Wikimedia](https://commons.wikimedia.org/wiki/File:Difference_engine_plate_1853.jpg#/media/File:Difference_engine_plate_1853.jpg)](https://upload.wikimedia.org/wikipedia/commons/9/9e/Difference_engine_plate_1853.jpg)
 
 Charles Babbage was trained in mathematics
 and worked in a variety of fields,
@@ -81,7 +81,7 @@ to define other types of operations.
 
 <details class="aside"><summary>Ada Lovelace, the first general-purpose programmer</summary>
 
-![A photograph of Ada Lovelace by Antoine Claudet, 1843. Public domain, hosted by [wikimedia](https://commons.wikimedia.org/wiki/File:Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png#/media/File:Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png)](https://upload.wikimedia.org/wikipedia/commons/4/4c/Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png)
+![A photograph of Ada Lovelace by Antoine Claudet, 1843. Public domain, hosted by [Wikimedia](https://commons.wikimedia.org/wiki/File:Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png#/media/File:Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png)](https://upload.wikimedia.org/wikipedia/commons/4/4c/Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png)
 
 Augusta Ada King née Byron, Countess of Lovelace,
 observed Charles Babbage's difference engine and understood its potential in a way that Babbage himself did not.
@@ -159,7 +159,7 @@ He designed a very small mathematical system which could still express that idea
 His student Alan Turing came up with a simple machine design, the operation of which tightly paralleled what the lambda calculus could do, which was later termed the "Turing machine".
 The two them postulated, but did not prove,
 that any more-complicated mathematical system could be reduced to the Lambda calculus
-and any more-complicated machine could be be reduced to the Turing machine.
+and any more-complicated machine could be reduced to the Turing machine.
 This concept that the two were capable of doing anything that other systems could do
 is called the Church-Turing Thesis.
 
@@ -168,7 +168,7 @@ Alonzo Church spent several more decades teaching at Princeton,
 then at the University of California at Los Angeles,
 publishing many additional papers in mathematics and philosophy.
 He was generally regarded as a quiet and focused person
-and did little to attract attention outside of his academic work.
+and did little to attract attention outside his academic work.
 
 Alan Turing returned to England and worked on cracking German codes during World War II.
 Shortly after the war ended he was convicted of homosexual acts (then illegal in England)
@@ -214,5 +214,5 @@ Information Technology
 
     One common use is for the people who procure, install, integrate, and maintain hardware and software purchased from others.
     
-    Another common use is as an umbrella term for all of the professions in this list.
+    Another common use is as an umbrella term for all the professions in this list.
 

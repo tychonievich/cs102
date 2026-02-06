@@ -11,7 +11,7 @@ and ordering to express common patterns of instruction usage.
 They generally include variables, selection, repetition, and functions for describing actions,
 as well as some way of describing data.
 There are a very large number of programming languages;
-this page looks at just a few as a way of exploring why one might chose one language over another.
+this page looks at just a few as a way of exploring why one might choose one language over another.
 
 # C
 
@@ -51,8 +51,8 @@ Influential
     If you see code that has braces^[Sometimes braces are called "curly braces" because people often have low comprehension of the difference between braces `{}`, brackets `[]`, and parentheses `()`.] in it (`{` and `}`), it's probably descended from C.
 
 Unsafe
-:   C lets the programmer do anything.
-    Including things they really shouldn't do.
+:   C lets the programmer do anything...
+    including things they really shouldn't do.
     There are so many things they shouldn't do, it is hard to write C that doesn't do something wrong.
     
     The lack of safety in C
@@ -179,4 +179,56 @@ App
     the programmer must supply their own tools
     for writing and running code;
     to program in R, all that is needed is the default R app.
+
+# Considerations in choosing a language
+
+- How much do you **trust** your users to never be malicious?
+
+    If you expect a malicious user could get access to your software^[This always includes any software with a web interface of any kind, even just for infrequent tasks like downloading updates; and any software with elevated privileges (anything that would ask for an administrator password while running). Only the smallest, simplest programs don't fit in this group.], pick a safer language like Rust or Java, not an unsafe one like C or C++.
+
+- How important is it that **new programmers** understand the software?
+
+    If you expect to bring on new people or maintain the software for many years,
+    pick a popular language (like those listed above)
+    instead of a more niche language, no matter how much better the niche language might be for the task at hand.
+
+- Do you have **existing code** you want to be able to keep using?
+
+    Note that this is not always as worth doing as it seems;
+    rebuilding software takes less time and money than building the original version did
+    and often results in cleaner, more efficient, easier to update programs.
+
+    But if you do choose to keep old code and add new code to it,
+    the interoperability of the old and new language is important to consider.
+    It's also somewhat nuanced, more so than we can explore on this page.
+
+- How much do you value **programmer productivity** versus **software efficiency**?
+
+    Productivity suggests picking a high-level language with clear syntax, like Python.
+
+    Efficiency suggests picking a low-level language with tunable performance, like C.
+
+- How **large** do you expect the program to grow?
+
+    Small programs are easier to write and update in simple-looking languages, like Python.
+
+    Large programs are easier to organize and manage in highly-structured languages, like Java.
+
+- What **domains** do you expect your program to utilize?
+
+    If the answer is just one, there may be a domain-specific language like R that would be helpful.
+
+    If the answer spans several, it's probably best to pick a general-purpose language like Python, Java, or C.
+
+- What **platform** will run your software?
+
+    Some platforms only support a few languages;
+    for example, web browsers only run JavaScript and WebAssembly.
+
+    Resource-constrained platforms like low-energy emebeded systems
+    generally require a language where you have detailed control over memory usage,
+    like C.
+
+    Software that needs to run on several different platforms
+    can benefit from a partially- or fully-interpreted language like Java or Python.
 

@@ -122,7 +122,7 @@ It may not seem exciting, but moving data is important to many things computers 
 
 <details class="aside"><summary>Booting a Computer: BIOS/UEFI and OS</summary>
 
-In the [The von Neumann architecture],
+In [the von Neumann architecture](architecture.html),
 programs and data are both just bit stored in memory.
 The only way to know that a given set of bits is intended to be a program
 rather than data is by knowing in advance where to look in memory to find a program.
@@ -148,7 +148,7 @@ but four of them are key to how we use computers:
 
 - They interpret bytes on disk using a <dfn>file system</dfn>
     that breaks the disk contents into files and folders,
-    allowing us to effectively store are retrieve disparate pieces of information in a single device.
+    allowing us to effectively store and retrieve disparate pieces of information in a single device.
 
 - They isolate running programs
     so that data in one program cannot be seen by other running programs.
@@ -206,7 +206,7 @@ When first introduced, assembly language was a tool to help programmers not make
 you'd program by hand in assembly, verify that it should work as expected,
 and then manually convert each line of assembly into binary and put it in the computer's memory.
 This process was called by Britten the "planning and coding style":
-you plan in assembly an then encode the assembly to bits;
+you plan in assembly and then encode the assembly to bits;
 this is one of the claimed origins of the verb <dfn>code</dfn> meaning "create a computer program".
 
 As computers grew applications called <dfn>assemblers</dfn> were created
@@ -221,7 +221,7 @@ Grace Hopper was working for a computer company in 1949
 and thought it would be possible to have a computer convert programs written in an English-like language
 into machine instructions automatically.
 She had trouble getting others to accept the idea,
-even building working programs (which she called called <dfn>compilers</dfn>) that would convert English-like text to machine instructions
+even building working programs (which she called <dfn>compilers</dfn>) that would convert English-like text to machine instructions
 and still being told it was impossible,
 but after 10 years of persistence her ideas were finally accepted
 and programming languages, as we know them today, were created.
@@ -325,7 +325,7 @@ Machine instructions, assembly languages, and programming languages are all Turi
 meaning each of them can do anything any of the others can do.
 But they can't necessarily do everything equally well.
 
-All of the languages mentioned here are computer languages,
+All the languages mentioned here are computer languages,
 meaning they have unambiguous meanings and highly structured grammatical forms.
 Those characteristic allow computers to easily understand exactly what any text in these languages mean.
 
@@ -357,7 +357,7 @@ Some entire programs are written in assembly.
 
 It's not common, but sometimes a program is written in assembly even when a programming language would work.
 Two of the best known examples
-are Super Mairo Brothers (1985)
+are Super Mario Brothers (1985)
 and Roller Coaster Tycoon (1999).
 
 <figure>
@@ -375,7 +375,7 @@ There is in general one assembly language per computer processor design:
 because they map directly to machine instructions,
 two processors with different sets of instructions
 also need different assembly languages.
-Some of the most popular processors have a small numner of competing assembly languages
+Some of the most popular processors have a small number of competing assembly languages
 that differ in things like what order they list the operands and destination of an instruction
 or what punctuation they use to represent that something is a variable.
 
