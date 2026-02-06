@@ -2,7 +2,7 @@
 title: Computer Programs and Languages
 ...
 
-Modern computers are <dfn>programmable<dfn>, meaning the specific things they do
+Modern computers are <dfn>programmable</dfn>, meaning the specific things they do
 can be changed freely and are not defined by the machine designer.
 The set of things a computer is asked to do is called a <dfn>program</dfn>.
 
