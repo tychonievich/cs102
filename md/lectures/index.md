@@ -4,6 +4,18 @@ title: Lectures
 
 
 
+Lecture 7 -- Friday 6 February 2026
+:   Board work
+    :   [2026-02-06.pdf](2026-02-06.pdf)
+
+    Relevant readings
+    :   - [Computer components and architecture](../text/architecture.html)
+        - [Computer programs and languages](../text/executable.html)
+
+    Announcements
+    :   - A [progress tracker](../progress.html) has been added to this site. It requires some manual updating and will generally by updated on Fridays. If you see something wrong in it, let the instructor know on teams or in email.
+    
+
 Lecture 6 -- Wednesday 4 February 2026
 :   Board work
     :   [2026-02-04.pdf](2026-02-04.pdf)
