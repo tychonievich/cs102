@@ -4,6 +4,12 @@ title: Labs
 
 
 
+Lab 3: January 10, 11, and 12
+:   - Primarily a paper worksheet provided by course staff during lab
+
+    - [Code Comparisons](lab3-code.html)
+
+
 Lab 2: January 3, 4, and 5
 :   - Primarily a paper worksheet provided by course staff during lab
     
@@ -13,6 +19,8 @@ Lab 2: January 3, 4, and 5
         - [mystery2.docx](mystery2.docx){download="mystery2.docx"}
         - [mystery3.pdf](mystery3.pdf){download="mystery3.pdf"}
         - [mystery4.jpeg](mystery4.jpeg){download="mystery4.jpeg"}
+
+    - [Slides used in lab (pdf)](Lab 2 Slides.pdf)
 
 
 Lab 1: January 27, 28, and 29
