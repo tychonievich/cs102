@@ -26,7 +26,7 @@ fetch('secure/progress.php')
     document.getElementById('update').dateTime = when.toJSON();
     document.getElementById('update').textContent = when.toLocaleString();
     
-    p.innerHTML = '<hr/><p>Viewing data for <tt>'+data.user+'</tt></p><dl><dt>Lecture (10% weight)</dt><dd id="lecture"></dd><dt>Lab (24% weight)</dt><dd id="lab"></dd><dt>Homework (10% weight)</dt><dd id="homework"></dd><dt>Quizzes (36% weight)</dt><dd id="quiz"></dd><dt>Final Exam (20% weight)</dt><dd id="final">Not completed yet; this will appear in the future.</dd><dt>Overall</dt><dd id="overall"></dd></dl>';
+    p.innerHTML = '<hr/><p>Viewing data for <tt>'+data.user+'</tt></p><dl><dt>Lecture (10% weight)</dt><dd id="lecture"></dd><dt>Lab (24% weight)</dt><dd id="lab"></dd><dt>Homework (10% weight)</dt><dd id="homework"></dd><dt>Quizzes (36% weight)</dt><dd id="quiz"></dd><dt>Final Exam (20% weight)</dt><dd id="final">Not yet; this will appear in the future.</dd><dt>Overall</dt><dd id="overall"></dd></dl>';
     
     let tot = 0;
     let of = 0;
