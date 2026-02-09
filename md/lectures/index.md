@@ -3,6 +3,14 @@ title: Lectures
 ...
 
 
+Lecture 8 -- Monday 9 February 2026
+:   Board work
+    :   [2026-02-09.pdf](2026-02-09.pdf)
+
+    Relevant readings
+    :   - [Computer programs and languages](../text/executable.html)
+        - [Comparing programming and languages](../text/languages.html)
+    
 
 Lecture 7 -- Friday 6 February 2026
 :   Board work
