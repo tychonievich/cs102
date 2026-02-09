@@ -13,3 +13,5 @@ Content introduced in lecture is expanded on in text.
 - [Computer components and architecture](architecture.html)
 - [Computer programs and languages](executable.html)
 - [Comparing programming languages](languages.html)
+- [Abstraction](abstraction.html)
+- [Algorithms](algorithms.html)
