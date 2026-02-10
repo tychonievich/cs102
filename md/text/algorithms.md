@@ -447,6 +447,7 @@ or "and it's basically impossible."
 Some of the most common graph algorithms are
 
 - Finding the shorted path between two nodes ($O(n)$, but with pre-processing much less)
+- Detecting and/or removing cycles, meaning rings of node-edge-node-edge-... that end where they start ($O(n)$)
 - Cutting a graph in half by removing the minimal number of nodes ($O(n^2)$)
 - Finding the shortest route that visits a set of nodes ($O(2^n)$)
 - Finding the longest path between two notes ($O(2^n)$)
