@@ -413,7 +413,7 @@ line from A to B chop "1    "
 line from B to D chop "" "2   "
 line from B to E chop "   3" ""
 line from C to D chop "   4" ""
-line from C to E chop "" "    5"
+line from C to E chop "" "     5"
 line from D to E chop "" "   6"
 ```
 <figcaption>
