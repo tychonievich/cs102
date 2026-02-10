@@ -429,7 +429,7 @@ edge 2 connects B-D,
 edge 3 connects B-E,
 edge 4 connects C-D,
 edge 5 connects C-E, and
-edge 6 conencts D-E.
+edge 6 connects D-E.
 </figcaption>
 </figure>
 
