@@ -5,11 +5,40 @@ title: Algorithms
 An <dfn>algorithm</dfn> is a sequence of unambiguously-defined steps to accomplish some task.
 The word comes from a transliteration of al-Khwarizmi (الخوارزميّ‎),
 part of Muhammad ibn Musa al-Khwarizmi's name.
-His 9th-century books on arithmetic and algebra brought these ideas from the Indian subcontinent to Europe.
+His 9th-century books on place-value arithmetic and algebra brought these ideas from the Indian subcontinent to Europe.
 
 A key part of al-Khwarizmi's books success in Europe
 is the fact that algorithms for the same task
 may be significantly more or less feasible depending on how the data used in the task is represented.
+The user of place-value numbers instead of tallies or Roman numerals
+made the algorithms he described much simpler and more versatile
+than the algorithms previously used in Europe.
+
+<details class="aside"><summary>Who invented what al-Khwarizmi described?</summary>
+
+Al-Khwarizmi's books were assumed by the Europeans who read them to describe his own work,
+which is why "algorithm" is named after him,
+"algebra" named after his book,
+and place-value digits are called "Arabic numerals."
+
+But the digits long predate al-Khwarizmi
+and appear to have originated in the Indian subcontinent, not the Middle East.
+Whether the rest of the contents of his books also predate him
+does not appear to be a matter of consensus:
+I've seen claims that they were his invention;
+that they were invented by other Middle-Eastern scholars;
+that they were invented in India and reached Arabia through travelling merchants;
+that they were independently rediscovered multiple times;
+and various mixes of these origins for different parts of his work.
+
+What is clear is that al-Khwarizmi moved European mathematics forward immensely,
+at a minimum by good communication
+whether it was also about his own inventions or those of others.
+It is also clear that most of what we mean by "algorithm" today
+was first invented in the 20^th^ century
+when digital computers enabled algorithms to be separated from the humans who followed them, opening up a wide range of new theoretical framing and algorithmic applications. 
+
+</details>
 
 :::example
 Using Roman numerals, to compute LXXVIII + LIX we
@@ -17,16 +46,16 @@ Using Roman numerals, to compute LXXVIII + LIX we
 - Break each number into groups based on the largest-value symbol to each symbol's right:\
   L XX V III + L IX
 
-- Combine both groups in descending cluster order, with subtraction groups before addition groups:\
+- Combine the groups of both numbers in descending order, with subtraction groups before addition groups:\
   LLIXXXVIII
 
-- If a subtraction symbol later appears as an addition structure, cancel them both out:\
+- If a subtraction symbol later appears in an addition structure, cancel them both out:\
   LLXXXVII
 
 - Check for a variety of shorter forms: two V → X, four I → IV, and so on:\
   CXXXVII
 
-To use Indian numerals, to compute 78 + 59
+Using Indian numerals, to compute 78 + 59 we
 
 - Add each pair of digits, starting at the right; keep the 1's place and stave the 10's place for the next digit:\
   8+9 = 17 keep 7\
@@ -71,12 +100,14 @@ Among many other options, it could be
 
 ... and so on for many other options.
 
-We would expect that algorithms that assume we have a grid
-will not work (without modification) if we give them a list of intersections instead.
+Algorithms designed to work on the grid type of map
+generally will not work if we give them a list of intersections instead,
+and so on for other the data designs.
+The structure of the data informs the nature of the algorithm.
 :::
 
 Some algorithms can be adapted to several different data structures
-by using [abstraction](abstraction.html) (a type of abstraction called an "abstract data type")
+by using [abstraction](abstraction.html) (in particular the type of abstraction called an "abstract data type")
 to hide the data structure details.
 
 :::example
@@ -97,7 +128,7 @@ as an abstraction to work with both types of maps.
 
 ## Input and output
 
-Each algorithms can solve an entire family of computations,
+Each algorithm can solve an entire family of computations,
 depending on the input it is given.
 
 Algorithms often compute some values we don't care about (like the set of carry digits in addition)
@@ -108,11 +139,11 @@ we say they are algorithms that solve the same problem
 even if they compute different non-output values along the way.
 
 It is common to distinguish between two types of input data.
-Some data, often called a <dfn>resource</dfn>, database, backing data, or asset,
-is large, durable, and rarely updated,
+Some data (often called a <dfn>resource</dfn>, database, backing data, or asset)
+is large and rarely updated,
 such as the street map used by a navigation system.
-Other data, often called <dfn>user input</dfn>,
-is smaller, transient, and changes each time the algorithm is used,
+Other data (often called <dfn>user input</dfn>)
+is smaller and changes each time the algorithm is used,
 such as the starting location and destination used by a navigation system.
 
 :::example
@@ -125,7 +156,7 @@ It might also include other inputs like
 
 - Current traffic
 - User preferences
-- Driving history
+- User's driving history
 - Other user's locations, speeds, and destinations
 - ...
 :::
@@ -133,16 +164,26 @@ It might also include other inputs like
 ## Defined operations
 
 The core part of an algorithm
-is the defined sequence of steps it takes to compute a result.
+is the defined sequence of steps it uses to compute a result.
 
 In the simplest case, these operations are a fixed set of steps.
 But most interesting algorithms use repetition and functions to repeat some steps,
 often repeating them different number of times for different inputs.
 
+:::example
+A number is even if its last digit is even.
+This is a fixed set of steps with no repetition.
+
+Long addition repeats the step
+"add two input digits and a carry digit"
+once for each pair of digits in its input.
+:::
+
 There are often multiple algorithms available
 for solving the same problem.
-Often, we pick which one we want
-based on which problems they are fastest on.
+While there are many reasons to pick one algorithm over another,
+one of the most common selection criteria is how quickly the algorithm
+can solve the sepecific problems we expect to give it.
 
 :::example
 There are *many* algorithms for finding a path through a map,
@@ -160,6 +201,11 @@ which works as follows:
 :::
 
 # Algorithms in your life
+
+Once upon a time, algorithms were just tools,
+used to solve specific problems but not otherwise impacting day-to-day life.
+But with the wide-spread adoption of the Internet that has changed
+and algorithms are impacting (among other things) what parts of the world you see.
 
 ## Web Search
 
@@ -393,7 +439,7 @@ The most common list algorithms are
     In a sorted list this is very fast ($O(\log n)$)
     but in an unsorted list it is slower ($O(n)$).
 
-## Graph
+## Graph algorithms
 
 In computing, the word <dfn>graph</dfn>
 does not refer to a chart or other visual representation of data;
@@ -457,3 +503,29 @@ Note that often even very similar-sounding graph problems
 have very different complexity (one being easy, the other being intractable).
 This can seem frustrating, with seemingly minor teaks to a problem statement
 resulting in huge changes to the algorithm feasibility.
+
+
+## Matrix algorithms
+
+Mathematics has many topics and subfields,
+one of which has come to dominate computation:
+matrices and vectors.
+These are studied in the branch of mathematics called linear algebra
+and in the math and computing hybrid field of numerical methods.
+
+A vector is a list of numbers
+and a matrix is a grid of numbers.
+They are combined with simple multiplication and addition operations,
+typically by lining up numbers in rows with numbers in columns.
+Because of the simple, regular structure of these computations
+they can be easily broken up into pieces
+with each piece worked on by a different piece of hardware,
+allowing very large matrix operations to be computed very quickly
+by using many copies of simple hardware.
+
+Matrices are used as the core of most algorithms that simulate something complex
+or deal with a large number of similar inputs at once.
+Weather prediction, stock market analysis, robotic control systems, generative AI, and most statistical analysis and computer-aided science
+are among the many computations
+for which the most successful algorithms use matrix operations
+to do most of the computational work.
