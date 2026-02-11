@@ -3,6 +3,17 @@ title: Lectures
 ...
 
 
+Lecture 9 -- Wednesday 11 February 2026
+:   Board work
+    :   [2026-02-11.pdf](2026-02-11.pdf)
+
+    Relevant readings
+    :   - [Computer programs and languages](../text/executable.html)
+        - [Abstraction](../text/abstrction.html)
+    
+    Announcements
+    :   - Class will be held next week on Wednesday, February 18^th^. It will not be held on Friday February 20^th^.
+
 Lecture 8 -- Monday 9 February 2026
 :   Board work
     :   [2026-02-09.pdf](2026-02-09.pdf)
