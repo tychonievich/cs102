@@ -194,12 +194,12 @@ either nothing has a property (being likeable/openable/unsolvable), or this spec
 
 ----
 
-To show a specific problem is intractable if there are any intractable problems, we need several tools.
+To show a specific problem is intractable (if there are any intractable problems), we need several tools.
 
 First, we define **P** to be the set of all problems that have tractable algorithms to solve them.
 Showing that some problem is part of this set can be done by showing a less-than-exponential-time algorithm to solve it.
 
-We don't know if there are any decidable problems that are not in **P**.
+We assume, but don't know for sure, that there are decidable problems that are not in **P**.
 
 Next, we define **NP** to be the set of all problems
 where there's a tractable answer for checking if a candidate solution is in fact a solution.
@@ -209,4 +209,49 @@ There are problems (like "guess my password") that are clearly in **NP**
 (given a candidate password, I can check if it's right by typing it into your login screen)
 but that we don't think are in **P** (we don't think guessing passwords can be done efficiently).
 
+A surprising but important theorem called the <dfn>Cook-Levin Theorem</dfn>
+shows that there are some special problems in **NP**
+that are "as hard as" every other problem in **NP**.
+An example of such a problem is
 
+> Input
+> :   A program implementing an algorithm in **P**.
+>
+> Output
+> :   An input to the program that produces the answer "0", if such an input exists.
+
+That special problem is in **NP**
+because checking if a output is correct is as simple as running the program on that input.
+And any other problem in **NP** can be solved by giving the especial problem the answer-checker
+of the other problem as its input.
+
+Surprisingly, that special problem is not unique or even very special;
+there are *many* problems in **NP** that can, with some clever manipulations,
+be used to solve any other problem in **NP**.
+We call such problems <dfn>NP Complete</dfn>.
+
+----
+
+All known algorithms for solving NP-complete problems
+run in exponential time,
+and are thus seen as intractable.
+
+If a less-than-exponential-time algorithm is ever found for any NP-complete problem,
+then that algorithm can be used to solve every other problem in **NP**
+in less-than-exponential time
+and none of those problems will turn out to be intractable,
+meaning they're all in **P** and thus **P** = **NP**.
+So far, we have no evidence that **P** = **NP**
+and it is widely assumed that **P** ≠ **NP**,
+but we don't have a proof of that.
+
+There's some additional theorems that show that if problems in **NP** are tractable
+than many problems that seem harder than **NP** are also not tractable.
+
+:::aside
+Would discovering that **P** = **NP** be good?
+
+Yes, it would be amazing! Problems that seem to hard to solve today would suddenly become solvable and everything would become easier, more efficient, and better!
+
+No, it would be terrible! Nothing would be hard, not even breaking passwords or impersonating others and reading secrete messages. Privacy would vanish, authentication would become impossible, online shopping and digital banking and the stock market and just about the entire global financial system would collapse. Phones wouldn't be able to rout messages to the right people, all subscription services would fail, and we'd be forced back to a pre-digital age, with widespread panic and general mayhem during the transition.
+:::
