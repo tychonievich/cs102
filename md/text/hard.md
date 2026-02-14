@@ -6,6 +6,21 @@ Computer science includes the study of what properties algorithms that solve spe
 This includes proofs that some problems are *impossible* to solve
 and others are *provably hard* to solve.
 
+The content on this page can be dense and hard to fully grasp. A high-level takeaway:
+
+- Some problems are <dfn>undecideable</dfn> and cannot be solved in general.
+    - Because: some special cases of the problem that are paradoxes.
+    - Includes: most questions about algorithms, like "will this program run forever?"
+    - In practice: algorithms can solve these problems in many, but not all, cases.
+
+- Some problems are <dfn>provably hard</dfn> and (probably) intractable.
+    - Caveat: we haven't proven anything is intractable.
+    - Proof: if any problem is intractable, these problems are.
+    - 
+
+
+
+
 # Impossible
 
 Programs can invoke other programs.
