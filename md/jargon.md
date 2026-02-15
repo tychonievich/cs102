@@ -3,7 +3,7 @@ title: Computing Jargon
 ...
 
 <dfn>Jargon</dfn> is the set of terms and expressions that have defined meaning within a field
-but lack that meaning (or perhaps any meaning) outside of that field.
+but lack that meaning (or perhaps any meaning) outside that field.
 Computing's jargon is primarily based on English words with computing-specific meanings
 which may or may not be related to the English meanings of those words.
 
@@ -36,7 +36,7 @@ Abstraction barrier
     there are always limitations of nuances
     which do matter in some cases.
     For example,
-    [Ariane fligh V88](https://en.wikipedia.org/wiki/Ariane_flight_V88) exploded
+    [Ariane flight V88](https://en.wikipedia.org/wiki/Ariane_flight_V88) exploded
     and a [Pariot Missle hit the army that fired it](https://barrgroup.com/sites/default/files/case-study-patriot-missile-defects.pdf)
     both because the abstraction barrier
     between bits and numbers failed.
@@ -56,7 +56,7 @@ Algorithm
 Analog
 :   Often used to mean simply "not digital", or the part of the world that is not computers.
 
-    Sometimes used to mean a signal with a meaning based on being analogous to (directly or naturally representing, not using symbols but more intrinsic properties like quantity or frequency) the thing is is describing.
+    Sometimes used to mean a signal with a meaning based on being analogous to (directly or naturally representing, not using symbols but more intrinsic properties like quantity or frequency) the thing is describing.
 
 Arguments
 :   Concerete values provided to a function or program in place of its *paramters*.
@@ -128,7 +128,7 @@ Data
 :   A defined, unambiguous representation of *information*.
 
     Ways of representing simple information like numbers are commonly called "data types" or "primitive data types".
-    Ways of representing multi-part information like lists are commonly called *data structures*.
+    Ways of representing multipart information like lists are commonly called *data structures*.
 
 Data Structure
 :   A way of storing data that consists of multiple related but distinct pieces of information.
@@ -198,7 +198,7 @@ Function
     instead of a set of actions you take.
 
 Gate
-:   An abstraction of a group of transistors that implement some simple operation on a small number of bits.
+:   An abstraction of a group of transistors that implement some simple operation on a few bits.
     
     The most commonly discussed gates are [and]{.smallcaps}, [or]{.smallcaps}, [not]{.smallcaps}, and [xor]{.smallcaps}.
     For some specific hardware cases, [nand]{.smallcaps} and [nor]{.smallcaps} are also used.
@@ -271,7 +271,7 @@ Information
     The information that I am 20 years old could be conveyed by various data:
     the text "I'm 20",
     the bits 00010100 in a location where age values are expected,
-    the difference between the current date and a birth date value,
+    the difference between the current date and a birthdate,
     etc.
 
     Less often, "information" is used as a technical term for the bits of some digital communication that could not be anticipated,
