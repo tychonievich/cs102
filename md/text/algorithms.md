@@ -258,9 +258,12 @@ The recommendation task is:
 > :   A few recommended things to watch
 
 Recommender systems have many variations in their algorithms.
-They generally include in their process trying to estimate which recommendations you'll accept,
-but they also often prioritize things that bring them ad revenue
-and things that people immediately follow with accepting another recommendation.
+They generally prioritize some mix of their best guess of
+(a) recommendations you'll accept,
+(b) recommendations that bring them ad revenue,
+and (c) recommendations that are in the middle, not the end, of other users' watch histories.
+This last point is often described as making the platform "addictive"
+and can lead to downgrading content that would lead users to a sense of completeness and conclusion and a satisfying end to their experience on the platform.
 
 
 # Picking algorithms
@@ -285,18 +288,18 @@ Energy efficient
     
     Often, faster algorithms are also more energy efficient
     because the longer a computer has to work on something
-    the more energy it using doing it.
+    the more energy it uses doing it.
     But some operations and hardware components use more energy per second than others,
     so algorithms that avoid those operations can be more energy efficient than their speed suggests.
 
 Small
-:   Some algorithms use a lot of memory,
-    enough that running several such algorithms at the same time
-    or running them on small embedded devices is challenging.
+:   Some algorithms use enough memory
+    that running several such algorithms at the same time,
+    or running them on small embedded devices, is challenging.
     Algorithms that use less space are valuable in these contexts.
     
     There is also a complicated relationship between space used and time used,
-    where reducing space can sometimes increase time and other times reduce time.
+    where reducing space can either increase or reduce time dependin gon how it is reduced.
 
 Accuracy
 :   Some algorithms are precise: they find *the* right answer.
@@ -307,14 +310,15 @@ Accuracy
     so a <dfn>heuristic</dfn> algorithm is used
     which is easier to compute but only finds an approximate or mostly-right answer.
 
-    <div class="example>
+    <div class="example">
 
     Suppose you wish to visit every city in the USA
     and spend the minimum amount of time on the road doing so.
     There is an optimal route, one that uses less time than any other,
-    but we can get "pretty good" by broadly going in a zigzag pattern
-    or by always going to the closest unvisited city next
-    or various other heuristics.
+    but finding that route is very hard.
+    We can get "pretty good" routes by using heuristics
+    such as going in a zigzag pattern across the country
+    or always going to the closest unvisited city next.
 
     </div>
 
@@ -323,7 +327,7 @@ Self-improvement
     but some adapt and (hopefully) improve over time.
     
     The most common way to have algorithms self-improve is to have them accumulate additional resource data,
-    typically processing it into an effectively usable form as it arrives.
+    typically processing it into an efficiently-usable form as it arrives.
     A less common way is to have a meta-algorithm that changes details of the main algorithm,
     often by trying several variants to see which ones work best.
     The line between these two is not crisp,
@@ -334,10 +338,9 @@ Testability
     is correct, with no errors or security vulnerabilities.
     Thus, it is common to try to estimate correctness using tests.
     
-    A <dfn>test case</dfn> is a set of inputs
-    and an expected output;
-    algorithm implementations are tested by trying many test cases
-    and verifying that they produce the correct output for each.
+    A <dfn>test case</dfn> is an input and the output it should produce.
+    Algorithm implementations are tested by trying many test cases
+    and verifying that they produce the correct output for each test.
     
     Some algorithms readily lend themselves to creating a wide range of useful tests
     while others are much more challenging to test.
@@ -354,7 +357,7 @@ meaning that adding a small  amount of additional input
 increases runtime be a multiplicative factor.
 
 :::example
-Breaking passwords by guess-and-check is an intractable algorithm.
+Breaking passwords by guess-and-check is an exponential-time algorithm.
 Assuming that passwords are made out of only English lower-case letters, the number we need to guess is:
 
 | Password length | Number to check |
@@ -392,7 +395,7 @@ When inputs get very large, we need algorithms that take less than linear time.
 Because looking at each input takes time, this requires finding the result without even looking at most of the input at all.
 A classic algorithm with sublinear time
 is finding a value in a sorted list
-like a print telephone book or dictionary:
+(like a print telephone book or dictionary):
 we can find a value in a list of 1 million entries by checking only 30 of them
 if we know that the list is in sorted order.
 
@@ -403,7 +406,7 @@ Several ways of scaling with larger input have names that are common enough to b
 | Constant | $O(1)$ | Ignores most input entirely. | Pick a random value from a list. |
 | Logarithmic | $O(\log n)$ | Selectively views a few inputs. | Find a value in a sorted list. |
 | Linear | $O(n)$ | Check each input once. | Count how many values in a list have a given property. |
-| Quadratic | $O(n^2)$ | Feasible for small problems, slow for larger ones. | Count how many people in a room root for rival teams. |
+| Quadratic | $O(n^2)$ | Feasible for small problems, slow for larger ones. | Count how many pairs of people in a room root for rival teams. |
 | Exponential | $O(2^n)$ | Intractable, basically unusable. | Try every possible password. |
 
 The $O(...)$ above is called <dfn>Big-O</dfn> and is a mathematically precise way of saying "roughly".
@@ -450,11 +453,11 @@ and any number of edges may connect to a given node.
 
 <figure>
 ```pikchr
-A: circle "A"
-B: circle "B" at 1 heading 0 from last circle
-C: circle "C" at 1 heading 72 from last circle
-D: circle "D" at 1 heading 144 from last circle
-E: circle "E" at 1 heading 216 from last circle
+A: circle rad 0.15 "A"
+B: circle rad 0.15 "B" at 1 heading 0 from last circle
+C: circle rad 0.15 "C" at 1 heading 72 from last circle
+D: circle rad 0.15 "D" at 1 heading 144 from last circle
+E: circle rad 0.15 "E" at 1 heading 216 from last circle
 line from A to B chop "1    "
 line from B to D chop "" "2   "
 line from B to E chop "   3" ""
@@ -494,7 +497,7 @@ Some of the most common graph algorithms are
 
 - Finding the shorted path between two nodes ($O(n)$, but with pre-processing much less)
 - Detecting and/or removing cycles, meaning rings of node-edge-node-edge-... that end where they start ($O(n)$)
-- Cutting a graph in half by removing the minimal number of nodes ($O(n^2)$)
+- Removing the minimum number of edges to cutting a graph in half ($O(n^2)$)
 - Finding the shortest route that visits a set of nodes ($O(2^n)$)
 - Finding the longest path between two notes ($O(2^n)$)
 
