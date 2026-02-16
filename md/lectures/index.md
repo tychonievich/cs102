@@ -4,7 +4,14 @@ title: Lectures
 
 
 
-Lecture 10 -- Wednesday 13 February 2026
+Lecture 11 -- Monday 16 February 2026
+:   Board work
+    :   [2026-02-16.pdf](2026-02-16.pdf)
+
+    Relevant readings
+    :   - [Algorithms](../text/algorithms.html)
+    
+Lecture 10 -- Friday 13 February 2026
 :   Board work
     :   [2026-02-13.pdf](2026-02-13.pdf)
 
