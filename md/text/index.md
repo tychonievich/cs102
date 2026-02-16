@@ -15,3 +15,7 @@ Content introduced in lecture is expanded on in text.
 - [Comparing programming languages](languages.html)
 - [Abstraction](abstraction.html)
 - [Algorithms](algorithms.html)
+- [Intractable problems](hard.html)
+- [Halt and other Undecideable problems](halt.html)
+    - or, [There are more problems than there are programs](more-problems.html)
+    - or, [Undecideable problems would prove much of mathematics](halt-proves-many-things.html)

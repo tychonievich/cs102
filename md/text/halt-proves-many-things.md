@@ -1,5 +1,5 @@
 ---
-title: Undecideable problems that would prove much of mathematics
+title: Undecideable problems would prove much of mathematics
 ...
 
 It is possible to prove that there are problems that algorithms cannot solve,

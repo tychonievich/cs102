@@ -1,5 +1,5 @@
 ---
-title: Provably hard tasks
+title: Intractable problems
 ...
 
 Computer science includes the study of what properties algorithms that solve specific problems must have.
