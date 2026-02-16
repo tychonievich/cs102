@@ -15,11 +15,14 @@ or an example input $x$ that would make $f(x)$ run forever.
 If such a program existed, it could be used to solve huge numbers of open math problems
 that mathematicians have spent centuries trying to solve without success.
 That power strongly suggests that we could never create $H$.
+We outline a proof that $H$ cannot exist on [another page](halt.html),
+but since that proof is hard for many to grasp
+we give examples here that show why $H$ would be weirdly powerful if it did exist.
 
-Many hard math problems are complicated to even describe,
+Many unsolved math problems are complicated to even describe,
 but not all are.
 The rest of this page shows how $H$, if it existed,
-could easily solve some famously hard problems in mathematics.
+could be used to solve some famously hard problems in mathematics.
 
 Collatz conjecture
 :   The Collatz conjecture asks if, for any positive integer $x$,
@@ -67,7 +70,7 @@ Legendre's conjecture
     or it will prove that there is no such $n$.
 
 
-Are all Fermat numbers square-free
+Are all Fermat numbers square-free?
 :   A Fermat number has the form $F_n = 2^{2^n}}$.
     A square-free number cannot be divided by any integer $k>1$ twice without a remainder.
     It is not known if all Fermat numbers are square free.
@@ -83,8 +86,3 @@ Are all Fermat numbers square-free
     Then call $H(f)$; it will either return an $n$ for which $F_n$ is not square-free
     or it will prove that there is no such $n$.
 
-To be clear,
-$H$ as described implements an undecideable problem
-and thus does not exist.
-This page doesn't prove its non-existance (though other pages do),
-but it does point out that it existing would be too good to be true.

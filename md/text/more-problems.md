@@ -6,7 +6,7 @@ There are more problems than there are programs. But there are infinitely many o
 
 :::note
 Most people find almost everything about infinities confusing or counter-intuitive.
-It feels funny and offputing because we have no lived experience with infinity
+It feels wrong or offputing because we have no lived experience with infinity
 and many things we know about finite things do not apply to infinite things.
 
 I recommend trying to suspend your disbelief while reading this.
@@ -77,6 +77,7 @@ To show this, consider an arbitrary mapping from real numbers to integers withou
 The decimal representation of an example real number that this mapping fails to include can be constructed as follows:
 the digit in this example number's the $10^{-k}$ place
 is 5 minus the digit in the $10^{-k}$ place of the real number that maps to $k$.
+(if none map to $k$ it doesn't matter what digit we pick).
 We know this number was omitted from the mapping because it differs in at least one digit
 from each number that was mapped.
 :::
@@ -88,7 +89,7 @@ than there are integers.
 Consider an arbitrary mapping from functions to integers.
 Let's call the function that maps to integer $k$ "$f_k$".
 An example function that is not covered by this mapping
-is $g(x) = f_x(x) + 1$.
+is $g(x) = \begin{cases}f_x(x) + 1&\text{if }f_x\text{ is in the mapping}\\0&\text{otherwise}\end{cases}$.
 We know this number was omitted from the mapping because it differs in at least one input-output pair
 from each function that was mapped.
 :::
@@ -104,8 +105,8 @@ Integers to programs
 
 
 However, there are more problems than there are integers
-because "compute a function with an integer input and integer output over integers"
-is one of many types of problems,
+because "compute a function with an integer input and integer output"
+is one type of problems,
 and as noted in the last example above there are more such functions than there are integers.
 
 Because there are more problems than there are programs,

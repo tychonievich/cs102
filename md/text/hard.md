@@ -3,91 +3,11 @@ title: Provably hard tasks
 ...
 
 Computer science includes the study of what properties algorithms that solve specific problems must have.
-This includes proofs that some problems are *impossible* to solve
-and others are *provably hard* to solve.
+Among that study are proofs that some problems are probably intractable.
+It's not known if *any* problem is intractable,
+but if any are then these problems, which we call <dfn>provably hard</dfn>, are intractable.
 
-The content on this page can be dense and hard to fully grasp. A high-level takeaway:
-
-- Some problems are <dfn>undecideable</dfn> and cannot be solved in general.
-    - Because: some special cases of the problem that are paradoxes.
-    - Includes: most questions about algorithms, like "will this program run forever?"
-    - In practice: algorithms can solve these problems in many, but not all, cases.
-
-- Some problems are <dfn>provably hard</dfn> and (probably) intractable.
-    - Caveat: we haven't proven anything is intractable.
-    - Proof: if any problem is intractable, these problems are.
-    - 
-
-
-
-
-# Impossible
-
-Programs can invoke other programs.
-This is well-established in both theory and practice:
-when you turn on your computer it runs a program called an Operating System,
-which you then use to select and run all the other programs you use.
-
-Programs can take other programs as inputs.
-This is well-established in both theory and practice:
-it's how web browsers run programs in the browser,
-how virus scanners check for viruses in programs before they run,
-and how some programs become faster while they run.
-
-We can use these two facts to show that certain kinds of programs
-cannot exist, because if they did we'd have a paradox.
-The most famous example of this is called "the halting problem"
-which has two common variants; the simpler variant is given here.
-
-:::example
-Halting Problem
-
-Theorem
-:   We cannot create a program `halt`
-    which takes another program as input
-    and produces as output
-    `true` if the input program always stops running after a finite amount of time
-    and `false` if the input program might run forever.
-
-
-Proof
-:   If `halt` existed, then we could make a paradox program as follows:
-
-    `paradox`: if `halt(paradox)` is `true`, repeat something forever; otherwise stop running now.
-    
-    What does `halt(paradox)` return?
-    
-    It can't by `true` because if it was then `paradox` would run forever, which by the definition of `halt` means `halt(paradox)` must return `false`.
-    
-    It can't by `false` because if it was then `paradox` would stop running, which by the definition of `halt` means `halt(paradox)` must return `true`.
-:::
-
-The halting problem probably looks kind of strange to most of you.
-How does coming up with a strange paradox prove that some task is impossible?
-Computer science students spend approximately two semesters
-building up the understanding of all of the mathematical properties
-needed to fully understand this proof,
-but the end result is some tasks can't be solved.
-
-The formal name for a problem
-that does not admit an algorithmic solution
-is an <dfn>undecidable</dfn> problem.
-
-One of the most general impossibility results
-is Rice's Theorem
-which states that it's not just "does this program run forever" that is undecidable:
-we can't make programs that answer *any* non-trivial question
-about other programs.
-
-A huge caveat in all undecidability results
-is they only say that we can't solve *every* instance of a problem.
-In practice, we have programs
-that can implement `halt` for *most* input programs we give them,
-but these programs are never complete:
-there's always some program we could give them
-that they have to answer "I can't tell."
-
-# Intractable
+---------
 
 Recall that an algorithm is intractable
 if it has exponential runtime;
@@ -108,7 +28,7 @@ then 50 years later in 2026 we should be able to break 65-bit passwords, having 
 Better hardware does not make intractable problems become tractable.
 That would require better algorithms.
 
-## An intuition about intractable problems
+# An intuition about intractable problems
 
 Most intractable problems share three properties:
 
@@ -145,7 +65,7 @@ The goal is one specific answer, not one of many or something "close enough".
 
     </div>
 
-## Mathematical definitions of "hard"
+# Mathematical definitions of "hard"
 
 In CS, there are a set of related mathematical[^CSMath] theorems and definitions
 that help define what we mean when we say that a given problem is hard.
