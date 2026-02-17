@@ -180,8 +180,10 @@ percent2letter()
 
 Labs will start the second week of classes (<time datetime="2026-01-27">Jan 27</time>).
 
-Lecture will not be held on <time datetime="2026-02-20">February 20</time>
-because the instructor and the likely substitute instructors will all be at [The Technical Symposium on Computer Science Education](https://sigcse2026.sigcse.org/). Labs will be held on that week as normal.
+Lecture on <time datetime="2026-02-20">February 20</time>
+will be by course TA Ashish
+because the instructor will be at [The Technical Symposium on Computer Science Education](https://sigcse2026.sigcse.org/).
+Labs will be held on that week as normal.
 
 :::{is="week-view" st="9" et="19" style="width:var(--wide)"}
 
