@@ -10,6 +10,8 @@ Lecture 12 -- Wednesdau 18 February 2026
     :   - [Algorithms](../text/algorithms.html)
         - [Intractable problems](../text/hard.html)
 
+    Announcements
+    :   Lecture on Friday will be optional and taught by a TA, Ashish.
 
 Lecture 11 -- Monday 16 February 2026
 :   Board work
