@@ -2,6 +2,13 @@
 title: Lectures
 ...
 
+Lecture 12 -- Wednesdau 18 February 2026
+:   Board work
+    :   [2026-02-18.pdf](2026-02-18.pdf)
+
+    Relevant readings
+    :   - [Algorithms](../text/algorithms.html)
+        - [Intractable problems](../text/hard.html)
 
 
 Lecture 11 -- Monday 16 February 2026
