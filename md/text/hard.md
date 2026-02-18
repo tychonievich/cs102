@@ -131,12 +131,23 @@ either nothing has a property (being likeable/openable/unsolvable), or this spec
 
 To show a specific problem is intractable (if there are any intractable problems), we need several tools.
 
-First, we define **P** to be the set of all problems that have tractable algorithms to solve them.
+We define a **reduction** from problem *A* to problem *B* to be an algorithm that solves *A* using "solve *B*" as one of the operations it uses.
+
+:::example
+The following algorithm reduces "find $x+y$" to the problem of counting.
+
+1. REPEAT UNTIL $x = 0$:
+    a. *count* $y$ up one step
+    b. *count* $x$ down one step
+2. RETURN $y$
+:::
+
+We define **P** to be the set of all problems that have tractable algorithms to solve them.
 Showing that some problem is part of this set can be done by showing a less-than-exponential-time algorithm to solve it.
 
 We assume, but don't know for sure, that there are decidable problems that are not in **P**.
 
-Next, we define **NP** to be the set of all problems
+We define **NP** to be the set of all problems
 where there's a tractable answer for checking if a candidate solution is in fact a solution.
 Showing that some problem is part of this set can be done by showing a less-than-exponential-time algorithm to check candidate answers.
 
@@ -146,24 +157,32 @@ but that we don't think are in **P** (we don't think guessing passwords can be d
 
 A surprising but important theorem called the <dfn>Cook-Levin Theorem</dfn>
 shows that there are some special problems in **NP**
-that are "as hard as" every other problem in **NP**.
-An example of such a problem is
+to which *every other* problem in **NP** reduces.
+In other words, these problems, called <dfn>NP complete</dfn>,
+are "as hard as" every other problem in **NP**.
+
+An example of such an NP-complete problem is
 
 > Input
-> :   A program implementing an algorithm in **P**.
+> :   A program $p$ implementing an algorithm in **P**.
+>
+>     A candidate input $s$ to that algorithm.
 >
 > Output
-> :   An input to the program that produces the answer "0", if such an input exists.
+> :   An input to $p$ the same size as $s$ that produces the answer "0", if such an input exists.
 
 That special problem is in **NP**
 because checking if a output is correct is as simple as running the program on that input.
-And any other problem in **NP** can be solved by giving the especial problem the answer-checker
+And any other problem in **NP** can be solved by giving this problem the answer-checker
 of the other problem as its input.
 
-Surprisingly, that special problem is not unique or even very special;
-there are *many* problems in **NP** that can, with some clever manipulations,
-be used to solve any other problem in **NP**.
-We call such problems <dfn>NP Complete</dfn>.
+Surprisingly, that example is not unique or even very special;
+there are *many* problems in **NP** that every other problem in **NP** can be reduced to.
+
+If we show that all of **NP** can be reduced to a given problem
+but don't show that the problem in question is itself in **NP**
+then we call the problem <dfn>NP hard</dfn>.
+Every NP-complete problem is also NP-hard.
 
 ----
 
