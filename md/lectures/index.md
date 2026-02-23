@@ -6,7 +6,9 @@ title: Lectures
 Lecture 14 -- Monday 23 February 2026
 :   Board work
     :   - [2026-02-23.pdf](2026-02-23.pdf)
-        - [Example code](2026-02-23-a.txt)
+    
+    Displayed text
+    :   - [Example code](2026-02-23-a.txt)
         - [Rice's Theorem](2026-02-23-b.txt)
         - [Polls](2026-02-23-c.txt)
 
