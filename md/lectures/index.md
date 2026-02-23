@@ -2,7 +2,17 @@
 title: Lectures
 ...
 
-Lecture 12 -- Wednesdau 18 February 2026
+
+Lecture 13 -- Friday 20 February 2026
+:   Slides
+    :   [Halt and other Undecideable (impossible) problems](https://docs.google.com/presentation/d/1CJj1kgPI-F5tOf9HqUaDW8J16aFDHcjR7bbzytkGszU/edit?usp=sharing)
+    
+    Relevant readings
+    :   - [Intractable problems](../text/hard.html)
+        - [Halt and other Undecideable problems](../text/halt.html)
+
+
+Lecture 12 -- Wednesday 18 February 2026
 :   Board work
     :   [2026-02-18.pdf](2026-02-18.pdf)
 
