@@ -1,0 +1,44 @@
+
+	Both intractable and undecideable problems are hard:
+	
+	A. Intractable cannot be solved at all; 	Undecideable cannot be solved at all
+	B. Intractable cannot be solved at all; 	Undecideable take too long to solve
+	C. Intractable take too long to solve; 	Undecideable cannot be solved at all
+	D. Intractable take too long to solve; 	Undecideable take too long to solve
+
+
+	Both intractable and undecideable problems are characterized by broad scope:
+	
+	A. Intractable accept themselves as input; 	Undecideable accept themselves as input
+	B. Intractable accept themselves as input; 	Undecideable look for "the best" option
+	C. Intractable look for "the best" option; 	Undecideable accept themselves as input
+	D. Intractable look for "the best" option; 	Undecideable look for "the best" option
+
+
+	To work around an undecidable problem
+	
+	A. Use a heuristic
+	B. Try limiting the problem space
+	C. Accept a program that sometimes says "I don't know"
+	D. Wait for Moore's Law to give us faster computers
+	E. Give up, this can't be done
+	
+	
+	To work around an intractable problem
+	
+	A. Use a heuristic
+	B. Try limiting the problem space
+	C. Accept a program that sometimes says "I don't know"
+	D. Wait for Moore's Law to give us faster computers
+	E. Give up, this can't be done
+
+
+
+
+
+
+
+
+
+
+

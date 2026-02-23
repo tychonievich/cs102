@@ -1,0 +1,19 @@
+
+	Pick some property X of a program (e.g. "doesn't crash", "requires authentication", "computes x²", ...)
+
+
+
+	Assume we have a program M
+		input: another program
+		output: whether that program "does X" or not
+
+
+
+	Paradox:
+		if M(Paradox) is "yes, it does X",
+			don't do X
+		otherwise,
+			do X
+
+
+	Ergo, checking any functional property of programs is undecideable (Rice's Theorem) 

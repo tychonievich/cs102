@@ -1,0 +1,18 @@
+
+	repeat while x > 1:
+	    increase x by 1
+
+
+
+	repeat while x > 1:
+	    decrease x by 1
+
+
+
+	repeat while x > 1:
+	    if x is even, divide x by 2
+	    otherwise, replace x with 3x + 1
+
+
+
+
