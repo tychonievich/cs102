@@ -3,6 +3,23 @@ title: Lectures
 ...
 
 
+Lecture 14 -- Monday 23 February 2026
+:   Board work
+    :   - [2026-02-23.pdf](2026-02-23.pdf)
+        - [Example code](2026-02-23-a.txt)
+        - [Rice's Theorem](2026-02-23-b.txt)
+        - [Polls](2026-02-23-c.txt)
+
+    Relevant readings
+    :   - [Halt and other Undecideable problems](../text/halt.html)
+        - [There are more problems than there are programs](../text/more-problems.html)
+        - [Undecideable problems would prove much of mathematics](../text/halt-proves-many-things.html)
+
+    Announcements
+    :   - Lecture on Wednesday is quiz review.
+        - Lecture on Friday is an in-person on-paper quiz, with questions resembling those in homeworks and labs.
+
+
 Lecture 13 -- Friday 20 February 2026
 :   Slides
     :   [Halt and other Undecideable (impossible) problems](https://docs.google.com/presentation/d/1CJj1kgPI-F5tOf9HqUaDW8J16aFDHcjR7bbzytkGszU/edit?usp=sharing)
