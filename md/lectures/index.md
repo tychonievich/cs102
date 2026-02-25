@@ -7,6 +7,11 @@ Lecture 15 -- Quiz 1 review -- Wednesday 25 February 2026
 :   Quiz review
     :   [Past questions in-scope for quiz](quiz1review.html)
 
+    Board work
+    :   - [2026-02-25.pdf](2026-02-25.pdf)
+
+    Announcements
+    :   - Lecture on Friday is an in-person on-paper quiz, with questions resembling (but not identical to) those in homeworks and labs.
 
 Lecture 14 -- Undecideable problems -- Monday 23 February 2026
 :   Board work
