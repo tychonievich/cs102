@@ -4,7 +4,7 @@ title: Quiz 1 review
 
 # All homework questions
 
-## HW Question 1 {.unnumbered.unlisted}
+## HW Question 1 {.unnumbered .unlisted}
 
 Which of the following are **not** stored in binary in the computer?
 
@@ -16,7 +16,7 @@ E.  Programming commands
 
 
 
-## HW Question 2 {.unnumbered.unlisted}
+## HW Question 2 {.unnumbered .unlisted}
 
 Before the things we call computers were invented, the word "computer"
 
@@ -27,7 +27,7 @@ D.  Referred to an abacus or other mechanical arithmetic aid
 
 
 
-## HW Question 3 {.unnumbered.unlisted}
+## HW Question 3 {.unnumbered .unlisted}
 
 Which of these is **not** an encoding for colors?
 
@@ -37,13 +37,13 @@ C.  Y2K
 
 
 
-## HW Question 4 {.unnumbered.unlisted}
+## HW Question 4 {.unnumbered .unlisted}
 
 In ASCII, characters are 8 bits, but the first bit is always 0. How many characters can be represented in ASCII?
 
 
 
-## HW Question 5 {.unnumbered.unlisted}
+## HW Question 5 {.unnumbered .unlisted}
 
 Which of these is **not** a power of 2?
 
@@ -56,7 +56,7 @@ F.  8
 
 
 
-## HW Question 6 {.unnumbered.unlisted}
+## HW Question 6 {.unnumbered .unlisted}
 
 Which is a larger number, 0x111 or 0b111? (By larger, I mean greater in magnitude)
 
@@ -66,19 +66,19 @@ C.  They’re the same number
 
 
 
-## HW Question 7 {.unnumbered.unlisted}
+## HW Question 7 {.unnumbered .unlisted}
 
 There are \_\_\_ bits in a byte
 
 
 
-## HW Question 8 {.unnumbered.unlisted}
+## HW Question 8 {.unnumbered .unlisted}
 
 How many symbols are used in the binary number system?
 
 
 
-## HW Question 9 {.unnumbered.unlisted}
+## HW Question 9 {.unnumbered .unlisted}
 
 0111 1010 0001 1110 0000 0010 is a
 
@@ -90,7 +90,7 @@ E.  We can’t know without knowing the encoding ahead of time
 
 
 
-## HW Question 10 {.unnumbered.unlisted}
+## HW Question 10 {.unnumbered .unlisted}
 
 Which of these is **not** a likely problem with numbers in computers?
 
@@ -100,7 +100,7 @@ C.  When you compare two numbers with decimal points (aka “floats” like 0.1)
 
 
 
-## HW Question 11 {.unnumbered.unlisted}
+## HW Question 11 {.unnumbered .unlisted}
 
 Moore's law says that "Microchips have their \_\_\_ every two years.“
 
@@ -113,7 +113,7 @@ F.  speed halve
 
 
 
-## HW Question 12 {.unnumbered.unlisted}
+## HW Question 12 {.unnumbered .unlisted}
 
 The following truth table is for what operation?
 
@@ -132,7 +132,7 @@ E.  mux/multiplex
 
 
 
-## HW Question 13 {.unnumbered.unlisted}
+## HW Question 13 {.unnumbered .unlisted}
 
 How many bytes are in a megabyte?
 
@@ -143,7 +143,7 @@ D.  One thousand
 
 
 
-## HW Question 14 {.unnumbered.unlisted}
+## HW Question 14 {.unnumbered .unlisted}
 
 Which of these is biggest?
 
@@ -153,7 +153,7 @@ C.  Terabyte
 
 
 
-## HW Question 15 {.unnumbered.unlisted}
+## HW Question 15 {.unnumbered .unlisted}
 
 Which of these is smallest?
 
@@ -163,7 +163,7 @@ C.  Terabyte
 
 
 
-## HW Question 16 {.unnumbered.unlisted}
+## HW Question 16 {.unnumbered .unlisted}
 
 What is **not** a difference between memory (RAM) and storage (SSD/HDD)?
 
@@ -174,7 +174,7 @@ D.  memory is where the processor keeps most data it works with
 
 
 
-## HW Question 17 {.unnumbered.unlisted}
+## HW Question 17 {.unnumbered .unlisted}
 
 The \_\_\_ is made up of the \_\_\_ and the \_\_\_
 
@@ -193,7 +193,7 @@ L.  The RAM is made up of the CPU and the CU
 
 
 
-## HW Question 18 {.unnumbered.unlisted}
+## HW Question 18 {.unnumbered .unlisted}
 
 \_\_\_ are made of \_\_\_
 
@@ -206,7 +206,7 @@ F.  Transistors are made of logic gates
 
 
 
-## HW Question 19 {.unnumbered.unlisted}
+## HW Question 19 {.unnumbered .unlisted}
 
 The \_\_\_ the transistors the \_\_\_ the computer.
 
@@ -217,7 +217,7 @@ D.  The smaller the transistors the more reliable the computer.
 
 
 
-## HW Question 20 {.unnumbered.unlisted}
+## HW Question 20 {.unnumbered .unlisted}
 
 Consider a circuit with the following components:
 
@@ -229,7 +229,7 @@ If A and C are 1 and B is 0, what is the output of this circuit?
 
 
 
-## HW Question 21 {.unnumbered.unlisted}
+## HW Question 21 {.unnumbered .unlisted}
 
 Which of the following is true?
 
@@ -239,7 +239,7 @@ C.  The job of an interpreter (converting source code into actions) is reversibl
 
 
 
-## HW Question 22 {.unnumbered.unlisted}
+## HW Question 22 {.unnumbered .unlisted}
 
 What part of the following description of a computer program (written in a human-targeted pseudo-code, not in a programming language) is an example of **variables**?
 
@@ -270,7 +270,7 @@ E.  The two places it says "take INFO 102".
 
 
 
-## HW Question 23 {.unnumbered.unlisted}
+## HW Question 23 {.unnumbered .unlisted}
 
 What part of the following description of a computer program (written in a human-targeted pseudo-code, not in a programming language) is an example of **repetition**?
 
@@ -301,7 +301,7 @@ E.  The two places it says "take INFO 102".
 
 
 
-## HW Question 24 {.unnumbered.unlisted}
+## HW Question 24 {.unnumbered .unlisted}
 
 What part of the following description of a computer program (written in a human-targeted pseudo-code, not in a programming language) is an example of **selection**?
 
@@ -332,7 +332,7 @@ E.  The two places it says "take INFO 102".
 
 
 
-## HW Question 25 {.unnumbered.unlisted}
+## HW Question 25 {.unnumbered .unlisted}
 
 What part of the following description of a computer program (written in a human-targeted pseudo-code, not in a programming language) is an example of **function definition**?
 
@@ -363,7 +363,7 @@ E.  The two places it says "take INFO 102".
 
 
 
-## HW Question 26 {.unnumbered.unlisted}
+## HW Question 26 {.unnumbered .unlisted}
 
 What part of the following description of a computer program (written in a human-targeted pseudo-code, not in a programming language) is an example of **function invocation**?
 
@@ -394,7 +394,7 @@ E.  The two places it says "take INFO 102".
 
 
 
-## HW Question 27 {.unnumbered.unlisted}
+## HW Question 27 {.unnumbered .unlisted}
 
 In response to a class question and on text we mentioned JSON,
 which is a computer language but not a programming language.
@@ -407,7 +407,7 @@ D.  it isn't popular enough
 
 
 
-## HW Question 28 {.unnumbered.unlisted}
+## HW Question 28 {.unnumbered .unlisted}
 
 The C language is the only language we discussed in the lectures comparing programming languages
 that is *not* memory-managed.
@@ -420,7 +420,7 @@ D.  more flexible and more secure
 
 
 
-## HW Question 29 {.unnumbered.unlisted}
+## HW Question 29 {.unnumbered .unlisted}
 
 The C language is the only language we discussed in the lectures comparing programming languages
 that is *compiled* with no interpreter.
@@ -433,7 +433,7 @@ D.  harder to create and slower to run
 
 
 
-## HW Question 30 {.unnumbered.unlisted}
+## HW Question 30 {.unnumbered .unlisted}
 
 Why is it wise to pick a popular programming language?
 
@@ -443,7 +443,7 @@ C.  The wisdom of the masses: they are popular because they are the best.
 
 
 
-## HW Question 31 {.unnumbered.unlisted}
+## HW Question 31 {.unnumbered .unlisted}
 
 Which of the following is an example of the **detail removal** form of abstraction?
 
@@ -454,7 +454,7 @@ D.  Describing how to reach our classroom without referring to the time of day c
 
 
 
-## HW Question 32 {.unnumbered.unlisted}
+## HW Question 32 {.unnumbered .unlisted}
 
 Which of the following is an example of the **generalization** form of abstraction?
 
@@ -465,7 +465,7 @@ D.  Describing how to reach our classroom without referring to the time of day c
 
 
 
-## HW Question 33 {.unnumbered.unlisted}
+## HW Question 33 {.unnumbered .unlisted}
 
 Where does the name "algorithm" come from?
 
@@ -475,7 +475,7 @@ C.  It's from the Latin root "alga", the same root as "algebra" and "algae", mea
 
 
 
-## HW Question 34 {.unnumbered.unlisted}
+## HW Question 34 {.unnumbered .unlisted}
 
 Which of the following best defines the word "algorithm"?
 
@@ -486,7 +486,7 @@ D.  Those mathematical functions that can be computed by a Turing machine or an 
 
 
 
-## HW Question 35 {.unnumbered.unlisted}
+## HW Question 35 {.unnumbered .unlisted}
 
 "Intractable" is a property of
 
@@ -496,7 +496,7 @@ C.  problems
 
 
 
-## HW Question 36 {.unnumbered.unlisted}
+## HW Question 36 {.unnumbered .unlisted}
 
 "Intractable" generally pairs with which runtime?
 
@@ -508,7 +508,7 @@ E.  Quadratic O(n^2)
 
 
 
-## HW Question 37 {.unnumbered.unlisted}
+## HW Question 37 {.unnumbered .unlisted}
 
 Which runtime suggests that only a few of the inputs are even looked at?
 
@@ -519,7 +519,7 @@ D.  Quadratic O(n^2)
 
 
 
-## HW Question 38 {.unnumbered.unlisted}
+## HW Question 38 {.unnumbered .unlisted}
 
 There is a famous, unsolved question of whether P = NP or P ≠ NP.
 
@@ -530,7 +530,7 @@ B.  P ≠ NP
 
 
 
-## HW Question 39 {.unnumbered.unlisted}
+## HW Question 39 {.unnumbered .unlisted}
 
 There is a famous, unsolved question of whether P = NP or P ≠ NP.
 
@@ -543,7 +543,7 @@ D.  Does nanotechnology (N) change what a processor (P) can do?
 
 
 
-## HW Question 40 {.unnumbered.unlisted}
+## HW Question 40 {.unnumbered .unlisted}
 
 If a software developer tells you that your problem is NP-complete or **NP-hard**, but you need it for your application, you should
 
@@ -555,7 +555,7 @@ E.  Weep! NP stands of "not possible," your application can't be done at all.
 
 
 
-## HW Question 41 {.unnumbered.unlisted}
+## HW Question 41 {.unnumbered .unlisted}
 
 If a software developer tells you that your problem is **Undecidable**, but you need it for your application, you should
 
@@ -566,7 +566,7 @@ D.  Explain the specific types of inputs you're interested in and ask them to se
 
 
 
-## HW Question 42 {.unnumbered.unlisted}
+## HW Question 42 {.unnumbered .unlisted}
 
 If I have a **reduction** from *A* to *B*, or equivalently if I say that *A* reduces to *B*, that means:
 
@@ -580,47 +580,47 @@ F.  While solving *B*, I also solve *A* as a side effect or necessary step along
 
 # All Lab Questions
 
-## Lab Question 1 {.unnumbered.unlisted}
+## Lab Question 1 {.unnumbered .unlisted}
 
 Convert this decimal number to binary: 137
 
 
-## Lab Question 2 {.unnumbered.unlisted}
+## Lab Question 2 {.unnumbered .unlisted}
 
 Convert this decimal number to binary: 117
 
 
-## Lab Question 3 {.unnumbered.unlisted}
+## Lab Question 3 {.unnumbered .unlisted}
 
 Convert this number into decimal: 0b100111
 
 
-## Lab Question 4 {.unnumbered.unlisted}
+## Lab Question 4 {.unnumbered .unlisted}
 
 Convert this number into decimal: 0b11100 
 
 
-## Lab Question 5 {.unnumbered.unlisted}
+## Lab Question 5 {.unnumbered .unlisted}
 
 Convert this number into binary: 0xb0ba
 
 
-## Lab Question 6 {.unnumbered.unlisted}
+## Lab Question 6 {.unnumbered .unlisted}
 
 Convert this number into binary: 0xdead 
 
 
-## Lab Question 7 {.unnumbered.unlisted}
+## Lab Question 7 {.unnumbered .unlisted}
 
 How many values can be represented by five bits? 
 
 
-## Lab Question 8 {.unnumbered.unlisted}
+## Lab Question 8 {.unnumbered .unlisted}
 
 How many values can be represented by seven bits?    
 
 
-## Lab Question 9 {.unnumbered.unlisted}
+## Lab Question 9 {.unnumbered .unlisted}
 
 Find C and D when A and B are 1 and 1
   
@@ -637,7 +637,7 @@ Find C and D when A and B are 1 and 1
          |_____|    |_____|
 
 
-## Lab Question 10 {.unnumbered.unlisted}
+## Lab Question 10 {.unnumbered .unlisted}
 
 Find C when A and B are 0 and 0
 
@@ -654,17 +654,17 @@ Find C when A and B are 0 and 0
 
 
 
-## Lab Question 11 {.unnumbered.unlisted}
+## Lab Question 11 {.unnumbered .unlisted}
 
 How many gigabytes are there in a terabyte?
 
 
-## Lab Question 12 {.unnumbered.unlisted}
+## Lab Question 12 {.unnumbered .unlisted}
 
 How many megabytes are in a petabyte?
 
 
-## Lab Question 13 {.unnumbered.unlisted}
+## Lab Question 13 {.unnumbered .unlisted}
 -14
 Order from the fastest language to the slowest language:
 
@@ -677,42 +677,42 @@ Order from the fastest language to the slowest language:
 Which of these languages are Turing Complete?
 
 
-## Lab Question 15 {.unnumbered.unlisted}
+## Lab Question 15 {.unnumbered .unlisted}
 
 What are at least four factors you should consider when choosing a programming language?
 
 
-## Lab Question 16 {.unnumbered.unlisted}
+## Lab Question 16 {.unnumbered .unlisted}
 
 What is an algorithm?
 
 
-## Lab Question 17 {.unnumbered.unlisted}
+## Lab Question 17 {.unnumbered .unlisted}
 
 How do heuristics differ from other algorithms?      
 
 
-## Lab Question 18 {.unnumbered.unlisted}
+## Lab Question 18 {.unnumbered .unlisted}
 
 How does data differ from information?
 
 
-## Lab Question 19 {.unnumbered.unlisted}
+## Lab Question 19 {.unnumbered .unlisted}
 
 What are some important characteristics that people should think about when choosing between different algorithms?
 
 
-## Lab Question 20 {.unnumbered.unlisted}
+## Lab Question 20 {.unnumbered .unlisted}
 
 What is the definition of intractable?
 
 
-## Lab Question 21 {.unnumbered.unlisted}
+## Lab Question 21 {.unnumbered .unlisted}
 
 What time complexity is always considered intractable?
 
 
-## Lab Question 22 {.unnumbered.unlisted}
+## Lab Question 22 {.unnumbered .unlisted}
 
 Draw a graph that represents these 4 cities and the distances between them.
 The nodes should represent the cities.
@@ -725,6 +725,6 @@ The edges should represent the distance between the cities.
 |Between Peoria      |                 |            |    74 miles     |
 
 
-## Lab Question 23 {.unnumbered.unlisted}
+## Lab Question 23 {.unnumbered .unlisted}
 
 What is the time complexity of the Traveling Salesman problem?
