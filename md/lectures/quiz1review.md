@@ -674,8 +674,6 @@ Order from the fastest language to the slowest language:
 - Machine code
 - Python
 
-Which of these languages are Turing Complete?
-
 ## Question 56 {.unnumbered .unlisted}
 
 Which of these languages are Turing Complete?
