@@ -637,6 +637,9 @@ Find C and D when A and B are 1 and 1
          |_____|    |_____|
 
 
+- C = A [xor]{.smallcaps} B
+- D = B [and]{.smallcaps} ([not]{.smallcaps} A)
+
 ## Question 52 {.unnumbered .unlisted}
 
 Find C when A and B are 0 and 0
@@ -652,6 +655,7 @@ Find C when A and B are 0 and 0
        +-| NOT |--------|     |
          |_____|        |_____|
 
+- C = (A [and]{.smallcaps} B) [or]{.smallcaps} ([not]{.smallcaps} B)
 
 
 ## Question 53 {.unnumbered .unlisted}
