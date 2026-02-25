@@ -676,43 +676,52 @@ Order from the fastest language to the slowest language:
 
 Which of these languages are Turing Complete?
 
-
 ## Question 56 {.unnumbered .unlisted}
+
+Which of these languages are Turing Complete?
+
+- Assembly
+- C
+- Java
+- Machine code
+- Python
+
+## Question 57 {.unnumbered .unlisted}
 
 What are at least four factors you should consider when choosing a programming language?
 
 
-## Question 57 {.unnumbered .unlisted}
+## Question 58 {.unnumbered .unlisted}
 
 What is an algorithm?
 
 
-## Question 58 {.unnumbered .unlisted}
+## Question 59 {.unnumbered .unlisted}
 
 How do heuristics differ from other algorithms?      
 
 
-## Question 59 {.unnumbered .unlisted}
+## Question 60 {.unnumbered .unlisted}
 
 How does data differ from information?
 
 
-## Question 60 {.unnumbered .unlisted}
+## Question 61 {.unnumbered .unlisted}
 
 What are some important characteristics that people should think about when choosing between different algorithms?
 
 
-## Question 61 {.unnumbered .unlisted}
+## Question 62 {.unnumbered .unlisted}
 
 What is the definition of intractable?
 
 
-## Question 62 {.unnumbered .unlisted}
+## Question 63 {.unnumbered .unlisted}
 
 What time complexity is always considered intractable?
 
 
-## Question 63 {.unnumbered .unlisted}
+## Question 64 {.unnumbered .unlisted}
 
 Draw a graph that represents these 4 cities and the distances between them.
 The nodes should represent the cities.
@@ -725,6 +734,6 @@ The edges should represent the distance between the cities.
 |Between Peoria      |                 |            |    74 miles     |
 
 
-## Question 64 {.unnumbered .unlisted}
+## Question 65 {.unnumbered .unlisted}
 
 What is the time complexity of the Traveling Salesman problem?
