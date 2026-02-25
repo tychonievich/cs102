@@ -3,12 +3,12 @@ title: Lectures
 ...
 
 
-Lecture 15 -- Wednesday 25 February 2026
+Lecture 15 -- Quiz 1 review -- Wednesday 25 February 2026
 :   Quiz review
     :   [Past questions in-scope for quiz](quiz1review.html)
 
 
-Lecture 14 -- Monday 23 February 2026
+Lecture 14 -- Undecideable problems -- Monday 23 February 2026
 :   Board work
     :   - [2026-02-23.pdf](2026-02-23.pdf)
     
@@ -27,7 +27,7 @@ Lecture 14 -- Monday 23 February 2026
         - Lecture on Friday is an in-person on-paper quiz, with questions resembling those in homeworks and labs.
 
 
-Lecture 13 -- Friday 20 February 2026
+Lecture 13 -- P, NP, Intractable, Undecideable -- Friday 20 February 2026
 :   Slides
     :   [Halt and other Undecideable (impossible) problems](https://docs.google.com/presentation/d/1CJj1kgPI-F5tOf9HqUaDW8J16aFDHcjR7bbzytkGszU/edit?usp=sharing)
     
@@ -36,7 +36,7 @@ Lecture 13 -- Friday 20 February 2026
         - [Halt and other Undecideable problems](../text/halt.html)
 
 
-Lecture 12 -- Wednesday 18 February 2026
+Lecture 12 -- P ≠ NP, intractable problems -- Wednesday 18 February 2026
 :   Board work
     :   [2026-02-18.pdf](2026-02-18.pdf)
 
@@ -47,21 +47,21 @@ Lecture 12 -- Wednesday 18 February 2026
     Announcements
     :   Lecture on Friday will be optional and taught by a TA, Ashish.
 
-Lecture 11 -- Monday 16 February 2026
+Lecture 11 -- Algorithms, Efficiency -- Monday 16 February 2026
 :   Board work
     :   [2026-02-16.pdf](2026-02-16.pdf)
 
     Relevant readings
     :   - [Algorithms](../text/algorithms.html)
     
-Lecture 10 -- Friday 13 February 2026
+Lecture 10 -- Problems, Algorithms -- Friday 13 February 2026
 :   Board work
     :   [2026-02-13.pdf](2026-02-13.pdf)
 
     Relevant readings
     :   - [Algorithms](../text/algorithms.html)
     
-Lecture 9 -- Wednesday 11 February 2026
+Lecture 9 -- Programming Languages, Abstraction -- Wednesday 11 February 2026
 :   Board work
     :   [2026-02-11.pdf](2026-02-11.pdf)
 
@@ -72,7 +72,7 @@ Lecture 9 -- Wednesday 11 February 2026
     Announcements
     :   - Class will be held next week on Wednesday, February 18^th^. It will not be held on Friday February 20^th^.
 
-Lecture 8 -- Monday 9 February 2026
+Lecture 8 -- Programming Languages -- Monday 9 February 2026
 :   Board work
     :   [2026-02-09.pdf](2026-02-09.pdf)
 
@@ -81,7 +81,7 @@ Lecture 8 -- Monday 9 February 2026
         - [Comparing programming and languages](../text/languages.html)
     
 
-Lecture 7 -- Friday 6 February 2026
+Lecture 7 -- Modern Processors -- Friday 6 February 2026
 :   Board work
     :   [2026-02-06.pdf](2026-02-06.pdf)
 
@@ -93,7 +93,7 @@ Lecture 7 -- Friday 6 February 2026
     :   - A [progress tracker](../progress.html) has been added to this site. It requires some manual updating and will generally by updated on Fridays. If you see something wrong in it, let the instructor know on teams or in email.
     
 
-Lecture 6 -- Wednesday 4 February 2026
+Lecture 6 -- Basic Processors -- Wednesday 4 February 2026
 :   Board work
     :   [2026-02-04.pdf](2026-02-04.pdf)
 
@@ -107,7 +107,7 @@ Lecture 6 -- Wednesday 4 February 2026
         - There's a homework due this Thursday (and most Thursdays going forward).
             
 
-Lecture 5 -- Monday 2 February 2026
+Lecture 5 -- Logic Gates, Arithmetic Machines -- Monday 2 February 2026
 :   Board work
     :   [2026-02-02.pdf](2026-02-02.pdf)
 
@@ -120,7 +120,7 @@ Lecture 5 -- Monday 2 February 2026
         - Quizzes are administered on paper and will include questions like those given in the first page of each lab and in the homeworks.
             
 
-Lecture 4 -- Friday 30 January 2026
+Lecture 4 -- Data in Parts, Logic Gates -- Friday 30 January 2026
 :   Board work
     :   [2026-01-30.pdf](2026-01-30.pdf)
 
@@ -138,7 +138,7 @@ Lecture 4 -- Friday 30 January 2026
         - Attendance is not yet part of your grade, but will be starting after the deadline to add the course next week.
             
 
-Lecture 3 -- Wednesday 28 January 2026
+Lecture 3 -- Data as Bits -- Wednesday 28 January 2026
 :   Board work
     :   [2026-01-28.pdf](2026-01-28.pdf)
 
@@ -150,7 +150,7 @@ Lecture 3 -- Wednesday 28 January 2026
             
 
 
-Lecture 2 -- Friday 23 January 2026
+Lecture 2 -- Place-Value Numbers, Binary -- Friday 23 January 2026
 :   Board work
     :   [2026-01-23.pdf](2026-01-23.pdf)
 
@@ -167,7 +167,7 @@ Lecture 2 -- Friday 23 January 2026
             For the lecture absence form, email the professor (luthert@) with your absence request if you can't access that form.
     
 
-Lecture 1 -- Wednesday 21 January 2026
+Lecture 1 -- Welcome and Overview -- Wednesday 21 January 2026
 :   Board work
     :   [2026-01-21.pdf](2026-01-21.pdf)
 
