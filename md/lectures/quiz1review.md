@@ -665,7 +665,7 @@ How many megabytes are in a petabyte?
 
 
 ## Question 55 {.unnumbered .unlisted}
--14
+
 Order from the fastest language to the slowest language:
 
 - Assembly
