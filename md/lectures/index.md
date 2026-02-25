@@ -3,6 +3,11 @@ title: Lectures
 ...
 
 
+Lecture 15 -- Wednesday 25 February 2026
+:   Quiz review
+    :   [Past questions in-scope for quiz](quiz1review.html)
+
+
 Lecture 14 -- Monday 23 February 2026
 :   Board work
     :   - [2026-02-23.pdf](2026-02-23.pdf)
