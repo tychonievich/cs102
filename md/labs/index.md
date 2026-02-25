@@ -3,6 +3,9 @@ title: Labs
 ...
 
 
+Lab 6: March 3, 4, and 5
+:   - [articles.txt](articles.txt)
+    - [links.txt](links.txt)
 
 Lab 3: January 10, 11, and 12
 :   - Primarily a paper worksheet provided by course staff during lab
