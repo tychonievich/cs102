@@ -3,6 +3,9 @@ title: Lectures
 ...
 
 
+Lecture 16 -- Quiz 1 -- Friday 27 February 2026
+:   Due to a few people traveling or being ill, late quizzes will be given to some students early next week and quiz grades and questions published on Wednesday.
+
 Lecture 15 -- Quiz 1 review -- Wednesday 25 February 2026
 :   Quiz review
     :   [Past questions in-scope for quiz](quiz1review.html)
