@@ -19,3 +19,7 @@ Content introduced in lecture is expanded on in text.
 - [Halt and other Undecideable problems](halt.html)
     - or, [There are more problems than there are programs](more-problems.html)
     - or, [Undecideable problems would prove much of mathematics](halt-proves-many-things.html)
+
+Quiz 1 covered the above topics
+
+- [Artificial Intelligence](ai.html)
