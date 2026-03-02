@@ -143,7 +143,7 @@ Suppose we have data about student study habits and grades in INFO 102.
 ------
 
 Regression might come up with a function mapping study habits to grade, something like 
-$$\text{grade} = 50 + \drac{\text{hours of study}}{3}$$
+$$\text{grade} = 50 + \dfrac{\text{hours of study}}{3}$$
 Regression won't be fully accurate, but hopefully it will match much of the variation in grades.
 
 ------
