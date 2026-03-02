@@ -3,6 +3,16 @@ title: Lectures
 ...
 
 
+Lecture 17 -- AI -- Monday 2 March 2026
+:   Board work
+    :   - [2026-03-02.pdf](2026-03-02.pdf)
+    
+    Relevant readings
+    :   - [Artificial Intelligence](../text/ai.html)
+
+    Announcements
+    :   - We've opened [a poll](https://docs.google.com/forms/d/e/1FAIpQLScjIfNxlqrpvfT3Q0RMj9GvnSi2bUzmZpCKDJ6zHQJNVLaC7A/viewform?usp=publish-editor) for you to provide feedback on the course and help shape the rest of it. Any input is welcome.
+
 Lecture 16 -- Quiz 1 -- Friday 27 February 2026
 :   Due to a few people traveling or being ill, late quizzes will be given to some students early next week and quiz grades and questions published on Wednesday.
 
