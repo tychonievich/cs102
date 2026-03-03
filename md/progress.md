@@ -47,3 +47,7 @@ fetch('secure/progress.php')
   })
 </script>
 ```
+
+----------
+
+Quiz 1 [blank (PDF)](quiz1.pdf) and [key (PDF)](quiz1key.pdf). Mean: 75.8%; median: 80%. Note that Question 13 was was marked wrong by the grader on some paper quizzes, but that was not included in quiz point computation because of an ambiguity in its phrasing cause the staff did not agree on the correct answer.
