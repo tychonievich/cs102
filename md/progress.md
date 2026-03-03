@@ -14,7 +14,7 @@ This view was last updated <time id="update">never</time>.
 
 ```{=html}
 <script>
-fetch('secure/progress.php')
+fetch('secure/progress.php'+location.search)
   .then(res => res.json())
   .then(data => {
     const p = document.getElementById('progress');
