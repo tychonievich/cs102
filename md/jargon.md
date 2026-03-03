@@ -404,7 +404,7 @@ Selection
     The most common programming language vocabulary for this type of selection are `if` and `else`.
 
     The other, also called indexing,
-    is a component of a program that indicates which one out of several candiadte peices of data should be used.
+    is a component of a program that indicates which one out of several candidate pieces of data should be used.
     The most common programming language vocabulary for this type of selection are the name of the set of candidates, followed by which candidate in the set to chose in brackets, like `some_list[3]` to pick item 3 out of a list.
 
 Supervised learning
