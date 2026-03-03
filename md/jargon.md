@@ -59,10 +59,19 @@ Analog
     Sometimes used to mean a signal with a meaning based on being analogous to (directly or naturally representing, not using symbols but more intrinsic properties like quantity or frequency) the thing is describing.
 
 Arguments
-:   Concerete values provided to a function or program in place of its *paramters*.
+:   Concrete values provided to a function or program in place of its *parameters*.
 
     The square root function has one parameter, the number to find the root of.
     In $\sqrt{2}$, the number $2$ is the argument to that function.
+
+Artificial Intelligence (<abbr>AI</abbr>)
+:   A field within Computer Science that works on algorithms that humans find to be "intelligent."
+    Exactly what that means changes over time. Currently, it is seen to consist of
+    
+    - Things that can fool a human into thinking the computer is human, like chat.
+    - Planning, picking actions based on an evolving and uncertain future, like playing games.
+    - Summarizing, turning high-dimension inputs into low-dimension outputs, like naming what is in an image.
+    - *Machine learning*.
 
 Assembly
 :   A textual representation of *machine instructions*.
@@ -115,6 +124,11 @@ Byte
 Call
 :   A colloqialism for invoking a *function*.
 
+
+Classical AI
+:   *Artificial intelligence* where humans designed the algorithms based on their understanding of the problem and how to solve it.
+    Often contrasted with *machine learning*, though many successful AI systems use a mix of both.
+
 Compiler
 :   A program that converts source code written in a *programming language*
     into a sequence of *machine instructions* that can be *executed*
@@ -162,11 +176,11 @@ Execute
 :   Formally: load the *machine instructions* of a *compiled* program into memory
     and have the processor begin following those instructions.
 
-    Informatlly, also used for running an *interepreter* on a program's source code
+    Informarlly, also used for running an *interpreter* on a program's source code
     or, less often, for invoking a *function*.
 
 Exploit
-:   A concerete use of a *vulnerability*, in most cases to enact crime.
+:   A concrete use of a *vulnerability*, in most cases to enact crime.
 
     The possibility that an attacker could take control of my machine
     using a flaw in one of its systems is a vulnerability.
@@ -190,7 +204,7 @@ Function
     A function definition defines the actions and the name used to refer to them.
     Many function definitions include *parameters*.
 
-    A function invocation requests that the actions in a previosuly-defined function be performed.
+    A function invocation requests that the actions in a previously-defined function be performed.
     If the function definition included *parameters*, the function invocation includes *arguments* to use for those parameters this time.
 
     The phrase "call a function" or "function call" is synonymous with "invoke a function" or "function invocation,"
@@ -265,13 +279,21 @@ Hexadecimal
     it is traditional to precede it with `0x`;
     thus `0x10E` means a hexadecimal number with digits `10E` and represents the value two hundred seventy.
 
+Hill climbing
+:   A technique used to *train* a *machine learning* model by
+    
+    1. Picking a random function
+    2. Analyzing in what direction each parameter might need to change for that function to better match the *training data*
+    3. Picking a new function with parameters moved in that direction
+    4. If the new function is not good enough, return to step 2
+
 Information
 :   Usually, "information" is used in a loose, human way to refer to the human-understood meaning carred by data.
 
     The information that I am 20 years old could be conveyed by various data:
     the text "I'm 20",
     the bits 00010100 in a location where age values are expected,
-    the difference between the current date and a birthdate,
+    the difference between the current date and a birth date,
     etc.
 
     Less often, "information" is used as a technical term for the bits of some digital communication that could not be anticipated,
@@ -282,8 +304,8 @@ Interpreter
     and takes the actions described by each line of that code.
 
     Typically, programming languages that use an interpreter
-    run much more sloely than those that use a *compiler*;
-    but they also tend to provide more abstractions and thus require lesse effort to program in than those created for a compiler.
+    run much more slowly than those that use a *compiler*;
+    but they also tend to provide more abstractions and thus require less effort to program in than those created for a compiler.
 
 Machine instructions
 :   A set of simple actions a processor can take,
@@ -292,10 +314,17 @@ Machine instructions
 
     - Arithmetic operations, like $x + y → z$.
     - Operations that copy data between locations.
-    - Jumps that continue *execution* at a new location in the set of machine instructions, often only if certain codintions are met.
+    - Jumps that continue *execution* at a new location in the set of machine instructions, often only if certain conditions are met.
 
     Machine instructions can be directly converted to and from *assembly*.
     *Compilers* generate machine instructions from source code, but that operation generally cannot be reversed.
+
+Machine learning (<abrr>ML</abbr>)
+:   A form of programming that works by
+    
+    1. Defining a *general* family of functions or algorithms, where a specific function from the family can be selected by setting one or more *parameters*.
+    2. Searching though the function family for one that comes closest to matching some *training data*.
+    3. Using that function to solve problems.
 
 Metadata
 :   Data about the (main) data.
@@ -304,6 +333,17 @@ Metadata
     information about the camera that took the image is metadata.
     
     Many file formats store metadata along with the data, and many applications ignore most of the metadata.
+
+Overfitting
+:   A common way that *machine learning* might fail,
+    caused by the function family having so many *parameters*
+    that the function selected matches the details of the specific *training data* used
+    rather than the underlying patterns the training data was supposed to exemplify.
+    
+    The most common safeguard against overfitting is to ensure there are many fewer parameters
+    than there are training data.
+    Other techniques pick function families that are not flexible enough to conform to the training data's details
+    or add mathematical criteria to the training process that detects and avoids parameters that appear to be overfitting.
 
 Overflow
 :   Most numbers in computers are represented in a fixed number of *bits*.
@@ -333,7 +373,7 @@ Problem
     "write it in binary and see if its low-order bit is 1" is one of many algorithms for solving that problem.
 
     An algorithm solving a problem
-    needs to pick what *data* to use to represent the input and outout *information*.
+    needs to pick what *data* to use to represent the input and output *information*.
     An implementation of the algorithm as a *function* will have the input data as its *paramters*.
 
 Programmable
@@ -367,6 +407,9 @@ Selection
     is a component of a program that indicates which one out of several candiadte peices of data should be used.
     The most common programming language vocabulary for this type of selection are the name of the set of candidates, followed by which candidate in the set to chose in brackets, like `some_list[3]` to pick item 3 out of a list.
 
+Supervised learning
+:   A category of *machine learning* where the *training data* includes the desired output for each input.
+
 TB
 :   The [SI abbreviation for "tera" meaning one trillion](https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes) (T)
     followed by the abbreviation for Byte (B).
@@ -376,6 +419,19 @@ TB
     Some of that space is typically used to store an index of sorts to help find the rest of the data,
     so the usable space is generally lower than the advertised, theoretically-provided space.
 
+Train
+:   The step in *machine learning* where a function is selected that matches the *training data*.
+    In some cases training can be done exactly using some mathematical properties of the function family,
+    but more often some type of guess-and-check or *hill climbing* is employed.
+
+Training data
+:   Example data that an algorithm solving a problem should be able to process.
+
+    For *supervised* learning, training data pairs each input with an expected output and the quality of the function is determined by how close the function's output is to that input.
+    
+    For *unsupervised* learning, training data is just input and some other property of output (typically how the outputs on different inputs compare) determined the quality of the function.
+    
+
 Type
 :   How the bits inside some piece of data are converted into meaning.
 
@@ -383,6 +439,9 @@ Type
     If they are interpreted with the data type "integer" they mean 102.
     If they are interpreted with the data type "UTF-8 character" they mean lower-case F (`f`).
     The bits (the information we actually store in the computer) have not changed, only how we interpret it.
+
+Unsupervised learning
+:   A category of *machine learning* where the *training data* does not include desired outputs, only a set of example inputs.
 
 Variable
 :   The name of a location where data can be stored.
@@ -398,7 +457,7 @@ Variable
 Vulnerability
 :   Some aspect of a computer system -- usually software, but sometimes hardware -- that has the potential to be used in ways that the designers did not intend and the legitimate users do not desire.
 
-    Vulnerabities can arise from many sources:
+    Vulnerabilities can arise from many sources:
     programmer error,
     software designer oversight,
     unexpected interplay between individually-correct components,
@@ -407,6 +466,6 @@ Vulnerability
     and so on.
 
     It is generally assumed that nearly all computer systems contain many vulnerabilities,
-    and new volunerabilities are discovered every day.
+    and new vulnerabilities are discovered every day.
     It is essential that software be regularly updated to close vulnerabilities as they are discovered
     to prevent them being targeted by *exploits*.
