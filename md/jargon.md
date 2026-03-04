@@ -124,10 +124,24 @@ Byte
 Call
 :   A colloquialism for invoking a *function*.
 
+Categorical
+:   A family of *AI* tasks where the output is one of a discrete set of options (labels, group membership, words, etc.), not *continuous* real numbers.
 
 Classical AI
 :   *Artificial intelligence* where humans designed the algorithms based on their understanding of the problem and how to solve it.
     Often contrasted with *machine learning*, though many successful AI systems use a mix of both.
+
+Classification
+:   A family of *AI* tasks where the output is *categorical* and the set of possible outputs is known during *training*.
+    This is generally *supervised* learning.
+    
+    Examples might be "pick the next word" or "tell which person is shown in this image."
+
+Clustering
+:   A family of *AI* tasks where the output is *categorical* and the set of possible outputs is not specified but instead learned by the AI system.
+    This is a form of *unsupervised* learning.
+    
+    Examples might be "organize these images into groups of similar images" -- the number of groups and what kinds of images belong in each is learned, not provided in the *training data*.
 
 Compiler
 :   A program that converts source code written in a *programming language*
@@ -137,6 +151,9 @@ Compiler
     Typically, programming languages that use a compiler
     provide fewer abstractions and thus require more effort to program in than those that use an *interpreter*;
     but they also tend to create programs that run more quickly than those created for an interpreter.
+
+Continuous
+:   A family of *AI* tasks where the output is one or more real numbers (a score, a grid of pixel intensities, etc.), not *categorical* data..
 
 Data
 :   A defined, unambiguous representation of *information*.
@@ -237,7 +254,7 @@ Generalization
 
     The most common form of generalization is by adding *parameters* to a *function*.
     For example, $\sqrt{x}$ is a one-parameter function that finds a square root;
-    $\sqrt[y][{x}$ is a two-parameter function that generalizes $\sqrt{x}$ to also compute other roots.
+    $\sqrt[y]{x}$ is a two-parameter function that generalizes $\sqrt{x}$ to also compute other roots.
 
     Another common form of generalization is to add parameters to a *data structure*;
     for example by defining a generic "list of $x$" structure
@@ -245,6 +262,12 @@ Generalization
     Parameterized data structures have more variation in how they are implemented between programming languages
     than do parameterized functions, leading to them having many names:
     generics, templates, type parameters, mixins, etc.
+
+Generative AI
+:   A family of *AI* tasks that aim to complete a pattern, filling in the missing parts.
+    Because this is generally *trained* on complete patterns, it is a form of *supervised* learning.
+    It can be either *categorical* (such as when picking the missing word in a piece of text)
+    or *continuous* (such as when picking the missing pixel color in an image).
 
 GHz
 :   The [SI abbreviation for "giga" meaning one billion](https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes) (G)
@@ -334,6 +357,17 @@ Metadata
     
     Many file formats store metadata along with the data, and many applications ignore most of the metadata.
 
+Offline learning
+:   A type of *machine learning* where the *training* happens separately from and before the function selected during training is used.
+    
+    Offline learning is easier to design than *online learning* and thus is the default for many machine learning applications.
+
+Online learning
+:   A type of *machine learning* where new *training data* is collected and used to change the function being used
+    after some use of the function.
+    
+    Online learning is harder to design than *offline learning* and thus is generally limited to cases where the applicaiton needs to start acting before it has all the training data, such as when it needs to learn from the outcomes of earlier decisions it has made.
+
 Overfitting
 :   A common way that *machine learning* might fail,
     caused by the function family having so many *parameters*
@@ -364,6 +398,15 @@ Parameter
     a value to use in place of $x$ for this run of the algorithm;
     and for each $x$ we provide the algorithm will create a different result.
 
+Pretraining and Fine-tuning
+:   A method of *training* an *AI* system in several steps.
+    
+    The pretraining step typically uses as much *training data* as possible to *learn* broad patterns without *overfitting*.
+    
+    The fine-tuning step moves the function selected during pretraining closer to a smaller, more desireable subset of the training data.
+    
+    Fine-tuning can be repeated to further adjust the learned function.
+
 Problem
 :   Often used as it is in English, to refer to anything that's not going well or needs to be addressed.
 
@@ -385,6 +428,12 @@ Programmable
     Usually, "programmable" is also assumed to mean that the program it follows
     is stored inside the computer's memory and can be an entire *algorithm*,
     not just one of a machine-defined set of operations selected by simple switches and buttons.
+
+Regression
+:   A family of *AI* tasks that predict one or more values based on other values.
+    This is *continuous* (the *categorical* version is called "classification") and *supervised* (because the training data has the value that should be predicted.
+    
+    Regression is an older topic than AI and is widely studied in statistics.
 
 Repetition
 :   A component of programs that indicates that some set of actions should be performed repeatedly.
