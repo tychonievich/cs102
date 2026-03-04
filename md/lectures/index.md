@@ -3,10 +3,26 @@ title: Lectures
 ...
 
 
+Lecture 18 -- ML -- Monday 2 March 2026
+:   Board work
+    :   - [2026-03-04.pdf](2026-03-04.pdf)
+    
+    Displayed text
+    :   - [Hieroglyphics](2026-03-04-learn.txt) as transcribed from the Book of the Dead by <https://github.com/STaTbS21D>
+        - [Polls](2026-03-04-polls.txt)
+        - [Vocabulary](2026-03-04-vocab.txt)
+
+    Relevant readings
+    :   - [Artificial Intelligence](../text/ai.html)
+
 Lecture 17 -- AI -- Monday 2 March 2026
 :   Board work
     :   - [2026-03-02.pdf](2026-03-02.pdf)
     
+    Displayed text
+    :   - [Topics from HW 0](2026-03-02-topics.txt)
+        - [Polls](2026-03-02-polls.txt)
+
     Relevant readings
     :   - [Artificial Intelligence](../text/ai.html)
 
