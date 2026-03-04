@@ -20,7 +20,7 @@ Lecture 17 -- AI -- Monday 2 March 2026
     :   - [2026-03-02.pdf](2026-03-02.pdf)
     
     Displayed text
-    :   - [Topics from HW 0](2026-03-02-topics.txt)
+    :   - [Topics requested in the "Getting to Know You" homework](2026-03-02-topics.txt)
         - [Polls](2026-03-02-polls.txt)
 
     Relevant readings
