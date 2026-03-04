@@ -1,0 +1,64 @@
+
+	How many years elapsed between 
+		Computer Science (CS)
+	and
+		Artificial Intelligence (AI)
+	being introduced as names of fields?
+	
+	If CS came first, enter a positive number.
+	If AI came first, enter a negative number.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Alan Turing created the Turing Test in 1949.
+	As of 2026, computers
+		A. have passed the Turing Test
+		B. have not passed the Turing Test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Alan Turing created the Turing Test in 1949.
+	The first chat program that several people thought was a human was written in _____
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

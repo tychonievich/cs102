@@ -122,7 +122,7 @@ Byte
     and `F3` means a byte with the value two hundred forty-three.
 
 Call
-:   A colloqialism for invoking a *function*.
+:   A colloquialism for invoking a *function*.
 
 
 Classical AI
@@ -359,10 +359,10 @@ Overflow
 Parameter
 :   A placeholder, often implemented as a *variable*, to achieve *generalization*.
 
-    An algorithm to compute $\sqrt{2}$ has no paramters: each time it is used it creates the same result.
+    An algorithm to compute $\sqrt{2}$ has no parameters: each time it is used it creates the same result.
     An algorithm to compute $\sqrt{x}$ has one parameter, $x$: to use the algorithm we have to provide an *argument*,
     a value to use in place of $x$ for this run of the algorithm;
-    and for each $x$ we provide the alorithm will create a different result.
+    and for each $x$ we provide the algorithm will create a different result.
 
 Problem
 :   Often used as it is in English, to refer to anything that's not going well or needs to be addressed.
@@ -374,7 +374,7 @@ Problem
 
     An algorithm solving a problem
     needs to pick what *data* to use to represent the input and output *information*.
-    An implementation of the algorithm as a *function* will have the input data as its *paramters*.
+    An implementation of the algorithm as a *function* will have the input data as its *parameters*.
 
 Programmable
 :   One of the key qualifiers of a computer,
@@ -393,7 +393,7 @@ Repetition
     The most common programming language vocabulary for repetition are `for` and `while`.
 
 Run
-:   A colloquialism meaning to *exceute* a program or invoke a *function*.
+:   A colloquialism meaning to *execute* a program or invoke a *function*.
 
 Selection
 :   There are two types of selection.

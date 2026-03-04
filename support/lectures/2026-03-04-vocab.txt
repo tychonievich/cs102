@@ -1,0 +1,18 @@
+
+	Terms we'll cover today:
+
+		Supervised learning
+		Unsupervised learning
+		
+		Categorical
+		Continuous
+
+		Classification
+		Clustering
+		Generative AI
+		Regression
+
+		Offline learning
+		Online learning
+		Pretraining
+		Fine-tuning

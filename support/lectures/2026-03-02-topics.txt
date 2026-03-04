@@ -1,0 +1,37 @@
++13 	how computers/programs work
++13 −1 	programming/coding
++12 	AI
+		 +1 	AI's climate change impact
+		 +1 	AI limitations
+		 +1 	AI ethics
++10 	computing jargon/communication
+  +8 	how data is represented and stored
+  +4 	data analytics
+  +4 	computing in business
+  +3 	use a variety of programming languages
+  +3 	human/social impact of computing
+  +3 	emerging tech
+  +2 	web design (back and/or front end)
+  +2 	tech day-to-day
+  +2 	overview of computing field
+  +2 	modeling and simulation
+  +2 	future of tech
+  +2 	cybersecurity
+  +1 	use computing to learn about the mind
+  +1 	statistics
+  +1 	philosophy about computing
+  +1 	informatics
+  +1 	how to use data
+  +1 	how programming happens
+  +1 	how client/server works
+  +1 	history of computing
+  +1 	high-level overview of CS concepts
+  +1 	fun facts
+  +1 	digital forensics
+  +1 	crypto
+  +1 	computing policies
+  +1 	computing in healthcare
+  +1 	algorithms
+  +1 	UI/UX design
+  +1 	SQL
+  +1 	CS careers

@@ -1,0 +1,86 @@
+
+	Which do you most agree with?
+	
+	A. Artificial superintelligence has been achieved: AI outperform humans in all cognitive tasks 
+	B. Artificial general intelligence (AGI) has been achieved: AI matches humans in all cognitive tasks
+	C. We're on track to achieve AGI soon
+	D. AGI isn't close, but is likely within my lifetime
+	E. I don't ever expect to see AGI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Last time we defined the following terms. Which would you most like me to review?
+	
+	A. Hill Climbing
+	B. Machine Learning
+	C. Overfitting
+	D. Training Data
+	E. (no review needed)
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Training data: student study habits and grades from past semesters
+	Problem: given how you are studying now, predict the grade you'll earn
+	
+	A. supervised + categorical
+	B. supervised + continuous
+	C. unsupervised + categorical
+	D. unsupervised + continuous
+
+
+
+	The "what heiroglyph is next" task we did today
+
+
+
+
+
+
+
+
+
+
+
