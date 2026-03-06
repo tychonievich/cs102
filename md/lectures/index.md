@@ -3,7 +3,17 @@ title: Lectures
 ...
 
 
-Lecture 18 -- ML -- Monday 2 March 2026
+Lecture 18 -- ML -- Friday 6 March 2026
+:   Board work
+    :   - [2026-03-06.pdf](2026-03-06.pdf)
+
+    Displayed text
+    :   - [Overview of LLMs](2026-03-06-outline.txt)
+
+    Relevant readings
+    :   - [Large Language Models](../text/llm.html)
+
+Lecture 18 -- ML -- Wednesday 4 March 2026
 :   Board work
     :   - [2026-03-04.pdf](2026-03-04.pdf)
     
