@@ -179,7 +179,6 @@ it is very likely that any high-end computer you buy has both its CPU and GPU pr
 Memory production is more diverse than processor production,
 in part because there's generally more market for slower chips using larger transistors and less delicate manufacturing processes
 and in part because memory is far more interchangeable than processors.
-That said, SK Hynix and Samsung (both headquartered in Korea) together account^[You can find many different market ratios claimed online; I'm trying to aggregate a few sources but could be off by ±10%] for roughly 70% of the memory produced worldwide
-with Micron (USA) accounting for another 20%.
+That said, SK Hynix and Samsung (both headquartered in Korea) and Micron (USA) together account^[You can find many different market ratios claimed online; the numebrs here are aggregated from how three leading LLMs summarize diverse Internet sources, and align with other sources I consulted.] for over 90% of the memory produced worldwide.
 :::
 
