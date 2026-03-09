@@ -3,7 +3,20 @@ title: Lectures
 ...
 
 
-Lecture 18 -- ML -- Friday 6 March 2026
+
+Lecture 20 -- LLM-based tools -- Monday 9 March 2026
+:   Board work
+    :   - [2026-03-09.pdf](2026-03-06.pdf)
+
+    Displayed text
+    :   - [Today's topics](2026-03-09-outline.txt)
+        - [Polls](2026-03-09-polls.txt)
+        - [Power](2026-03-09-power.txt)
+
+    Relevant readings
+    :   - [Large Language Models](../text/llm.html)
+
+Lecture 19 -- LLMs -- Friday 6 March 2026
 :   Board work
     :   - [2026-03-06.pdf](2026-03-06.pdf)
 
