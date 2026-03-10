@@ -49,10 +49,10 @@ achieved AGI
 and about what would be needed to move a non-AGI system towards AGI.
 
 The notion of AGI brings up a host of difficult moral and ethical questions.
-If an algorithm were to reach sufficent AGI that it had all of the characteristics we associate with humans,
+If an algorithm were to reach sufficient AGI that it had all the characteristics we associate with humans,
 would it have rights? Would powering it down be murder and programming it be slavery?
 Thus far we have not created any algorithm that has forced us to resolve these questions;
-whether we ever will is a matter on which AI rearchers disagree.
+whether we ever will is a matter on which AI researchers disagree.
 
 As a general observation (with exceptions), I have found that
 
@@ -64,7 +64,7 @@ As a general observation (with exceptions), I have found that
 
 # Classical AI
 
-<dfn>Classical AI</dfn> uses algorithms designed by humans who understand, decopose, and solve the AI problem.
+<dfn>Classical AI</dfn> uses algorithms designed by humans who understand, decompose, and solve the AI problem.
 While they may use some data, the bulk of their behavior is programmed, not extracted from data.
 
 :::example
@@ -78,7 +78,7 @@ This is an example of a purely human-created AI algorithm.
 
 :::example
 A chess-playing AI might have programmed rules for looking ahead several moves,
-with the desireability of a board position at the end of that forecasting
+with the desirability of a board position at the end of that forecasting
 based on data derived from playing many games.
 
 This is an example of a mostly human-created AI algorithm
@@ -105,7 +105,7 @@ is called <dfn>training data</dfn>.
 
 ## Types of machine-learning problems
 
-Problems that machine learning solves can be broadly catagorized into the following groups:
+Problems that machine learning solves can be broadly categorized into the following groups:
 
 - <dfn>Regression</dfn> tries to find a function
     which comes close to matching the training data.
@@ -128,7 +128,7 @@ Problems that machine learning solves can be broadly catagorized into the follow
 
     Classification is categorical; like clustering, it matches each input to a discrete label.
     
-    Clustering is supervised; unlike clustering, the training data does indicates what cluster each dataum should belong to.
+    Clustering is supervised; unlike clustering, the training data indicates what cluster each datum should belong to.
 
 - <dfn>Generative AI</dfn> tries to find a function
     which will add in a missing element in a sequence, grid, or pattern.
@@ -160,7 +160,7 @@ such as "studies a little every week" or "studies for many hours the day before 
 
 Classification might come up with something like
 
-> Your study habits suggests you'll earn an A.
+> Your study habits suggest you'll earn an A.
 
 Classification is similar to clustering, in that it puts each datum in one of several groups;
 but unlike clustering those groups have to be provided in the training data.
@@ -209,7 +209,7 @@ Function families are chosen broadly based on three criteria:
     If we use the function family "lines" ($y = mx + b$) to try to match data that is curved,
     we're guaranteed to fail because the function family is too limited.
     
-    One form of flexibility is the number of <dfn>parameters</dfn>, typcially in the form of numbers that can be chosen to separate one function in the family from another.
+    One form of flexibility is the number of <dfn>parameters</dfn>, typically in the form of numbers that can be chosen to separate one function in the family from another.
     A line has two parameters ($m$ and $b$ in $y = mx + b$), a parabola has three (the $a$, $b$, and $c$ in $y = a x^2 + b x + c$), and so on.
     
     Another form of flexibility is if adding more parameters adds the kind of differences between functions that the data needs.
@@ -240,7 +240,7 @@ This difference in difficulty leads to three broad categories of training.
     
     By having the training (step 2) happen separately from the use of the algorithm (step 3),
     we can afford to spend much more time and energy on the training,
-    resutling in higher-quality results.
+    resulting in higher-quality results.
 
 - <dfn>Online learning</dfn> runs in a loop:
     
@@ -252,7 +252,7 @@ This difference in difficulty leads to three broad categories of training.
     By adding training data as we go, online learning can adapt to new situations
     and learn from the results of its own actions.
     However, the need to do the training (step 1.b) with the same (time and energy) resources that are being used to collect training data (1.a) and use the algorithm (1.c) limits the resources that can be used,
-    peventing use of some of the more expensive (and powerful) function families.
+    preventing use of some of the more expensive (and powerful) function families.
 
 - <dfn>Pretrained</dfn> learning followed by a <dfn>fine-tuning</dfn> step
     is a variant of offline learning that uses two training sets and two rounds of training:

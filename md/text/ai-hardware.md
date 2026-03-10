@@ -69,13 +69,13 @@ This company might boast of how little time passes between an order being placed
 # FLOPS / Watt
 
 At their core, LLMs perform trillions of multiplications and additions for each word they produce;
-as a rule of thumb, they do one multiplication and one addition per paramemter in their underlying ANN model.
+as a rule of thumb, they do one multiplication and one addition per parameter in their underlying ANN model.
 
 As of March 2026, high-end LLMs have between 200 billion and 1 trillion parameters.
 
 Before LLMs, the usual measure of computation power was <abbr>FLOPS</abbr>,
 standing for <dfn>FLoating-point Operations Per Second</dfn>,
-where a floating-point operation is a single math operation (addition, multiplication, etc) on a non-integer number.
+where a floating-point operation is a single math operation (addition, multiplication, etc.) on a non-integer number.
 With LLMs, the "per second" part is seen as less important that the energy used
 (to run a data center you pay for electricity, not time)
 so the common unit is "FLOPS / Watt"
@@ -87,7 +87,7 @@ As of March 2026, high-end GPUs have something shy of 100 billion FLOPS/Watt.
 Combining these, current high-end LLMs running on new high-end GPUs consume in the neighborhood of 10 Joules per word they produce.
 The average American consumes about 12,000 kWh per year in total,
 our about 1400 Watts;
-this includes heat, cooling, electricity, vehicle fuel, energy used by companies to produce and ship products they we consume, etc.
+this includes heat, cooling, electricity, vehicle fuel, energy used by companies to produce and ship products that we consume, etc.
 This suggests that if we had LLMs produce 140 words per second per person
 that would double our overall energy use.
 
@@ -122,7 +122,7 @@ because that would slow down the LLM by a factor of a hundred or more.
 
 This has created a huge spike in the demand for high-capacity, high-speed memory.
 Not only do we need many more computers to run all the new LLM workloads,
-but each one needs a hundred fold more memory than was common for computers before.
+but each one needs a hundredfold more memory than was common for computers before.
 
 Memory (and CPUs and GPUs and many other computer components)
 is created as follows:
@@ -162,7 +162,7 @@ and so on.
 Because of the complexity of this process, it was largely developed under the assumption of an open global trade network,
 with the equipment needed for different steps manufactured in specialized labs in different countries
 and used in a few dedicated companies that create chips for many other companies' based on those companies' designs.
-With the degredation of global trade in the last decade,
+With the degradation of global trade in the last decade,
 many countries are racing to try to replicate this entire supply chain within their own borders,
 with the usual losses of efficiency that comes from such decentralization and unspecialization.
 
@@ -179,6 +179,6 @@ it is very likely that any high-end computer you buy has both its CPU and GPU pr
 Memory production is more diverse than processor production,
 in part because there's generally more market for slower chips using larger transistors and less delicate manufacturing processes
 and in part because memory is far more interchangeable than processors.
-That said, SK Hynix and Samsung (both headquartered in Korea) and Micron (USA) together account^[You can find many different market ratios claimed online; the numebrs here are aggregated from how three leading LLMs summarize diverse Internet sources, and align with other sources I consulted.] for over 90% of the memory produced worldwide.
+That said, SK Hynix and Samsung (both headquartered in Korea) and Micron (USA) together account^[You can find many different market ratios claimed online; the numbers here are aggregated from how three leading LLMs summarize diverse Internet sources, and align with other sources I consulted.] for over 90% of the memory produced worldwide.
 :::
 

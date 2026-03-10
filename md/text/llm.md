@@ -38,7 +38,7 @@ Some of the reasons we like linear operators as a function family for machine le
 
 - Linear operators are very easy to compute, even with millions of inputs.
 - Linear operators are primarily parameterized by huge lists of real numbers, giving many options to consider during training.
-- Linear operators are easily analyzed, meaning the next function we check during training can be chosen cleverly to make the objective function likely to increase; that analysis enables <dfn>hill climbing</dfn> where the each new function we try is "above" the one before in terms of quality.
+- Linear operators are easily analyzed, meaning the next function we check during training can be chosen cleverly to make the objective function likely to increase; that analysis enables <dfn>hill climbing</dfn> where each new function we try is "above" the one before in terms of quality.
 
 Linear operators are not a good function family for machine learning for two reasons.
 First, because they are easily analyzed they can only represent functions that are easily analyzed,
@@ -137,7 +137,7 @@ in the fine-tuning we focus the training on just text we like to get it to prefe
 
 :::example
 If we expect the input to be questions and want the output to be answers
-then the pre-training would use all the text we can find.
+then the pretraining would use all the text we can find.
 The fine-tuning would be just the Q&A forums again, pushing the function closer to those outputs.
 
 The result will be a prompt like "How do I bake bread?" given to an LLM being much more likely to start producing a recipe for bread than it is to start producing other text that might follow that online, such as expanding the question with "Is it hard?" or responding with judgment like "Why would you even want to do that?"
@@ -169,7 +169,7 @@ we pick the largest number in the list^[Or, if we want more variation in output,
 ## Reduced dimension
 
 The one-hot encoding has the nice property that it doesn't treat any word as special:
-they each get their own place in the list, none any different than any others.
+they each get their own place in the list, none any different then any others.
 But we know that some words are more like each other than other words,
 and we want to have that similarity in our model.
 

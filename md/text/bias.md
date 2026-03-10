@@ -50,9 +50,9 @@ Its training data comes from the Internet, meaning it has a lost of training dat
 If I have facial features that do not match the bulk of the training data,
 the model will be much weaker at recognizing me:
 faces like mine have lower accuracy because there was less training.
-But most images are not images of faces, so low acuracy will usually result in "not a face" judgments.
+But most images are not images of faces, so low accuracy will usually result in "not a face" judgments.
 
-Once I find that AIs cannot see me, I am likely to find work-arounds:
+Once I find that AIs cannot see me, I am likely to find workarounds:
 using non-facial-recognition to log in to my devices (and thus reducing my presence in future training data),
 adjusting my grooming to try to get AIs to see me (and thus conforming my future image to what it already knows),
 and so on.
@@ -74,10 +74,10 @@ will pick up on those patterns and use them to show me more applicants like that
 If I was 10% more likely to hire someone from my ethnic group than others before,
 the AI will show me at least 10% more of that group
 and my bias will continue to be present, meaning I'll still be 10% more likely to hire from that 10% larger pool,
-making my next reound of hiring closer to 20% biased.
+making my next round of hiring closer to 20% biased.
 If the AI learns from that it will show me even more of them,
 of whom I'll still pick an extra 10% bringing the next round even higher,
-and so on with ever increasing bias.
+and so on with ever-increasing bias.
 :::
 
 :::example
@@ -85,16 +85,17 @@ Summarizing information.
 
 Suppose 70% of people posting things online believe $X$ and 30% don't.
 
-If I ask AI about $X$, it will tell me most people beleive $X$.
+If I ask AI about $X$, it will tell me most people believe $X$.
 I might then make a post that says $X$ too, trusting the AI summary.
 
 When the AI looks again, my page will be evidence of one more person believing $X$
-and it will start saying even more people believe $X$,
+which will cause the AI to saying even more people believe $X$,
+increasing the likelihood that that AI will tell others that $X$ is widely believed,
 and so on and so forth.
 
 This kind of reduction of minority views is also present in all other forms of summarizing
-(search engines, surveys, news reports, etc),
-but the prevelance of people accepting the AI summary and looking no further
+(search engines, surveys, news reports, etc.),
+but the prevalence of people accepting the AI summary and looking no further
 coupled with AIs having many definitive answers in their training data and less intricate and caveated replies
 means AIs seem to be more extreme than some other techniques.
 :::
