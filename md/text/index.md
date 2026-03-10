@@ -25,3 +25,4 @@ Quiz 1 covered the above topics
 - [Artificial Intelligence](ai.html)
 - [Large Language Models](llm.html)
 - [AI hardware and memory](ai-hardware.html)
+- [Algorithmic Bias](bias.html)
