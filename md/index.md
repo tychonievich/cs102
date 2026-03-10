@@ -109,11 +109,18 @@ Quizzes (36% = 3 x 12% each)
 Final Exam (20%)
 :   On <time datetime="2026-05-08T19:00:00">Friday, May 8 at 7pm</time>^[This day and time [was schedule by the registrar](https://registrar.illinois.edu/final-exam-scheduling-guidelines/).]
     we will have a cumulative in-person exam, broadly covering the content of all 3 quizzes.
-    
+       
     The final is partly a chance to review and refresh information learned previously.
 
     The final is partly a chance to show you have learned material you missed on the quizzes.
     Superior performance on the portion of the final the covers missed quiz material will increase prior quiz grades.
+    That increase will be computed as follows:
+    
+    - The final will be divided into three parts, one for each quiz.
+    - If your grade on part 1 is greater than your grade on quiz 1, we will adjust your quiz 1 grade upwards
+    to be 20% your original quiz 1 grade and 80% your final part 1 grade.
+    - The same 80/20 adjustments will be made for quiz/part 2 and for quiz/part 3.
+    - The final will never lower any quiz grade.
 
 ## Absences
 
