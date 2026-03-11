@@ -6,7 +6,7 @@ title: Lectures
 
 Lecture 20 -- Using LLMs and Agentic AI -- Wednesday 11 March 2026
 :   Board work
-    :   - [2026-03-09.pdf](2026-03-11.pdf)
+    :   - [2026-03-11.pdf](2026-03-11.pdf)
 
     Displayed text
     :   - [Polls](2026-03-11-polls.txt)
@@ -14,6 +14,7 @@ Lecture 20 -- Using LLMs and Agentic AI -- Wednesday 11 March 2026
 
     Relevant readings
     :   - [Large Language Models](../text/llm.html)
+        - [Reasoning, agents, and related LLM-using tools](../text/llm-plus.html)
 
 Lecture 20 -- LLM-based tools -- Monday 9 March 2026
 :   Board work
