@@ -26,4 +26,4 @@ Quiz 1 covered the above topics; Quiz 2 will focus on those below.
 - [Large Language Models](llm.html)
 - [Reasoning, agents, and related LLM-using tools](llm-plus.html)
 - [Algorithmic Bias](bias.html)
-- [AI hardware and memory](ai-hardware.html)
+- [AI hardware and memory](ai-hardware.html) (not covered in lecture)

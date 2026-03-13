@@ -3,8 +3,20 @@ title: Lectures
 ...
 
 
+Lecture 22 -- LLMs in development and Algorithmic Bias -- Friday 13 March 2026
+:   Board work
+    :   - [2026-03-13.pdf](2026-03-13.pdf)
 
-Lecture 20 -- Using LLMs and Agentic AI -- Wednesday 11 March 2026
+    Displayed text
+    :   - [Today's topics](2026-03-13-outline.txt)
+        - [Polls](2026-03-13-polls.txt)
+
+    Relevant readings
+    :   - [Reasoning, agents, and related LLM-using tools](../text/llm-plus.html)
+        - [Algorithmic Bias](../text/bias.html)
+
+
+Lecture 21 -- Using LLMs and Agentic AI -- Wednesday 11 March 2026
 :   Board work
     :   - [2026-03-11.pdf](2026-03-11.pdf)
 
