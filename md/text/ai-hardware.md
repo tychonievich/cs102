@@ -71,7 +71,7 @@ This company might boast of how little time passes between an order being placed
 At their core, LLMs perform trillions of multiplications and additions for each word they produce;
 as a rule of thumb, they do one multiplication and one addition per parameter in their underlying ANN model.
 
-As of March 2026, high-end LLMs have between 200 billion and 1 trillion parameters.
+As of March 2026, high-end LLMs have between 400 billion and 4 trillion parameters.
 
 Before LLMs, the usual measure of computation power was <abbr>FLOPS</abbr>,
 standing for <dfn>FLoating-point Operations Per Second</dfn>,
@@ -84,14 +84,14 @@ FLOPS / Watt = operations / Joule.
 
 As of March 2026, high-end GPUs have something shy of 100 billion FLOPS/Watt.
 
-Combining these, current high-end LLMs running on new high-end GPUs consume in the neighborhood of 10 Joules per word they produce.
+Combining these, current high-end LLMs running on new high-end GPUs consume in the neighborhood of between 5 and 50 Joules per word they produce.
 The average American consumes about 12,000 kWh per year in total,
-our about 1400 Watts;
+or about 1400 Watts;
 this includes heat, cooling, electricity, vehicle fuel, energy used by companies to produce and ship products that we consume, etc.
-This suggests that if we had LLMs produce 140 words per second per person
+This suggests that if we had LLMs produce between 30 and 300 words per second per person
 that would double our overall energy use.
 
-Is that realistic? Could we possibly use 140 words per second?
+Is that realistic? Could we possibly use 30 (let alone 300) words per second?
 
 If humans were reading all of those words, no.
 Humans can generally only read about 3–5 words per second.
@@ -108,7 +108,7 @@ ask an LLM to change the code based on the review,
 ask the LLM how to run the program,
 run the program that way and have an LLM summarize the program's output,
 and so on and so forth...
-then 140 words per second can easily be not only achieved but vastly exceeded.
+then 300 words per second can easily be not only achieved but vastly exceeded.
 
 # Memory and Silicon
 
