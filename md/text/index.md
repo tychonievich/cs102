@@ -20,10 +20,10 @@ Content introduced in lecture is expanded on in text.
     - or, [There are more problems than there are programs](more-problems.html)
     - or, [Undecideable problems would prove much of mathematics](halt-proves-many-things.html)
 
-Quiz 1 covered the above topics
+Quiz 1 covered the above topics; Quiz 2 will being with those below.
 
 - [Artificial Intelligence](ai.html)
 - [Large Language Models](llm.html)
 - [Reasoning, agents, and related LLM-using tools](llm-plus.html)
-- [AI hardware and memory](ai-hardware.html)
 - [Algorithmic Bias](bias.html)
+- [AI hardware and memory](ai-hardware.html)
