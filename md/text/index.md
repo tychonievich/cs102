@@ -27,3 +27,4 @@ Quiz 1 covered the above topics; Quiz 2 will focus on those below.
 - [Reasoning, agents, and related LLM-using tools](llm-plus.html)
 - [Algorithmic Bias](bias.html)
 - [AI hardware and memory](ai-hardware.html) (only section 2 was covered in lecture)
+- [Software development](swdev.html)
