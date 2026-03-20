@@ -234,13 +234,13 @@ and the picture laid out (designed) with each picture element given an appropria
 
 This reduced quality has many names.
 The oft-modified code is said to become <dfn>brittle</dfn>
-or to be <dfn>spaghetti code</dfn>;
-decisions made to add a new feature wherever it will fit
-is said to accumulate <dfn>technical debt</dfn>;
-the code is said to have developed a <dfn>code smell</dfn>
+or to be <dfn>spaghetti code</dfn>
+or to have developed a <dfn>code smell</dfn>
 or to have experienced <dfn>code rot</dfn>.
+The actions that added new feature wherever they fit
+are said to have added <dfn>technical debt</dfn> to the software.
 
-It takes energy and time to rework a program to be well-designed again after it has accumulated technical debt.
-While there are many parts to this, the most commonly discussed is refactoring.
+It takes energy and time to pay down technical debt, reworking a program to be once again well-designed.
+One key part of paying down technical debt is refactoring.
 To <dfn>refactor</dfn> software is to change *how* it does what it does without changing *what* it does.
 Refactoring adds no features and fixes no bugs, but it can make future feature additions and bug fixes much, much easier.
