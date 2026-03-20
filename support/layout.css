@@ -302,6 +302,6 @@ details > summary > p:first-child { display: inline; }
     border-left: rgba(191,191,0,0.2) solid 0.5ex;
     padding: 0.5em 1em;
 }
-.important p:first-child { font-size: 150%; }
+.important > p:first-child { font-size: 150%; }
 
 
