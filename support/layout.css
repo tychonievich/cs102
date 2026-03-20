@@ -25,7 +25,7 @@
 body {
   margin-left: var(--leftplain);
   width: var(--mainplain);
-  line-height: 130%;
+  line-height: 1.3;
 }
 
 
