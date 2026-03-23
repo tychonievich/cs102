@@ -3,6 +3,19 @@ title: Lectures
 ...
 
 
+Lecture 23 -- Five-step Software Development -- Monday 23 March 2026
+:   Board work
+    :   - [2026-03-23.pdf](2026-03-23.pdf)
+
+    Displayed text
+    :   - [Today's topics](2026-03-23-outline.txt)
+        - [Polls](2026-03-23-polls.txt)
+        - [Defining "upstream"](2026-03-23-upstream.txt)
+
+    Relevant readings
+    :   - [Software development](../text/swdev.html)
+
+
 Lecture 22 -- LLMs in development and Algorithmic Bias -- Friday 13 March 2026
 :   Board work
     :   - [2026-03-13.pdf](2026-03-13.pdf)
