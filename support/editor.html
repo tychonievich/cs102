@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Local Editor</title>
+    <title>Text Editor</title>
     <style>
         :root { --bg: #181818; --header: #252525; --text: #d4d4d4; --border: #333; --input: #333; }
         body.light { --bg: #ffffff; --header: #f0f0f0; --text: #333; --border: #ccc; --input: #eee; }
@@ -32,12 +32,12 @@
     </div>
 </header>
 
-<textarea id="editor" placeholder="Start typing your thoughts..." spellcheck="false"></textarea>
+<textarea id="editor" placeholder="Type or paste text here..." spellcheck="false"></textarea>
 
 <script>
 
     function about() {
-        alert("This editor was made using gemini. I opened gemini.google.com and used the following prompts:\n\n1. I'd like to make a client-side app that runs locally without a server. \n\n2.  I'd like it to be a plain text editor, with a custom file name and Ctrl+S to save it with that file name on my computer \n\n3.  I'd like it to work from file:/// URLs \n\n4.  Can we also support Cmd+S (for Mac users)? \n\nI then copied the final response, saved it as a file, and since I wanted you to use it too put it here.");
+        alert("This editor was made using Gemini. I opened https://gemini.google.com/ and used the following four prompts (one after another, not all four at once):\n\n1. I'd like to make a client-side app that runs locally without a server. \n\n2.  I'd like it to be a plain text editor, with a custom file name and Ctrl+S to save it with that file name on my computer \n\n3.  I'd like it to work from file:/// URLs \n\n4.  Can we also support Cmd+S (for Mac users)? \n\nI then copied the final response, saved it as a file, and loaded it onto this webpage for you to use too. It added the light/dark theme setting on its own. I added this description of how it was created manually.");
     }
 
     const editor = document.getElementById('editor');
