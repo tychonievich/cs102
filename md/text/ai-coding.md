@@ -1,5 +1,5 @@
 ---
-title: Elementary AI-assisted programming
+title: Basic AI-assisted programming
 ...
 
 AI is changing every aspect of software development.
