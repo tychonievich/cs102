@@ -3,6 +3,14 @@ title: Lectures
 ...
 
 
+Lecture 24 -- Spiral model; impact of design; technical debt; supply chain -- Wednesday 25 March 2026
+:   Board work
+    :   - [2026-03-25.pdf](2026-03-25.pdf)
+
+    Relevant readings
+    :   - [Software development](../text/swdev.html)
+
+
 Lecture 23 -- Five-step Software Development -- Monday 23 March 2026
 :   Board work
     :   - [2026-03-23.pdf](2026-03-23.pdf)
