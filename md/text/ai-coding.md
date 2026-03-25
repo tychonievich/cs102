@@ -13,6 +13,19 @@ In particular, it assumes
 This page was written in March 2026.
 Given the speed of AI development, it will likely become at least partially obsolete by the end of the year.
 
+# Intellectual property
+
+Intellectual property law as it relates to AI-developed code is not yet fully resolved.
+
+There is one view (famously exemplified by [the copyright office's response to a monkie's selfie](https://en.wikipedia.org/wiki/Monkey_selfie_copyright_dispute#Expert_opinions))
+that only works created by a human can be copyrighted.^[See <https://www.copyright.gov/comp3/docs/compendium-12-22-14.pdf#page=465> section 802.5(B).]
+
+There is another view that using tools does not remove authorship.
+
+How these two views will finally be resolved by the courts or legislature
+is not yet determined.
+If having full rights and ownership over your software product is important to you,
+there is some risk that the development processes described here will fail to provide that.
 
 # Logistics
 
@@ -105,4 +118,46 @@ we recommend instead saying
 
 ## Not downloading things
 
+There is much you can do if you download <dfn>libraries</dfn>? (code written by others) an <dfn>assets</dfn> (non-code content like images),
+but managing those and knowing which ones to trust can be tricky.
+This page recommends refusing all of those.
+
+If the AI suggests you have an image file, "import" or "include" a "module" or "library", or the like
+we recommend you respond with something like
+
+> I want this to be stand-alone and self-contained, no external assets or third-party libraries. Can we do it with just the app's code alone?
+
+
+## Making changes
+
+Much of the LLM's training data consists of <dfn>patches</dfn>,
+which have the form "replace lines 305--317 of this file with this other code instead: *(code)*".
+Because of that, the AI will often respond to a new suggestion with only a few lines of new code,
+assuming you can figure out what code to replace.
+
+There are two techniques for handling this:
+
+1. When it gives you an entire file, replace the file with that.
+
+    When if gives you a little new code, search for code that it describes being replaced or code that looks like part of what it gave you and replace it in the file.
+
+2. When it gives you a little new code, ask it to show the entire file with that new code integrated.
+
+    Because this can take time (especially once the file gets large),
+    you might want to try several prompts between such a request.
+
+
+## Fixing bugs
+
+The AI will make mistakes.
+
+Usually, you can simply describe what the app is doing wrong to the AI and it will fix it.
+
+Sometimes that won't work. In those cases, you might try prompts that make it rethink the entire app's code, like
+
+> Can you re-write this to be shorter?
+
+> Can you add comments and descriptive variable names?
+
+> Are there refactors that would make the code easier to maintain?
 
