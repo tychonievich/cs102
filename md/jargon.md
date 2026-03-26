@@ -37,7 +37,7 @@ Abstraction barrier
     which do matter in some cases.
     For example,
     [Ariane flight V88](https://en.wikipedia.org/wiki/Ariane_flight_V88) exploded
-    and a [Pariot Missle hit the army that fired it](https://barrgroup.com/sites/default/files/case-study-patriot-missile-defects.pdf)
+    and a [Patriot Missile hit the army that fired it](https://barrgroup.com/sites/default/files/case-study-patriot-missile-defects.pdf)
     both because the abstraction barrier
     between bits and numbers failed.
 
@@ -113,7 +113,7 @@ Bit
 
 Brittle
 :   A characteristic of software, describing the difficulty of making changes
-    or the likelihood that small-sounding changes will either break eisting systems or require a large amount of work.
+    or the likelihood that small-sounding changes will either break existing systems or require a large amount of work.
     
     Brittleness is usually accumulated over time as a form of *technical debt*.
 
@@ -159,7 +159,7 @@ Compiler
     but they also tend to create programs that run more quickly than those created for an interpreter.
 
 Continuous
-:   A family of *AI* tasks where the output is one or more real numbers (a score, a grid of pixel intensities, etc.), not *categorical* data..
+:   A family of *AI* tasks where the output is one or more real numbers (a score, a grid of pixel intensities, etc.), not *categorical* data.
 
 Data
 :   A defined, unambiguous representation of *information*.
@@ -193,7 +193,7 @@ Detail Removal
     *Functions* are the primary tool for that form of detail removal.
 
     Another important form of detail removal is an *abstract data type*,
-    which helps use build algorithms that do not depend too closely on the specifics of how we represet *data*.
+    which helps use build algorithms that do not depend too closely on the specifics of how we represent *data*.
 
 Digital
 :   Represented or operating using a set of discrete symbols called digits,
@@ -206,7 +206,7 @@ Execute
 :   Formally: load the *machine instructions* of a *compiled* program into memory
     and have the processor begin following those instructions.
 
-    Informarlly, also used for running an *interpreter* on a program's source code
+    Informally, also used for running an *interpreter* on a program's source code
     or, less often, for invoking a *function*.
 
 Exploit
@@ -324,12 +324,12 @@ Hill climbing
     4. If the new function is not good enough, return to step 2
 
 Information
-:   Usually, "information" is used in a loose, human way to refer to the human-understood meaning carred by data.
+:   Usually, "information" is used in a loose, human way to refer to the human-understood meaning carried by data.
 
     The information that I am 20 years old could be conveyed by various data:
     the text "I'm 20",
     the bits 00010100 in a location where age values are expected,
-    the difference between the current date and a birth date,
+    the difference between the current date and a birthdate,
     etc.
 
     Less often, "information" is used as a technical term for the bits of some digital communication that could not be anticipated,
@@ -349,7 +349,7 @@ Library
     ranging from under-the-hood data structures and simple algorithms
     to broad frameworks that provide visual elements used in many apps.
     
-    Many libraries are *maintained* by a small team of developers as a side project and relased for free.
+    Many libraries are *maintained* by a small team of developers as a side project and released for free.
     This makes them vulnerable to *supply chain attacks*.
 
 Machine instructions
@@ -396,7 +396,7 @@ Online learning
 :   A type of *machine learning* where new *training data* is collected and used to change the function being used
     after some use of the function.
     
-    Online learning is harder to design than *offline learning* and thus is generally limited to cases where the applicaiton needs to start acting before it has all the training data, such as when it needs to learn from the outcomes of earlier decisions it has made.
+    Online learning is harder to design than *offline learning* and thus is generally limited to cases where the application needs to start acting before it has all the training data, such as when it needs to learn from the outcomes of earlier decisions it has made.
 
 Overfitting
 :   A common way that *machine learning* might fail,
@@ -433,7 +433,7 @@ Pretraining and Fine-tuning
     
     The pretraining step typically uses as much *training data* as possible to *learn* broad patterns without *overfitting*.
     
-    The fine-tuning step moves the function selected during pretraining closer to a smaller, more desireable subset of the training data.
+    The fine-tuning step moves the function selected during pretraining closer to a smaller, more desirable subset of the training data.
     
     Fine-tuning can be repeated to further adjust the learned function.
 
@@ -490,10 +490,10 @@ Requirements
 Requirements elicitation
 :   The process of defining the *requirements* of a project.
     
-    Requirements are often ambiguous and poorly defined iniitally,
+    Requirements are often ambiguous and poorly defined initially,
     and often conflict, and often conflict in non-obvious ways
-    (for example, the nonfunctional rerquirements that the code be high quality, inexpensive, and delivered cannot all be satisfied).
-    Requirements elicitation is generally an itneractive process
+    (for example, the nonfunctional requirements that the code be high quality, inexpensive, and delivered cannot all be satisfied).
+    Requirements elicitation is generally an interactive process
     with the developer asking questions and posing possible solutions
     and the clients commenting on them and adding priorities to resolve conflicts.
 
@@ -514,7 +514,7 @@ Selection
 
 Spiral model
 :   A set of related repeated or iterative organizations of software development.
-    Sprial models are usually grouped into four main pieces:
+    Spiral models are usually group development work into four main pieces:
     
     1. Plan a set of objectives or *requirements* to be added to the software.
     2. Identify likely risks in adding these and try to mitigate them.
@@ -522,9 +522,9 @@ Spiral model
     4. Evaluate how well the software meets its goals.
     5. Return to step 1 and repeat.
     
-    The spiral model is sometimes offerred as an alternative to the *waterfall model*,
+    The spiral model is sometimes offered as an alternative to the *waterfall model*,
     sometimes posed as having the entire waterfall model in step 3 above,
-    and sometimes suggested to have one loop for each step of the waterfall model.
+    and sometimes posed with one pass around the loop for each step of the waterfall model.
 
 Supervised learning
 :   A category of *machine learning* where the *training data* includes the desired output for each input.
@@ -566,12 +566,12 @@ Testing
 
     Most tests are code that run other code to see if it does the right thing.
     Some tests are done by humans using the software,
-    and are called *alpa* tests if those humans are internal to the development process
+    and are called *alpha* tests if those humans are internal to the development process
     or *beta* tests if they are external.
     
     Tests do not prove that software works; they just offer some confidence that it seems to work.
     It is possible to prove that software works, but doing so typically takes at least 10× as much time and money as creating the software itself, and thus is rarely seen as worth the investment.
-    As a conseuquence, most software ships with bugs, which is one of the reasons that *maintenance* is necessary.
+    As a consequence, most software ships with bugs, which is one of the reasons that *maintenance* is necessary.
 
 Train
 :   The step in *machine learning* where a function is selected that matches the *training data*.
@@ -595,7 +595,7 @@ Type
     The bits (the information we actually store in the computer) have not changed, only how we interpret it.
 
 Upstream
-:   Often used to meani the *libraries* and other resources used by a piece of software.
+:   Often used to mean the *libraries* and other resources used by a piece of software.
 
     Sometimes used as a direction: software uses libraries that are upstream from it and is used by those that are downstream from it.
 
@@ -630,7 +630,7 @@ Vulnerability
     to prevent them being targeted by *exploits*.
 
 Waterfall model
-:   Any of several ways of breaking software development into a sequqece of steps, one undetaken after another.
+:   Any of several ways of breaking software development into a sequence of steps, one undertaken after another.
     One common breakdown is:
     
     1. *Requirements*
