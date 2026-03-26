@@ -127,6 +127,16 @@ we recommend you respond with something like
 
 > I want this to be stand-alone and self-contained, no external assets or third-party libraries. Can we do it with just the app's code alone?
 
+Some things the AI will tell you are hard to do without a library
+or will work less well the no-library way.
+If that's the case, you can ask 
+
+> Can we use a CDN to include the library?
+
+Usually the answer will be yes, and that will prevent you from needing to manage a bunch of folders and files yourself.
+However, it will mean that your program goes online^[to a Content Delivery Network (<abbr>CDN</abbr>), which will usually pull a copy from a server physically close to you to minimize network traffic] to download library code written by someone else
+each time you load the page, which is usually fine but worth knowing is happening.
+
 
 ## Making changes
 
@@ -161,3 +171,13 @@ Sometimes that won't work. In those cases, you might try prompts that make it re
 
 > Are there refactors that would make the code easier to maintain?
 
+For the kind of code we're creating, we can sometimes get additional diagnostic information that might help the AI.
+There's a tool in browsers called the "JavaScript console" which can be opened as follows:
+
+| | Linux/Windows | Mac |
+|-|:-:|:-:|
+| Chrome/Edge/Brave | Ctrl+Shift+J | Cmd+Option+J |
+| Firefox | Ctrl+Shift+K | Cmd+Option+K |
+| Safari^[Only works if you enabled the Develop menu through Preferences → Advanced] | | Cmd+Option+C |
+
+Some (but not all) errors will create messages in the JavaScript console which sometimes (but not always) will help the AI if you copy them over to the AI.
