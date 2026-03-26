@@ -111,6 +111,12 @@ Bit
     
     The word "bit" is a portmanteau of "<u>bi</u>nary digi<u>t</u>".
 
+Brittle
+:   A characteristic of software, describing the difficulty of making changes
+    or the likelihood that small-sounding changes will either break eisting systems or require a large amount of work.
+    
+    Brittleness is usually accumulated over time as a form of *technical debt*.
+
 Byte
 :   A group of 8 *bits*.
     Equivalently, a group of 2 *hex* digits.
@@ -171,6 +177,13 @@ Data Structure
     "List" could also be implemented with other data structures,
     such as by having each element in the list store both a value
     and the location in memory to find the element that comes after it.
+
+Design
+:   The high-level outline of how software approaches its tasks.
+    This typically includes
+    how the task is broken into parts,
+    the major *algorithms* and *data structures* used in each part,
+    and concrete decisions that realize *requirements* that could be met in several ways.
 
 Detail Removal
 :   One of two common forms of *abstraction*.
@@ -330,6 +343,15 @@ Interpreter
     run much more slowly than those that use a *compiler*;
     but they also tend to provide more abstractions and thus require less effort to program in than those created for a compiler.
 
+Library
+:   A set of code that is designed to be used by other programs.
+    Libraries generally implement components that are common to many applications,
+    ranging from under-the-hood data structures and simple algorithms
+    to broad frameworks that provide visual elements used in many apps.
+    
+    Many libraries are *maintained* by a small team of developers as a side project and relased for free.
+    This makes them vulnerable to *supply chain attacks*.
+
 Machine instructions
 :   A set of simple actions a processor can take,
     encoded in a compact binary format.
@@ -348,6 +370,14 @@ Machine learning (<abrr>ML</abbr>)
     1. Defining a *general* family of functions or algorithms, where a specific function from the family can be selected by setting one or more *parameters*.
     2. Searching though the function family for one that comes closest to matching some *training data*.
     3. Using that function to solve problems.
+
+Maintenance
+:   Changes made to a software product after it is "complete" and shipped.
+    There are three main reasons to change delivered code:
+    
+    - Removing bugs that were missed during *testing* and were identified after the code was released.
+    - Adding new features that became part of the *requirements* after the original version was released.
+    - Updating code that uses *libraries* or other *upstream* resources when those resources have changed.
 
 Metadata
 :   Data about the (main) data.
@@ -429,6 +459,16 @@ Programmable
     is stored inside the computer's memory and can be an entire *algorithm*,
     not just one of a machine-defined set of operations selected by simple switches and buttons.
 
+Refactoring
+:   Changing how code operates without changing what it does.
+    
+    There are two common reasons to refactor code.
+    
+    When adding a new feature, refactoring can be used to first update the design and implementation to make the new feature simpler to add.
+    
+    When dealing with code that has accumulated *technical debt*, refactoring can be used to try to simplify the code and make it less *brittle*.
+    
+    
 Regression
 :   A family of *AI* tasks that predict one or more values based on other values.
     This is *continuous* (the *categorical* version is called "classification") and *supervised* (because the training data has the value that should be predicted.
@@ -440,6 +480,22 @@ Repetition
     Also called iteration or looping.
 
     The most common programming language vocabulary for repetition are `for` and `while`.
+
+Requirements
+:   What the client or user of software wants from the software. This can be divided into two broad types:
+    
+    - *Functional requirements* describe what the software does.
+    - *Nonfuntional requirements* describe how it does that and how it is developed: what platforms it runs on, how many resources it needs, how much it costs, when it will be ready, and so on.
+
+Requirements elicitation
+:   The process of defining the *requirements* of a project.
+    
+    Requirements are often ambiguous and poorly defined iniitally,
+    and often conflict, and often conflict in non-obvious ways
+    (for example, the nonfunctional rerquirements that the code be high quality, inexpensive, and delivered cannot all be satisfied).
+    Requirements elicitation is generally an itneractive process
+    with the developer asking questions and posing possible solutions
+    and the clients commenting on them and adding priorities to resolve conflicts.
 
 Run
 :   A colloquialism meaning to *execute* a program or invoke a *function*.
@@ -456,6 +512,20 @@ Selection
     is a component of a program that indicates which one out of several candidate pieces of data should be used.
     The most common programming language vocabulary for this type of selection are the name of the set of candidates, followed by which candidate in the set to chose in brackets, like `some_list[3]` to pick item 3 out of a list.
 
+Spiral model
+:   A set of related repeated or iterative organizations of software development.
+    Sprial models are usually grouped into four main pieces:
+    
+    1. Plan a set of objectives or *requirements* to be added to the software.
+    2. Identify likely risks in adding these and try to mitigate them.
+    3. Develop code that meets the new requirements.
+    4. Evaluate how well the software meets its goals.
+    5. Return to step 1 and repeat.
+    
+    The spiral model is sometimes offerred as an alternative to the *waterfall model*,
+    sometimes posed as having the entire waterfall model in step 3 above,
+    and sometimes suggested to have one loop for each step of the waterfall model.
+
 Supervised learning
 :   A category of *machine learning* where the *training data* includes the desired output for each input.
 
@@ -467,6 +537,41 @@ TB
     
     Some of that space is typically used to store an index of sorts to help find the rest of the data,
     so the usable space is generally lower than the advertised, theoretically-provided space.
+
+Supply chain attack
+:   One form of cyber crime, based on inserting malicious code into the *upstream* *libraries* used by the software that is being attacked.
+    
+    The common approach to these attacks runs as follows:
+    
+    1. Find a library that is upstream from the target and has limited developers and funding.
+    2. Offer some helpful *maintenance* to those libraries to buld trust.
+    3. Once trust is gained, add malicious code to the libraries, often by hiding it in places that other developers looking at the code don't see.
+
+Technical debt
+:   The accumulated poor *design* created by modifying code after it is designed,
+    often as a result of *maintenance* but sometimes as a result of the initial design being inadequate.
+    
+    Technical debt makes code *brittle*.
+    
+    *Refactoring* is often used to paying down technical debt.
+    If too much technical debt accumulates, it becomes cheaper to start over than to continue maintaining the existing software.
+    
+    Technical debt often accumulates because developers are pressured to get the next thing out now,
+    even if that means cutting corners and not keeping the code clean and well-designed.
+    Like financial debt, technical debt gives us things we want now,
+    but with increased cost later on.
+
+Testing
+:   The part of software development that attempts to check if the software works.
+
+    Most tests are code that run other code to see if it does the right thing.
+    Some tests are done by humans using the software,
+    and are called *alpa* tests if those humans are internal to the development process
+    or *beta* tests if they are external.
+    
+    Tests do not prove that software works; they just offer some confidence that it seems to work.
+    It is possible to prove that software works, but doing so typically takes at least 10× as much time and money as creating the software itself, and thus is rarely seen as worth the investment.
+    As a conseuquence, most software ships with bugs, which is one of the reasons that *maintenance* is necessary.
 
 Train
 :   The step in *machine learning* where a function is selected that matches the *training data*.
@@ -488,6 +593,11 @@ Type
     If they are interpreted with the data type "integer" they mean 102.
     If they are interpreted with the data type "UTF-8 character" they mean lower-case F (`f`).
     The bits (the information we actually store in the computer) have not changed, only how we interpret it.
+
+Upstream
+:   Often used to meani the *libraries* and other resources used by a piece of software.
+
+    Sometimes used as a direction: software uses libraries that are upstream from it and is used by those that are downstream from it.
 
 Unsupervised learning
 :   A category of *machine learning* where the *training data* does not include desired outputs, only a set of example inputs.
@@ -518,3 +628,13 @@ Vulnerability
     and new vulnerabilities are discovered every day.
     It is essential that software be regularly updated to close vulnerabilities as they are discovered
     to prevent them being targeted by *exploits*.
+
+Waterfall model
+:   Any of several ways of breaking software development into a sequqece of steps, one undetaken after another.
+    One common breakdown is:
+    
+    1. *Requirements*
+    2. *Design*
+    3. Implementation
+    4. *Testing*
+    5. *Maintenance*
