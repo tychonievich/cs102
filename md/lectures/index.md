@@ -2,6 +2,29 @@
 title: Lectures
 ...
 
+Lecture 25 -- Coding with an AI -- Friday 26 March 2026
+:   Editor we used
+    :   [editor](../editor.html)
+    
+    Code we generated
+    :   - [2026-03-27-tetris-0.html](2026-03-27-tetris-0.html)
+        - [2026-03-27-tetris-1.html](2026-03-27-tetris-1.html)
+        - [2026-03-27-tetris-2.html](2026-03-27-tetris-2.html)
+        - [2026-03-27-tetris-3.html](2026-03-27-tetris-3.html)
+        - [2026-03-27-tetris-4.html](2026-03-27-tetris-4.html)
+        - [2026-03-27-tetris-5.html](2026-03-27-tetris-5.html)
+        - [2026-03-27-tetris-6.html](2026-03-27-tetris-6.html)
+        - [2026-03-27-tetris-7.html](2026-03-27-tetris-7.html)
+        - [2026-03-27-tetris-8.html](2026-03-27-tetris-8.html)
+        - [2026-03-27-tetris-9.html](2026-03-27-tetris-9.html)
+
+    Relevant readings
+    :   - [Basic AI-assisted programming](../text/ai-coding.html)
+
+    Announcements
+    :   - There's a study about communicating about computing topics in preparation for the workplace you're invited to join. If you're interested, [please fill out this survey](https://illinois.qualtrics.com/jfe/form/SV_8k5x7EbEvMXytIq). Each co-design session will last approximately 1.5 hours. You may choose to participate in either one or two sessions. Participants will receive $30 per session.
+
+        - Next Wednesday is quiz review, next Friday is quiz 2.
 
 Lecture 24 -- Spiral model; impact of design; technical debt; supply chain -- Wednesday 25 March 2026
 :   Board work
