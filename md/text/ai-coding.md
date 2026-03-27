@@ -43,7 +43,7 @@ You'll need two tools for the programming described on this page:
     (most computers ship with either notepad or textedit installed)
     but sometimes getting them set up to do this without changing anything can be nuanced for a novice.
     
-    We provide a [simple in-browser text editor](../editor.html) you can use.
+    We provide a [simple in-browser text editor](../editor.html){style="font-size:120%; background:#ff03; border: thin solid #880; padding:0.25ex;"} you can use.
     It was made that using the techniques on this page; there's a link at the top of the editor page that shows the steps we used.
 
 You basic operation will go as follows
