@@ -13,8 +13,8 @@ Lecture 25 -- Coding with an AI -- Friday 26 March 2026
         - [2026-03-27-tetris-3.html](2026-03-27-tetris-3.html)
         - [2026-03-27-tetris-4.html](2026-03-27-tetris-4.html)
         - [2026-03-27-tetris-5.html](2026-03-27-tetris-5.html)
-        - [2026-03-27-tetris-6.html](2026-03-27-tetris-6.html)
-        - [2026-03-27-tetris-7.html](2026-03-27-tetris-7.html)
+        - [2026-03-27-tetris-6.html](2026-03-27-tetris-6.html) (broken: I copied the text before it was done being written)
+        - [2026-03-27-tetris-7.html](2026-03-27-tetris-7.html) (broken: the AI made a mistake)
         - [2026-03-27-tetris-8.html](2026-03-27-tetris-8.html)
         - [2026-03-27-tetris-9.html](2026-03-27-tetris-9.html)
 
