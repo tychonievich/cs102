@@ -105,21 +105,25 @@ E.  Move data through several steps called "generations" before finding the fina
 
 Which best describes **how** LLMs like ChatGPT, Gemini, Claude, and CoPilot respond to something you type?
 
-A.  1. The text you type is parsed into its semantic meaning.
-2. The LLM compares the meaning to what it knows to find an answer.
-3. The answer is converted into text to send back to you.
-B.  1. The text you type is parsed into its semantic meaning.
-2. The LLM compares the meaning to what it knows to find one thought that expands on that meaning.
-3. That thought is added to the meaning and converted into text to send back to you.
-4. The LLM compares the expanded meaning to what it knows to find one thought that expands on that meaning.
-5. That thought is added to the meaning and converted into text to send back to you.
-6. Steps 5 and 6 repeat until there's no additional thoughts to add.
-C.  1. The text you type is placed in a pattern "Question: «your text». Answer: "
-2. A fill-in-the-blank AI system tries to find one word that is most likely to follow that pattern; that word is shown to you and added to the pattern.
-3. A fill-in-the-blank AI system tries to find one word that is most likely to follow that now larger pattern; that word is shown to you and added to the pattern.
-4. Step 3 repeats until the word produced is a special "end of response" word.
-D.  1. The text you type is placed in a pattern "Question: «your text». Answer: «blank»."
-2. a fill-in-the-blank AI system tries to find the text that best fills that blank based on the patterns of all text online.
+A.
+    1. The text you type is parsed into its semantic meaning.
+    2. The LLM compares the meaning to what it knows to find an answer.
+    3. The answer is converted into text to send back to you.
+B.
+    1. The text you type is parsed into its semantic meaning.
+    2. The LLM compares the meaning to what it knows to find one thought that expands on that meaning.
+    3. That thought is added to the meaning and converted into text to send back to you.
+    4. The LLM compares the expanded meaning to what it knows to find one thought that expands on that meaning.
+    5. That thought is added to the meaning and converted into text to send back to you.
+    6. Steps 5 and 6 repeat until there's no additional thoughts to add.
+C.
+    1. The text you type is placed in a pattern "Question: «your text». Answer: "
+    2. A fill-in-the-blank AI system tries to find one word that is most likely to follow that pattern; that word is shown to you and added to the pattern.
+    3. A fill-in-the-blank AI system tries to find one word that is most likely to follow that now larger pattern; that word is shown to you and added to the pattern.
+    4. Step 3 repeats until the word produced is a special "end of response" word.
+D.
+  1. The text you type is placed in a pattern "Question: «your text». Answer: «blank»."
+  2. a fill-in-the-blank AI system tries to find the text that best fills that blank based on the patterns of all text online.
 
 
 
