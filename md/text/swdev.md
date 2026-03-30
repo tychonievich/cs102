@@ -210,7 +210,7 @@ As I speak with developers, many of them are using selected parts of scrum, ofte
     There is one large <dfn>project backlog</dfn> with all the unmet requirements
     as well as a smaller <dfn>sprint backlog</dfn>  defined at the start of each sprint and defining the set of features that will be added in the current sprint.
 
-Because it seems to be common to mix and match multiple methodologies in practice, the exact terms and their meanings vary from one software team to another.
+Because it seems to be common to mix and match multiple methodologies in practice, each team might use the above terms in a different way.
 
 
 # Refactoring and technical debt
