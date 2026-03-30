@@ -207,6 +207,8 @@ As I speak with developers, many of them are using selected parts of scrum, ofte
 - A <dfn>story</dfn> is a description of what a user should be able to do with the software; a set of stories serves as the primary requirements document of a sprint.
 
 - The <dfn>backlog</dfn> is the set of stories that have been defined but not yet implemented in the software.
+    There is one large <dfn>project backlog</dfn> with all the unmet requirements
+    as well as a smaller <dfn>sprint backlog</dfn>  defined at the start of each sprint and defining the set of features that will be added in the current sprint.
 
 Because it seems to be common to mix and match multiple methodologies in practice, the exact terms and their meanings vary from one software team to another.
 
