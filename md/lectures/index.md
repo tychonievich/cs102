@@ -2,6 +2,14 @@
 title: Lectures
 ...
 
+Lecture 26 -- Scrum; more on using AI -- Monday 30 March 2026
+:   Board work
+    :   - [2026-03-30.pdf](2026-03-30.pdf)
+
+    Relevant readings
+    :   - [Software development](../text/swdev.html)
+
+
 Lecture 25 -- Coding with an AI -- Friday 26 March 2026
 :   Editor we used
     :   [editor](../editor.html)
