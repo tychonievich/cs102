@@ -2,6 +2,13 @@
 title: Lectures
 ...
 
+Lecture 17 -- Quiz 2 review -- Wednesday 1 April 2026
+:   Quiz review
+    :   [Past questions in-scope for quiz](quiz2review.html)
+
+    Announcements
+    :   - Lecture on Friday is an in-person on-paper quiz, with questions resembling (but not identical to) those in homeworks and labs.
+
 Lecture 26 -- Scrum; more on using AI -- Monday 30 March 2026
 :   Board work
     :   - [2026-03-30.pdf](2026-03-30.pdf)
