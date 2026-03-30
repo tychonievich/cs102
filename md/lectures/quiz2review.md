@@ -69,7 +69,7 @@ H.  Use a supervised approach to notice and remove the over-fitting
 
 ## Question 6 {.unnumbered .unlisted}
 
-The **P** in ChatGPT, one of the first highly-successful chatbots, stands for **pretrained**. This is suggests the ChatGPT
+The **P** in ChatGPT, one of the first highly-successful chatbots, stands for **pretrained**. This is suggests that ChatGPT
 
 A.  Is a revision of an older trained model.
 B.  Is provided in an untrained state, allowing users to train it by what they type into its prompt.
