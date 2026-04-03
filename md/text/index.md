@@ -29,3 +29,9 @@ Quiz 1 covered the above topics; Quiz 2 will focus on those below.
 - [AI hardware and memory](ai-hardware.html) (only section 2 was covered in lecture)
 - [Software development](swdev.html)
 - [Basic AI-assisted programming](ai-coding.html)
+
+Quiz 2 covered the above topics; Quiz 3 will focus on those below.
+
+- security
+- networks, the Internet, and the cloud
+- robots and automation in daily life
