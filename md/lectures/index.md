@@ -2,7 +2,23 @@
 title: Lectures
 ...
 
-Lecture 17 -- Quiz 2 review -- Wednesday 1 April 2026
+Lecture 29 -- Security -- Monday 6 April 2026
+:   Board work
+    :   - [2026-04-06.pdf](2026-04-06.pdf)
+
+    Displayed text
+    :   - [Today's topics](2026-04-06-outline.txt)
+        - [Polls](2026-04-06-polls.txt)
+
+    Relevant readings
+    :   - [Security in computing](../text/security.html)
+
+    
+
+Lecture 28 -- Quiz 2 -- Friday 3 April 2026
+:   Due to a few people traveling or being ill, late quizzes will be given to some students early next week and quiz grades and questions published on Wednesday.
+
+Lecture 27 -- Quiz 2 review -- Wednesday 1 April 2026
 :   Quiz review
     :   [Past questions in-scope for quiz](quiz2review.html)
 
