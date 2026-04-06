@@ -2,6 +2,22 @@
 title: Labs
 ...
 
+: Labs related to Quiz 1
+
+| Lab   | Slides                  | Handout                  |
+|-------|-------------------------|--------------------------|
+| Lab 1 | [PDF](Lab 1 Slides.pdf) | [PDF](Lab 1 Handout.pdf) |
+| Lab 2 | [PDF](Lab 2 Slides.pdf) | [PDF](Lab 2 Handout.pdf) |
+| Lab 3 | [PDF](Lab 3 Slides.pdf) | [PDF](Lab 3 Handout.pdf) |
+| Lab 4 | [PDF](Lab 4 Slides.pdf) | [PDF](Lab 4 Handout.pdf) |
+| Lab 5 | [PDF](Lab 5 Slides.pdf) | [PDF](Lab 5 Handout.pdf) |
+
+: Inter-quiz lab
+
+| Lab   | Slides                  | Handout                  |
+|-------|-------------------------|--------------------------|
+| Lab 6 | [PDF](Lab 6 Slides.pdf) | [PDF](Lab 6 Handout.pdf) |
+
 : Labs related to Quiz 2
 
 | Lab   | Slides                  | Handout                  |
@@ -13,7 +29,7 @@ title: Labs
 
 ----------
 
-Files used in earlier labs:
+Files used in labs:
 
 
 Lab 6: March 3, 4, and 5
