@@ -85,7 +85,7 @@ Lab (24%)
     Each will have you go through several exercises related to recent lecture content
     and check off your work with the course staff leading the lab.
     
-    Some content would sink in until you experience it.
+    Some content doesn't sink in until you experience it.
     The labs help provide that experience.
 
 Homework (10%)
