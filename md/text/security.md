@@ -90,11 +90,76 @@ Use one your trust,
 and maybe keep your most important passwords only in your head,
 but *definitely* use one for all the less-important accounts you have.
 
-## Emotional manipulation: kindness, urgency, embarrassment
+## Emotional manipulation: urgency, embarrassment, kindness, concessions
+
+Properly implemented security measures keep people from doing things they are not authorized to do.
+But if an attacker can convince someone who is authorized to do something for them
+then no security can prevent the attack.
+We call such human-based attacks <dfn>social engineering</dfn>,
+and they are a subtype of scam or confidence trick.
+
+The easiest way to get someone to do something they should not do
+is to use strong emotions to override rational thought and dissuade correct behavior.
+Common tools used in social engineering include:
+
+Urgency
+:   If you feel like you have to act *now*, you won't think as hard about what you're doing.
+
+Embarrassment
+:   If you are worried about being embarrassed yourself
+    or believe someone else would be embarrassed if you shared details,
+    you'll feel alone and worried and make less rational decisions.
+
+Kindness
+:   You're more likely to do things for people who seem kind.
+    The most successful social engineering attackers don't pose as the source of your embarrassment
+    but rather as an ally trying to save you from it.
+
+Concessions
+:   We're naturally wary of people who ask for things they shouldn't have,
+    but if they tell us *not* to tell them our account information and other identifying details
+    then we're more likely to think they are genuine and give them something else
+    (equally damaging to us in the end) instead.
+
+If someone asks for something, pause and ask yourself
+how many of these tools are being used in the ask.
+If the answer is more than one, slow down,
+verify identities via a separate medium,
+and don't move forward without consulting others.
+
+# Authentication and authorization
+
+<dfn>Authentication</dfn> checks that you are who you say you are.
+There are many ways of authenticating people, including:
+
+- Recognizing their face, voice, fingerprint, etc.
+- Passcodes
+- Access to another authenticated account
+- Cryptographic security keys
+- Signed attestations of identify from trusted parties
+
+We explore more about these ideas on the [cryptography page](crypto.html).
+
+<dfn>Authorization</dfn> checks that you are allowed to do what you are trying to do.
+
+A failure of authentication can lead to a failure of authorization,
+but authorization can also fail with authentication intact.
+The <dfn>principle of least privilege</dfn>
+tries to avoid authorization errors by giving each user
+access to as few actions (privileges) as possible.
+
+Least privilege is not always achievable
+because some privileges are granted accidentally by the way other systems work.
+
+:::example
+A student in a class without group work has no need to know who the other students in the class are,
+so by the principle of least privilege that information should not be available to them.
+
+However, if that class meets in person then the students can see and speak with one another
+and the privilege of knowing other students is granted anyway.
+:::
 
 
-
-# Authentication, authorization, and permissions
 
 # Integrity and confidentiality
 
