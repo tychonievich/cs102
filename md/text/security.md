@@ -163,3 +163,9 @@ and the privilege of knowing other students is granted anyway.
 
 # Integrity and confidentiality
 
+Integrity ensures that the messages that are recieved are the same that are sent, with no modifications.
+Confidentiality ensures that no one other than the intended recipient can read the messages.
+
+Integrity can be given without confidentiality by adding digital signatures to a message.
+Integrity and confidentiality are given together with many encryption schemes.
+Both of these ideas are explored in more detail on the [cryptography page](crypto.html).

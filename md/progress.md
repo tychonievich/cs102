@@ -51,3 +51,6 @@ fetch('secure/progress.php'+location.search)
 ----------
 
 Quiz 1 [blank (PDF)](quiz1.pdf) and [key (PDF)](quiz1key.pdf). Mean: 75.8%; median: 80%. Note that Question 13 was was marked wrong by the grader on some paper quizzes, but was not included (right or wrong) in quiz point computation because of an ambiguity in its phrasing cause the staff did not agree on the correct answer.
+
+
+Quiz 2 [blank (PDF)](quiz2.pdf) and [key (PDF)](quiz2key.pdf). Mean: 75.2%; median: 80%. This was graded out of 15 points to give lenience to those who forgot one term. Because some partial-credit answers were highly correlated (if you got one you often got another), one partial-credit answer was weighted as full-credit (if applicable to your quiz).
