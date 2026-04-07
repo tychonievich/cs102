@@ -69,7 +69,7 @@ even if they hear everything both of them say to each other.
 
 There is some difference of opinion about the justice of this name. Whitfield Diffie and Martin Hellman published a paper describing it in 1976, but Hellman later stated the idea in the paper was that of their graduate student Ralph Merkle.
 When Diffie and Hellman were given the Turing award in 2015 (the top prize in computer science),
-the press photo for the award announcment was a clipped version of a photo that, if unclipped, included Merkle.
+the press photo for the award announcement was a clipped version of a photo that, if unclipped, included Merkle.
 
 ![Press photo.](https://news.stanford.edu/__data/assets/image/0033/129588/16185-turingtwo_news.jpg)
 
@@ -90,7 +90,7 @@ we can exchange keys as follows:
 ## Signature
 
 A signature is very much like a hash, but it also has *two* keys:
-one used by the signer (called the <dfn>private key</dfn>) and another shared publically with everyone (called the <dfn>public key<dfn>).
+one used by the signer (called the <dfn>private key</dfn>) and another shared publicly with everyone (called the <dfn>public key<dfn>).
 Both keys are needed to encrypt,
 but only the public key is needed to decrypt.
 
@@ -108,21 +108,21 @@ To *check* a signature, we do this:
 4. If the hash and the decrypted signature match, the owner of the key signed this message
 
 Note that public and private key pairs are potentially valuable in many contexts,
-forming what is called an assymmetric cipher.
+forming what is called an asymmetric cipher.
 However, they tend to be quite limited in how they can be securely used,
 often working only on fixed-size input (like the outputs of a hash),
 and some only work reliably in the context of a signature.
 
 # Using cryptography
 
-## Providing confidentiallity
+## Providing confidentiality
 
 To provide confidential communication with a single other party,
 
 1. Use Diffie-Hellman key exchange to agree on a random secret key
 2. Use the key to communicate using a symmetric cipher
 
-Note that this provides confidentiallity (no one can listen in),
+Note that this provides confidentiality (no one can listen in),
 but does not provide authentication:
 you know you're talking to just one person
 but don't know who that person is.
@@ -148,7 +148,7 @@ The certificate has four important pieces of information:
 4. A signature from a certificate authority
 
 The expiration date is very important: cryptography is hard to invert, but not impossible,
-so we need to make keys expire soo enough that finding an inversion can't be done in time.
+so we need to make keys expire so enough that finding an inversion can't be done in time.
 
 Certificate authorities are important in this process:
 if I trust an authority I shouldn't
@@ -169,7 +169,7 @@ But if they have my password stored then they become an attractive mark for othe
 Instead, they can store the hash of my password.
 If the password I type hashes to the hash they have on file, I must have typed the right password.
 
-But hashes are predictable, meaning if someone finds a password with the same hash they can break my psasword,
+But hashes are predictable, meaning if someone finds a password with the same hash they can break my password,
 leading to a similar desire to steal those files.
 
 To prevent that, we store not just the hash of the password as-is,
@@ -207,7 +207,51 @@ what happens?
     d. Send that certificate to the service provider
 
 There are more complicated protocols
-that let the service provider to ask the indentity provider more questions about you,
+that let the service provider to ask the identity provider more questions about you,
 but the main parts of the flow are the same.
 
+:::example
+Suppose I visit Slack,
+which  has me log in with Google,
+and use a security key as my 2-factor authentication with Google.
 
+1. I visit https://slack.com
+    a. My computer sends a list of ciphers it knows
+    b. The server picks one
+    c. The server sends a certificate of its public key
+    d. The server sends a signed half key
+    e. My computer sends my half of the key
+    f. We both switch to a symmetric cipher and send a hash of the entire exchange so far
+
+    I now know I'm talking to Slack and not someone else,
+    and can talk with them securely.
+
+2. The site asks me to pick a login provider from a list it supports
+
+3. I pick Google and am redirected to their login page.
+
+    This is HTTPS, so I repeat step 1 with this page.
+
+    I now know I'm talking to Google and not someone else,
+    and can talk with them securely.
+
+4.  To log in
+
+    a. I send my username and password
+    b. They look up my salt in their list of users
+    c. They add my salt and their pepper to my password and hash it
+    d. If the hashes match, they ask me to dual-authenticate
+    e. I enter my security key into my computer
+    f. They send me a random value
+    g. My security key signs it with its private key
+    h. They check the signature with the public key of the security key, which they have on file
+
+    Google now knows who I am.
+
+5. Google gives me a certificate of my identity to share with Slack
+
+6. I send the certificate with Slack
+
+    Slack now knows who I am.
+
+:::
