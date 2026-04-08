@@ -2,6 +2,19 @@
 title: Lectures
 ...
 
+Lecture 29 -- Cryptography -- Wednesday 8 April 2026
+:   Board work
+    :   - [2026-04-08.pdf](2026-04-08.pdf)
+
+    Displayed text
+    :   - [Polls](2026-04-08-polls.txt)
+
+    Relevant readings
+    :   - [Basics of cryptography](../text/crypto.html)
+        - [Security in computing](../text/security.html)
+
+    
+
 Lecture 29 -- Security -- Monday 6 April 2026
 :   Board work
     :   - [2026-04-06.pdf](2026-04-06.pdf)
