@@ -180,8 +180,8 @@ for both the key and the text being en/decrypted.
 
 <label>Symmetric key: <input id="symmkey"></label>
 
-<input type="button" onclick="document.getElementById('symmout').value = vignere_e(document.getElementById('symmkey').value, document.getElementById('symmin').value)" value="encode">
-<input type="button" onclick="document.getElementById('symmout').value = vignere_d(document.getElementById('symmkey').value, document.getElementById('symmin').value)" value="decode">
+<input type="button" onclick="document.getElementById('symmout').value = vignere_e(document.getElementById('symmkey').value, document.getElementById('symmin').value)" value="encrypt">
+<input type="button" onclick="document.getElementById('symmout').value = vignere_d(document.getElementById('symmkey').value, document.getElementById('symmin').value)" value="decrypt">
 
 <textarea disabled id="symmout"></textarea>
 
