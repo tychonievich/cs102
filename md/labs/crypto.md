@@ -174,7 +174,7 @@ Most functions on this page use a "base-95" encoding, representing numbers as pr
 # Symmetric cipher
 
 This uses a variant of the Vignere cipher that uses all printable ASCII instead of just letters
-for both the key and the text being en/decrypted.
+for both the key and the message text.
 
 <textarea id="symmin"></textarea>
 
