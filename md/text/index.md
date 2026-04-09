@@ -34,5 +34,6 @@ Quiz 2 covered the above topics; Quiz 3 will focus on those below.
 
 - [Security in computing](security.html)
 - [Basics of cryptography](crypto.html)
+- [Blockchains](blockchain.html)
 - networks, the Internet, and the cloud
 - robots and automation in daily life
