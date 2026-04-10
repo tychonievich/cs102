@@ -47,10 +47,9 @@ The future of computing
 :   Trends in how computers and software, including disruptions like LLMs and quantum computers.
 
 Great Ideas
-:   - Cryptography, including cryptocurrency and post-quantum cryptography.
-    - Databases, both SQL and NoSQL, and how data drives software design.
-    - Modeling and simulation, using computers to predict real-world events.
+:   - Cryptography, including cryptocurrency.
     - Artificial Intelligence, both classical (e.g. chess-playing) and recent (e.g. generative).
+    - Others are selected by students.
 
 The [first test page](text/goals.html) provides additional objectives of this course.
 
