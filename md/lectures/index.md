@@ -2,7 +2,21 @@
 title: Lectures
 ...
 
-Lecture 29 -- Cryptography -- Wednesday 8 April 2026
+
+Lecture 31 -- Secure communication -- Friday 10 April 2026
+:   Board work
+    :   - [2026-04-10.pdf](2026-04-10.pdf)
+
+    Displayed text
+    :   - [Today's topics](2026-04-10-outline.txt)
+        - [HTTPS](2026-04-10-https.txt)
+        - [Log in with another site](2026-04-10-login.txt)
+
+    Relevant readings
+    :   - [Basics of cryptography](../text/crypto.html)
+        - [Security in computing](../text/security.html)
+
+Lecture 30 -- Cryptography -- Wednesday 8 April 2026
 :   Board work
     :   - [2026-04-08.pdf](2026-04-08.pdf)
 
@@ -12,8 +26,6 @@ Lecture 29 -- Cryptography -- Wednesday 8 April 2026
     Relevant readings
     :   - [Basics of cryptography](../text/crypto.html)
         - [Security in computing](../text/security.html)
-
-    
 
 Lecture 29 -- Security -- Monday 6 April 2026
 :   Board work
