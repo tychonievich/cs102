@@ -63,8 +63,8 @@ with the last domain name being the <dfn>top-level domain name</dfn>
 and each step to the left being one level lower down.
 
 :::example
-The full URL of this page is []{#url}.
-The hostname is []{#host},
+The full URL of this page is <code id="url"></code>.
+The hostname is <code id="host"></code>,
 which is made of the following domain names, from top level to lowest level:
 
 ```{=html}
