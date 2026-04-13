@@ -77,6 +77,20 @@ Assembly
 :   A textual representation of *machine instructions*.
     Also sometimes called "assembly code" or "assembler code."
 
+Authentication
+:   Identifying who someone is.
+    This includes both user authentication through usernames, passwords, push notifications and the like;
+    and server authentication though digital *certificates*.
+
+Authorization
+:   Identifying what an *authenticated* user is permitted to do.
+    
+    Course-grained authorization might look like a firewall: if you're permitted inside, you can do anything.
+    Fine-grained authorization might look like an access control list: each user, resource, and action grouping might have its own permission control.
+    
+    The *principle of least privilege* is a widely-cited guide to picking an authorization scheme.
+
+
 Backwards compatibility
 :   A new system is backwards compatible with an old system
     if data created by/for the old system works without modification in the new system.
@@ -110,6 +124,31 @@ Bit
 :   A single digit in *base* 2: either 0 or 1.
     
     The word "bit" is a portmanteau of "<u>bi</u>nary digi<u>t</u>".
+
+Blockchain
+:   A family of related technologies for implementing a distributed indelible ledger,
+    where in this context those words mean
+    
+    distributed
+    :   shared by many users' computers with no central control
+    
+    indelible
+    :   cannot be edited or erased once created
+    
+    ledger
+    :   a list of structured entries with new entries appearing only at the end
+    
+    Each block consists of the hash of the preceding block,
+    a transaction (typically moving virtual currency between accounts),
+    and a signature from each user losing resources in the transaction.
+    
+    The chain of blocks found by starting from the most recent block
+    and using hashes to identify each preceding block
+    gives the full state of the blockchain.
+    
+    Most blockchains allow anonymous users
+    and prevent one user from overwhelming consensus with a large number of voting accounts
+    by making votes cost, typically using either *proof of work* or *proof of stake*.
 
 Brittle
 :   A characteristic of software, describing the difficulty of making changes
@@ -149,6 +188,22 @@ Clustering
     
     Examples might be "organize these images into groups of similar images" -- the number of groups and what kinds of images belong in each is learned, not provided in the *training data*.
 
+Certificate
+:   In general, any document signed by a trusted party.
+
+    Most often, a document that says the public key used by the legitimate owner of a specific URL.
+    
+    Certificates always include expiration dates
+    because cracking signatures is a matter of time and computing power;
+    adding an expiration date keeps people from using the same certificate long enough
+    for others to crack it.
+
+Ciphertext
+:   The name for the output of an encryption (usually a *symmetric encryption*)
+    and the input of the associated decryption.
+    
+    Ideally, it should be nearly impossible to convert from ciphertext to *plaintext* without knowing the encryption key.
+
 Compiler
 :   A program that converts source code written in a *programming language*
     into a sequence of *machine instructions* that can be *executed*
@@ -157,6 +212,11 @@ Compiler
     Typically, programming languages that use a compiler
     provide fewer abstractions and thus require more effort to program in than those that use an *interpreter*;
     but they also tend to create programs that run more quickly than those created for an interpreter.
+
+Confidentiality
+:   A property of secure communications that prevents people other than the intended recipient from knowing the contents of the communication.
+    
+    The most common tools for achieving confidentiality are *symmetric ciphers*.
 
 Continuous
 :   A family of *AI* tasks where the output is one or more real numbers (a score, a grid of pixel intensities, etc.), not *categorical* data.
@@ -194,6 +254,18 @@ Detail Removal
 
     Another important form of detail removal is an *abstract data type*,
     which helps use build algorithms that do not depend too closely on the specifics of how we represent *data*.
+
+Diffie-Hellman key exchange
+:   A way for two parties to agree on a shared secret,
+    such as the key used in a *symmetric cipher*,
+    with no prior shared information over an insecure communication channel.
+    
+    The exchange uses three random numbers and one hard-to-invert function.
+    One number is shared,  and one is kept secret by each party.
+    Both parties apply the function to the two numbers they know (their secret number and the shared number)
+    and share the results,
+    then apply it again to their secret and what the other person shared.
+    With the correct choice of function, this resilts in both having the same number at the end.
 
 Digital
 :   Represented or operating using a set of discrete symbols called digits,
@@ -289,6 +361,16 @@ GHz
     Commonly used to measure the clock speed of processors,
     roughly meaning how many billion arithmetic problems the processor can complete per second.
 
+Hash
+:   A function that turns arbitrary bytes into a fixed-size number
+    where any change to the input has (with high probability) a different resulting number.
+    
+    Cryptographically secure hashes are quite large
+    and it is very hard to find two inputs that give the same output.
+    This allows these hashes to be used as unique fingerprints of arbitrary data,
+    making them useful for *signatures* and *blockchains*
+    as well as a tool for verifying the *integrity* of data.
+
 Heuristic
 :   An *algorithm* that (usually) only approximates the solution to a problem
     rather than finding the full solution.
@@ -335,6 +417,12 @@ Information
     Less often, "information" is used as a technical term for the bits of some digital communication that could not be anticipated,
     an important concept in designing efficient networking, compression, and storage technologies.
 
+Integrity
+:   A property of secure communications that ensures messages are not modified in transit,
+    or at a minimum that if they are that change can be detected.
+    
+    The most common tools for achieving confidentiality are *hashes* (which detect changes) and *symmetric ciphers* (with make making a specific change almost impossible).
+
 Interpreter
 :   A program that reads the source code of a *programming language*
     and takes the actions described by each line of that code.
@@ -342,6 +430,12 @@ Interpreter
     Typically, programming languages that use an interpreter
     run much more slowly than those that use a *compiler*;
     but they also tend to provide more abstractions and thus require less effort to program in than those created for a compiler.
+
+Key exchange
+:   A way of having two parties agree on the key they will use for a *symmetric cipher*
+    without anyone else knowing what key they picked.
+    
+    The *Diffie-Hellman key exchange* is by far the most common key exchange protocol.
 
 Library
 :   A set of code that is designed to be used by other programs.
@@ -428,6 +522,14 @@ Parameter
     a value to use in place of $x$ for this run of the algorithm;
     and for each $x$ we provide the algorithm will create a different result.
 
+Plaintext
+:   A message that has not been encrypted, or has been decrypted.
+    
+    "Plaintext" is often used with "*ciphertext*" to discuss encryption processes,
+    such as the contents of webpages.
+    It is also used to refer to messages that are never encrypted,
+    such as most email.
+
 Pretraining and Fine-tuning
 :   A method of *training* an *AI* system in several steps.
     
@@ -436,6 +538,14 @@ Pretraining and Fine-tuning
     The fine-tuning step moves the function selected during pretraining closer to a smaller, more desirable subset of the training data.
     
     Fine-tuning can be repeated to further adjust the learned function.
+
+Principle of least privilege
+:   A guideline for setting an *authorization* system
+    that says each person should have access to everything for which they have a legitimate defensible need
+    and nothing else.
+    Typically, this suggests a fine-grained authorization system
+    and often also not allowing individuals to pick who has access to their content,
+    instead using a set of roles and purposes to control access.
 
 Problem
 :   Often used as it is in English, to refer to anything that's not going well or needs to be addressed.
@@ -458,6 +568,16 @@ Programmable
     Usually, "programmable" is also assumed to mean that the program it follows
     is stored inside the computer's memory and can be an entire *algorithm*,
     not just one of a machine-defined set of operations selected by simple switches and buttons.
+
+Proof of stake
+:   One way of preventing a single bad actor from impersonating a million users and overwhelming a *blockchain* with bad blocks.
+    In its most common form, adding a block requires entering a raffle, investing some existing digital wealth for the opportunity to add the block.
+
+Proof of work
+:   One way of preventing a single bad actor from impersonating a million users and overwhelming a *blockchain* with bad blocks.
+    In its most common form, only blocks with specific patterns in their hash (often many leading zeros) are accepted to be added to the blockchain.
+    This requires people to try adding many random values to their block to get the right hash pattern,
+    a process called "mining" because successful blocks are rewarded with additional digital currency.
 
 Refactoring
 :   Changing how code operates without changing what it does.
@@ -512,6 +632,17 @@ Selection
     is a component of a program that indicates which one out of several candidate pieces of data should be used.
     The most common programming language vocabulary for this type of selection are the name of the set of candidates, followed by which candidate in the set to chose in brackets, like `some_list[3]` to pick item 3 out of a list.
 
+Signature
+:   A way of attesting approval of a document, using a special type of encryption that has two keys: one to encrypt, another to decrypt.
+    The encryption key is kept private, while the decryption key is shaded publicly.
+    
+    To create a signature, the signer hashes the document they wish to sign and encrypts the hash.
+    
+    To check a signature, the checker both hashes the document and decrypts the signature; if those two operations result in the same hash, the signature is valid.
+    
+    Signatures are widely used as part of *authentication*, for example in the creation of *certificates*,
+    as well as to ensure message *integrity*.
+
 Spiral model
 :   A set of related repeated or iterative organizations of software development.
     Spiral models are usually group development work into four main pieces:
@@ -528,6 +659,13 @@ Spiral model
 
 Supervised learning
 :   A category of *machine learning* where the *training data* includes the desired output for each input.
+
+Symmetric cipher
+:   A tool for converting *plaintext* to *ciphertext* using a secret key,
+    and for converting back using the same key,
+    which is very hard to break without knowing the key.
+    Symmetric ciphers often use *Diffie-Hellman key exchange* to pick the key
+    and are widely used to achieve *confidentiality* and *integrity* of communications.
 
 TB
 :   The [SI abbreviation for "tera" meaning one trillion](https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes) (T)
