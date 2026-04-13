@@ -3,6 +3,17 @@ title: Lectures
 ...
 
 
+Lecture 32 -- Authorization and Blockchain -- Monday 13 April 2026
+:   Board work
+    :   - [2026-04-13.pdf](2026-04-13.pdf)
+
+    Displayed text
+    :   - [Today's topics and poll](2026-04-13-outline.txt)
+
+    Relevant readings
+    :   - [Security in computing](../text/security.html)
+        - [Blockchains](../text/blockchain.html)
+
 Lecture 31 -- Secure communication -- Friday 10 April 2026
 :   Board work
     :   - [2026-04-10.pdf](2026-04-10.pdf)
