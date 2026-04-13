@@ -81,7 +81,7 @@ document.getElementById('url').textContent = location.href;
 document.getElementById('host').textContent = location.hostname;
 location.hostname.split(/\./g).reverse().forEach(n => {
   document.getElementById('domains').append(document.createElement('li'));
-  document.getElementById('domains').lastElementChild.textContent = n;
+  document.getElementById('domains').lastElementChild.innerHTML = '<code>'+n+'</code>';
 })
 </script>
 ```
