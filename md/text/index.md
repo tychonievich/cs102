@@ -36,5 +36,5 @@ Quiz 2 covered the above topics; Quiz 3 will focus on those below.
 - [Basics of cryptography](crypto.html)
 - [Blockchains](blockchain.html)
 - [The Internet](internet.html)
-- The Cloud and X-as-a-Service architectures
+- [The Cloud and X-as-a-Service architectures](cloud.html)
 - robots and automation in daily life
