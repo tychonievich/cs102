@@ -79,6 +79,9 @@ Lecture (10%)
     This is a broader goal than any single assessment can cover,
     so your presence in our in-class conversations is part of your grade.
     
+    Lecture attendance is primarily checked by participation in in-class polls.
+    Submitting such a poll when you are not present in the class is thus dishonest, prohibited by class policy, and will be penalized accordingly.
+    
 Lab (24%)
 :   Weekly labs will begin the second week of the course (<time datetime="2026-01-27">January 27^th^</time>).
     Each will have you go through several exercises related to recent lecture content
