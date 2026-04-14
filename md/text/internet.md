@@ -52,6 +52,28 @@ Allocating addresses is manged by the Internet Assigned Numbers Authority (<abbr
 who is responsible for ensuring the uniqueness of IP addresses.
 
 
+## National borders
+
+The Internet derived from a project by the US military
+and while it is now governed by an international standards body,
+it is still seen by many as a USA-based system.
+Because of this, various nations who have had poor relations with the US
+have explored how the Internet might work if they detached at their national borders.
+
+Note that detaching is generally possible.
+While wireless communication is good for the relatively small amounts of data reaching a single device,
+it is insufficient for the vast amounts of data traversing the Internet
+so there are physical cables crossing national borders to make the Internet an international communcation platform.
+
+Because IP is already designed to work in a decentralized way that is rubust to disconnections,
+cutting the connections that cross out of a nation has relatively little impact on IP routing.
+External IP addresses simply appear to be unreachable.
+It is even straightforward to make external IP addresses seem to still work
+by routing their traffice to internal servers instead.
+
+China is well known for doing a more selective form of cut-off
+with what is known as the "great firewall of China",
+blocking traffic at the border if that traffic was routed to some IP addresses but not others.
 
 # DNS
 
@@ -92,4 +114,104 @@ Everything that comes after the hostname in a URL is called the <dfn>path</dfn>
 and can be interpreted by the server however they wish,
 but the hostname itself maps to a specific IP address
 using a system called the <dfn>domain name system</dfn> (<abbr>DNS</abbr>).
+
+DNS has several parts, but the most interesting for our purposes is how it maps a hostname to an IP address.
+This is done hierarchically:
+
+- My local network knows a list of IANA server IP addresses
+- Each IANA servers know a list of .com servers, and .edu servers, and so on for every other top-level domain.
+- Each .edu server knows a list of illinois.edu servers, and uic.edu servers, and uis.edu servers, and so on for every second-level .edu domain.
+- Each illinois.edu server knows a list of grainger.illinois.edu servers, and las.illinois.edu servers, and so on for every third-level illinois.edu domain.
+- .. and so on.
+
+Each time I visit a new URL,
+my browser finds its hostname,
+breaks it into domain names,
+and queries each of the relevant servers to find the IP address of the host in question;
+it then sends that host the rest of the URL to get the page's contents.
+
+This hierarchical design allows decentralized control.
+If I want to create `info102.illinois.edu` I don't need to contact IANA,
+I can just ask the owners to `illinois.edu` to add my IP address to their DNS server.
+This local control can seem good if they are responsive and responsible or bad if they are not,
+but either way it is a local problem only.
+
+
+## National borders
+
+A key part of detaching a national part of the Internet from the rest of the world
+is to detach DNS.
+Instead of providing IANA's servers, provide a local copy
+that only has local IP addresses.
+Since DNS is already implemented by many servers, this is quite simple to do:
+just get a copy of the national part of the IANA top-level DNS servers
+and host it internally.
+Local networks needn't even know this has happened:
+once the network limited to national borders, 
+
+Russia famously experimented with this kind of full national cut-off,
+restricting parts of the Interent to just within Russia briefly in 2023 to prove they could
+and then trying to use it in a more targetting manner in 2026 as part of their conflict with Ukraine.
+
+# Reliable transport {#reliable}
+
+IP is fundamentally an unreliable medium.
+This unreliability manifests in two ways:
+
+- Data sent over the Internet is split into <dfn>packets</dfn> of up to a few kilobytes and each is routed separately to its destination. This means that packets might arrive out of order, with packets from later in a long message arriving conceptually-earlier packets.
+
+- The Internet provided <dfn>best-effort</dfn> delivery. Most packets arrive promptly, but some are not delivered at all. There's not explicit notice when this happens: the packets are simply lost.
+
+To deal with this unreliability, messages sent over IP typically have have additional information added to them to check for and recover from unreliable delivery.
+<abbr>TCP</abbr> (transmission control protocol) is the best-known reliable transport technique,
+which uses the following elements to achieve reliability:
+
+- Each packet is given an order number, so that if packet 3 arrives before packet 2 it can be held on to until packet 2 arrives to put it back in order.
+
+- The recipient of a packet responds to acknowledge receipt. If not such response is received within a reasonable time, the packet is re-sent.
+    
+The many rounds of receipt acknowledgements does add significant time to the process,
+and sometimes some steps can be skipped by using other information present in the messages being sent.
+For example, web pages can sometimes avoid sending receipts by having the browser re-request missing data
+and a different protocol based on that (called <addr>QUIC</abbr>) is increasingly common in that space.
+
+# Is your computer on the Internet?
+
+The computer you are using to connect to this webpage
+is online,
+but what does that mean?
+Let's assume the common case where you're connecting wirelessly.
+
+- Your device is directly connected (via radio waves) to a router,
+    which is a special-purpose computer with a radio signal array.
+    Common routers are wifi routers and cell tower.
+    
+    Your computer likely has a special IP address that only works within the set of computers connected to the same router.
+    You can use that special local IP address to communicate with those other computers,
+    but no one outside of that limited local-area network (<abbr>LAN</abbr>) can use these addresses.
+
+- The router is connected (typically via wire or fiber) to other computers making up a network.
+    This network is typically owned and managed by the group you are paying for Internet access:
+    your internet service provider, cell carrier, or the like.
+    
+    Within this network, each computer has an IP address.
+    However, these networks are usually set up to limit routing,
+    not allowing most computers to send messages to each other.
+
+- Somewhere within the network is a computer that is actually on the Internet,
+    connected to other computers on the Internet and participating in IP to send, receive, and route messages.
+    This computer is sometimes called a gateway or switch.
+    
+    This computer may only have a single IP address that the rest of the Internet can see
+    and uses that for all the computers attached to it.
+    This is implemented using a process called <dfn>Network Address Translation</dfn> (<abbr>NAT</abbr>)
+    where your computer thinks it has one IP address
+    but that is changed to the shared IP address by the gateway;
+    messages that come back are matched with the outgoing message that prompted them
+    and then forwarded to the correct computer inside the network.
+
+One consequence of this design is that your computer cannot be directly addressed by others on the Internet.
+Sometimes this is good, removing the risk of attackers directly sending malicious content to your computer;
+other times it is bad, making initiating something like a video call far more complicated than it would be otherwise with a required intermediate server to achieve some otherwise-simple goals.
+    
 
