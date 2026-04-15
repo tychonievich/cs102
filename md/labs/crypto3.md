@@ -166,7 +166,7 @@ Most functions on this page use a "base-95" encoding, representing numbers as pr
 
 <input type="button" onclick="document.getElementById('hashout').value = hash(document.getElementById('hashin').value)" value="Compute hash">
 
-<label>Hash: <input disabled id="hashout" size="5"></label>
+<label>Hash: <input disabled id="hashout" size="7"></label>
 
 # Key exchange function
 
@@ -176,7 +176,7 @@ Most functions on this page use a "base-95" encoding, representing numbers as pr
 
 <input type="button" onclick="document.getElementById('dhres').value = fivechar_oneway(document.getElementById('dhpub').value, document.getElementById('dhpriv').value)" value="Compute function">
 
-<label>Computed secret: <input disabled id="dhres" size="5"></label>
+<label>Computed secret: <input disabled id="dhres" size="7"></label>
 
 # Symmetric cipher
 
@@ -206,26 +206,26 @@ function newkeys() {
 
 <input type="button" value="Generate a signature key pair" onclick="newkeys()">
 
-<label>Public part (share this): <input disabled id="pubkey" size="10"></label>
+<label>Public part (share this): <input disabled id="pubkey" size="14"></label>
 
-<label>Private part (don't share this): <input disabled id="privkey" size="10"></label>
+<label>Private part (don't share this): <input disabled id="privkey" size="14"></label>
 
 <textarea id="signin"></textarea>
 
 <input type="button" onclick="document.getElementById('signout').value = sign(document.getElementById('signin').value, document.getElementById('pubkey').value, document.getElementById('privkey').value)" value="Sign message">
 
-<label>Signature: <input disabled id="signout" size="10"></label>
+<label>Signature: <input disabled id="signout" size="14"></label>
 
 # Check signature
 
 
-<label>Signature: <input id="checksig" size="10"></label>
+<label>Signature: <input id="checksig" size="14"></label>
 
-<label>Signer's public key: <input id="checkkey" size="10"></label>
+<label>Signer's public key: <input id="checkkey" size="14"></label>
 
 <input type="button" onclick="document.getElementById('checkout').value = sig2hash(document.getElementById('checkkey').value, document.getElementById('checksig').value)" value="Decrypt signature">
 
-<label>Signed hash: <input disabled id="checkout" size="10"></label>
+<label>Signed hash: <input disabled id="checkout" size="14"></label>
 
 Note: if the signed hash is longer than 5 characters, that means key was not used to create the signature.
 If it is ≤5 characters but doesn't match the message's hash, that means the signature is from the signer but was for a different message.
