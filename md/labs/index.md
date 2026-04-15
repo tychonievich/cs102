@@ -32,7 +32,8 @@ title: Labs
 Files used in labs:
 
 Lab 11: April 14, 15, and 16
-:   - [Simplified cryptography tools](crypto.html)
+:   - [Simplified cryptography tools](crypto3.html)
+      (revised 2026-04-15 12:18; [previous version](crypto.html) available if needed)
 
 Lab 6: March 3, 4, and 5
 :   - [articles.txt](articles.txt)
