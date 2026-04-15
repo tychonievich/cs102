@@ -3,12 +3,22 @@ title: Lectures
 ...
 
 
+Lecture 33 -- The Internet, part 1: making connections -- Wednesday 15 April 2026
+:   Board work
+    :   - [2026-04-15.pdf](2026-04-15.pdf)
+
+    Displayed text
+    :   - [Today's topics and poll](2026-04-15-outline.txt)
+
+    Relevant readings
+    :   - [The Internet](../text/internet.html)
+
 Lecture 32 -- Authorization and Blockchain -- Monday 13 April 2026
 :   Board work
     :   - [2026-04-13.pdf](2026-04-13.pdf)
 
     Displayed text
-    :   - [Today's topics and poll](2026-04-13-outline.txt)
+    :   - [Today's topics and poll](2026-04-13-text.txt)
 
     Relevant readings
     :   - [Security in computing](../text/security.html)
