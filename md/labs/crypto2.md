@@ -12,7 +12,7 @@ header-includes:
         if (charcode < 32 || charcode > 126) return String.fromCharCode(charcode)
         return charcode - 32;
     }
-    function n2cn(num) {
+    function n2c(num) {
         return String.fromCharCode(num+32);
     }
     function vignere_e(key, text) {
