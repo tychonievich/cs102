@@ -7,7 +7,7 @@ header-includes:
     const base_n = BigInt(base);
     const digits = 5;
     const prime = 7737809363n; // the largest prime smaller than base**digits
-    const dig_m1 = prime / base_n + 2;
+    const dig_m1 = prime / base_n + 2n;
     function c2n(charcode) {
         if (charcode < 32 || charcode > 126) return String.fromCharCode(charcode)
         return charcode - 32;
