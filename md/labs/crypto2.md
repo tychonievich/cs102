@@ -43,7 +43,7 @@ header-includes:
         let ans = '';
         while (n > 0n) {
             const dig = Number(n % base_n);
-            n /= base_b;
+            n /= base_n;
             ans = n2c(dig) + ans;
         }
         return ans;
