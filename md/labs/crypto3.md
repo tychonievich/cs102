@@ -158,7 +158,7 @@ header-includes:
 This page has several example functions that are the kinds of tools used to build cryptographic protocols.
 The functions on this page are insecure, deigned for exploration not for actual security.
 
-Most functions on this page use a "base-95" encoding, representing numbers as printable ASCII characters.
+Most functions on this page use a "base-26" encoding, representing numbers as only lowercase English letters.
 
 # Hash
 
