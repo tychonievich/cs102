@@ -160,38 +160,6 @@ The functions on this page are insecure, deigned for exploration not for actual 
 
 Most functions on this page use a "base-26" encoding, representing numbers as only lowercase English letters.
 
-# Hash
-
-<textarea id="hashin"></textarea>
-
-<input type="button" onclick="document.getElementById('hashout').value = hash(document.getElementById('hashin').value)" value="Compute hash">
-
-<label>Hash: <input disabled id="hashout" size="7"></label>
-
-# Key exchange function
-
-<label>Public information: <input id="dhpub" ></label>
-
-<label>Secret information: <input id="dhpriv" ></label>
-
-<input type="button" onclick="document.getElementById('dhres').value = fivechar_oneway(document.getElementById('dhpub').value, document.getElementById('dhpriv').value)" value="Compute function">
-
-<label>Computed secret: <input disabled id="dhres" size="7"></label>
-
-# Symmetric cipher
-
-This uses a variant of the Vignere cipher that uses all printable ASCII instead of just letters
-for both the key and the message text.
-
-<textarea id="symmin"></textarea>
-
-<label>Symmetric key: <input id="symmkey"></label>
-
-<input type="button" onclick="document.getElementById('symmout').value = vignere_e(document.getElementById('symmkey').value, document.getElementById('symmin').value)" value="encrypt">
-<input type="button" onclick="document.getElementById('symmout').value = vignere_d(document.getElementById('symmkey').value, document.getElementById('symmin').value)" value="decrypt">
-
-<textarea disabled id="symmout"></textarea>
-
 # Sign
 
 ```{=html}
@@ -227,5 +195,38 @@ function newkeys() {
 
 <label>Signed hash: <input disabled id="checkout" size="14"></label>
 
-Note: if the signed hash is longer than 5 characters, that means key was not used to create the signature.
-If it is ≤5 characters but doesn't match the message's hash, that means the signature is from the signer but was for a different message.
+Note: if the signed hash is longer than 7 characters, that means key was not used to create the signature.
+If it is ≤7 characters but doesn't match the message's hash, that means the signature is from the signer but was for a different message.
+
+# Hash
+
+<textarea id="hashin"></textarea>
+
+<input type="button" onclick="document.getElementById('hashout').value = hash(document.getElementById('hashin').value)" value="Compute hash">
+
+<label>Hash: <input disabled id="hashout" size="7"></label>
+
+# Key exchange function
+
+<label>Public information: <input id="dhpub" ></label>
+
+<label>Secret information: <input id="dhpriv" ></label>
+
+<input type="button" onclick="document.getElementById('dhres').value = fivechar_oneway(document.getElementById('dhpub').value, document.getElementById('dhpriv').value)" value="Compute function">
+
+<label>Computed secret: <input disabled id="dhres" size="7"></label>
+
+# Symmetric cipher
+
+This uses a variant of the Vignere cipher that uses all printable ASCII instead of just letters
+for both the key and the message text.
+
+<textarea id="symmin"></textarea>
+
+<label>Symmetric key: <input id="symmkey"></label>
+
+<input type="button" onclick="document.getElementById('symmout').value = vignere_e(document.getElementById('symmkey').value, document.getElementById('symmin').value)" value="encrypt">
+<input type="button" onclick="document.getElementById('symmout').value = vignere_d(document.getElementById('symmkey').value, document.getElementById('symmin').value)" value="decrypt">
+
+<textarea disabled id="symmout"></textarea>
+
