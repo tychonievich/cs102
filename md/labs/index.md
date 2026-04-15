@@ -26,6 +26,20 @@ title: Labs
 | Lab 8 | [PDF](Lab 8 Slides.pdf) | [PDF](Lab 8 Handout.pdf) |
 | Lab 9 | [PDF](Lab 9 Slides.pdf) | [PDF](Lab 9 Handout.pdf) |
 
+: Inter-quiz lab
+
+| Lab   | Slides                  | Handout                  |
+|-------|-------------------------|--------------------------|
+| Lab 10 | [PDF](Lab 10 Slides.pdf) | [PDF](Lab 10 Handout.pdf) |
+
+: Labs related to Quiz 3
+
+| Lab   | Slides                  | Handout                  |
+|-------|-------------------------|--------------------------|
+| Lab 11 | [PDF](Lab 11 Slides.pdf) | [PDF](Lab 11 Handout.pdf) |
+| Lab 12 | | |
+| Lab 13 | | |
+
 
 ----------
 

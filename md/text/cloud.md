@@ -56,4 +56,50 @@ when it fact it is being run on a computer that is also running many other apps 
 
 # Service architectures
 
-(section to appear later)
+It is common for cloud providers to refer to what they provide as a service.
+The central idea of various "(thing) as a service" models
+is that you're not buying or renting physical resources,
+but instead some computation performed on them.
+
+Common service categories include
+
+Infrastructure as a Service (<abbr>IaaS</abbr>)
+:   To the client, this looks like renting a computer.
+    You get seemingly full access to a file system, processor, and so on.
+    However, it is actually run as one of several <dfn>virtual machines</dfn>
+    which are programs that pretend to be entire computers.
+
+Containers as a Service (<abbr>CaaS</abbr>)
+:   To the client, this looks like renting a computer
+    on which you have limited control.
+    It's a lot easier and cheaper to run a <dfn>container</dfn> than a full virtual machine,
+    allowing containers to be created and destroyed on a moments notice,
+    unlike virtual machines which require significant resources to provision.
+    
+    The container software itself is often referred to by name,
+    with some of the most common names being Docker and Kubernetes.
+    
+Platform as a Service (<abbr>PaaS</abbr>)
+:   With both IaaS and CaaS, the client can configure the service as if it were a computer,
+    installing and running programs.
+    By contrast, PaaS grants access to a large utility program,
+    not a machine-like tool.
+    It's also not an end-user-facing application:
+    it has a way for other programs to access some service that is expensive to do directly
+    like managing a database or querying the raw LLM that backs an AI.
+    
+Function as a Service (<abbr>FaaS</abbr>)
+:   If PaaS gives a program access to a major tool used in building software,
+    FaaS gives a programmer the ability to move the other parts of their program into the cloud.
+    A client provides the FaaS provider with algorithms to run as individual functions during setup,
+    and then can ask the FaaS provider to run those functions on given inputs thereafter.
+    
+    Use of FaaS is sometimes called "serverless computing" -- not because there are no servers involved
+    but because the software developer doesn't need to worry about server details (not even abstracted away into virtual machines of containers).
+
+Software as a Service (<abbr>SaaS</abbr>)
+:   SaaS encompasses many web tools you know and use often,
+    from UIUC's course registration system to social media to online games.
+    If the end user is the client interacting over the Internet with the software, it's Software as a Service.
+
+
