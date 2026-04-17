@@ -55,7 +55,7 @@ AAAA
     To visit in IPv6 address in your browser, enclose it in brackets and use it in place of the hostname in the URL.
 
     <div class="example">
-    The `/index.html` path of IPv6 `2620:12a:8000::3` can be visited by entering <https://[2620:12a:8000::3]/index.html> in your browser's location bar.
+    The `/index.html` path of IPv6 `2620:12a:8000::3` can be visited by entering `<a href="https://[2620:12a:8000::3]/index.html">https://[2620:12a:8000::3]/index.html</a>`{=html} in your browser's location bar.
     </div>
     
 CNAME
