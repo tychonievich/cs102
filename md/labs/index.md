@@ -45,6 +45,9 @@ title: Labs
 
 Files used in labs:
 
+Lab 12: April 21, 22, and 23
+:   - [DNS lookups](dns.html)
+
 Lab 11: April 14, 15, and 16
 :   - [Simplified cryptography tools](crypto3.html)^[revised 2026-04-15 12:18; [the previous version](crypto.html) is still available if needed.]
 

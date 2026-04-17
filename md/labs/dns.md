@@ -38,7 +38,7 @@ async function lookup(elem) {
 </script>
 ```
 
-We show four (of many) DNS record types:
+We show four DNS record types:
 
 A
 :   Shows the IPv4 IP address associated with the host.
