@@ -3,6 +3,17 @@ title: Lectures
 ...
 
 
+Lecture 34 -- The Internet, part 2: DNS, TCP, and URL -- Friday 17 April 2026
+:   Board work
+    :   - [2026-04-17.pdf](2026-04-17.pdf)
+
+    Displayed text
+    :   - [Today's topics](2026-04-17-outline.txt)
+        - [Polls](2026-04-17-polls.txt)
+
+    Relevant readings
+    :   - [The Internet](../text/internet.html)
+
 Lecture 33 -- The Internet, part 1: making connections -- Wednesday 15 April 2026
 :   Board work
     :   - [2026-04-15.pdf](2026-04-15.pdf)
