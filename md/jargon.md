@@ -166,6 +166,13 @@ Byte
     thus `0D` means a byte with the value thirteen
     and `F3` means a byte with the value two hundred forty-three.
 
+Cache
+:   As a verb, storing values to prevent the need to compute them again in the future.
+    As a noun, the place where those values are stored.
+
+    Caching is widely used to speed up operations that might otherwise be repetitive,
+    such as *DNS* lookups or the bytes that make up image files used on many webpages.
+
 Call
 :   A colloquialism for invoking a *function*.
 
@@ -273,6 +280,25 @@ Digital
     
     Because of the prevalence of programmable general-purpose digital computers,
     "digital" is sometimes used as a synonym for "done with computers".
+
+DNS
+:   Short for "Domain Name System," a hierarchical mapping between *domains* and *IP* addresses.
+    DNS also contains other related information, such as entries stating that one hostname is an alias of another.
+    
+    DNS lookups proceed with one query per domain in the hostname,
+    starting with the last.
+    Each request asks for an IP address of a *subdomain*;
+    for example, to get the IP address of `grainger.illinois.edu`
+    we ask `illinois.edu` for it.
+    
+    DNS is frequently *cached* to avoid needing to send all these IP lookup requests repeatedly.
+    
+Domain
+:   A valid suffix of a *hostname*.
+    For example, in the hostname `courses.grainger.illinois.edu`
+    the domains are `edu`, `illinois.edu`, `grainger.illinois.edu`, and `courses.grainger.illinois.edu`.
+    
+    Typically, *DNS* performs one IP lookup per domain.
 
 Execute
 :   Formally: load the *machine instructions* of a *compiled* program into memory
@@ -405,6 +431,12 @@ Hill climbing
     3. Picking a new function with parameters moved in that direction
     4. If the new function is not good enough, return to step 2
 
+Hostname
+:   On part of a URL, in particular being between the `://` and the following `/`.
+    The hostname identifies a single computer and can be converted to an *IP* address using *DNS*.
+    
+    Because every hostname is a valid *domain*, it is common for "domain" to be used as a synonym for "hostname" when the difference is not important.
+
 Information
 :   Usually, "information" is used in a loose, human way to refer to the human-understood meaning carried by data.
 
@@ -423,6 +455,12 @@ Integrity
     
     The most common tools for achieving confidentiality are *hashes* (which detect changes) and *symmetric ciphers* (with make making a specific change almost impossible).
 
+Internet
+:   The Internet is a collection of computers using *IP* and *DNS* to connect computers in a mostly-decentralized way.
+
+    It is common to capitalized "Internet" when it is referring to the Internet
+    and leave "internet" lower-case when it is used as an adjective.
+
 Interpreter
 :   A program that reads the source code of a *programming language*
     and takes the actions described by each line of that code.
@@ -430,6 +468,14 @@ Interpreter
     Typically, programming languages that use an interpreter
     run much more slowly than those that use a *compiler*;
     but they also tend to provide more abstractions and thus require less effort to program in than those created for a compiler.
+
+IP
+:   Short for "internet protocol", a way for computers that are not owned by the same agency to send messages between each other.
+    
+    There are two current versions of IP: IPv4 assigns each computer a 32-bit number^[between 0 and 4,294,967,295 (about 4 billion)] and IPv6 assigns them a 128-bit number^[between 0 and 340,282,366,920,938,463,463,374,607,431,768,211,455 (about 300 duodecillion, a number so large that many dictionaries do not even recognize it as a word)].
+    These numbers, called IP addresses, are generally not used directly: humans prefer to use *hostnames* with *DNS* providing the translation between them.
+    
+    IP does not guarantee delivery of messages, leading to reliably protocols like *TCP*.
 
 Key exchange
 :   A way of having two parties agree on the key they will use for a *symmetric cipher*
@@ -657,8 +703,25 @@ Spiral model
     sometimes posed as having the entire waterfall model in step 3 above,
     and sometimes posed with one pass around the loop for each step of the waterfall model.
 
+Subdomain
+:   A more specific *domain*.
+    For example, `a.b.c` is a subdomain of `b.c`.
+    
+    Because *DNS* is hierarchical, the owner of a domain can create as many subdomains as they wish
+    by ensuring the computer identified by their *IP* address responds to DNS requests.
+    No special rights or permissions are needed beyond owning the domain.
+
 Supervised learning
 :   A category of *machine learning* where the *training data* includes the desired output for each input.
+
+Supply chain attack
+:   One form of cyber crime, based on inserting malicious code into the *upstream* *libraries* used by the software that is being attacked.
+    
+    The common approach to these attacks runs as follows:
+    
+    1. Find a library that is upstream from the target and has limited developers and funding.
+    2. Offer some helpful *maintenance* to those libraries to buld trust.
+    3. Once trust is gained, add malicious code to the libraries, often by hiding it in places that other developers looking at the code don't see.
 
 Symmetric cipher
 :   A tool for converting *plaintext* to *ciphertext* using a secret key,
@@ -675,15 +738,6 @@ TB
     
     Some of that space is typically used to store an index of sorts to help find the rest of the data,
     so the usable space is generally lower than the advertised, theoretically-provided space.
-
-Supply chain attack
-:   One form of cyber crime, based on inserting malicious code into the *upstream* *libraries* used by the software that is being attacked.
-    
-    The common approach to these attacks runs as follows:
-    
-    1. Find a library that is upstream from the target and has limited developers and funding.
-    2. Offer some helpful *maintenance* to those libraries to buld trust.
-    3. Once trust is gained, add malicious code to the libraries, often by hiding it in places that other developers looking at the code don't see.
 
 Technical debt
 :   The accumulated poor *design* created by modifying code after it is designed,
@@ -710,6 +764,16 @@ Testing
     Tests do not prove that software works; they just offer some confidence that it seems to work.
     It is possible to prove that software works, but doing so typically takes at least 10× as much time and money as creating the software itself, and thus is rarely seen as worth the investment.
     As a consequence, most software ships with bugs, which is one of the reasons that *maintenance* is necessary.
+
+TCP
+:   Short for "transmission control protocol", a tool for adding reliability on top of an unreliable communication medium like *IP*.
+    There are several key ideas used by TCP:
+    
+    1. Split messages into packets small enough to be delivered intact.
+    2. Add a packet number to each message so that if they arrive out of order they can be reordered.
+    3. Send an acknowledgment of each packet received; if receipt is not acknowledged within a reasonable time, resend it.
+    
+    Because the acknowledgments roughly double the number of messages sent, some protocols that depend on low latency chose not to use TCP, instead having their own way of handling dropped packets.
 
 Train
 :   The step in *machine learning* where a function is selected that matches the *training data*.
@@ -739,6 +803,30 @@ Upstream
 
 Unsupervised learning
 :   A category of *machine learning* where the *training data* does not include desired outputs, only a set of example inputs.
+
+URL
+:   Short for "universal resource locator," a human-readable way of identifying a computer and the resource on the computer to access.
+    URLs generally have five components:
+    
+    1. A scheme, like `https`, which indicates what data format will be sent.
+        
+        The scheme is followed by `://`
+    
+    2. A *hostname*, like `illinois.edu`, which is turned into the *IP* address of a specific computer by *DNS*.
+    
+        It is possible, but quite unusual, for the hostname to be preceded by a username and password separated by a color `:` and followed by an at sign `@`.
+        
+        It is possible, but uncommon, for the hostname to be followed by a colon `:` and a port number, which identifies which program on the host computer should handle the request.
+    
+    3. A path, which starts with a slash `/` and is intended to name a resource on that computer.
+    
+    4. Optionally, a query, which starts with a question mark `/` and is intended to store the *arguments* to be sent to the resource, assuming it is a program and not a file.
+    
+        Not all computers use queries for arguments they way they were designed, but most do.
+    
+    5. Optionally, a fragment or hash, which starts with an number sign/hash/ocotothorp `#`.
+        The fragment is not sent to the computer identified by the hostname at all;
+        instead, it is used by browsers to pick a part of the page to scroll into view.
 
 Variable
 :   The name of a location where data can be stored.
