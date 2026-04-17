@@ -50,7 +50,7 @@ Algorithm
     and the steps used to compute the answer.
 
     The word "algorithm" is a Latinization of the name of [Muḥammad ibn Mūsā al-Khwārizmī](https://en.wikipedia.org/wiki/Al-Khwarizmi)
-    who wrote books that Europeans adopt the ideas of algorithms with place-value numbers.
+    who wrote books that helped Europeans adopt the ideas of algorithms with place-value numbers.
     Algorithms themselves long predate his work.
 
 Analog
