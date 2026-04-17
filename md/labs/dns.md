@@ -36,5 +36,33 @@ async function lookup(elem) {
 }
 
 </script>
-
 ```
+
+We show four (of many) DNS record types:
+
+A
+:   Shows the IPv4 IP address associated with the host.
+
+    To visit in IPv4 address in your browser, use it in place of the hostname in the URL.
+    
+    <div class="example">
+    The `/index.html` path of IPv4 `130.126.151.14` can be visited by entering <https://130.126.151.14/index.html> in your browser's location bar.
+    </div>
+
+AAAA
+:   Shows the IPv6 IP address associated with the host.
+
+    To visit in IPv6 address in your browser, enclose it in brackets and use it in place of the hostname in the URL.
+
+    <div class="example">
+    The `/index.html` path of IPv6 `2620:12a:8000::3` can be visited by entering <https://[2620:12a:8000::3]/index.html> in your browser's location bar.
+    </div>
+    
+CNAME
+:   Shows the canonical domain name (the one preferred for use) of an alias (which is kind of like a nickname or stage name for a computer).
+    
+    Also shows entries for that canonical name in the same query, since you almost always want those.
+
+NS
+:   Shows the domain name of the computer that answers DNS queries for subdomains of this domain.
+
