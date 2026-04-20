@@ -3,6 +3,16 @@ title: Lectures
 ...
 
 
+Lecture 35 -- The Internet, part 3: The cloud, VPNs, Onoin Routing, and Tor -- Monday 20 April 2026
+:   The tech in the classroom was not working so I taught without a microphone using the blackboard.
+    There are not board work PDFs or text files to share.
+    
+    If you missed class and have questions after reviewing the reading, please reach out on Teams or in office hours.
+
+    Relevant readings
+    :   - [The Cloud and X-as-a-Service](../text/cloud.html)
+        - [The Internet](../text/internet.html), especially section 5 "VPNs and Tor"
+
 Lecture 34 -- The Internet, part 2: DNS, TCP, and URL -- Friday 17 April 2026
 :   Board work
     :   - [2026-04-17.pdf](2026-04-17.pdf)
