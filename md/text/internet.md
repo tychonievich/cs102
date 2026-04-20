@@ -25,7 +25,7 @@ Each computer on the Internet is given an IP Address, which is a large number.
 There are two common versions of IP in use today:
 IPv4 and IPv6; the most obvious difference between them is how large those numbers are:
 32 bits for IPv4 addresses^[There are about 4 billion IPv4 addresses, roughly 1 for every 2 people alive in 2026.]
-and 128 bits for IPv6 addresses^[There are about 100 quentillion quentillion IPv6 addresses, roughly 50 times the Earth's mass measured in nanograms.].
+and 128 bits for IPv6 addresses^[There are about 100 quintillion quintillion IPv6 addresses, roughly 50 times the Earth's mass measured in nanograms.].
 
 There are several aspects to IP, but the main operation to get a message from one computer to another
 is:
@@ -63,13 +63,13 @@ have explored how the Internet might work if they detached at their national bor
 Note that detaching is generally possible.
 While wireless communication is good for the relatively small amounts of data reaching a single device,
 it is insufficient for the vast amounts of data traversing the Internet
-so there are physical cables crossing national borders to make the Internet an international communcation platform.
+so there are physical cables crossing national borders to make the Internet an international communication platform.
 
-Because IP is already designed to work in a decentralized way that is rubust to disconnections,
+Because IP is already designed to work in a decentralized way that is robust to disconnections,
 cutting the connections that cross out of a nation has relatively little impact on IP routing.
 External IP addresses simply appear to be unreachable.
 It is even straightforward to make external IP addresses seem to still work
-by routing their traffice to internal servers instead.
+by routing their traffic to internal servers instead.
 
 China is well known for doing a more selective form of cut-off
 with what is known as the "great firewall of China",
@@ -150,8 +150,8 @@ Local networks needn't even know this has happened:
 once the network limited to national borders, 
 
 Russia famously experimented with this kind of full national cut-off,
-restricting parts of the Interent to just within Russia briefly in 2023 to prove they could
-and then trying to use it in a more targetting manner in 2026 as part of their conflict with Ukraine.
+restricting parts of the Internet to just within Russia briefly in 2023 to prove they could
+and then trying to use it in a more targeting manner in 2026 as part of their conflict with Ukraine.
 
 # Reliable transport {#reliable}
 
@@ -170,10 +170,10 @@ which uses the following elements to achieve reliability:
 
 - The recipient of a packet responds to acknowledge receipt. If not such response is received within a reasonable time, the packet is re-sent.
     
-The many rounds of receipt acknowledgements does add significant time to the process,
+The many rounds of receipt acknowledgments does add significant time to the process,
 and sometimes some steps can be skipped by using other information present in the messages being sent.
 For example, web pages can sometimes avoid sending receipts by having the browser re-request missing data
-and a different protocol based on that (called <addr>QUIC</abbr>) is increasingly common in that space.
+and a different protocol based on that (called <abbr>QUIC</abbr>) is increasingly common in that space.
 
 # Is your computer on the Internet?
 
@@ -184,7 +184,7 @@ Let's assume the common case where you're connecting wirelessly.
 
 - Your device is directly connected (via radio waves) to a router,
     which is a special-purpose computer with a radio signal array.
-    Common routers are wifi routers and cell tower.
+    Common routers are WiFi routers and cell tower.
     
     Your computer likely has a special IP address that only works within the set of computers connected to the same router.
     You can use that special local IP address to communicate with those other computers,
@@ -192,7 +192,7 @@ Let's assume the common case where you're connecting wirelessly.
 
 - The router is connected (typically via wire or fiber) to other computers making up a network.
     This network is typically owned and managed by the group you are paying for Internet access:
-    your internet service provider, cell carrier, or the like.
+    your internet service provider (<abbr>ISP</abbr>), cell carrier, or the like.
     
     Within this network, each computer has an IP address.
     However, these networks are usually set up to limit routing,
@@ -200,7 +200,7 @@ Let's assume the common case where you're connecting wirelessly.
 
 - Somewhere within the network is a computer that is actually on the Internet,
     connected to other computers on the Internet and participating in IP to send, receive, and route messages.
-    This computer is sometimes called a gateway or switch.
+    This computer is sometimes called a <dfn>gateway</dfn> or switch.
     
     This computer may only have a single IP address that the rest of the Internet can see
     and uses that for all the computers attached to it.
@@ -213,5 +213,71 @@ Let's assume the common case where you're connecting wirelessly.
 One consequence of this design is that your computer cannot be directly addressed by others on the Internet.
 Sometimes this is good, removing the risk of attackers directly sending malicious content to your computer;
 other times it is bad, making initiating something like a video call far more complicated than it would be otherwise with a required intermediate server to achieve some otherwise-simple goals.
-    
+
+# VPNs and Tor
+
+Because IP involves many computers handing a message off one to another,
+it requires that the IP addresses of both receiver and sender^[Receiver is needed to get the message where it is going; sender is needed so that NAT and related ideas can successfully communicate nontrivial return paths.] be sent in plaintext,
+unencrypted and visible to every computer making up the packet's route.
+This means that, while the *contents* of messages can be encrypted,
+who sent messages when to whom cannot.
+
+Knowing what IP addresses you are sending each packet to
+allows ISPs to selectively throttle traffic,
+for example by prioritizing packets sent to and from an Internet connection speed test site
+and delaying traffic to the sites of competitors.
+It allows companies to block access from work computers to sites they deem inappropriate.
+It allows countries to block access to sites they deem to be a security risk or in violation of intellectual property laws
+and to use the quantity and timing of messages in legal action.
+These technical allowances are all things some users might object to and wish to disallow.
+
+<dfn>Virtual private networks</dfn> (<abbr>VPN</abbr>s) are the main tool for obfuscating communicating IP addresses.
+To send a message to illinois.edu using a VPN,
+
+1. You open a secure connection (such as HTTPS) with the VPN.
+
+2. You send the VPN a request to send illinois.edu your message.
+
+3. The VPN opens a secure connection to illinois.edu.
+
+4. The VPN sends your message to illinois.edu and gets a reply.
+
+5. The VPN sends you the reply.
+
+The end result of this is the VPN knows who you are talking to,
+and your ISP and other Internet computers know that you're talking to the VPN,
+but your ISP and other Internet computers don't know who your using the VPN to talk to.
+The VPN thus has the same power to see your communications that an ISP would otherwise,
+but no one else does.
+
+But what if you don't trust your VPN?
+Then you can use <dfn>onion routing</dfn> by picking three unrelated VPNs.
+
+1. You send a message to VPN1
+2. requesting they send a message to VPN2
+3. requesting they send a message to VPN3
+4. requesting they send a message to your destination website.
+
+This results in VPN1 knowing that you are communicating with someone but not whom;
+VPN3 knowing that someone is communicating with the site but not whom;
+and VPN2 being an extra buffer to keep either of the other VPNs from even knowing what countries the two communicating parties live in.
+
+The most successful onion routing network is called the <dfn>Tor network</dfn>
+and accepts volunteers from across the world to be the VPNs.
+Tor was created by researchers working for the US military
+but has seen significant buy-in from many nations,
+including heavy use by journalists in nations without full freedom of the press
+and by those seeking to connect to one another without being susceptible to wiretaps,
+including criminals and political dissenters.
+It is also widely used to hide embarrassing Internet usage from ISPs and employers.
+
+Tor also supports a special protocol for any computer connected to Tor
+to serve a website that is only accessible through Tor.
+Initially designed to protect servers from even being visible to the governments where they operated,
+these websites can easily be ephemeral, coming and going as computers connect and disconnect;
+they lack human-readable URLs;
+and they cannot readily be indexed by search engines or the like.
+Together, these sites that depend on and are hidden by Tor (and other related onion routing systems) are called the <dfn>dark web</dfn>.
+
+
 
