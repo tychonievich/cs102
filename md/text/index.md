@@ -37,4 +37,8 @@ Quiz 2 covered the above topics; Quiz 3 will focus on those below.
 - [Blockchains](blockchain.html)
 - [The Internet](internet.html)
 - [The Cloud and X-as-a-Service architectures](cloud.html)
-- robots and automation in daily life
+- [Robots and automation in daily life](bots.html)
+
+We have a few classes after Quiz 3, which will focus on the following topic
+
+- Other legal, economic, and global considerations in computing

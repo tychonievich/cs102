@@ -48,7 +48,7 @@ We often use that computation to create other kinds of behaviors,
 but sometimes the computation itself -- the ability to find the result of non-trivial mathematical expressions -- is valuable in and of itself.
 
 :::example
-GPS is based on four satellites broadcasting their position and the current time.
+GPS^[<abbr>GPS</abbr> stands for Global Positioning System and is also the name of the first satellite network using its ideas, owned by the US government. Other agencies have also deployed similar satellites, and the general term for all such systems is Global Navigation Satellite System (<abbr>GNSS</abbr>).] is based on four satellites broadcasting their position and the current time.
 Because the signal takes time to travel, differences in the times stated and the time they are received
 can be used to create a system of four equations in four unknowns: the latitude, longitude, and altitude of the GPS receiver
 and the current time.
@@ -124,12 +124,200 @@ including [news reports](https://www.forbes.com/sites/alexvakulov/2024/12/22/how
 [blogs summarizing attacks](https://blog.halonex.app/posts/threats-to-smart-thermostats.html),
 and so on.
 
+But what good is it to an attacker to take over your doorbell?
+They might be able to harass you by making it ring all the time and try to get a payoff to make them go away,
+but if that happens you're likely to just disconnect the device and report it to the manufacturer.
+More likely, they'll incorporate your device into a bot net.
+
+A <dfn>bot net</dfn> is a collection of attacker-compromised devices
+that are connected to the Internet and can be used to mount other kinds of attacks.
+One of the most common such attacks is a <dfn>distributed denial of service</dfn> (<abbr>DDOS</abbr>) attack,
+where a website is shut down by overwhelming it with a very large number of simultaneous requests,
+more than their servers can handle.
+If one computer creates all of the requests then the IP address of the computer can be identified and blocked,
+but if the requests are coming from a million different doorbells, thermostats, refrigerators, and other household devices
+then figuring out which are malicious and which are not is very difficult.
+
+All of that said, from your experience as a smart device user
+the risks are fairly low.
+While it is likely that your device is part of a bot net
+and being used to attack others,
+that fact is unlikely to impede its functioning in your home:
+in fact, the attackers likely *want* it to keep functioning so that you keep the device,
+recommend that your friends buy the same device,
+and they have more devices to add to their bot net.
+
 
 # Robots
 
+The word <dfn>robot</dfn> entered English in 1923 and derives from the Old Slavic word for slave.
+It originally referred to mechanical people who differed from humans in
+being stronger and more intelligent than us but in having no soul and thus no moral prohibition to being enslaved.
+For many years the idea was limited to science fiction,
+but with the advent of more advanced machinery it gained new use
+referring to machinery that did "advanced" or "human-like" work;
+and from there has been extended to most systems where a computer
+is attached to sensors and actuators
+to enable its interaction with the physical world.
 
+Robotics is a large field, and much of it focuses on the hardware used
+and the software that controls that hardware.
+Often an advance in robotics comes with the combination
+of new hardware that can do things previous hardware could not
+and new software that uses those operations to solve new problems,
+but perhaps more important than either is the recognition that a robot could help with a new task.
+
+:::example
+The First Roomba
+
+In 2002, iRobot released its first Roomba, a robot vacuum cleaner that became the first commercially-successful home robot.
+Later Roombas and other robots have more involved algoritmhs, but the first one was quite simple.
+
+The device had four main sensors:
+
+- A bumper on its front that detected when it ran into something.
+- Infrared proximity sensors that detected when it was near a solid surface, of two kinds:
+    - wall sensors on its sides, and
+    - a "cliff" sensor under its front bumper.
+- A microphone in its vacuum intake.
+
+These were used to implement four basic behaviors:
+
+- Spiral outward from an initial point until one of the sensors indicated a different action.
+- If the side sensors detect a wall, follow that wall for a randomly-chosen distance.
+- If the front bumper or cliff sensor detects and obstacle, rotate a random amount and move a random distance.
+- If the microphone detects the sound of debris rattling down the vacuum intake, go in a small circle to clean that area again.
+
+This simple algorithm meant that no expensive or fragile sensors were needed
+and the computer running on the device could be inexpensive and low-power,
+helping keep the device affordable and sturdy.
+It was used for 8 years before being replaced by more complicated algorithms
+backed by more comprehensive sensors.
+:::
+
+
+## Bugs and robots
+
+
+A bug in a computer that is only connected to a screen and other computers has limited potential for harm;
+a computer that can move things has greatly heightened risks.
+
+<details class="example"><summary>Therac-25: computer bugs as the cause of death</summary>
+
+In the 1980s, a cancer radiation treatment machine called the Therac-25
+was created that worked well in most cases.
+But it had an error in how it showed error messages to the operator,
+which could cause an operator who pressed `x` for X-ray instead of `e` for electron
+and then corrected that quickly
+before pressing `b` for emit beam
+showed an error message suggesting the beam was not emitted
+when in fact it was, resulting in the operator trying again and sending another dose of radiation into the patient.
+Additionally, if the time gap between `x` and `e` was less than 8 seconds,
+the incomplete X-ray selection interacted with the electron selection
+to open the machine to full power, which was roughly 100× more powerful than is appropriate for this kind of therapy.
+The result was pain, burnt flesh, and sufficient radiation to create lethal radiation sickness.
+
+This exact set of actions happened rarely, and radiation sickness can take a few months to result in death,
+both of which contributed to this bug taking 2 years of operation and 6 patient deaths before the error was identified and corrected.
+
+</details>
+
+One of the challenges in trying to prevent these kinds of harm
+is that they are generally unexpected.
+We have developed intuition about what kinds of human conditions and behaviors are riskier than others,
+but that intuition does not generally apply to robots.
+Efforts to make robots safe often focus more on processes that are believed to reduce the risk that bugs would be overlooked than they do on specific technical innovations that make the software bug-free or the robots innocuous.
 
 # Self-driving cars
 
+One of the largest and most visible class of robots is self-driving cars.
+Their actuators are generally understood by most drivers:
+an accelerator, a brake, a steering wheel, and turn signals.
+Their sensors have more variety:
 
+Cameras
+:   Roads contain many visual signals based on color, such as signs and painted pavement.
+    Detecting these requires cameras.
+    
+    Machine vision often relies on artificial neural networks, similar to the core of LLMs,
+    but with vision-based adjustments instead of the text-based encoders, decoders, and transformers of LLMs.
+    Notably, they do not perceive the way that humans do.
+    The kinds of "optical illusions" that fool humans don't fool computers,
+    and the ones that fool computers don't even look like illusions to humans.
+    This means that relying primarily on vision to navigate (as humans do)
+    leads to mistakes humans cannot understand.
+    They also make mistakes that humans do understand in foggy or other low-visibility situations.
+
+LiDAR
+:   LiDAR is short for Light Detection and Ranging
+    and uses pulsing scanning lasers and high-speed cameras sensitive to the lasers' wavelength
+    to create 3D models of the environment surrounding the car.
+    
+    LiDAR essentially solves millions of trigonometry problems a second:
+    given a laser in one location and its light seen by a camera at a particular angle, where in 3D space is that point?
+    It works very well, but can be fooled by things that reflect some light and let other light through
+    such as heavy snow, blowing dust, and falling leaves.
+    
+    LiDAR hardware is expensive and can be somewhat delicate.
+    
+
+Radar
+:   Radar bounces radio waves (which are long-wavelength low-energy light) off of objects
+    and uses the time taken for the bounce to determine distances
+    and the dopler shift in the light to determine relative velocities.
+    
+    Because radio waves are long-wavelength, they cannot see small things.
+    This can be both good -- they aren't fooled by snow like LiDAR is --
+    and bad -- they can't make out any kind of details, including not being able to tell what they detected, only that they detected something.
+    
+
+Sonar
+:   Sonar emits beeps of sound too high for humans to hear it
+    and uses how long it takes for an echo of the sound to return to detect the distance of objects.
+    
+    Sonar is very inexpensive, allowing many sensors to be distributed across the car.
+    However, its effective range is limited to just a few meters.
+
+
+GPS
+:   As noted in an example [above](#computed-precision),
+    GPS uses precise times broadcast from satellites to determine location on the planet.
+    All major self-driving cars use GPS rather than road signs to plot paths for the car to follow.
+    
+    GPS only works when it can detect signals from multiple satellites simultaneously.
+    This makes it ineffective in tunnels and underpasses that block satellite signals.
+    It also only is only as up to date as the maps it stores.
+
+
+Accelerometers and Gyroscopes
+:   Accelerometers and gyroscopes can be used to detect the vehicle's motion.
+    This is more accurate than steering wheel position and tire speed which can be fooled by slippery roads and strong winds,
+    but both methods accumulate error over time
+    and are primarily used for (hopefully brief) times when the car is inside a tunnel or otherwise cannot see enough GPS satellites for GPS to work.
+
+
+Microphones
+:   Vehicles behave differently when they hear sirens then when they do not.
+    Self driving cars thus need microphones to hear sirens with.
+
+
+Internet
+:   GPS by itself only tells a car where it is on the globe.
+    Paired with the Internet, it can be updated with traffic alerts
+    and with the shared GPS locations of other cars,
+    helping it know if there's an upcoming traffic jam or diversion.
+    
+
+A great deal of the work done by self-driving cars
+is combining these inputs into a single cohesive model of the environment around the car.
+That model needs to be quite complex:
+not just the car's position in the road,
+but also detecting and distinguishing between
+pedestrians, animals, and blowing leaves and litter;
+road markings and graffiti;
+emergency vehicle lights and Christmas trees;
+poorly-maintained roads and impassible obstacles;
+and so on.
+We've had cars that can drive in most situations correctly
+for many years, but the difference between most and all is key to their safety and ability to go beyond the best-maintained roads.
 
