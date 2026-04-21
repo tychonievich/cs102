@@ -211,6 +211,15 @@ Ciphertext
     
     Ideally, it should be nearly impossible to convert from ciphertext to *plaintext* without knowing the encryption key.
 
+Cloud
+:   A name for applications and data that are hosted on shared computers rented by cloud providers to multiple users.
+
+    Cloud hosting allows averaging out bursty usage patterns that most apps experience
+    between many apps,
+    keeping each server more uniformly busy and allowing fewer overall servers than if each app owned their own.
+    
+    Cloud providers often use *virutal machines* or *containers* to issolate different users' code and data.
+
 Compiler
 :   A program that converts source code written in a *programming language*
     into a sequence of *machine instructions* that can be *executed*
@@ -224,6 +233,17 @@ Confidentiality
 :   A property of secure communications that prevents people other than the intended recipient from knowing the contents of the communication.
     
     The most common tools for achieving confidentiality are *symmetric ciphers*.
+
+Container
+:   A lighter-weight way of isolating programs and providing the illusion of each running on its own computer than a *virtual machine*.
+
+    In a container, each *system call* is checked by the container program
+    and adjusted to simulate being on its own computer,
+    but is then handled by the *kernel* of the computer running the container.
+    This means (for example) that a program running in a container might have every effort to open a file
+    pretend that one directory on the computer is the entire file system, preventing the program from even being able to refer to other program's files at all.
+    
+    Containers are widely used in *cloud*-based computing.
 
 Continuous
 :   A family of *AI* tasks where the output is one or more real numbers (a score, a grid of pixel intensities, etc.), not *categorical* data.
@@ -502,6 +522,14 @@ ISP
 :   Short for "internet service provider", a company that allows subscribers to connect to their network
     and through their *gateway* to reach the *Internet*.
 
+Kernel
+:   A key piece of an *operating system*, responsible for managing programs' access to disks, networks, and other hardware resources.
+    
+    What kernels can do is defined by the computer hardware, which requires that some operations
+    (those that would talk to hardware directly) only be run in kernel mode
+    and stops any program that is not the kernel which tries to do these operations,
+    switching to the kernel and having the kernel decide what to do with the program's attempt.
+
 Key exchange
 :   A way of having two parties agree on the key they will use for a *symmetric cipher*
     without anyone else knowing what key they picked.
@@ -587,6 +615,18 @@ Online learning
     after some use of the function.
     
     Online learning is harder to design than *offline learning* and thus is generally limited to cases where the application needs to start acting before it has all the training data, such as when it needs to learn from the outcomes of earlier decisions it has made.
+
+Operating system
+:   A collection of programs including a *kernel* and supporting software designed to make other programs easier to build and more consistent in how they behave.
+    
+    Four of the most popular operating systems (Windows, MacOS, Android, iOS) are very large systems
+    with hundreds of programs and *libraries* that impose specific designs on how programs should look.
+    Almost all other operating systems (Linux, FreeBSD, Unix, OpenBSD, Irix, Firefly, BeOS, Dos, OS/2, and so on)
+    include a kernel and basic programming libraries
+    but allow windowing environments that support different looks and operational modalities to be run as separate programs.
+    Having a separate windowing environment makes these particularly well suited to web servers
+    and other computers that are not primarily used to run graphical programs for a single user
+    and thus don't need a windowing environment to be installed at all.
 
 Overfitting
 :   A common way that *machine learning* might fail,
@@ -731,6 +771,9 @@ Selection
     The other, also called indexing,
     is a component of a program that indicates which one out of several candidate pieces of data should be used.
     The most common programming language vocabulary for this type of selection are the name of the set of candidates, followed by which candidate in the set to chose in brackets, like `some_list[3]` to pick item 3 out of a list.
+
+Serverless
+:   A common phrase for an application that is hosted in the *cloud* rather than on devices owned by the app developers.
 
 Signature
 :   A way of attesting approval of a document, using a special type of encryption that has two keys: one to encrypt, another to decrypt.
@@ -923,6 +966,15 @@ Variable
     `x = 3 + 4` means the memory named by variable `x` should have the number `7` stored inside it.
     Conversely, `3 + 4 = x` is a nonsensical an erroneous request that the number `7` have the contents of the memory named by variable `x` put inside it.
 
+Container
+:   A heavier-weight way of isolating programs and providing the illusion of each running on its own computer than a *container*.
+
+    In a virtual, each *system call* is routed not to the usual *kernel*
+    but to a second virtual kernel that only exists within the virtual machine.
+    When that guest kernel tries to talk to hardware,
+    that effort is interrupted by the real kernel and adjusted to prevent the guest kernel from interacting with anything else the computer is running.
+    
+    Virtual machines are sometimes used in *cloud*-based computing, but containers are more popular.
 VPN
 :   Short for "virtual private network", a computer that agrees to forward messages for other computers
     in a more private way than is provided by *IP*.
