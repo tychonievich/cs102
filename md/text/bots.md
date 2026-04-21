@@ -318,6 +318,6 @@ road markings and graffiti;
 emergency vehicle lights and Christmas trees;
 poorly-maintained roads and impassible obstacles;
 and so on.
-We've had cars that can drive in most situations correctly
-for many years, but the difference between most and all is key to their safety and ability to go beyond the best-maintained roads.
+We've had cars that can self-drive in *most* situations correctly for many years,
+but the difference between most and all is key to their safety and ability to go beyond the best-maintained roads.
 

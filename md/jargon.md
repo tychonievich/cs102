@@ -228,6 +228,15 @@ Confidentiality
 Continuous
 :   A family of *AI* tasks where the output is one or more real numbers (a score, a grid of pixel intensities, etc.), not *categorical* data.
 
+Dark web
+:   A collection of websites that are only accessible via *Tor*
+    and are not linked to from more visible *Internet* sites.
+    
+    Pages on the dark web are called "onion sites" and may be hosted by any Internet-connected device,
+    and can be created and changed without notice or centralized control.
+    Their *hostnames* are 56 random characters followed by `.onion`;
+    these *URL*s are not accessible except through Tor.
+
 Data
 :   A defined, unambiguous representation of *information*.
 
@@ -300,6 +309,9 @@ Domain
     
     Typically, *DNS* performs one IP lookup per domain.
 
+Encrypt
+:   To hide from most people's understanding using a cipher, most often a *symmetric cipher*.
+
 Execute
 :   Formally: load the *machine instructions* of a *compiled* program into memory
     and have the processor begin following those instructions.
@@ -344,6 +356,13 @@ Gate
     
     The most commonly discussed gates are [and]{.smallcaps}, [or]{.smallcaps}, [not]{.smallcaps}, and [xor]{.smallcaps}.
     For some specific hardware cases, [nand]{.smallcaps} and [nor]{.smallcaps} are also used.
+
+Gateway
+:   A computer that is part of the *Internet*, engaging in routing messages between computers using *IP*;
+    and is also part of a *network* of computers that are not part of the Internet themselves
+    but gain access to it through the gateway.
+    
+    Gateways are the component of *ISP*s that separates them from other networks.
 
 General-purpose
 :   One of the key qualifiers of a computer,
@@ -460,6 +479,8 @@ Internet
 
     It is common to capitalized "Internet" when it is referring to the Internet
     and leave "internet" lower-case when it is used as an adjective.
+    It is also possible (though uncommon) to use "internet" (lower-case) to refer to connections between different *LAN*s
+    even when those connections are not part of the Internet (upper-case).
 
 Interpreter
 :   A program that reads the source code of a *programming language*
@@ -477,11 +498,25 @@ IP
     
     IP does not guarantee delivery of messages, leading to reliably protocols like *TCP*.
 
+ISP
+:   Short for "internet service provider", a company that allows subscribers to connect to their network
+    and through their *gateway* to reach the *Internet*.
+
 Key exchange
 :   A way of having two parties agree on the key they will use for a *symmetric cipher*
     without anyone else knowing what key they picked.
     
     The *Diffie-Hellman key exchange* is by far the most common key exchange protocol.
+
+LAN
+:   Short for Local Area Network, a collection of computers connected to and communicating with one another
+    with some level of trust or central management.
+    The computers connected to the same home network typically form a LAN,
+    as do the computers owned by many companies.
+    
+    Despite the name, there is not firm requirement that computers on a LAN be in the same physical location.
+    However, they do connect to one another without the interposition of computers that are not part of the LAN;
+    if external computers are needed to route traffic, the result is some form of internet.
 
 Library
 :   A set of code that is designed to be used by other programs.
@@ -527,10 +562,25 @@ Metadata
     
     Many file formats store metadata along with the data, and many applications ignore most of the metadata.
 
+Network
+:   A group of computers connected to one another and sending information back and forth.
+    
+    Networks range from very small *LAN*s that might have only two computers (a router and a user's computer)
+    through multi-LAN networks owned by *ISP*s
+    through to the entire Internet.
+    
+    Sometimes people use "network" only to refer to centrally-managed networks
+    and thus omit the Internet from its definition.
+
 Offline learning
 :   A type of *machine learning* where the *training* happens separately from and before the function selected during training is used.
     
     Offline learning is easier to design than *online learning* and thus is the default for many machine learning applications.
+
+Onion routing
+:   Sending an *IP* packet though multiple *proxies* to prevent identification of who is communicating with whom.
+    
+    *Tor* is the largest and best-known onion routing network.
 
 Online learning
 :   A type of *machine learning* where new *training data* is collected and used to change the function being used
@@ -624,6 +674,10 @@ Proof of work
     In its most common form, only blocks with specific patterns in their hash (often many leading zeros) are accepted to be added to the blockchain.
     This requires people to try adding many random values to their block to get the right hash pattern,
     a process called "mining" because successful blocks are rewarded with additional digital currency.
+
+Proxy
+:   A computer that acts on behalf of another computer,
+    most often to send *IP* packets as a *VPN*.
 
 Refactoring
 :   Changing how code operates without changing what it does.
@@ -775,6 +829,36 @@ TCP
     
     Because the acknowledgments roughly double the number of messages sent, some protocols that depend on low latency chose not to use TCP, instead having their own way of handling dropped packets.
 
+Tor
+:   A large volunteer-run group of computers participating in *onion routing*.
+    
+    The computers that make up Tor are called relays.
+    Each relay accepts incoming *encrypted* messages
+    that when decrypted contain a destination computer and a message to send them
+    and forwards the message to that computer.
+    
+    To send a message via Tor, a client picks three relays and sends
+    
+    To
+    :   relay 1
+    
+    Message encrypted using relay 1's *symmetric cipher*
+    :   To
+        :   relay 2
+    
+        Message encrypted using relay 2's *symmetric cipher*
+        :   To
+            :   relay 3
+
+            Message encrypted using relay 3's *symmetric cipher*
+            :   To
+                :   web server
+                
+                Message encrypted using server's *symmetric cipher*
+                :   whatever the client wanted to send.
+
+    Tor is used for many purposes, including hosting the *dark web*.
+
 Train
 :   The step in *machine learning* where a function is selected that matches the *training data*.
     In some cases training can be done exactly using some mathematical properties of the function family,
@@ -838,6 +922,21 @@ Variable
     but rather "gets the value of", in a directional way.
     `x = 3 + 4` means the memory named by variable `x` should have the number `7` stored inside it.
     Conversely, `3 + 4 = x` is a nonsensical an erroneous request that the number `7` have the contents of the memory named by variable `x` put inside it.
+
+VPN
+:   Short for "virtual private network", a computer that agrees to forward messages for other computers
+    in a more private way than is provided by *IP*.
+    
+    Using IP, even *encrypted* messages have the sending and receiving IP address visible to other computers making up the *Internet*.
+    VPNs accept messages over IP from their clients
+    which are encrypted versions of messages to send to others,
+    send them to those recipients,
+    receive the replies,
+    and send the encrypted replies back to the the clients.
+    
+    Even more private communication is provided by *onion routing*,
+    which can be provided by paying for multiple VPNs
+    or through volunteer networks like *Tor*.
 
 Vulnerability
 :   Some aspect of a computer system -- usually software, but sometimes hardware -- that has the potential to be used in ways that the designers did not intend and the legitimate users do not desire.
