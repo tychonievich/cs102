@@ -3,7 +3,20 @@ title: Lectures
 ...
 
 
-Lecture 35 -- The Internet, part 3: The cloud, VPNs, Onoin Routing, and Tor -- Monday 20 April 2026
+Lecture 36 -- Q&A on the Internet and AI; introduce ubiquitous computing -- Wednesday 22 April 2026
+:   Board work
+    :   - [2026-04-22.pdf](2026-04-22.pdf)
+
+    Displayed text
+    :   - [Today's topics](2026-04-22-outline.txt)
+        - [Q&A](2026-04-22-qa.txt)
+
+    Relevant readings
+    :   - [Computing Jargon](../jargon.html)
+        - [The Internet](../text/internet.html)
+        - [Robots and automation in daily life](../text/bots.html)
+
+Lecture 35 -- The Internet, part 3: The cloud, VPNs, Onion Routing, and Tor -- Monday 20 April 2026
 :   The tech in the classroom was not working so I taught without a microphone using the blackboard.
     There are not board work PDFs or text files to share.
     
