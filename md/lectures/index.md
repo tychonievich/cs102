@@ -3,6 +3,27 @@ title: Lectures
 ...
 
 
+Lecture 38 -- Robots, vacuum cleaners, driverless cars -- Monday 27 April 2026
+:   Board work
+    :   - [2026-04-27.pdf](2026-04-27.pdf)
+
+    Displayed text
+    :   - [Today's topics](2026-04-27-outline.txt)
+
+    Relevant readings
+    :   - [Robots and automation in daily life](../text/bots.html)
+
+
+Lecture 37 -- ASICs, computed precision, smart devices, botnets -- Friday 24 April 2026
+:   Board work
+    :   - [2026-04-24.pdf](2026-04-24.pdf)
+
+    Displayed text
+    :   - [Today's topics](2026-04-24-outline.txt)
+
+    Relevant readings
+    :   - [Robots and automation in daily life](../text/bots.html)
+
 Lecture 36 -- Q&A on the Internet and AI; introduce ubiquitous computing -- Wednesday 22 April 2026
 :   Board work
     :   - [2026-04-22.pdf](2026-04-22.pdf)
