@@ -3,6 +3,15 @@ title: Lectures
 ...
 
 
+Lecture 39 -- Quiz 3 review -- Wednesday 29 April 2026
+:   Quiz review
+    :   [Past questions in-scope for quiz](quiz3review.html)
+
+    Announcements
+    :   - Lecture on Friday is an in-person on-paper quiz, with questions resembling (but not identical to) those in homeworks and labs.
+
+
+
 Lecture 38 -- Robots, vacuum cleaners, driverless cars -- Monday 27 April 2026
 :   Board work
     :   - [2026-04-27.pdf](2026-04-27.pdf)
