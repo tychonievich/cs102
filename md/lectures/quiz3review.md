@@ -415,12 +415,12 @@ What is the primary purpose of TCP?
 
 Your computer is online, but it is not part of the Internet. Which of the following operations can it do?
 
-- [ ] Send data to other machines
-- [ ] Send DNS requests
-- [ ] Receive data from other machines
-- [ ] Respond to DNS requests sent by others
-- [ ] Route data between two other machines
-- [ ] Use TCP
+- Send data to other machines
+- Send DNS requests
+- Receive data from other machines
+- Respond to DNS requests sent by others
+- Route data between two other machines
+- Use TCP
 
 
 ## Question 42 {.unnumbered .unlisted}
@@ -430,8 +430,4 @@ Recently U of I announced (https://massmail.illinois.edu/massmail/1486908145.htm
 
 ## Question 43 {.unnumbered .unlisted}
 
-A robot was defined in lecture as having three components and in lab as what those three components do. Give either list here:
-
-- \_\_\_\_\_\_\_\_\_\_\_\_
-- \_\_\_\_\_\_\_\_\_\_\_\_
-- \_\_\_\_\_\_\_\_\_\_\_\_
+A robot was defined in lecture as having three components and in lab as what those three components do. Give either list here.
