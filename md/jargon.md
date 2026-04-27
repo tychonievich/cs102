@@ -150,6 +150,16 @@ Blockchain
     and prevent one user from overwhelming consensus with a large number of voting accounts
     by making votes cost, typically using either *proof of work* or *proof of stake*.
 
+Botnet
+:   A large number of computers connected to the *Internet*,
+    all compromised and at least partially controlled by a single cybercriminal.
+    
+    Botnets often target small devices that are often less secure and less often updated, like smart thermostats, smart doorbells, smart refrigerators, and other Internet-connected appliances.
+    Phones and computes that are not regularly updated are also often controlled by botnets.
+    
+    Botnets are usually used to attack others rather than to harm the owners of the devices they are made of,
+    for example by launching *DDoS* attacks.
+
 Brittle
 :   A characteristic of software, describing the difficulty of making changes
     or the likelihood that small-sounding changes will either break existing systems or require a large amount of work.
@@ -273,6 +283,11 @@ Data Structure
     "List" could also be implemented with other data structures,
     such as by having each element in the list store both a value
     and the location in memory to find the element that comes after it.
+
+DDoS
+:   Short for "distributed denial of service", a way of bringing down even secure websites through too many requests.
+    
+    Typically, DDoS attacks involve an attacker using a *botnet* to send millions of requests from thousands of IP addresses across the world to a single website, overwhelming its servers without them being able to easily pick out which originating IP addresses are to blame.
 
 Design
 :   The high-level outline of how software approaches its tasks.
@@ -756,6 +771,10 @@ Requirements elicitation
     Requirements elicitation is generally an interactive process
     with the developer asking questions and posing possible solutions
     and the clients commenting on them and adding priorities to resolve conflicts.
+
+Robot
+:   A system consisting of a computer attached to sensors and actuators.
+    This allows it to sense the environment around it, make decisions based on those sensations, and then act on those decisions in a way that interacts with the physical world.
 
 Run
 :   A colloquialism meaning to *execute* a program or invoke a *function*.
