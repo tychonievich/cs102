@@ -5,7 +5,7 @@ title: Lectures
 
 Lecture 39 -- Quiz 3 review -- Wednesday 29 April 2026
 :   Quiz review
-    :   [Past questions in-scope for quiz](quiz3review.html)
+    :   [Past questions in-scope for quiz](quiz3review.html). The last question on that page was covered in both lecture and lab and hence is in scope for the quiz, but it was not asked as a question in that form in either setting.
 
     Announcements
     :   - Lecture on Friday is an in-person on-paper quiz, with questions resembling (but not identical to) those in homeworks and labs.
