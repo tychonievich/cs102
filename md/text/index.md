@@ -39,6 +39,6 @@ Quiz 2 covered the above topics; Quiz 3 will focus on those below.
 - [The Cloud and X-as-a-Service architectures](cloud.html)
 - [Robots and automation in daily life](bots.html)
 
-We have a few classes after Quiz 3, which will focus on the following topic
+We have one non-review class after Quiz 3, which will focus on the following topic
 
-- Other legal, economic, and global considerations in computing
+- [Computer creation and supply chains](supplychain.html)
