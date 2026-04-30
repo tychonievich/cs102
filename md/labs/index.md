@@ -37,8 +37,8 @@ title: Labs
 | Lab   | Slides                  | Handout                  |
 |-------|-------------------------|--------------------------|
 | Lab 11 | [PDF](Lab 11 Slides.pdf) | [PDF](Lab 11 Handout.pdf) |
-| Lab 12 | | |
-| Lab 13 | | |
+| Lab 12 | [PDF](Lab 12 Slides.pdf) | [PDF](Lab 12 Handout.pdf) |
+| Lab 13 | [PDF](Lab 13 Slides.pdf) | N/A |
 
 
 ----------
