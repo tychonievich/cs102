@@ -10,14 +10,31 @@ that was turned into a processor in Taiwan
 using a machine built in Holland
 with a part bult in Japan getting the design into the machine.
 The memory chip in the computer was likely designed and created in Korea,
-also using a Japanese piece of silicon and a machine from Holland with a Japanese part.
+also using a Japanese piece of silicon and a machine from Holland with a key Japanese part.
+
+# Design
+
+Designing computer chips is a a complicated task,
+but one done all over the world:
+it requires care and thought, but it doesn't require vast physical infrastructure.
+Many of the leading chips that run phones, servers, laptops, and tablets
+are designed by companies in the US,
+but certainly not all of them.
+
+One of the major obstacles to the success of new hardware designs
+is the supporting software, infrastructure, and marketing.
+I often read reviews of new hardware designs
+that note their superiority over designs by established designers,
+yet advise the reader to stick with the established designs instead
+because of the available software ecosystem.
 
 
 # Silicon wafers
 
 Modern computer chips have components that measure only a few atoms across.
-That small size is essential: at the speed we run computers, even light can only travel about 2 inches per computation and performing the work of computation slows down electricity below that.
-Larger components simply cannot keep up.
+That small size is essential: at the speed we run computers, even light can only travel about 2 inches per CPU clock cycle,
+and performing the work of computation slows down electricity below that.
+Electrons in chips with larger components simply cannot keep up.
 
 At that scale, the base silicon must be entirely pure:
 even a single non-silicon atom in the wrong place can ruin a chip's functionality.
@@ -58,23 +75,23 @@ allowing the masks to be much larger (and thus easier to create) than the chip i
 
 Light has a wavelength that limits the maximum focus it can achieve, and chips have components much smaller that the wavelength of visible light.
 To get smaller components, shorter-wavelength (and thus higher-energy) light is needed;
-since the 2010s that has meant X-rays,
-a type of light that is so energetic it ionizes anything it passes through, making it impossible to focus with lenses.
+since the 2010s that has meant light so energetic that it ionizes anything it passes through, making it impossible to focus with lenses.
 Instead, it is focused with special mirrors which themselves need to be molecularly smooth,
 but many mirrors are needed to get the right light focus
 and since mirrors absorb some light that means the light source needs to be very bright.
 
-To control diffraction when passing through the mask, all the light needs to have the same wavelength,
-which means the X-rays need to all come from the same reaction of the same element.
-This is done by shooting tiny droplets of liquid tin with high-powered lasers
+To control diffraction when passing through the mask, all the light needs to have the same wavelength^[In particular, ASML machines use 13.5 nanometer light; for contrast, the atomic diameter of silicon is 102 nm and the shortest wavelength most humans can see is 390 nm.],
+which means the photons need to all come from the same reaction of the same element.
+This is done by shooting tiny droplets of molten tin with high-powered lasers
 several times in a row
+in a vacuum
 at a precise location in front of the first mirror,
-turning them briefly into a plasma that emits the correct wavelength of X-rays when it reforms into a gas.
+turning them into a plasma that emits the correct wavelength of light.
 
 As of 2026, only one company in the world has successfully created machines that can create enough X-rays quickly enough with precise enough focus to generate modern computer chips at scale:
 ASML in Holland.
 It took ASML more than 30 years to go from the concept
-to working machines that were able to produce chips at the scale needed for commercial viability,
+to working machines that were able to produce chips at the scale needed for commercial viability^[That scale includes hitting 50,000 tin droplets per second 2 or 3 times each, raising their temperature to 40 times hotter than the sun; using rarified oxygen to clean the tin residue off the mirrors; and moving the silicon wafer and mask at 60 mph jerking back and forth at 20G with nanometer precision of resulting locations. Each of those tasks is a multi-year engineering marvel],
 and so far no other company seems to be positioned to compete with them in the near future.
 If the device you are using to view this page was created after 2015,
 odds are it has *at least* two chips in it made with an ASML machine,
