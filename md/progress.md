@@ -54,3 +54,5 @@ Quiz 1 [blank (PDF)](quiz1.pdf) and [key (PDF)](quiz1key.pdf). Mean: 75.8%; medi
 
 
 Quiz 2 [blank (PDF)](quiz2.pdf) and [key (PDF)](quiz2key.pdf). Mean: 75.2%; median: 80%. This was graded out of 15 points, not 16, to allow for forgetting one term. Because some partial-credit answers were highly correlated (if you got one you often got another), one partial-credit answer was weighted as full-credit (if applicable to your quiz).
+
+Quiz 3 [blank (PDF)](quiz3.pdf) and [key (PDF)](quiz3key.pdf). Mean: 81.3%; median: 83%. Questions 1, 8, and 13 (the first of two numbered 13) were identified in some students' comments as having ambiguities that, once pointed out, I agreed rendered the questions invalid, so they were dropped. To compensate for the stress caused by so many ambiguous questions, a free point was added to each quiz.
