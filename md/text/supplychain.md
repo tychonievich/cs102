@@ -18,8 +18,8 @@ Designing computer chips is a a complicated task,
 but one done all over the world:
 it requires care and thought, but it doesn't require vast physical infrastructure.
 Many of the leading chips that run phones, servers, laptops, and tablets
-are designed by companies in the US,
-but certainly not all of them.
+are designed by companies in the US^[Notably Intel, NVIDIA, AMD],
+but certainly not all of them^[A notable exception is ARM in England, which designs Apple's processors and many phone and tablet chips.].
 
 One of the major obstacles to the success of new hardware designs
 is the supporting software, infrastructure, and marketing.
