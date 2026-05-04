@@ -3,6 +3,19 @@ title: Lectures
 ...
 
 
+
+Lecture 38 -- Chip creation and global supply chains -- Monday 4 May 2026
+:   Board work
+    :   - [2026-05-04.pdf](2026-05-04.pdf)
+
+    Relevant readings
+    :   - [Computer creation and supply chains](../text/supplychain.html)
+
+
+Lecture 40 -- Quiz 3 -- Friday 1 May 2026
+:   Quiz grades will be released Monday evening. Graded quizzes will be returned to students Wednesday.
+
+
 Lecture 39 -- Quiz 3 review -- Wednesday 29 April 2026
 :   Quiz review
     :   [Past questions in-scope for quiz](quiz3review.html). The last question on that page was covered in both lecture and lab and hence is in scope for the quiz, but it was not asked as a question in that form in either setting.
@@ -12,7 +25,6 @@ Lecture 39 -- Quiz 3 review -- Wednesday 29 April 2026
 
     Announcements
     :   - Lecture on Friday is an in-person on-paper quiz, with questions resembling (but not identical to) those in homeworks and labs.
-
 
 
 Lecture 38 -- Robots, vacuum cleaners, driverless cars -- Monday 27 April 2026
