@@ -119,9 +119,8 @@ Final Exam (20%)
     That increase will be computed as follows:
     
     - The final will be divided into three parts, one for each quiz.
-    - If your grade on part 1 is greater than your grade on quiz 1, we will adjust your quiz 1 grade upwards
-    to be 20% your original quiz 1 grade and 80% your final part 1 grade.
-    - The same 80/20 adjustments will be made for quiz/part 2 and for quiz/part 3 if the final part grade exceeds the corresponding quiz grade.
+    - If your grade on part 1 is greater than your grade on quiz 1, we will replace your quiz 1 grade with your final part 1 grade.
+    - The same replacements if better will be made for quiz/part 2 and for quiz/part 3 if the final part grade exceeds the corresponding quiz grade.
     - The final will never lower any quiz grade.
 
 ## Absences
