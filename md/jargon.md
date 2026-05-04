@@ -985,7 +985,7 @@ Variable
     `x = 3 + 4` means the memory named by variable `x` should have the number `7` stored inside it.
     Conversely, `3 + 4 = x` is a nonsensical an erroneous request that the number `7` have the contents of the memory named by variable `x` put inside it.
 
-Container
+Virtual Machine
 :   A heavier-weight way of isolating programs and providing the illusion of each running on its own computer than a *container*.
 
     In a virtual, each *system call* is routed not to the usual *kernel*
@@ -994,6 +994,7 @@ Container
     that effort is interrupted by the real kernel and adjusted to prevent the guest kernel from interacting with anything else the computer is running.
     
     Virtual machines are sometimes used in *cloud*-based computing, but containers are more popular.
+
 VPN
 :   Short for "virtual private network", a computer that agrees to forward messages for other computers
     in a more private way than is provided by *IP*.
