@@ -585,7 +585,7 @@ Machine instructions
 Machine learning (<abrr>ML</abbr>)
 :   A form of programming that works by
     
-    1. Defining a *general* family of functions or algorithms, where a specific function from the family can be selected by setting one or more *parameters*.
+    1. Defining a general family of functions or algorithms, where a specific function from the family can be selected by setting one or more *parameters*.
     2. Searching though the function family for one that comes closest to matching some *training data*.
     3. Using that function to solve problems.
 
