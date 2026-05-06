@@ -8,6 +8,9 @@ Lecture 42 -- Final review -- Wednesday 6 May 2026
 :   Quiz review
     :   [Past questions in-scope for final](finalreview.html)
 
+    Board work
+    :   - [2026-05-06.pdf](2026-05-06.pdf)
+
     Announcements
     :   - The final is 7–10 pm this Friday.
 
