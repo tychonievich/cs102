@@ -781,82 +781,82 @@ Which of ALU, CPU, HDD, RAM, or SSD **performs multiplication**? If several do, 
 
 Which of these seems most likely to work well?
 
-A. A **decompiler** that deduces the input to a compiler from its output or behavior.
-A. A **disassembler** that deduces the input to an assembler from its output or behavior.
-A. An **uninterpreter** that deduces the input to an interpreter from its output or behavior.
+A.  A **decompiler** that deduces the input to a compiler from its output or behavior.
+B.  A **disassembler** that deduces the input to an assembler from its output or behavior.
+C.  An **uninterpreter** that deduces the input to an interpreter from its output or behavior.
 
 ## Question 1.74 {.unnumbered .unlisted}
 
 Which of these **names data** in a program?
 
-A. Function
-A. Repetition
-A. Selection
-A. Variable
+A.  Function
+B.  Repetition
+C.  Selection
+D.  Variable
 
 ## Question 1.75 {.unnumbered .unlisted}
 
 Which of these is also called a loop?
 
-A. Function
-A. Repetition
-A. Selection
-A. Variable
+A.  Function
+B.  Repetition
+C.  Selection
+D.  Variable
 
 
 ## Question 1.76 {.unnumbered .unlisted}
 
 Which of the following is a valid reason to choose **C** over Java, Python, and R?
 
-A. Efficiency: I need the program to run as fast as possible.
-A. Programmer productivity: I want the program soon.
-A. Program scale: this is a many-developer multi-year project.
-A. Security: I don’t want to be hacked
+A.  Efficiency: I need the program to run as fast as possible.
+B.  Programmer productivity: I want the program soon.
+C.  Program scale: this is a many-developer multi-year project.
+D.  Security: I don’t want to be hacked
 
 
 ## Question 1.77 {.unnumbered .unlisted}
 
 Which of the following is the best example of **data** (as opposed to information or data type)?
 
-A. ASCII, a mapping between letters and bytes.
-A. The byte 0x41, which is an upper-case A in ASCII.
-A. The letter A (or a) in either case.
-A. The upper-case letter A.
+A.  ASCII, a mapping between letters and bytes.
+B.  The byte 0x41, which is an upper-case A in ASCII.
+C.  The letter A (or a) in either case.
+D.  The upper-case letter A.
 
 
 ## Question 1.78 {.unnumbered .unlisted}
 
 CS 233 spends 4 months explaining processors but INFO 102 does so in one day by being more abstract. What form of abstraction is this?
 
-A. Detail removal
-A. Generalization 
+A.  Detail removal
+B.  Generalization 
 
 
 ## Question 1.79 {.unnumbered .unlisted}
 
 If we discover that **P = NP**, that would suggest that
 
-A. Some exponential-time algorithms would become faster.
-A. Some intractable problems would become tractable.
-A. Some undecidable problems would become decideable.
+A.  Some exponential-time algorithms would become faster.
+B.  Some intractable problems would become tractable.
+C.  Some undecidable problems would become decideable.
 
 ## Question 1.80 {.unnumbered .unlisted}
 
 **Heuristic**s are often used to work around
 
-A. Intractable problems
-A. Undecidable problems
+A.  Intractable problems
+B.  Undecidable problems
 
 
 ## Question 1.81 {.unnumbered .unlisted}
 
 Put the following algorithm runtimes in order, from fastest to slowest on large inputs
 
-A. Constant
-A. Exponential
-A. Linear
-A. Logarithmic
-A. Quadratic
+A.  Constant
+B.  Exponential
+C.  Linear
+D.  Logarithmic
+E.  Quadratic
 
 
 
@@ -1308,10 +1308,10 @@ The scrum backlog matches which of the five waterfall stages?
 
 To know if an AI algorithm is **supervised** requires knowing
 
-A. If there’s a feedback mechanism in its user interface
-A. What its training data looks like
-A. What problems it can solve
-A. Whether it learned with human help
+A.  If there’s a feedback mechanism in its user interface
+B.  What its training data looks like
+C.  What problems it can solve
+D.  Whether it learned with human help
 
 
 ## Question 2.45 {.unnumbered .unlisted}
@@ -1322,8 +1322,8 @@ What is the word used to describe AI systems that continue to learn after they a
 
 Which one more directly impacts LLM electricity consumption:
 
-A. Length of text I send to it
-A. Length of text it sends back
+A.  Length of text I send to it
+B.  Length of text it sends back
 
 
 ## Question 2.47 {.unnumbered .unlisted}
@@ -1334,10 +1334,10 @@ What is the name of the problem where an AI can repeat its training data well, n
 
 For each described AI system, identify what group of AI it is:
 
-A. Classification
-A. Clustering
-A. Generative
-A. Regression
+A.  Classification
+B.  Clustering
+C.  Generative
+D.  Regression
 
 - Given income and zip code, predict the value of owned vehicle(s).
 - Given pictures of newly-discovered creatures, estimate how many species there are and which pictures are of each species
@@ -1348,11 +1348,11 @@ A. Regression
 
 Suppose an LLM response includes references to items from yesterday’s news. This most likely means it
 
-A. has been fine-tuned
-A. is agentic
-A. is reasoning
-A. learns as it is running
-A. was trained in the last 24 hours
+A.  has been fine-tuned
+B.  is agentic
+C.  is reasoning
+D.  learns as it is running
+E.  was trained in the last 24 hours
 
 
 ## Question 2.50 {.unnumbered .unlisted}
@@ -1363,32 +1363,32 @@ What are the five stages of the **waterfall model** we discussed in class?
 
 In software development, “upstream” refers to
 
-A. An earlier stage in the waterfall model
-A. Brittleness
-A. Libraries being used
-A. Previous versions of the software
-A. Requested by management
+A.  An earlier stage in the waterfall model
+B.  Brittleness
+C.  Libraries being used
+D.  Previous versions of the software
+E.  Requested by management
 
 
 ## Question 2.52 {.unnumbered .unlisted}
 
 Which of the following is an example of **refactoring**?
 
-A. Adding a “preferred name” field to everyone’s user profile.
-A. Changing which algorithm is used to sort numbers to be more performant.
-A. Disabling a buggy feature to keep the program running.
-A. Changing a program crash to show an error message instead.
+A.  Adding a “preferred name” field to everyone’s user profile.
+B.  Changing which algorithm is used to sort numbers to be more performant.
+C.  Disabling a buggy feature to keep the program running.
+D.  Changing a program crash to show an error message instead.
 
 
 ## Question 2.53 {.unnumbered .unlisted}
 
 A scrum backlog is a list of stories. In this context, a story is a description of
 
-A. an implementation of the scrum design
-A. how part of the software is designed
-A. one piece of a larger software system
-A. something the software did wrong
-A. something the software should be able to do
+A.  an implementation of the scrum design
+B.  how part of the software is designed
+C.  one piece of a larger software system
+D.  something the software did wrong
+E.  something the software should be able to do
 
 
 ## Question 2.54 {.unnumbered .unlisted}
@@ -1829,48 +1829,48 @@ A robot was defined in lecture as having three components and in lab as what tho
 
 On April 2nd ago it was revealed that the most commonly-used digital certificate checker let people take over computers if they included a comma in the input they sent to the certificate authority. Given that,
 
-A. Adding a comma is an exploit
-A. Adding a comma is a vulnerability
-A. Both
-A. Neither
+A.  Adding a comma is an exploit
+B.  Adding a comma is a vulnerability
+C.  Both
+D.  Neither
 
 
 ## Question 3.45 {.unnumbered .unlisted}
 
 Having your browser remember your passwords is
 
-A. Safe, like other password managers
-A. Unsafe, it weakens the browser
-A. Unsafe, passwords should stay in human memory not computer
+A.  Safe, like other password managers
+B.  Unsafe, it weakens the browser
+C.  Unsafe, passwords should stay in human memory not computer
 
 
 ## Question 3.46 {.unnumbered .unlisted}
 
 If key K decrypts signature S to the hash of message M then
 
-A. K’s owner wrote M
-A. M describes K’s owner
-A. M was signed by K’s owner
-A. S is invalid
+A.  K’s owner wrote M
+B.  M describes K’s owner
+C.  M was signed by K’s owner
+D.  S is invalid
 
 
 ## Question 3.47 {.unnumbered .unlisted}
 
 If I figure out how to log in as if I were you, that is a failure of
 
-A. Authentication
-A. Authorization
-A. Confidentiality
-A. Integrity
+A.  Authentication
+B.  Authorization
+C.  Confidentiality
+D.  Integrity
 
 ## Question 3.48 {.unnumbered .unlisted}
 
 I want to send you a secret, using IP to get it to you.
 
-A. I should also use a digital certificate to keep it secret
-A. I should also use a hash to keep it secret
-A. I should also use a symmetric cipher to keep it secret
-A. None of the above; IP keeps messages secret for me
+A.  I should also use a digital certificate to keep it secret
+B.  I should also use a hash to keep it secret
+C.  I should also use a symmetric cipher to keep it secret
+D.  None of the above; IP keeps messages secret for me
 
 
 ## Question 3.49 {.unnumbered .unlisted}
@@ -1888,40 +1888,40 @@ Your ISP would tell it
 
 What is something an IP routing server can do without any exploits of vulnerabilities, just using IP’s basic structure?
 
-A. Add you to a botnet
-A. Control what websites you can see
-A. Read your email
-A. See passwords you type in websites
+A.  Add you to a botnet
+B.  Control what websites you can see
+C.  Read your email
+D.  See passwords you type in websites
 
 ## Question 3.51 {.unnumbered .unlisted}
 
 The following are all true of the cloud; which one makes cloud computing more energy efficient than local computing?
 Answer for the total energy usage of all apps, not the specific energy usage of a single app developer.
 
-A. Apps can change which servers they run on as they run
-A. Apps rent, not own, servers
-A. Less-used apps cost less
-A. Servers each hosts multiple apps
+A.  Apps can change which servers they run on as they run
+B.  Apps rent, not own, servers
+C.  Less-used apps cost less
+D.  Servers each hosts multiple apps
 
 
 ## Question 3.52 {.unnumbered .unlisted}
 
 Why do battery chargers include computers?
 
-A. To control actuators
-A. To interpret sensors
-A. To provide customization or settings
-A. To perform complex computation
+A.  To control actuators
+B.  To interpret sensors
+C.  To provide customization or settings
+D.  To perform complex computation
 
 
 ## Question 3.53 {.unnumbered .unlisted}
 
 Smart devices are often added to botnets because they are rarely updated and they
 
-A. Are on the Internet
-A. Are powerful computers for bitcoin mining
-A. Can be used to extort money from their owners
-A. Have access to multiple sensors
+A.  Are on the Internet
+B.  Are powerful computers for bitcoin mining
+C.  Can be used to extort money from their owners
+D.  Have access to multiple sensors
 
 ## Question 3.54 {.unnumbered .unlisted}
 
@@ -1931,21 +1931,21 @@ What are the two most important tips for computer security?
 
 I should use TCP if I want to
 
-A. communicate reliably
-A. communicate securely
-A. use URLs instead of IP addresses
-A. use IP addresses instead of URLs
+A.  communicate reliably
+B.  communicate securely
+C.  use URLs instead of IP addresses
+D.  use IP addresses instead of URLs
 
 
 ## Question 3.56 {.unnumbered .unlisted}
 
 Which of the following can you send but not receive because you have an ISP instead of being part of the Internet?
 
-A. Digital certificates
-A. Diffie-Helmen key exchanges
-A. DNS requests
-A. Messages over IP 
-A. TCP packets
+A.  Digital certificates
+B.  Diffie-Helmen key exchanges
+C.  DNS requests
+D.  Messages over IP 
+E.  TCP packets
 
 
 
