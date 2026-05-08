@@ -4,6 +4,11 @@ title: Lectures
 
 
 
+Lecture 43 -- Final exam -- **cancelled**
+:   We will not have a final exam.
+    What that will mean for grading is yet to be determined, but I will attempt to make it not harm anyone's grade.
+    See [Teams](https://teams.cloud.microsoft/l/message/19:LND-tC7Fy85Lr3-prspsp3GAqGW6GrwqKdoly3dP8sY1@thread.tacv2/1778267636940?tenantId=44467e6f-462c-4ea2-823f-7800de5434e3&groupId=e7b26082-f371-45c8-8292-69f035e0adba&parentMessageId=1778267636940&teamName=INFO%20102%20Spring%202026&channelName=General&createdTime=1778267636940) for more information.
+
 Lecture 42 -- Final review -- Wednesday 6 May 2026
 :   Quiz review
     :   [Past questions in-scope for final](finalreview.html)
