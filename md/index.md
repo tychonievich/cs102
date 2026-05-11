@@ -21,12 +21,6 @@ summary: |
 ...
 
 
-<div class="important">
-We will not have a final exam.
-What that will mean for grading is yet to be determined, but I will attempt to make it not harm anyone's grade.
-See [Teams](https://teams.cloud.microsoft/l/message/19:LND-tC7Fy85Lr3-prspsp3GAqGW6GrwqKdoly3dP8sY1@thread.tacv2/1778267636940?tenantId=44467e6f-462c-4ea2-823f-7800de5434e3&groupId=e7b26082-f371-45c8-8292-69f035e0adba&parentMessageId=1778267636940&teamName=INFO%20102%20Spring%202026&channelName=General&createdTime=1778267636940) for more information.
-</div>
-
 Welcome to INFO 102! We're excited to explore a wide variety of computing concepts with you.
 
 See you in lecture! Attendance does count for this class.
@@ -116,9 +110,7 @@ Quizzes (36% = 3 x 12% each)
 
 <del>Final Exam (20%)</del>
 :   <div class="important">
-    We will not have a final exam.
-    What that will mean for grading is yet to be determined, but I will attempt to make it not harm anyone's grade.
-    See [Teams](https://teams.cloud.microsoft/l/message/19:LND-tC7Fy85Lr3-prspsp3GAqGW6GrwqKdoly3dP8sY1@thread.tacv2/1778267636940?tenantId=44467e6f-462c-4ea2-823f-7800de5434e3&groupId=e7b26082-f371-45c8-8292-69f035e0adba&parentMessageId=1778267636940&teamName=INFO%20102%20Spring%202026&channelName=General&createdTime=1778267636940) for more information.
+    Because of the final exam challenges created by the cybercriminals who hacked Instructure, the company that owns Canvas, we did not have a final. Instead I used the higher of 10% + the highest quiz grade and 5% + the midpoint between the quiz average and 100% to simulate the best I've seen students do on finals in the past.
     </div>
 
     On <time datetime="2026-05-08T19:00:00">Friday, May 8 at 7pm</time>^[This day and time [was schedule by the registrar](https://registrar.illinois.edu/final-exam-scheduling-guidelines/).]
