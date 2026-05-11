@@ -35,10 +35,10 @@ fetch('secure/progress.php'+location.search)
       if (data[n].of) {
         of += w;
         tot += w*data[n].score/data[n].of;
-        document.getElementById(n).innerHTML = `<p>Score so far: ${100*data[n].score/data[n].of}%</p><ul>${Object.entries(data[n].details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
+        document.getElementById(n).innerHTML = `<p>Score: ${100*data[n].score/data[n].of}%</p><ul>${Object.entries(data[n].details).map(([d,s])=>'<li>'+d+': '+s+'</li>').join('')}</ul>`;
         
       } else {
-        document.getElementById(n).append('None yet; these will appear in the future.');
+        document.getElementById(n).append('ERROR: some of your grades seem to be missing.');
       }
     }
     
