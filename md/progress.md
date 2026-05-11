@@ -14,6 +14,15 @@ This view was last updated <time id="update">never</time>.
 
 ```{=html}
 <script>
+function percent2letter(p) {
+  let g = (p-55)/10;
+  let g2 = (p-56-2/3)/10;
+  let r = Math.min(Math.round(g*3)/3, 4);
+  if (r < 2/6) r = 0;
+  return ["F","F","D−","D","D+","C−","C","C+","B−","B","B+","A−","A","A+"][Math.min(Math.round(g*3),13)];
+}
+percent2letter()
+
 fetch('secure/progress.php'+location.search)
   .then(res => res.json())
   .then(data => {
@@ -42,7 +51,7 @@ fetch('secure/progress.php'+location.search)
       }
     }
     
-    document.getElementById('overall').innerHTML = `<p>${of ? 100*tot/of : 'unknown'}%</p>`;
+    document.getElementById('overall').innerHTML = `<p>${of ? 100*tot/of : 'unknown'}% (${percent2letter(100*tot/of)})</p>`;
     
   })
 </script>
