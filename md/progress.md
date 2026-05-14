@@ -19,6 +19,7 @@ function percent2letter(p) {
   let g2 = (p-56-2/3)/10;
   let r = Math.min(Math.round(g*3)/3, 4);
   if (r < 2/6) r = 0;
+  if (Math.min(Math.round(g*3),13) < 0) return 'F';
   return ["F","F","D−","D","D+","C−","C","C+","B−","B","B+","A−","A","A+"][Math.min(Math.round(g*3),13)];
 }
 percent2letter()
