@@ -223,14 +223,20 @@ The first 500 numbers would be the encoding of the first word,
 followed by 500 numbers encoding the second,
 and so on.
 
-But what if a user types fewer words than we allow?
-Neural nets don't allow variable-length inputs,
-so the missing words have to be added,
-often by adding a special «nothing» token.
-Did you put 10 words
-into an LLM that supports 10,000?
-It will put 9,990 special «nothing» tokens before your ten words
-to make its input list of numbers.
+Except, we don't really want giant lists like that.
+Linear operators are most powerful when their input and output list sizes are approximately the same length,
+so inputting billions of numbers
+into operators that output maybe a million numbers
+is wasteful.
+Instead, we forcibly apply a special linear operator
+that is fast to compute on any number of words
+and uses both place and word encoding in the result.
+The specific operator most often used
+is based on cosines with a different frequency and phase for each input position,
+but that's mostly incidental:
+the goal is just to turn a list of any length
+into a list of a a specific constant length
+while keeping some position information.
 
 ## Self-attention
 
@@ -334,7 +340,7 @@ and uses those to try to extend incomplete sequences.
 
 ## Consequences for LLM users
 
-- Longer prompts have more power; short prompts waste most of your LLM's thousands of input tokens.
+- Longer prompts have more power; short prompts waste most of your LLM's training on long inputs.
 
 - LLMs don't think, they don't have intent or understanding; they don't even know that the tokens they are generating mean anything at all.
 
